@@ -2,11 +2,11 @@
 
 ## Project Overview
 
-This is a Node.js-based testing and validation tool for GitHub Actions workflows. The repository contains comprehensive analysis and documentation for Case 2025-137857, involving Peter Andrew Faucitt (Applicant) vs. Jacqueline Faucitt and Daniel James Faucitt (Respondents) in the High Court of South Africa.
+This is a Node.js-based testing and validation tool for GitHub Actions workflows with PostgreSQL database support. The repository contains comprehensive analysis and documentation for Case 2025-137857, involving Peter Andrew Faucitt (Applicant) vs. Jacqueline Faucitt and Daniel James Faucitt (Respondents) in the High Court of South Africa.
 
-**Purpose:** Legal case documentation management with automated workflow validation for GitHub Actions that convert todo items to issues and maintain file format representations.
+**Purpose:** Legal case documentation management with automated workflow validation for GitHub Actions that convert todo items to issues and maintain file format representations. Now includes PostgreSQL database for tracking documents, evidence, issues, and amendments.
 
-**Type:** Command-line testing tool (no frontend)
+**Type:** Command-line testing tool with database backend (no frontend)
 
 ## Project Structure
 

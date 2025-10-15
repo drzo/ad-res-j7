@@ -30,10 +30,21 @@
     "fix-file-paths": "node scripts/fix_file_paths.js file-path-validation-report.json",
     "hypergraph:example": "node docs/models/hypergnn/case-hypergraph.js",
     "validate-workflows": "node tests/run-all-tests.js",
-    "lint": "echo 'No linting configured - using workflow validation instead' && npm run test:validation"
+    "lint": "echo 'No linting configured - using workflow validation instead' && npm run test:validation",
+    "db:test": "node db/test-connection.js",
+    "db:migrate": "node db/migrate.js",
+    "db:push": "node db/migrate.js",
+    "db:list-docs": "node db/case-manager.js list-documents",
+    "db:list-issues": "node db/case-manager.js list-issues",
+    "db:list-evidence": "node db/case-manager.js list-evidence",
+    "db:import": "node db/case-manager.js import"
   },
   "dependencies": {
-    "glob": "^11.0.3"
+    "@neondatabase/serverless": "^1.0.2",
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.44.6",
+    "glob": "^11.0.3",
+    "ws": "^8.18.3"
   },
   "keywords": [
     "github-actions",
