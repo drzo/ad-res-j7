@@ -24,8 +24,10 @@ This is a Node.js-based testing and validation tool for GitHub Actions workflows
 
 - **Runtime:** Node.js 20
 - **Package Manager:** npm
-- **Dependencies:** glob (for file pattern matching)
+- **Database:** PostgreSQL (Neon) with Drizzle ORM
+- **Dependencies:** glob, @neondatabase/serverless, drizzle-orm, ws, dotenv
 - **Testing Framework:** Custom test runner with validation and integration tests
+- **Knowledge Graph:** Hypergraph database for relationship modeling
 
 ## Running the Project
 
@@ -37,11 +39,33 @@ npm run test:integration  # Run functional tests only
 npm run test:simple       # Run simple workflow tests
 ```
 
+### Database Commands
+```bash
+npm run db:test           # Test database connection
+npm run db:migrate        # Create database tables
+npm run db:list-issues    # View critical issues
+npm run db:list-docs      # List case documents
+npm run db:list-evidence  # View evidence records
+npm run db:import <dir>   # Import documents from directory
+```
+
+### Hypergraph Commands
+```bash
+npm run db:hypergraph:setup     # Create hypergraph schema
+npm run db:hypergraph:populate  # Populate with case data
+npm run db:hypergraph:stats     # View graph statistics
+npm run db:hypergraph:demo      # Run demo with sample data
+```
+
 ### Current Status
 - **All Tests:** 128/128 passing (100% success rate)
 - **Test Coverage:** 
   - 85 validation tests (workflow structure and syntax)
   - 43 integration tests (functional behavior)
+- **Database:** 
+  - 9 tables (5 case tables + 4 hypergraph tables)
+  - 12 critical issues tracked
+  - 26 hypergraph nodes, 15 edges, 37 relations
 
 ## Automated Workflows
 
