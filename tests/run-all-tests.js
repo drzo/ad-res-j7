@@ -361,6 +361,13 @@ class TestRunner {
           failureIndex++;
         });
       }
+      if (this.results.markdownFormatting.errors.length > 0) {
+        console.log('   Markdown Formatting Test Failures:');
+        this.results.markdownFormatting.errors.forEach(error => {
+          console.log(`   ${failureIndex}. ${error}`);
+          failureIndex++;
+        });
+      }
       
       if (this.results.todoValidation.errors.length > 0) {
         console.log('   Todo Validation Test Failures:');
