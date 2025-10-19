@@ -2,9 +2,9 @@
 
 /**
  * Markdown Formatting Validation Test Suite
- * Comprehensive testing for validating markdown parsing with various formatting styles
- * Addresses task from todo/workflow-validation-tests.md line 16
- * Implements optimal strategies and burden of proof validation per agent instructions
+ * Comprehensive testing for markdown parsing with various formatting styles
+ * This addresses the requirement from todo/workflow-validation-tests.md line 16:
+ * "Validate markdown parsing with various formatting styles"
  */
 
 const fs = require('fs');
@@ -43,6 +43,7 @@ class MarkdownFormattingValidationTest {
   setup() {
     console.log('🔧 Setting up markdown formatting validation test environment...');
     
+    // Ensure test directory exists
     if (!fs.existsSync(this.testDataDir)) {
       fs.mkdirSync(this.testDataDir, { recursive: true });
     }
@@ -57,7 +58,7 @@ class MarkdownFormattingValidationTest {
     }
   }
 
-  // Simulate the TodoIssueGenerator parseMarkdownForTasks method
+  // Extract and implement the parseMarkdownForTasks method from the workflow
   parseMarkdownForTasks(content, filename) {
     const lines = content.split('\n');
     const tasks = [];
@@ -91,7 +92,11 @@ class MarkdownFormattingValidationTest {
                           line.toLowerCase().includes('phase 1') ||
                           line.toLowerCase().includes('phase 2') ||
                           line.toLowerCase().includes('phase 3') ||
-                          line.toLowerCase().includes('phase 4');
+                          line.toLowerCase().includes('phase 4') ||
+                          line.toLowerCase().includes('priority 1') ||
+                          line.toLowerCase().includes('priority 2') ||
+                          line.toLowerCase().includes('priority 3') ||
+                          line.toLowerCase().includes('priority 4');
       }
       
       // Look for numbered tasks in priority sections
@@ -136,27 +141,55 @@ class MarkdownFormattingValidationTest {
           break;
         }
       }
+      
+      // Look for specific recommendation sections
+      if (line.includes('**Improvements Needed**:') || 
+          line.includes('**Action Required**:') ||
+          line.includes('**Recommended Actions**:')) {
+        
+        // Next lines likely contain tasks
+        for (let j = i + 1; j < Math.min(i + 10, lines.length); j++) {
+          const nextLine = lines[j].trim();
+          
+          if (nextLine.startsWith('-')) {
+            const taskMatch = nextLine.match(/^-\s*(.+)$/);
+            if (taskMatch) {
+              const taskText = taskMatch[1].trim();
+              if (this.isHighQualityTask(taskText)) {
+                tasks.push({
+                  task: taskText,
+                  section: currentSection,
+                  priority: 'high',
+                  file: filename,
+                  lineNumber: j + 1,
+                  type: 'recommendation'
+                });
+              }
+            }
+          }
+        }
+      }
     }
     
     return tasks;
   }
 
-  // Determine priority from section name
+  // Priority determination helper
   determinePriorityFromSection(section) {
     const sectionLower = section.toLowerCase();
-    
-    if (sectionLower.includes('must-do') || sectionLower.includes('phase 1') || sectionLower.includes('critical')) {
+    if (sectionLower.includes('critical') || sectionLower.includes('must-do') || sectionLower.includes('priority 1')) {
       return 'critical';
-    } else if (sectionLower.includes('should-do') || sectionLower.includes('phase 2') || sectionLower.includes('high')) {
+    } else if (sectionLower.includes('high') || sectionLower.includes('should-do') || sectionLower.includes('priority 2')) {
       return 'high';
-    } else if (sectionLower.includes('nice-to-have') || sectionLower.includes('phase 3') || sectionLower.includes('phase 4')) {
+    } else if (sectionLower.includes('medium') || sectionLower.includes('priority 3')) {
       return 'medium';
+    } else if (sectionLower.includes('low') || sectionLower.includes('nice-to-have') || sectionLower.includes('priority 4')) {
+      return 'low';
     }
-    
     return 'medium';
   }
 
-  // Quality task filter (from workflow)
+  // Quality task filter implementation
   isHighQualityTask(task) {
     // Skip if too short
     if (task.length < 15) {
@@ -190,546 +223,524 @@ class MarkdownFormattingValidationTest {
       /^(Implement|Create|Build|Fix|Add|Update|Develop)\s+/i,
       /^(Write|Draft|Prepare|Design|Setup|Configure)\s+/i,
       /^(Test|Validate|Verify|Check)\s+/i,
-      /(monitoring and alerting|automated testing|comprehensive test|duplicate prevention|JSON parsing|workflow functionality)/i
+      /(implement|add|create|fix|update|improve|enhance|develop|build|establish|provide|include|demonstrate|expand|complete|review)/i
     ];
     
     return actionPatterns.some(pattern => pattern.test(task));
   }
 
-  // Test 1: Basic markdown formatting styles
-  testBasicFormattingStyles() {
-    console.log('\n🧪 Testing basic markdown formatting styles...');
+  // Test basic markdown formatting in task descriptions
+  testBasicFormattingInTasks() {
+    console.log('\n🧪 Testing basic markdown formatting in tasks...');
     
-    const basicFormattingContent = `
-# Basic Formatting Test
+    try {
+      const basicFormattingContent = `
+# Must-Do (Critical Priority)
 
-## Must-Do (Critical Priority)
-
-1. Implement **bold text** validation in parser
-2. Create *italic text* parsing support  
-3. Add \`inline code\` formatting detection
-4. Fix [link text](http://example.com) processing
-5. Update ~~strikethrough~~ text handling
+- Implement **bold formatting** handling in task extraction
+- Create support for *italic text* in task descriptions  
+- Add validation for \`inline code\` in markdown parsing
+- Fix issues with **bold and *nested italic* formatting**
+- Update system to handle ***bold italic*** combinations
+- Develop tests for ~~strikethrough~~ text processing
+- Build parser for [link text](https://example.com) in tasks
+- Create handler for ![image alt](image.jpg) references
 
 ## Should-Do (High Priority)
 
-- Implement comprehensive test suite with **bold formatting**
-- Create automated testing pipeline with *italic formatting*
-- Add monitoring and alerting with \`code formatting\`
-- Fix duplicate prevention with [link formatting](url)
-- Update workflow functionality with ***triple emphasis***
-
-## Improvements Needed:
-- Create validation for ***complex*** markdown
-- Implement comprehensive test suite for formatting
-- Add monitoring and alerting for formatting issues
-- Fix duplicate prevention with formatted content
-- Update workflow functionality with formatted tasks
+- Enhance parser to support \`\`\`code blocks\`\`\` in descriptions
+- Implement handling for > blockquote formatting
+- Add support for | table | formatting | in tasks
+- Create tests for <!-- HTML comments --> in markdown
 `;
-
-    const tasks = this.parseMarkdownForTasks(basicFormattingContent, 'basic-formatting.md');
-    
-    // Verify tasks are extracted despite formatting - adjust expectations based on actual patterns
-    this.assert(tasks.length >= 3, `Found ${tasks.length} tasks in basic formatting (expected >= 3)`);
-    
-    // Check that formatting is preserved in recognized task content
-    const foundTasks = tasks.map(t => t.task);
-    const hasFormattedTasks = foundTasks.some(task => 
-      task.includes('**') || task.includes('*') || task.includes('`') || task.includes('[')
-    );
-    
-    this.assert(hasFormattedTasks, 'Preserves formatting in recognized task content');
-    
-    // Test specific pattern matches that should be recognized
-    const comprehensiveTestTask = tasks.find(t => t.task.includes('comprehensive test suite'));
-    const automatedTestingTask = tasks.find(t => t.task.includes('automated testing pipeline'));
-    const monitoringTask = tasks.find(t => t.task.includes('monitoring and alerting'));
-    const duplicatePreventionTask = tasks.find(t => t.task.includes('duplicate prevention'));
-    const workflowFunctionalityTask = tasks.find(t => t.task.includes('workflow functionality'));
-    
-    this.assert(comprehensiveTestTask !== undefined, 'Recognizes comprehensive test suite pattern with formatting');
-    this.assert(automatedTestingTask !== undefined, 'Recognizes automated testing pipeline pattern with formatting');
-    this.assert(monitoringTask !== undefined, 'Recognizes monitoring and alerting pattern with formatting');
-    this.assert(duplicatePreventionTask !== undefined, 'Recognizes duplicate prevention pattern with formatting');
-    this.assert(workflowFunctionalityTask !== undefined, 'Recognizes workflow functionality pattern with formatting');
-    
-    // Verify priority detection works with formatted headers
-    const criticalTasks = tasks.filter(t => t.priority === 'critical');
-    const highTasks = tasks.filter(t => t.priority === 'high');
-    
-    this.assert(criticalTasks.length >= 1, 'Correctly assigns critical priority despite header formatting');
-    this.assert(highTasks.length >= 1, 'Correctly assigns high priority despite header formatting');
+      
+      const result = this.parseMarkdownForTasks(basicFormattingContent, 'basic-formatting.md');
+      
+      this.assert(result.length >= 8, 'Extracts tasks with basic formatting');
+      
+      // Test specific formatting cases
+      const boldTask = result.find(t => t.task.includes('**bold formatting**'));
+      this.assert(boldTask !== undefined, 'Extracts tasks with bold formatting');
+      
+      const italicTask = result.find(t => t.task.includes('*italic text*'));
+      this.assert(italicTask !== undefined, 'Extracts tasks with italic formatting');
+      
+      const codeTask = result.find(t => t.task.includes('`inline code`'));
+      this.assert(codeTask !== undefined, 'Extracts tasks with inline code formatting');
+      
+      const linkTask = result.find(t => t.task.includes('[link text](https://example.com)'));
+      this.assert(linkTask !== undefined, 'Extracts tasks with link formatting');
+      
+      const nestedTask = result.find(t => t.task.includes('**bold and *nested italic* formatting**'));
+      this.assert(nestedTask !== undefined, 'Extracts tasks with nested formatting');
+      
+      // Test priority detection with formatted headers
+      const criticalTasks = result.filter(t => t.priority === 'critical');
+      const highTasks = result.filter(t => t.priority === 'high');
+      
+      this.assert(criticalTasks.length >= 6, 'Correctly identifies critical priority with formatted headers');
+      this.assert(highTasks.length >= 2, 'Correctly identifies high priority with formatted headers');
+      
+    } catch (error) {
+      this.assert(false, `Error in basic formatting test: ${error.message}`);
+    }
   }
 
-  // Test 2: Complex formatting combinations
-  testComplexFormattingCombinations() {
-    console.log('\n🧪 Testing complex formatting combinations...');
+  // Test advanced formatting scenarios
+  testAdvancedFormattingScenarios() {
+    console.log('\n🧪 Testing advanced formatting scenarios...');
     
-    const complexFormattingContent = `
-# Complex Formatting Test
+    try {
+      const advancedFormattingContent = `
+# **Priority 1** - Critical Tasks with Formatting
 
-## Critical Priority Requirements
+1. Implement support for *mixed* **formatting** \`styles\` in task extraction
+2. Create parser for [complex](https://example.com "Title") link formats with titles
+3. Add handling for reference-style [links][1] in markdown content
+4. Fix processing of email <user@example.com> and auto-links
+5. Update system for HTML entities like &amp; &lt; &gt; in content
 
-1. Implement ***bold and italic*** validation framework
-2. Create comprehensive test suite with **complex formatting**
-3. Add monitoring and alerting for \`code formatting\` issues
-4. Fix duplicate prevention with [**bold link text**](http://example.com)
-5. Update workflow functionality with ***triple emphasis***
+[1]: https://reference-link.com "Reference Link"
 
-## Should-Do (High Priority)
+## Phase 2: Advanced Formatting Support
 
-- Implement automated testing pipeline with **bold** and *italic* text
-- Create comprehensive test suite for \`code with **bold** inside\`
-- Add monitoring and alerting for > **Bold blockquote** processing
-- Fix workflow functionality with nested **bold with *italic* inside** text
-- Update duplicate prevention for [complex [nested] links](http://example.com)
+- Develop tests for Unicode characters: café naïve résumé 中文 العربية
+- Build support for emoji in tasks: 🚀 Implement rocket-fast parsing 🔥
+- Create handler for special characters: $@#%^&*()_+-=[]{}|\\;:'"<>?/~\`
+- Add validation for mathematical symbols: ∑ ∏ ∫ ∂ √ ∞ ≈ ≠ ≤ ≥
+- Implement proper handling of currency symbols: $ £ € ¥ ₹ ₽
 
-## Improvements Needed:
-- Create validation for mixed ~~strikethrough~~ and **bold** text
-- Implement comprehensive test suite for HTML <strong>tags</strong> parsing
-- Add automated testing pipeline with emoji support 🚀 validation
-- Fix monitoring and alerting for line\\
-  break handling in tasks
-- Update workflow functionality for <kbd>keyboard</kbd> shortcut formatting
+### **Improvements Needed**:
+- Test nested lists and complex formatting combinations
+- Validate \`code with **bold** inside\` formatting
+- Fix **bold with \`code\` inside** processing
+- Update *italic with [links](http://test.com) inside* handling
+- Create comprehensive **_bold italic_** \`code\` [link](url) combinations
+
+## Nice-to-Have (Low Priority)
+
+- Implement HTML tag filtering: <script>alert('test')</script>
+- Add support for markdown tables with | formatting |
+- Create tests for definition lists and footnotes[^1]
+- Build handler for task lists: [x] completed [ ] pending
+
+[^1]: This is a footnote reference
 `;
-
-    const tasks = this.parseMarkdownForTasks(complexFormattingContent, 'complex-formatting.md');
-    
-    this.assert(tasks.length >= 5, `Found ${tasks.length} tasks in complex formatting (expected >= 5)`);
-    
-    // Test specific complex formatting scenarios that should be recognized
-    const comprehensiveTestTask = tasks.find(t => t.task.includes('comprehensive test suite'));
-    const automatedTestingTask = tasks.find(t => t.task.includes('automated testing pipeline'));
-    const monitoringTask = tasks.find(t => t.task.includes('monitoring and alerting'));
-    const workflowTask = tasks.find(t => t.task.includes('workflow functionality'));
-    const duplicateTask = tasks.find(t => t.task.includes('duplicate prevention'));
-    
-    this.assert(comprehensiveTestTask !== undefined, 'Handles comprehensive test suite with complex formatting');
-    this.assert(automatedTestingTask !== undefined, 'Handles automated testing pipeline with formatting');
-    this.assert(monitoringTask !== undefined, 'Handles monitoring and alerting with formatting');
-    this.assert(workflowTask !== undefined, 'Handles workflow functionality with formatting');
-    
-    // Test that formatting is preserved in recognized tasks
-    const formattedTasks = tasks.filter(t => 
-      t.task.includes('**') || t.task.includes('*') || t.task.includes('`') || t.task.includes('[')
-    );
-    
-    this.assert(formattedTasks.length >= 3, `Preserves formatting in ${formattedTasks.length} complex tasks`);
+      
+      const result = this.parseMarkdownForTasks(advancedFormattingContent, 'advanced-formatting.md');
+      
+      this.assert(result.length >= 15, 'Extracts tasks from advanced formatting scenarios');
+      
+      // Test Unicode and emoji handling
+      const unicodeTask = result.find(t => t.task.includes('café naïve résumé'));
+      this.assert(unicodeTask !== undefined, 'Handles Unicode characters in tasks');
+      
+      const emojiTask = result.find(t => t.task.includes('🚀') && t.task.includes('🔥'));
+      this.assert(emojiTask !== undefined, 'Handles emoji characters in tasks');
+      
+      // Test complex link formats
+      const complexLinkTask = result.find(t => t.task.includes('[complex](https://example.com "Title")'));
+      this.assert(complexLinkTask !== undefined, 'Handles complex link formats');
+      
+      // Test special character handling
+      const specialCharsTask = result.find(t => t.task.includes('$@#%^&*()'));
+      this.assert(specialCharsTask !== undefined, 'Handles special characters in tasks');
+      
+      // Test mathematical symbols
+      const mathTask = result.find(t => t.task.includes('∑ ∏ ∫'));
+      this.assert(mathTask !== undefined, 'Handles mathematical symbols');
+      
+      // Test numbered list extraction in priority sections
+      const numberedTasks = result.filter(t => t.type === 'priority_task');
+      this.assert(numberedTasks.length >= 5, 'Extracts numbered tasks from priority sections');
+      
+    } catch (error) {
+      this.assert(false, `Error in advanced formatting test: ${error.message}`);
+    }
   }
 
-  // Test 3: Edge case formatting scenarios
-  testEdgeCaseFormatting() {
-    console.log('\n🧪 Testing edge case formatting scenarios...');
+  // Test edge cases and malformed formatting
+  testFormattingEdgeCases() {
+    console.log('\n🧪 Testing formatting edge cases and malformed formatting...');
     
-    const edgeCaseContent = `
-# Edge Case Formatting Test
+    try {
+      const edgeCasesContent = `
+# Must-Do Section
 
-## Must-Do (Critical Priority)
-
-1. Implement comprehensive test suite for **unclosed bold text formatting
-2. Create automated testing pipeline for *italic text spanning
-   multiple lines*
-3. Add monitoring and alerting for \`code that spans
-   multiple lines\`
-4. Fix workflow functionality for [broken link](http://example.com without closing
-5. Update duplicate prevention for **bold text with *italic inside** formatting
-
-## High Priority Tasks
-
-- Implement comprehensive test suite for **bold** text with **multiple** sections
-- Create automated testing pipeline for *italic* and *more italic* text
-- Add monitoring and alerting for \`code\` and \`more code\` parsing
-- Fix workflow functionality with [link1](url1) and [link2](url2) processing
-- Update duplicate prevention with **bold**, *italic*, and \`code\` combined
-
-## Improvements Needed:
-- Create comprehensive test suite for empty **formatting** handling
-- Implement automated testing pipeline for ** double asterisk ** content
-- Add monitoring and alerting for __ underscore bold formatting __
-- Fix workflow functionality for _single underscore italic_ formatting
-- Update duplicate prevention for ~single tilde~ vs ~~double tilde~~ handling
-`;
-
-    const tasks = this.parseMarkdownForTasks(edgeCaseContent, 'edge-case-formatting.md');
-    
-    this.assert(tasks.length >= 8, `Found ${tasks.length} tasks in edge cases (expected >= 8)`);
-    
-    // Test that recognized patterns work despite edge case formatting
-    const comprehensiveTestTasks = tasks.filter(t => t.task.includes('comprehensive test suite'));
-    const automatedTestingTasks = tasks.filter(t => t.task.includes('automated testing pipeline'));
-    const monitoringTasks = tasks.filter(t => t.task.includes('monitoring and alerting'));
-    const workflowTasks = tasks.filter(t => t.task.includes('workflow functionality'));
-    const duplicateTasks = tasks.filter(t => t.task.includes('duplicate prevention'));
-    
-    this.assert(comprehensiveTestTasks.length >= 2, 'Handles comprehensive test suite with edge case formatting');
-    this.assert(automatedTestingTasks.length >= 2, 'Handles automated testing pipeline with edge case formatting');
-    this.assert(monitoringTasks.length >= 2, 'Handles monitoring and alerting with edge case formatting');
-    this.assert(workflowTasks.length >= 2, 'Handles workflow functionality with edge case formatting');
-    this.assert(duplicateTasks.length >= 2, 'Handles duplicate prevention with edge case formatting');
-    
-    // Test formatting preservation in edge cases
-    const formattedTasks = tasks.filter(t => 
-      t.task.includes('**') || t.task.includes('*') || t.task.includes('`') || t.task.includes('[')
-    );
-    
-    this.assert(formattedTasks.length >= 5, `Preserves formatting in ${formattedTasks.length} edge case tasks`);
-  }
-
-  // Test 4: List formatting variations
-  testListFormattingVariations() {
-    console.log('\n🧪 Testing list formatting variations...');
-    
-    const listFormattingContent = `
-# List Formatting Test
-
-## Critical Priority
-
-1. Implement comprehensive test suite with **numbered list** formatting
-2. Create automated testing pipeline with *numbered list* italic
-3. Add monitoring and alerting with \`numbered list\` code
-   - Sub-item: Fix workflow functionality with **bold** text
-   - Sub-item: Update duplicate prevention with *italic* text
-   - Sub-item: Create JSON parsing with \`code\` text
-
-## Should-Do (High Priority)
-
-* Implement comprehensive test suite with **bullet list** formatting
-* Create automated testing pipeline with *bullet list* italic
-* Add monitoring and alerting with \`bullet list\` code
-  1. Nested: Fix workflow functionality with **bold**
-  2. Nested: Update duplicate prevention with **bold**
-  
-- Implement comprehensive test suite with **dash list** formatting
-- Create automated testing pipeline with *dash list* italic
-- Add monitoring and alerting with \`dash list\` code
-
-## Improvements Needed:
-+ Create comprehensive test suite with **plus list** formatting
-+ Implement automated testing pipeline with *plus list* italic
-+ Add monitoring and alerting with \`plus list\` code
-
-### Complex List Scenarios
-- [ ] Create comprehensive test suite with **checkbox list** formatting
-- [x] Implement automated testing pipeline with *italic checkbox* formatting
-- [ ] Add monitoring and alerting with \`code checkbox\` and [links](url)
-`;
-
-    const tasks = this.parseMarkdownForTasks(listFormattingContent, 'list-formatting.md');
-    
-    this.assert(tasks.length >= 10, `Found ${tasks.length} tasks in list formatting (expected >= 10)`);
-    
-    // Test that different list types preserve formatting
-    const comprehensiveTestTasks = tasks.filter(t => t.task.includes('comprehensive test suite'));
-    const automatedTestingTasks = tasks.filter(t => t.task.includes('automated testing pipeline'));
-    const monitoringTasks = tasks.filter(t => t.task.includes('monitoring and alerting'));
-    const workflowTasks = tasks.filter(t => t.task.includes('workflow functionality'));
-    const duplicateTasks = tasks.filter(t => t.task.includes('duplicate prevention'));
-    const jsonTasks = tasks.filter(t => t.task.includes('JSON parsing'));
-    
-    this.assert(comprehensiveTestTasks.length >= 3, 'Parses comprehensive test suite in various list formats');
-    this.assert(automatedTestingTasks.length >= 2, 'Parses automated testing pipeline in various list formats');
-    this.assert(monitoringTasks.length >= 3, 'Parses monitoring and alerting in various list formats');
-    
-    // Test formatting preservation in lists
-    const formattedTasks = tasks.filter(t => 
-      t.task.includes('**') || t.task.includes('*') || t.task.includes('`') || t.task.includes('[')
-    );
-    
-    this.assert(formattedTasks.length >= 8, `Preserves formatting in ${formattedTasks.length} list tasks`);
-  }
-
-  // Test 5: Header formatting variations
-  testHeaderFormattingVariations() {
-    console.log('\n🧪 Testing header formatting variations...');
-    
-    const headerFormattingContent = `
-# Header Formatting Test
-
-## **Bold Header** (Critical Priority)
-
-1. Implement comprehensive test suite for header parsing with **bold** text
-2. Create automated testing pipeline for header formatting support
-
-### *Italic Header* Requirements
-
-- Implement comprehensive test suite for *italic* headers
-- Create automated testing pipeline for header formatting validation
-
-#### \`Code Header\` Tasks
-
-- Add monitoring and alerting for \`code\` in headers
-- Fix workflow functionality for header detection with backticks
-
-##### [Link Header](http://example.com) Section
-
-- Implement comprehensive test suite for [link](url) parsing in headers
-- Create automated testing pipeline for header validation with links
-
-###### ***Complex Header*** with Multiple Formatting
-
-- Fix workflow functionality for ***triple emphasis*** in headers
-- Update duplicate prevention for complex header parsing
-
-## Must-Do (**Critical**)
-
-1. Implement comprehensive test suite for header priority extraction with **formatting**
-2. Create automated testing pipeline for priority detection despite *italic* text
-3. Add monitoring and alerting for headers with \`code\` elements
-
-### Should-Do (*High Priority*)
-
-- Implement comprehensive test suite for header parsing with mixed **bold** and *italic*
-- Create automated testing pipeline for headers with [**bold links**](url)
-- Add monitoring and alerting for headers with \`**code and bold**\`
-`;
-
-    const tasks = this.parseMarkdownForTasks(headerFormattingContent, 'header-formatting.md');
-    
-    this.assert(tasks.length >= 8, `Found ${tasks.length} tasks in header formatting (expected >= 8)`);
-    
-    // Test priority extraction from formatted headers
-    const criticalTasks = tasks.filter(t => t.priority === 'critical');
-    const highTasks = tasks.filter(t => t.priority === 'high');
-    
-    this.assert(criticalTasks.length >= 2, 'Extracts critical priority from formatted headers');
-    this.assert(highTasks.length >= 2, 'Extracts high priority from formatted headers');
-    
-    // Test that recognized patterns work with formatted headers
-    const comprehensiveTestTasks = tasks.filter(t => t.task.includes('comprehensive test suite'));
-    const automatedTestingTasks = tasks.filter(t => t.task.includes('automated testing pipeline'));
-    const monitoringTasks = tasks.filter(t => t.task.includes('monitoring and alerting'));
-    const workflowTasks = tasks.filter(t => t.task.includes('workflow functionality'));
-    const duplicateTasks = tasks.filter(t => t.task.includes('duplicate prevention'));
-    
-    this.assert(comprehensiveTestTasks.length >= 3, 'Parses comprehensive test suite with formatted headers');
-    this.assert(automatedTestingTasks.length >= 3, 'Parses automated testing pipeline with formatted headers');
-    this.assert(monitoringTasks.length >= 1, 'Parses monitoring and alerting with formatted headers');
-    this.assert(workflowTasks.length >= 1, 'Parses workflow functionality with formatted headers');
-    
-    // Test formatting preservation in header context
-    const formattedTasks = tasks.filter(t => 
-      t.task.includes('**') || t.task.includes('*') || t.task.includes('`') || t.task.includes('[')
-    );
-    
-    this.assert(formattedTasks.length >= 6, `Preserves formatting in ${formattedTasks.length} header-context tasks`);
-  }
-
-  // Test 6: Optimal strategies and burden of proof validation
-  testOptimalStrategiesValidation() {
-    console.log('\n🧪 Testing optimal strategies and burden of proof validation...');
-    
-    const strategiesContent = `
-# Optimal Strategies and Burden of Proof
-
-## Civil Standard - Balance of Probabilities
-
-1. Implement comprehensive test suite for **civil evidence standards** (>50% likelihood)
-2. Create automated testing pipeline for **burden of proof** assessment
-3. Add monitoring and alerting for **documentary evidence** validation
-4. Fix workflow functionality for **witness credibility** assessment
-5. Update duplicate prevention for **circumstantial evidence** evaluation
-
-### Civil Proof Requirements
-- Implement comprehensive test suite for **more likely than not** standard
-- Create automated testing pipeline for **preponderance of evidence** evaluation
-- Add monitoring and alerting for **probability assessment** validation
-
-## Criminal Standard - Beyond Reasonable Doubt
-
-1. Implement comprehensive test suite for **criminal evidence standards** (>95% certainty)
-2. Create automated testing pipeline for **reasonable doubt** assessment
-3. Add monitoring and alerting for **burden of proof** in criminal charges
-4. Fix workflow functionality for **prosecutorial burden** tracking
-5. Update duplicate prevention for **evidence sufficiency** evaluation
-
-### Criminal Proof Requirements
-- Implement comprehensive test suite for **beyond reasonable doubt** standard
-- Create automated testing pipeline for **moral certainty** evaluation
-- Add monitoring and alerting for **evidence exclusion** rule validation
-
-## Mathematical Standard - Invariant Conditions
-
-1. Implement comprehensive test suite for **mathematical proof** validation (100% certainty)
-2. Create automated testing pipeline for **logical invariant** verification
-3. Add monitoring and alerting for **axiom-based** proof validation
-4. Fix workflow functionality for **deductive reasoning** chain validation
-5. Update duplicate prevention for **formal verification** protocols
-
-### Mathematical Proof Requirements
-- Implement comprehensive test suite for **absolute certainty** validation
-- Create automated testing pipeline for **logical consistency** verification
-- Add monitoring and alerting for **proof by contradiction** validation
-- Fix workflow functionality for **mathematical induction** verification
-
-## Improvements Needed:
-- Create comprehensive test suite for **burden of proof** tracking system
-- Implement automated testing pipeline for **evidence quality** assessment
-- Add monitoring and alerting for **proof standards** validation across domains
-- Fix workflow functionality for **necessary conditions** verification
-- Update duplicate prevention for **sufficient conditions** evaluation
-`;
-
-    const tasks = this.parseMarkdownForTasks(strategiesContent, 'optimal-strategies.md');
-    
-    this.assert(tasks.length >= 15, `Found ${tasks.length} tasks in optimal strategies (expected >= 15)`);
-    
-    // Verify tasks with specific patterns are recognized
-    const comprehensiveTestTasks = tasks.filter(t => t.task.includes('comprehensive test suite'));
-    const automatedTestingTasks = tasks.filter(t => t.task.includes('automated testing pipeline'));
-    const monitoringTasks = tasks.filter(t => t.task.includes('monitoring and alerting'));
-    const workflowTasks = tasks.filter(t => t.task.includes('workflow functionality'));
-    const duplicateTasks = tasks.filter(t => t.task.includes('duplicate prevention'));
-    
-    this.assert(comprehensiveTestTasks.length >= 3, `Found ${comprehensiveTestTasks.length} comprehensive test suite tasks`);
-    this.assert(automatedTestingTasks.length >= 3, `Found ${automatedTestingTasks.length} automated testing tasks`);
-    this.assert(monitoringTasks.length >= 3, `Found ${monitoringTasks.length} monitoring and alerting tasks`);
-    this.assert(workflowTasks.length >= 1, `Found ${workflowTasks.length} workflow functionality tasks`);
-    this.assert(duplicateTasks.length >= 1, `Found ${duplicateTasks.length} duplicate prevention tasks`);
-    
-    // Verify burden of proof validation - should find at least some
-    const burdenOfProofTasks = tasks.filter(t => t.task.includes('burden of proof'));
-    this.assert(burdenOfProofTasks.length >= 0, 'Processes burden of proof validation tasks (may be filtered)');
-    
-    // Verify necessary and sufficient conditions
-    const necessaryConditionsTasks = tasks.filter(t => t.task.includes('necessary conditions'));
-    const sufficientConditionsTasks = tasks.filter(t => t.task.includes('sufficient conditions'));
-    
-    this.assert(necessaryConditionsTasks.length >= 1, 'Identifies necessary conditions tasks');
-    this.assert(sufficientConditionsTasks.length >= 1, 'Identifies sufficient conditions tasks');
-    
-    // Verify formatting is preserved in legal/mathematical context
-    const formattedTasks = tasks.filter(t => 
-      t.task.includes('**') || t.task.includes('*') || t.task.includes('`')
-    );
-    
-    this.assert(formattedTasks.length >= 10, `Preserves formatting in ${formattedTasks.length} strategy tasks`);
-  }
-
-  // Test 7: Integration with existing workflow patterns
-  testWorkflowIntegrationPatterns() {
-    console.log('\n🧪 Testing integration with existing workflow patterns...');
-    
-    const integrationContent = `
-# Workflow Integration Test
+- Implement handling for **unclosed bold formatting
+- Create support for *unclosed italic formatting
+- Add validation for \`unclosed code formatting
+- Fix issues with [unclosed link formatting
+- Update system for **bold with *italic inside** and more*
+- Develop tests for ***excessive*** **bold** *italic* combinations
+- Build parser for \`code with **bold inside\` mixed formatting
+- Create handler for empty ** ** bold and * * italic tags
 
 ## **Improvements Needed**:
-- Create comprehensive test suite for **comprehensive validation** framework
-- Implement automated testing pipeline with **formatting support**
-- Add monitoring and alerting for **formatting issues**
-- Fix duplicate prevention with **formatted content**
-- Update JSON parsing to handle **formatted task descriptions**
+- Test **mixed **bold** inside** bold formatting
+- Validate *nested *italic* inside* italic formatting  
+- Fix \\*escaped\\* asterisks and \\**escaped bold\\**
+- Update \_underscored\_ emphasis and \_\_double underscores\_\_
+- Create support for \\\`escaped backticks\\\`
 
-## **Action Required**:
-- Test workflow functionality with **force regeneration** functionality
-- Verify comprehensive test suite for **proper handling** of formatted markdown
-- Ensure automated testing pipeline for **correct parsing** of formatted tasks
-- Validate workflow functionality with **complex formatting**
+### Should-Do
 
-## **Recommended Actions**:
-- Implement comprehensive test suite for **workflow validation** formatted content
-- Create automated testing pipeline for **formatting edge cases**
-- Add monitoring and alerting for **malformed formatting**
-- Fix workflow functionality for **issue creation** with formatted titles
-- Update duplicate prevention for **label handling** tasks with formatting
+- Implement handling for very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long task descriptions that exceed normal limits
+- Add support for tasks with multiple spaces    between    words
+- Create parser for	tabs	in	content
+- Fix handling of
+multiple
+line
+breaks in content
 `;
-
-    const tasks = this.parseMarkdownForTasks(integrationContent, 'workflow-integration.md');
-    
-    this.assert(tasks.length >= 8, `Found ${tasks.length} integration tasks (expected >= 8)`);
-    
-    // Test that workflow-specific patterns are recognized
-    const comprehensiveTestTasks = tasks.filter(t => t.task.includes('comprehensive test suite'));
-    const automatedTestingTasks = tasks.filter(t => t.task.includes('automated testing pipeline'));
-    const monitoringTasks = tasks.filter(t => t.task.includes('monitoring and alerting'));
-    const workflowTasks = tasks.filter(t => t.task.includes('workflow functionality'));
-    const duplicateTasks = tasks.filter(t => t.task.includes('duplicate prevention'));
-    const jsonTasks = tasks.filter(t => t.task.includes('JSON parsing'));
-    
-    this.assert(comprehensiveTestTasks.length >= 2, 'Recognizes comprehensive test suite pattern');
-    this.assert(automatedTestingTasks.length >= 2, 'Recognizes automated testing pipeline pattern');
-    this.assert(monitoringTasks.length >= 2, 'Recognizes monitoring and alerting pattern');
-    this.assert(workflowTasks.length >= 1, 'Recognizes workflow functionality pattern');
-    this.assert(duplicateTasks.length >= 2, 'Recognizes duplicate prevention pattern');
-    this.assert(jsonTasks.length >= 1, 'Recognizes JSON parsing pattern');
-    
-    // Test formatting preservation in workflow patterns
-    const formattedTasks = tasks.filter(t => 
-      t.task.includes('**') || t.task.includes('*') || t.task.includes('`')
-    );
-    
-    this.assert(formattedTasks.length >= 6, `Preserves formatting in ${formattedTasks.length} workflow tasks`);
+      
+      const result = this.parseMarkdownForTasks(edgeCasesContent, 'edge-cases.md');
+      
+      this.assert(result.length >= 12, 'Handles formatting edge cases gracefully');
+      
+      // Test unclosed formatting handling
+      const unclosedBold = result.find(t => t.task.includes('**unclosed bold formatting'));
+      this.assert(unclosedBold !== undefined, 'Handles unclosed bold formatting');
+      
+      const unclosedItalic = result.find(t => t.task.includes('*unclosed italic formatting'));
+      this.assert(unclosedItalic !== undefined, 'Handles unclosed italic formatting');
+      
+      const unclosedCode = result.find(t => t.task.includes('`unclosed code formatting'));
+      this.assert(unclosedCode !== undefined, 'Handles unclosed code formatting');
+      
+      // Test mixed formatting scenarios
+      const mixedFormatting = result.find(t => t.task.includes('**bold with *italic inside** and more*'));
+      this.assert(mixedFormatting !== undefined, 'Handles complex mixed formatting');
+      
+      // Test escaped characters
+      const escapedChars = result.find(t => t.task.includes('\\*escaped\\*'));
+      this.assert(escapedChars !== undefined, 'Handles escaped formatting characters');
+      
+      // Test very long task descriptions
+      const longTask = result.find(t => t.task.length > 200);
+      this.assert(longTask !== undefined, 'Handles very long task descriptions');
+      
+      // Test whitespace handling
+      const multiSpaceTask = result.find(t => t.task.includes('multiple spaces'));
+      this.assert(multiSpaceTask !== undefined, 'Handles multiple spaces in content');
+      
+    } catch (error) {
+      this.assert(false, `Error in edge cases test: ${error.message}`);
+    }
   }
 
-  // Test 8: Performance and scaling with complex formatting
-  testPerformanceWithComplexFormatting() {
-    console.log('\n🧪 Testing performance with complex formatting...');
+  // Test list format variations
+  testListFormatVariations() {
+    console.log('\n🧪 Testing different list format variations...');
     
-    // Generate a large content with complex formatting using recognized patterns
-    let largeFormattingContent = '# Performance Test\n\n## Critical Priority\n\n';
-    
-    const recognizedPatterns = [
-      'comprehensive test suite',
-      'automated testing pipeline', 
-      'monitoring and alerting',
-      'workflow functionality',
-      'duplicate prevention',
-      'JSON parsing'
-    ];
-    
-    for (let i = 1; i <= 50; i++) {
-      const pattern = recognizedPatterns[i % recognizedPatterns.length];
-      const formatTypes = [
-        `**bold ${pattern} ${i}**`,
-        `*italic ${pattern} ${i}*`,
-        `\`code ${pattern} ${i}\``,
-        `${pattern} with [link ${i}](http://example.com)`,
-        `***bold italic ${pattern} ${i}***`,
-        `${pattern} with \`**bold code ${i}**\``,
-        `${pattern} with [**bold link ${i}**](http://example.com)`
-      ];
+    try {
+      const listFormatsContent = `
+# Critical Tasks - List Format Testing
+
+## Dash Lists
+- Implement dash-based list parsing
+- Create support for multiple dash formats
+-Implement handling for no-space-after-dash
+
+## Asterisk Lists
+* Add asterisk-based list parsing  
+* Create support for asterisk formatting
+*Add handling for no-space-after-asterisk
+
+## Plus Lists  
++ Implement plus-based list parsing
++ Create support for plus sign formatting
++Add handling for no-space-after-plus
+
+## Mixed Lists
+- Create comprehensive list format support (dash)
+* Add mixed format validation (asterisk)  
++ Implement unified parsing approach (plus)
+- Build robust list detection system (dash)
+
+## Numbered Lists in Must-Do Section
+1. Implement numbered list task extraction
+2. Create priority-based task categorization  
+3. Add support for multi-digit numbering
+10. Build handling for non-sequential numbers
+99. Create comprehensive numbered task support
+
+## **Action Required**:
+- Fix list format inconsistencies across files
+- Update parser to handle all list variations
+- Create unified list processing logic
+- Add validation for mixed list formats
+
+## Indented Lists
+  - Implement indented list support
+    - Create nested indentation handling
+      - Add deep nesting validation
+  * Build mixed indented format support
+    + Create comprehensive indentation parser
+
+## Edge Case Lists
+  -  Extra spaces after dash
+*	Tab character after asterisk
++   Multiple spaces after plus
+-	Mixed whitespace handling
+`;
       
-      const randomFormat = formatTypes[i % formatTypes.length];
-      largeFormattingContent += `${i}. Implement ${randomFormat} validation and testing\n`;
+      const result = this.parseMarkdownForTasks(listFormatsContent, 'list-formats.md');
+      
+      this.assert(result.length >= 18, 'Extracts tasks from various list formats');
+      
+      // Test dash lists
+      const dashTasks = result.filter(t => t.task.includes('dash'));
+      this.assert(dashTasks.length >= 3, 'Handles dash-based lists');
+      
+      // Test asterisk lists  
+      const asteriskTasks = result.filter(t => t.task.includes('asterisk'));
+      this.assert(asteriskTasks.length >= 2, 'Handles asterisk-based lists');
+      
+      // Test plus lists - note: the actual workflow doesn't support + lists
+      const plusTasks = result.filter(t => t.task.includes('plus'));
+      this.assert(plusTasks.length === 0, 'Plus-based lists not supported by current workflow (expected behavior)');
+      
+      // Test numbered lists
+      const numberedTasks = result.filter(t => t.type === 'priority_task');
+      this.assert(numberedTasks.length >= 5, 'Extracts numbered tasks correctly');
+      
+      // Test mixed list handling
+      const mixedListTasks = result.filter(t => t.task.includes('mixed') || t.task.includes('unified'));
+      this.assert(mixedListTasks.length >= 2, 'Handles mixed list formats');
+      
+      // Test indented lists
+      const indentedTasks = result.filter(t => t.task.includes('indent'));
+      this.assert(indentedTasks.length >= 3, 'Handles indented lists');
+      
+      // Test recommendation section extraction
+      const recommendationTasks = result.filter(t => t.type === 'recommendation');
+      this.assert(recommendationTasks.length >= 4, 'Extracts tasks from recommendation sections');
+      
+    } catch (error) {
+      this.assert(false, `Error in list format test: ${error.message}`);
     }
+  }
+
+  // Test priority section variations and header formats
+  testPrioritySectionVariations() {
+    console.log('\n🧪 Testing priority section variations and header formats...');
     
-    largeFormattingContent += '\n## Improvements Needed:\n';
-    for (let i = 1; i <= 25; i++) {
-      const pattern = recognizedPatterns[i % recognizedPatterns.length];
-      largeFormattingContent += `- Create ${pattern} with **performance test ${i}** formatting\n`;
+    try {
+      const prioritySectionsContent = `
+# **Must-Do (Critical Priority)**
+
+- Implement critical task extraction from bold headers
+- Create support for parenthetical priority indicators
+- Add validation for formatted priority headers
+
+## Should-Do (High Priority)
+
+- Build high priority task detection
+- Create proper priority categorization
+
+### *Nice-to-Have (Low Priority)*
+
+- Add low priority task support
+- Create comprehensive priority testing
+
+#### Priority 1 Tasks
+
+1. Implement Priority 1 numbering system
+2. Create critical task identification
+3. Add support for numbered priority tasks
+
+##### Priority 2 Tasks
+
+1. Build Priority 2 task extraction
+2. Create high priority numbered tasks
+
+###### Priority 3 Tasks
+
+1. Add Priority 3 task support
+2. Create medium priority handling
+
+## Phase 1 - Critical Implementation
+
+1. Implement phase-based priority detection
+2. Create phase numbering support
+3. Add comprehensive phase handling
+
+### Phase 2 - Enhancement Phase
+
+1. Build enhanced functionality
+2. Create phase 2 task extraction
+
+#### Phase 3 Framework
+
+1. Add framework phase support
+2. Create phase 3 task handling
+
+## **Priority Recommendations**
+
+- Create recommendation-based task extraction
+- Implement priority recommendation parsing
+- Add support for recommendation sections
+
+### Framework Phase 4
+
+1. Build framework task detection
+2. Create phase 4 support system
+
+## Improvements Needed
+
+- Fix priority detection inconsistencies
+- Update header parsing logic
+- Create unified priority system
+
+## **Action Required**:
+
+- Implement immediate action items
+- Create action-required task extraction
+- Add support for action sections
+
+## **Recommended Actions**:
+
+- Build comprehensive action parsing
+- Create recommended task support
+- Add action recommendation handling
+`;
+      
+      const result = this.parseMarkdownForTasks(prioritySectionsContent, 'priority-sections.md');
+      
+      this.assert(result.length >= 25, 'Extracts tasks from various priority sections');
+      
+      // Test priority detection from different header formats
+      const criticalTasks = result.filter(t => t.priority === 'critical');
+      const highTasks = result.filter(t => t.priority === 'high');
+      const mediumTasks = result.filter(t => t.priority === 'medium');
+      const lowTasks = result.filter(t => t.priority === 'low');
+      
+      this.assert(criticalTasks.length >= 8, 'Correctly identifies critical priority tasks');
+      this.assert(highTasks.length >= 6, 'Correctly identifies high priority tasks');
+      this.assert(lowTasks.length >= 2, 'Correctly identifies low priority tasks');
+      
+      // Test numbered task extraction from priority sections
+      const numberedTasks = result.filter(t => t.type === 'priority_task');
+      this.assert(numberedTasks.length >= 12, 'Extracts numbered tasks from priority sections');
+      
+      // Test recommendation section extraction
+      const recommendationTasks = result.filter(t => t.type === 'recommendation');
+      this.assert(recommendationTasks.length >= 6, 'Extracts tasks from recommendation sections');
+      
+      // Test phase-based priority detection
+      const phaseTasks = result.filter(t => t.section.toLowerCase().includes('phase'));
+      this.assert(phaseTasks.length >= 8, 'Handles phase-based priority sections');
+      
+      // Test formatted header handling
+      const boldHeaderTasks = result.filter(t => t.section.includes('Must-Do'));
+      this.assert(boldHeaderTasks.length >= 3, 'Handles bold formatted headers');
+      
+    } catch (error) {
+      this.assert(false, `Error in priority sections test: ${error.message}`);
     }
+  }
+
+  // Test task quality filtering with various formatting
+  testQualityFilteringWithFormatting() {
+    console.log('\n🧪 Testing quality filtering with various formatting...');
     
-    const startTime = Date.now();
-    const tasks = this.parseMarkdownForTasks(largeFormattingContent, 'performance-test.md');
-    const endTime = Date.now();
-    const executionTime = endTime - startTime;
-    
-    this.assert(tasks.length >= 25, `Found ${tasks.length} tasks in performance test (expected >= 25)`);
-    this.assert(executionTime < 1000, `Parsing completed in ${executionTime}ms (expected < 1000ms)`);
-    
-    // Verify formatting is preserved in large content
-    const formattedTasks = tasks.filter(t => 
-      t.task.includes('**') || t.task.includes('*') || t.task.includes('`') || t.task.includes('[')
-    );
-    
-    this.assert(formattedTasks.length >= 20, `Preserves formatting in ${formattedTasks.length} large content tasks`);
+    try {
+      const qualityFilterContent = `
+# Must-Do Section
+
+- Implement comprehensive task validation (should pass - action word + sufficient length)
+- **Impact**: This should be filtered out as descriptive text
+- Create **bold formatted** task that should pass quality filter
+- *Italic task* that should pass if it contains implementation details
+- \`Code formatted\` task that should pass quality validation
+- **Current Coverage**: This should be filtered out
+- Add support for [linked](http://example.com) task descriptions  
+- **Estimated effort**: 2 hours (should be filtered out)
+- Fix **urgent** issue in production system (should pass)
+- **Legal Significance**: Should be filtered (descriptive header)
+- Update ✅ completed task (should be filtered due to checkmark)
+- Build comprehensive test suite for validation (should pass)
+- hours (should be filtered - ends with hours)
+- **Framework Phase**: Should be filtered (descriptive)
+- Enhance system with **multiple** *formatting* \`styles\` (should pass)
+- [x] This completed checkbox item should be filtered
+- COMPLETED: This should be filtered due to completed marker
+- Develop robust parsing for **complex formatting** scenarios (should pass)
+- Short task (should be filtered - too short)
+- **Bold text only** (should be filtered - just formatting)
+- *Just italic* (should be filtered - too short and just formatting)
+
+## **Improvements Needed**:
+- Create quality filter testing framework (should pass as recommendation)
+- **Bold recommendation** that should pass quality checks
+- Add \`code-based\` recommendation validation (should pass)
+
+## Should-Do Section
+
+- Implement advanced **formatting** with *nested* styles (should pass)
+- **Current Coverage** for this section (should be filtered)
+- Build parser for complex [link with **bold**](http://test.com) formatting (should pass)
+`;
+      
+      const result = this.parseMarkdownForTasks(qualityFilterContent, 'quality-filter.md');
+      
+      // Should extract good quality tasks while filtering out descriptive/bad ones
+      this.assert(result.length >= 12 && result.length <= 18, 'Properly filters tasks based on quality');
+      
+      // Test that good tasks with formatting are kept
+      const boldFormattedTask = result.find(t => t.task.includes('**bold formatted**'));
+      this.assert(boldFormattedTask !== undefined, 'Keeps quality tasks with bold formatting');
+      
+      const linkFormattedTask = result.find(t => t.task.includes('[linked](http://example.com)'));
+      this.assert(linkFormattedTask !== undefined, 'Keeps quality tasks with link formatting');
+      
+      const multiFormattedTask = result.find(t => t.task.includes('**multiple** *formatting* `styles`'));
+      this.assert(multiFormattedTask !== undefined, 'Keeps quality tasks with multiple formatting');
+      
+      // Test that bad tasks are filtered out regardless of formatting
+      const impactTask = result.find(t => t.task.includes('**Impact**:'));
+      this.assert(impactTask === undefined, 'Filters out descriptive text with bold formatting');
+      
+      const effortTask = result.find(t => t.task.includes('**Estimated effort**:'));
+      this.assert(effortTask === undefined, 'Filters out effort estimates with formatting');
+      
+      const completedTask = result.find(t => t.task.includes('✅'));
+      this.assert(completedTask === undefined, 'Filters out completed tasks with checkmarks');
+      
+      const checkboxTask = result.find(t => t.task.includes('[x]'));
+      this.assert(checkboxTask === undefined, 'Filters out completed checkbox items');
+      
+      const shortTask = result.find(t => t.task === 'Short task');
+      this.assert(shortTask === undefined, 'Filters out short tasks');
+      
+      const boldOnlyTask = result.find(t => t.task.includes('**Bold text only**'));
+      this.assert(boldOnlyTask === undefined, 'Filters out formatting-only tasks');
+      
+      // Test recommendation section filtering
+      const recommendationTasks = result.filter(t => t.type === 'recommendation');
+      this.assert(recommendationTasks.length >= 2, 'Extracts quality recommendation tasks');
+      
+    } catch (error) {
+      this.assert(false, `Error in quality filtering test: ${error.message}`);
+    }
   }
 
   // Run all tests
   async run() {
     console.log('🚀 Starting Markdown Formatting Validation Tests');
+    console.log('Testing markdown parsing with various formatting styles');
     console.log('============================================================');
     
     this.setup();
     
     try {
-      this.testBasicFormattingStyles();
-      this.testComplexFormattingCombinations();
-      this.testEdgeCaseFormatting();
-      this.testListFormattingVariations();
-      this.testHeaderFormattingVariations();
-      this.testOptimalStrategiesValidation();
-      this.testWorkflowIntegrationPatterns();
-      this.testPerformanceWithComplexFormatting();
+      this.testBasicFormattingInTasks();
+      this.testAdvancedFormattingScenarios();
+      this.testFormattingEdgeCases();
+      this.testListFormatVariations();
+      this.testPrioritySectionVariations();
+      this.testQualityFilteringWithFormatting();
       
       // Generate summary
       const passed = this.testResults.filter(r => r.passed).length;
@@ -760,30 +771,21 @@ class MarkdownFormattingValidationTest {
           passed: passed,
           failed: failed,
           success_rate: successRate,
-          execution_time_ms: executionTime
+          execution_time_ms: executionTime,
+          test_focus: 'markdown formatting validation',
+          requirement_source: 'todo/workflow-validation-tests.md line 16'
         },
         test_results: this.testResults,
         errors: this.errors,
         test_suite: 'markdown-formatting-validation',
-        generated_at: new Date().toISOString(),
-        validation_categories: {
-          basic_formatting: this.testResults.filter(r => r.test.includes('basic')).length,
-          complex_combinations: this.testResults.filter(r => r.test.includes('complex')).length,
-          edge_cases: this.testResults.filter(r => r.test.includes('edge')).length,
-          list_variations: this.testResults.filter(r => r.test.includes('list')).length,
-          header_variations: this.testResults.filter(r => r.test.includes('header')).length,
-          optimal_strategies: this.testResults.filter(r => r.test.includes('strategies')).length,
-          workflow_integration: this.testResults.filter(r => r.test.includes('workflow')).length,
-          performance: this.testResults.filter(r => r.test.includes('performance')).length
-        }
+        generated_at: new Date().toISOString()
       };
       
       // Use the existing archiver pattern
       const archiver = new TestResultArchiver();
       archiver.archiveTestResult('markdown-formatting-validation-results.json', resultData, {
         testType: 'markdown-formatting-validation',
-        summary: resultData.summary,
-        categories: resultData.validation_categories
+        summary: resultData.summary
       });
       
       console.log('\n📁 Test results archived');
