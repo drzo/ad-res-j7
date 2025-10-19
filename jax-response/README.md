@@ -1,10 +1,49 @@
-# Jax Response - Case 2025-137857
+# Consolidated Response - Case 2025-137857
 
-Complete collection of documents, evidence, and analysis for Jacqueline Faucitt's answering affidavit in response to Peter Faucitt's interdict application.
+**CONSOLIDATED STRUCTURE - Post Directory Consolidation (2025-10-19)**
+
+Complete collection of documents, evidence, and analysis for both Jacqueline Faucitt's and Daniel Faucitt's responses to Peter Faucitt's interdict application. This consolidated directory eliminates duplication between the former `jax-response` and `jax-dan-response` directories while preserving all content and perspectives.
+
+## Structure Changes
+- **Merged**: `jax-response` + `jax-dan-response` → `jax-consolidated-response`
+- **Preserved**: All original content with clear separation of perspectives
+- **Enhanced**: Unified evidence collection with technical and general categories
 
 ---
 
 ## Directory Structure
+
+### 📁 `/AD/` - **Structured Response Framework**
+**Primary Response Structure**: Paragraph-by-paragraph analysis organized by priority rating.
+
+**Sub-directories:**
+- **`1-Critical/` through `5-Meaningless/`** - Jacqueline's comprehensive legal responses
+- **`dan-perspective/`** - **NEW** - Daniel's technical perspective mirroring the AD structure
+  - Daniel's responses as CIO, focusing on technical infrastructure and regulatory compliance
+  - Specialized technical analysis for IT, compliance systems, and business continuity
+
+### 📁 `/evidence-attachments/` - **Unified Evidence Collection**
+**Comprehensive Evidence Package**: All supporting evidence and analysis documents for both respondents.
+
+**Primary Evidence** (from original jax-response):
+- Settlement agreement evidence (JF5 draft vs final)
+- Chesno fraud documentation (JF-CHESNO1-4)
+- Financial analysis and director loan evidence
+- UK tax residency and restoration evidence
+
+**Technical Evidence** (from dan-technical/):
+- **`dan-technical/`** - **NEW** - Daniel's technical infrastructure evidence
+  - Technical Infrastructure Affidavit
+  - IT spend industry comparative analysis
+  - System access audit and regulatory crisis documentation
+  - Business continuity impact assessments
+
+### 📁 `/dan-response-materials/` - **NEW** - Daniel's Response Documents
+**Daniel's Strategic Documents**: Core response materials from Daniel's perspective including:
+- Comprehensive response structure and evidence mapping
+- Criminal enterprise evidence structure
+- Burden of proof analysis from technical perspective
+- Implementation optimization and strategy reports
 
 ### 📁 `/revenue-theft/`
 **FORENSIC EVIDENCE ANALYSIS - Revenue Hijacking Criminal Scheme**
@@ -22,12 +61,17 @@ Comprehensive forensic analysis of the coordinated revenue hijacking scheme targ
 - **`README.md`** - Complete forensic analysis overview
 - **`FORENSIC_EVIDENCE_INDEX.md`** - Comprehensive evidence catalog and prosecution framework
 
-### 📁 `/source-documents/`
-Original affidavit drafts and source materials provided by Jax:
+### 📁 `/source-documents/` - **Unified Source Materials**
+**Combined Source Documents**: Original affidavit drafts and source materials from both respondents.
 
-- **1.2.MAT4719-AnsweringAffidavit-ENHANCED.docx** - Enhanced answering affidavit with AD PARAGRAPH structure
-- **ANSWERING_AFFIDAVIT_-_JACQUELINE_FAUCITT_(FINAL_DRAFT_FOR_REVIEW_BYJAX).docx** - Final draft for Jax's review
-- **FINAL_ASSESSMENT_Jacqui_Affidavit_(Reconstructed_Version).docx** - Reconstructed version with assessments
+**Jacqueline's Materials**:
+- Enhanced answering affidavit with AD PARAGRAPH structure
+- Final draft for review and reconstructed versions
+
+**Daniel's Materials** (from dan-materials/):
+- **`dan-materials/`** - **NEW** - Daniel's source documents and drafts
+  - Technical affidavit drafts and supporting materials
+  - Infrastructure documentation and analysis
 
 ### 📁 `/evidence-attachments/`
 Supporting evidence and analysis documents:
