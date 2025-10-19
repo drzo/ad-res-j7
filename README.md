@@ -1,6 +1,28 @@
-# Legal Attention Inference Engine
+# AD-RES-J7: Legal Case Repository & Attention Inference Engine
 
-A transformer-based system that uses attention mechanisms to perform legal reasoning and guilt determination. The key insight is that **attention IS the lex inference engine** - guilt emerges from learned relational patterns in attention weights, not from explicit rules.
+This repository contains comprehensive legal documentation for case 2025-137857 and implements a transformer-based system that uses attention mechanisms to perform legal reasoning and guilt determination. The key insight is that **attention IS the lex inference engine** - guilt emerges from learned relational patterns in attention weights, not from explicit rules.
+
+## 📁 Repository Structure
+
+All documentation has been organized into a comprehensive structure for easy navigation and reference:
+
+### 📋 **Documentation Catalog** - `/docs/README.md`
+**Master index of all 888+ legal documents, properly categorized and cross-referenced**
+
+### 📚 **Organized Documentation Structure**
+- **Legal Documents** (`/docs/legal/`) - Affidavits, evidence, analysis, and annexures
+- **Technical Documentation** (`/docs/technical/`) - Implementation guides, workflows, and system docs  
+- **Strategic Analysis** (`/docs/strategic/`) - Burden of proof strategies and legal arguments
+- **Reports & Status** (`/docs/reports/`) - Completion, verification, and validation reports
+- **Evidence Collections** (`/evidence/`, `/ANNEXURES/`) - Organized evidence packages and supporting materials
+
+### 🎯 **Quick Navigation**
+- **Legal Team**: Start with [📋 Documentation Catalog](/docs/README.md)
+- **Case Materials**: See [📁 Legal Annexures](/docs/legal/annexures/ANNEXURES_INDEX.md)  
+- **Technical Team**: Reference [⚙️ Technical Documentation](/docs/technical/)
+- **Evidence**: Browse [📂 Evidence Collections](/evidence/)
+
+---
 
 ## Core Insight
 
