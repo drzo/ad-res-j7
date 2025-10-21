@@ -74,6 +74,13 @@ This document serves as the master index for all legal case documentation, evide
 #### System Documentation (`/docs/technical/`)
 - `REPOSITORY_STRUCTURE_OLD.md` - Old repository structure reference
 
+#### Directory Structure (`/docs/`)
+- `JAX_RESPONSE_DIRECTORY_CONSOLIDATION.md` - **Comprehensive guide to jax-response/jax-dan-response consolidation**
+  - Explains original directory purposes and consolidation rationale
+  - Content mapping showing where all files are now located
+  - Navigation guide for legal team and developers
+  - Benefits, FAQs, and historical context
+
 ### 📁 Strategic Documentation (`/docs/strategic/`)
 
 #### Burden of Proof (`/docs/strategic/burden-of-proof/`)

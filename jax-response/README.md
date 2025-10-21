@@ -9,6 +9,16 @@ Complete collection of documents, evidence, and analysis for both Jacqueline Fau
 - **Preserved**: All original content with clear separation of perspectives
 - **Enhanced**: Unified evidence collection with technical and general categories
 
+**📖 For complete documentation of the consolidation process and directory relationship, see:**
+- **[JAX Response Directory Consolidation Documentation](/docs/JAX_RESPONSE_DIRECTORY_CONSOLIDATION.md)**
+
+This comprehensive guide explains:
+- Original purpose of each directory
+- Why consolidation was necessary
+- Content mapping (where to find everything)
+- Navigation guide for legal team and developers
+- Benefits and frequently asked questions
+
 ---
 
 ## Directory Structure

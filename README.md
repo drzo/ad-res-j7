@@ -21,6 +21,25 @@ All documentation has been organized into a comprehensive structure for easy nav
 - **Case Materials**: See [📁 Legal Annexures](/docs/legal/annexures/ANNEXURES_INDEX.md)  
 - **Technical Team**: Reference [⚙️ Technical Documentation](/docs/technical/)
 - **Evidence**: Browse [📂 Evidence Collections](/evidence/)
+- **Directory Consolidation**: See [📖 Jax Response Consolidation Guide](/docs/JAX_RESPONSE_DIRECTORY_CONSOLIDATION.md)
+
+### 📂 **Jax Response Directory** - `/jax-response/`
+
+**Consolidated response materials for both respondents** (Jacqueline and Daniel Faucitt)
+
+This directory represents a **consolidation** of the former `jax-response` and `jax-dan-response` directories into a unified structure. All original content has been preserved with clear attribution.
+
+**Key Information:**
+- **Consolidation Date:** October 19, 2025
+- **Original Directories Backed Up To:** `/backups/pre-consolidation/`
+- **Comprehensive Guide:** [JAX Response Directory Consolidation Documentation](/docs/JAX_RESPONSE_DIRECTORY_CONSOLIDATION.md)
+
+The consolidated structure includes:
+- Jacqueline's legal and business perspective
+- Daniel's technical and infrastructure perspective
+- Unified evidence collection
+- Forensic analyses (R10.227M+ documented losses)
+- Multiple affidavit versions with tracked changes
 
 ---
 
