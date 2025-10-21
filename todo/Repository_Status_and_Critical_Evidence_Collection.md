@@ -35,6 +35,12 @@ The repository has grown significantly:
 ### Should-Do (Phase 2) - High Priority Evidence
 
 1. Obtain system access restriction logs (JF-SAL1, JF-EAL1, JF-FSL1)
+2. Collect correspondence showing Daniel provided documentation (JF-CORR1)
+3. ✅ **FRAMEWORK COMPLETE** - Gather IT service invoices and contracts (JF-ITS1)
+   - **Framework Created:** `evidence/annexures/JF-ITS1_IT_SERVICE_INVOICES_AND_CONTRACTS.md`
+   - **Collection Guide:** `evidence/annexures/JF-ITS1_COLLECTION_GUIDE.md`
+   - **Analysis Complete:** 2,578 transactions categorized, R30M+ expenditure documented
+   - **Next Phase:** Evidence collection from service providers (3-4 weeks estimated)
 2. ✅ **FRAMEWORK COMPLETE** - Collect correspondence showing Daniel provided documentation (JF-CORR1)
    - **Framework Document:** `evidence/annexures/JF-CORR1_CORRESPONDENCE_EVIDENCE_COLLECTION.md`
    - **Documentation Log:** `evidence/correspondence/JF8A_DOCUMENTATION_LOG.md` (538 lines)

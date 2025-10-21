@@ -18,6 +18,7 @@ This document provides a comprehensive checklist and action plan for collecting 
 - **JF-DLA3:** Daniel's Director Loan Account Statement
 - **JF-PA1-PA4:** Peter's Withdrawal Examples (4 instances)
 - **JF-BS1:** Bank Statement 16 July 2025
+- **JF-ITS1:** IT Service Invoices and Contracts (NEW - Phase 2 Priority)
 
 ---
 
@@ -141,6 +142,24 @@ This document provides a comprehensive checklist and action plan for collecting 
 - [ ] **Stage 9:** Attorney review for admissibility
 - **Estimated Time:** 1-2 weeks
 - **Resources Required:** Bank records, legal review
+
+#### JF-ITS1: IT Service Invoices and Contracts (Phase 2 Priority)
+- [x] **Stage 1:** Create evidence framework and categorization (COMPLETED)
+- [x] **Stage 2:** Analyze existing transaction data (2,578 transactions) (COMPLETED)
+- [x] **Stage 3:** Document business justification for each category (COMPLETED)
+- [ ] **Stage 4:** Access major service provider accounts (Shopify, QuickBooks, Auth0)
+- [ ] **Stage 5:** Download invoices from provider dashboards
+- [ ] **Stage 6:** Collect service agreements and contracts
+- [ ] **Stage 7:** Contact providers directly for missing documents
+- [ ] **Stage 8:** Recover vendor correspondence from email systems
+- [ ] **Stage 9:** Correlate all transactions with bank statement evidence
+- [ ] **Stage 10:** Organize documents by service category
+- [ ] **Stage 11:** Create master index of all collected documents
+- [ ] **Stage 12:** Authenticate documents as required
+- [ ] **Stage 13:** Attorney review for admissibility
+- **Estimated Time:** 3-4 weeks
+- **Resources Required:** Service provider access, email recovery, bank statements, legal review
+- **Note:** Framework complete; collection guide available at JF-ITS1_COLLECTION_GUIDE.md
 
 ---
 
