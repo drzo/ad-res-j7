@@ -39,13 +39,13 @@ jobs:
       - name: Analyze file representations
         run: |
           echo "=== File Representation Analysis ==="
-          echo "Total MD files: $(find . -name "*.md" -not -path "./.git/*" | wc -l)"
-          echo "Total JSON files: $(find . -name "*.json" -not -path "./.git/*" | wc -l)"
+          echo "Total MD files: $(find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*" | wc -l)"
+          echo "Total JSON files: $(find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*" | wc -l)"
           echo ""
           
           echo "=== Missing JSON representations ==="
           missing_json=0
-          for md_file in $(find . -name "*.md" -not -path "./.git/*"); do
+          for md_file in $(find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*"); do
             json_file="${md_file%.md}.json"
             if [ ! -f "$json_file" ]; then
               echo "Missing JSON: $json_file (for $md_file)"
@@ -56,7 +56,7 @@ jobs:
           echo ""
           echo "=== Missing Markdown representations ==="
           missing_md=0
-          for json_file in $(find . -name "*.json" -not -path "./.git/*"); do
+          for json_file in $(find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*"); do
             md_file="${json_file%.json}.md"
             if [ ! -f "$md_file" ]; then
               echo "Missing MD: $md_file (for $json_file)"
@@ -218,8 +218,8 @@ jobs:
             const glob = require('glob');
             
             // Find all markdown files missing JSON counterparts
-            const mdFiles = glob.sync('**/*.md', { ignore: ['node_modules/**', '.git/**'] });
-            const jsonFiles = glob.sync('**/*.json', { ignore: ['node_modules/**', '.git/**'] });
+            const mdFiles = glob.sync('**/*.md', { ignore: ['node_modules/**', 'vendor/**', 'bower_components/**', 'jspm_packages/**', '.bundle/**', 'target/**', 'build/**', 'dist/**', '.git/**', 'README.md'] });
+            const jsonFiles = glob.sync('**/*.json', { ignore: ['node_modules/**', 'vendor/**', 'bower_components/**', 'jspm_packages/**', '.bundle/**', 'target/**', 'build/**', 'dist/**', '.git/**', 'package*.json'] });
 
             let conversions = 0;
 
@@ -291,15 +291,15 @@ jobs:
       - name: Final validation
         run: |
           echo "=== Final Validation ==="
-          echo "Total MD files: $(find . -name "*.md" -not -path "./.git/*" | wc -l)"
-          echo "Total JSON files: $(find . -name "*.json" -not -path "./.git/*" | wc -l)"
+          echo "Total MD files: $(find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*" | wc -l)"
+          echo "Total JSON files: $(find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*" | wc -l)"
           
           # Check for any remaining mismatches
           missing_pairs=0
           
           echo ""
           echo "=== Checking for remaining missing pairs ==="
-          for md_file in $(find . -name "*.md" -not -path "./.git/*"); do
+          for md_file in $(find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*"); do
             json_file="${md_file%.md}.json"
             if [ ! -f "$json_file" ]; then
               echo "❌ Missing JSON: $json_file"
@@ -307,7 +307,7 @@ jobs:
             fi
           done
           
-          for json_file in $(find . -name "*.json" -not -path "./.git/*"); do
+          for json_file in $(find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*"); do
             md_file="${json_file%.json}.md"
             if [ ! -f "$md_file" ]; then
               echo "❌ Missing MD: $md_file"
