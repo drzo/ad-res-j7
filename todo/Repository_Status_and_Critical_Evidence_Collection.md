@@ -36,7 +36,11 @@ The repository has grown significantly:
 
 1. Obtain system access restriction logs (JF-SAL1, JF-EAL1, JF-FSL1)
 2. Collect correspondence showing Daniel provided documentation (JF-CORR1)
-3. Gather IT service invoices and contracts
+3. ✅ **FRAMEWORK COMPLETE** - Gather IT service invoices and contracts (JF-ITS1)
+   - **Framework Created:** `evidence/annexures/JF-ITS1_IT_SERVICE_INVOICES_AND_CONTRACTS.md`
+   - **Collection Guide:** `evidence/annexures/JF-ITS1_COLLECTION_GUIDE.md`
+   - **Analysis Complete:** 2,578 transactions categorized, R30M+ expenditure documented
+   - **Next Phase:** Evidence collection from service providers (3-4 weeks estimated)
 4. Document historical collaborative model evidence (JF-HIST1, JF-HIST2, JF-HIST3)
 5. Collect Rynette's expanding access documentation (JF-RF1, JF-RF2, JF-RF3)
 6. Document director exclusion evidence (JF-EX1, JF-EX2, JF-EX3, JF-EX4)

@@ -191,6 +191,25 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - **Affidavit References:** Paragraph 129, Section 11.1.1, Necessity defense
 - **Status:** ⚠️ **Template** - Requires qualified insolvency practitioner assessment
 
+### IT Service Documentation (Phase 2 Priority)
+
+#### JF-ITS1: IT Service Invoices and Contracts
+- **File:** `JF-ITS1_IT_SERVICE_INVOICES_AND_CONTRACTS.md`
+- **Purpose:** Comprehensive documentation of IT service invoices and contracts supporting Daniel's business-related computer expenses
+- **Priority:** HIGH (Phase 2 - Should-Do)
+- **Affidavit References:** Section 8.2 (Applicant's Unilateral Actions), Lines regarding computer expense documentation
+- **Status:** ✅ **Framework Complete** - Collection in progress
+- **Supporting Documents:**
+  - Collection Guide: `JF-ITS1_COLLECTION_GUIDE.md`
+  - Transaction Data: `evidence/computer-expenses/validated_transactions.csv` (2,578 transactions)
+  - Analysis Framework: `evidence/computer-expenses/Computer Expenses Analysis Framework.md`
+- **Strategic Importance:**
+  - Refutes Peter's "unexplained expenses" allegation
+  - Demonstrates Peter's bad faith in restricting documentation access
+  - Proves systematic obstruction: cancel cards → demand invoices → claim lack of evidence
+  - Shows business necessity for R30M+ in IT infrastructure costs
+- **Cross-References:** JF-SAL1, JF-EAL1, JF-FSL1, JF-CORR1, JF-DLA3
+
 ---
 
 ## Strategic Framework
@@ -226,6 +245,12 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 
 5. **Historical Pattern Evidence** (Paragraph 129, Section 11.1.1)
    - **JF-CHESNO1-4:** Establish Peter's modus operandi of poor decisions, abandonment, and Daniel's rescue
+
+6. **Peter's Systematic Documentation Obstruction** (Section 8.2)
+   - **JF-ITS1:** Comprehensive IT service documentation despite Peter's access restrictions
+   - **JF-SAL1, JF-EAL1, JF-FSL1:** Evidence of system/email/financial access restrictions
+   - **JF-CORR1:** Correspondence showing Daniel provided available documentation
+   - **Demonstrates:** Peter created "documentation problem" by restricting access, then used it to justify interdict
 
 ### Evidence Integration Pattern:
 
