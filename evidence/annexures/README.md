@@ -57,7 +57,60 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - **Purpose:** Bank statement showing R500,000 payment with clear reference demonstrating routine business transaction
 - **Priority:** CRITICAL
 - **Affidavit References:** Line 457, Section 7.8.5.2, Lines 491, 497
-- **Status:** ⚠️ **Template** - Requires actual bank statement
+- **Status:** ✅ **OBTAINED** - Bank statement PDF on file (`evidence/bank_records/D_FAUCITT_PERSONAL_BANK_RECORDS_20250704.pdf`)
+- **Completion Status:** See `JF-BS1_COMPLETION_STATUS.md` for details
+
+### Settlement Agreement Evidence
+
+#### JF5-DRAFT: Settlement Agreement - Initial Version Reviewed
+- **File:** `JF5-DRAFT_SETTLEMENT_AGREEMENT_INITIAL_VERSION.md`
+- **Purpose:** Initial version of settlement agreement reviewed by Jacqueline and Daniel Faucitt before final changes were made
+- **Priority:** CRITICAL
+- **Affidavit References:** Paragraph 48.4, 48.5, 48.10
+- **Status:** ⚠️ **Template** - Requires actual draft agreement document
+- **Date:** Approximately 8-10 August 2025 (reviewed version)
+
+#### JF5-FINAL: Settlement Agreement - Signed Version with Changes
+- **File:** `JF5-FINAL_SETTLEMENT_AGREEMENT_SIGNED_VERSION.md`
+- **Purpose:** Final signed version of settlement agreement containing material changes made after respondents' review
+- **Priority:** CRITICAL
+- **Affidavit References:** Paragraph 48.5, 48.6, 48.10
+- **Status:** ⚠️ **Template** - Requires actual signed agreement document
+- **Date:** 11 August 2025 (signed date)
+
+#### JF5-COMPARISON: Settlement Agreement Comparison
+- **File:** `JF5-COMPARISON_DRAFT_VS_FINAL_CHANGES.md`
+- **Purpose:** Detailed side-by-side comparison highlighting all changes between draft and final versions
+- **Priority:** CRITICAL
+- **Affidavit References:** Paragraph 48.5.5, 48.6, 48.10.1
+- **Status:** ⚠️ **Template** - Requires completion after obtaining both agreement versions
+- **Date:** [To be completed during analysis]
+
+### Settlement Agreement Evidence
+
+#### JF5-DRAFT: Settlement Agreement - Initial Version Reviewed
+- **File:** `JF5-DRAFT_SETTLEMENT_AGREEMENT_INITIAL_VERSION.md`
+- **Purpose:** Initial version of settlement agreement reviewed by Jacqueline and Daniel Faucitt before final changes were made
+- **Priority:** CRITICAL
+- **Affidavit References:** Paragraph 48.4, 48.5, 48.10
+- **Status:** ⚠️ **Template** - Requires actual draft agreement document
+- **Date:** Approximately 8-10 August 2025 (reviewed version)
+
+#### JF5-FINAL: Settlement Agreement - Signed Version with Changes
+- **File:** `JF5-FINAL_SETTLEMENT_AGREEMENT_SIGNED_VERSION.md`
+- **Purpose:** Final signed version of settlement agreement containing material changes made after respondents' review
+- **Priority:** CRITICAL
+- **Affidavit References:** Paragraph 48.5, 48.6, 48.10
+- **Status:** ⚠️ **Template** - Requires actual signed agreement document
+- **Date:** 11 August 2025 (signed date)
+
+#### JF5-COMPARISON: Settlement Agreement Comparison
+- **File:** `JF5-COMPARISON_DRAFT_VS_FINAL_CHANGES.md`
+- **Purpose:** Detailed side-by-side comparison highlighting all changes between draft and final versions
+- **Priority:** CRITICAL
+- **Affidavit References:** Paragraph 48.5.5, 48.6, 48.10.1
+- **Status:** ⚠️ **Template** - Requires completion after obtaining both agreement versions
+- **Date:** [To be completed during analysis]
 
 ### Settlement Agreement Evidence
 
@@ -326,6 +379,7 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 ## Document Status Legend:
 
 - ✅ **Complete:** Actual evidence inserted, ready for filing
+- ✅ **OBTAINED:** Source evidence obtained, template ready for data insertion
 - ⚠️ **Template:** Structure complete, requires actual evidence insertion
 - ❌ **Missing:** Not yet created or incomplete structure
 - 🔍 **Review:** Requires attorney or expert review before completion
