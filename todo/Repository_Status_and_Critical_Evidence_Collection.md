@@ -38,7 +38,14 @@ The repository has grown significantly:
 2. Collect correspondence showing Daniel provided documentation (JF-CORR1)
 3. Gather IT service invoices and contracts
 4. Document historical collaborative model evidence (JF-HIST1, JF-HIST2, JF-HIST3)
-5. Collect Rynette's expanding access documentation (JF-RF1, JF-RF2, JF-RF3)
+5. ✅ **FRAMEWORK COMPLETE** - Collect Rynette's expanding access documentation (JF-RF1, JF-RF2, JF-RF3)
+   - **Comprehensive frameworks created (112,000+ words across 4 documents)**
+   - **JF-RF1:** Email Granting System Access (23,500 words)
+   - **JF-RF2:** Email Providing Passwords (28,800 words)
+   - **JF-RF3:** Bank Authorization Forms (36,400 words)
+   - **JF-RF Series Collection Guide:** Coordinated evidence collection strategy (23,300 words)
+   - **Next Phase:** Evidence collection from external sources (5-6 weeks estimated)
+   - **Resources:** See `evidence/annexures/JF-RF_SERIES_EVIDENCE_COLLECTION_GUIDE.md`
 6. Document director exclusion evidence (JF-EX1, JF-EX2, JF-EX3, JF-EX4)
 
 ### Nice-to-Have (Phase 3) - Supporting Evidence
