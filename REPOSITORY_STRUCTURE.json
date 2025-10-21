@@ -13,6 +13,11 @@
           "content": "The root directory contains the main README.md file, which provides an overview of the case and the repository structure. It also contains configuration files and utility scripts."
         },
         {
+          "heading": "Comprehensive Evidence Index",
+          "level": 3,
+          "content": "The repository includes a **Comprehensive Evidence Index** (`COMPREHENSIVE_EVIDENCE_INDEX.md` and `COMPREHENSIVE_EVIDENCE_INDEX.json`) that maps all 1,700+ files with complete metadata including:\n\n- File categorization by type and purpose\n- Evidence code cross-references (JF-, PF-, JAX, DJF, etc.)\n- File size and location information\n- Directory summaries and statistics\n- Detailed file-by-file listing organized by category and directory\n\nThis index can be regenerated at any time using `scripts/generate_comprehensive_evidence_index.py` to ensure it stays up-to-date as files are added or modified."
+        },
+        {
           "heading": "`affidavit_work/`",
           "level": 3,
           "content": "This directory contains all work related to the drafting and analysis of affidavits for Case 2025-137857. It is organized into the following subdirectories:\n\n- **`analysis/`**: Contains in-depth analysis of the applicant's affidavit and supporting documents. This includes a three-part classification of the evidence (Irrefutable Proof, Strong Evidence, and Circumstantial/Inferred).\n- **`corrections/`**: Contains critical corrections to the information presented in the applicant's affidavit.\n- **`recommendations/`**: Contains recommendations for the responding affidavit.\n- **`versions/`**: Contains different versions of the responding affidavit."
@@ -64,7 +69,7 @@
         },
         {
           "heading": "`2-CRIMINAL-CASE/`",
-          "level": 3,  
+          "level": 3,
           "content": "Criminal prosecution framework for Peter Faucitt, Rynette Farrar, and others. Currently blocked by interdict pending civil case resolution."
         },
         {
