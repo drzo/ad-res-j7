@@ -6,6 +6,9 @@ This repository contains comprehensive legal documentation for case 2025-137857 
 
 All documentation has been organized into a comprehensive structure for easy navigation and reference:
 
+### 📋 **Comprehensive Evidence Index** - `COMPREHENSIVE_EVIDENCE_INDEX.md`
+**Complete mapping of all 1,700+ files in the repository with categorization, metadata, and evidence code cross-references**
+
 ### 📋 **Documentation Catalog** - `/docs/README.md`
 **Master index of all 888+ legal documents, properly categorized and cross-referenced**
 
@@ -17,7 +20,8 @@ All documentation has been organized into a comprehensive structure for easy nav
 - **Evidence Collections** (`/evidence/`, `/ANNEXURES/`) - Organized evidence packages and supporting materials
 
 ### 🎯 **Quick Navigation**
-- **Legal Team**: Start with [📋 Documentation Catalog](/docs/README.md)
+- **Repository Overview**: Start with [📋 Comprehensive Evidence Index](COMPREHENSIVE_EVIDENCE_INDEX.md)
+- **Legal Team**: Browse [📋 Documentation Catalog](/docs/README.md)
 - **Case Materials**: See [📁 Legal Annexures](/docs/legal/annexures/ANNEXURES_INDEX.md)  
 - **Technical Team**: Reference [⚙️ Technical Documentation](/docs/technical/)
 - **Evidence**: Browse [📂 Evidence Collections](/evidence/)

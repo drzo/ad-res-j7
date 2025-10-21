@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generated": "2025-10-21T19:00:07.521893",
+    "generated": "2025-10-21T19:01:38.375266",
     "repository": "cogpy/ad-res-j7",
     "case": "Case 2025-137857",
     "version": "1.0",
-    "total_files": 1736,
-    "total_size": "169.02 MB"
+    "total_files": 1738,
+    "total_size": "170.01 MB"
   },
   "statistics": {
-    "total_files": 1736,
-    "total_size_bytes": 177233224,
+    "total_files": 1738,
+    "total_size_bytes": 178272179,
     "by_category": {
       "Scripts/Tools": {
         "count": 134,
@@ -20,12 +20,12 @@
         "size": 300228
       },
       "Configuration/Data": {
-        "count": 176,
-        "size": 5132587
+        "count": 177,
+        "size": 5912716
       },
       "Documents": {
-        "count": 570,
-        "size": 27058214
+        "count": 571,
+        "size": 27317040
       },
       "Testing": {
         "count": 9,
@@ -78,8 +78,8 @@
         "size": 36085
       },
       ".json": {
-        "count": 313,
-        "size": 6714280
+        "count": 314,
+        "size": 7494409
       },
       ".txt": {
         "count": 5,
@@ -98,8 +98,8 @@
         "size": 19233
       },
       ".md": {
-        "count": 882,
-        "size": 10310801
+        "count": 883,
+        "size": 10569627
       },
       ".sh": {
         "count": 3,
@@ -164,8 +164,8 @@
     },
     "by_directory": {
       "root": {
-        "count": 63,
-        "size": 2179585
+        "count": 65,
+        "size": 3218540
       },
       "db": {
         "count": 21,
@@ -307,7 +307,7 @@
       "JF5": 26,
       "DJF": 4
     },
-    "total_size_human": "169.02 MB"
+    "total_size_human": "170.01 MB"
   },
   "files": [
     {
@@ -380,6 +380,18 @@
       "evidence_codes": [],
       "mime_type": "application/json",
       "modified": "2025-10-21T18:54:57.971239",
+      "directory": "."
+    },
+    {
+      "path": "COMPREHENSIVE_EVIDENCE_INDEX.json",
+      "name": "COMPREHENSIVE_EVIDENCE_INDEX.json",
+      "extension": ".json",
+      "size_bytes": 780129,
+      "size_human": "761.84 KB",
+      "category": "Configuration/Data",
+      "evidence_codes": [],
+      "mime_type": "application/json",
+      "modified": "2025-10-21T19:00:07.537874",
       "directory": "."
     },
     {
@@ -848,6 +860,18 @@
       "evidence_codes": [],
       "mime_type": "application/json",
       "modified": "2025-10-21T18:54:57.527232",
+      "directory": "."
+    },
+    {
+      "path": "COMPREHENSIVE_EVIDENCE_INDEX.md",
+      "name": "COMPREHENSIVE_EVIDENCE_INDEX.md",
+      "extension": ".md",
+      "size_bytes": 258826,
+      "size_human": "252.76 KB",
+      "category": "Documents",
+      "evidence_codes": [],
+      "mime_type": "text/markdown",
+      "modified": "2025-10-21T19:00:07.540874",
       "directory": "."
     },
     {

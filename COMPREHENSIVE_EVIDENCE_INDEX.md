@@ -1,16 +1,16 @@
 # COMPREHENSIVE EVIDENCE INDEX
 ## Case 2025-137857: Complete Repository File Mapping
 
-**Generated:** 2025-10-21 19:00:07  
-**Total Files:** 1,736  
-**Total Size:** 169.02 MB  
+**Generated:** 2025-10-21 19:01:38  
+**Total Files:** 1,738  
+**Total Size:** 170.01 MB  
 **Repository:** cogpy/ad-res-j7
 
 ---
 
 ## Executive Summary
 
-This comprehensive evidence index maps all 1,736 files in the ad-res-j7 repository,
+This comprehensive evidence index maps all 1,738 files in the ad-res-j7 repository,
 providing a complete catalog of evidence, documentation, analysis, and supporting materials for
 Case 2025-137857 (Jacqueline Faucitt and Daniel James Faucitt vs Peter Faucitt).
 
@@ -22,10 +22,10 @@ Case 2025-137857 (Jacqueline Faucitt and Daniel James Faucitt vs Peter Faucitt).
 
 | Category | File Count | Total Size |
 |----------|------------|------------|
-| Documents | 570 | 25.80 MB |
+| Documents | 571 | 26.05 MB |
 | Jax Response | 302 | 2.60 MB |
 | Evidence | 276 | 78.91 MB |
-| Configuration/Data | 176 | 4.89 MB |
+| Configuration/Data | 177 | 5.64 MB |
 | Scripts/Tools | 134 | 2.01 MB |
 | Analysis | 115 | 2.58 MB |
 | Images | 68 | 22.23 MB |
@@ -41,8 +41,8 @@ Case 2025-137857 (Jacqueline Faucitt and Daniel James Faucitt vs Peter Faucitt).
 
 | Extension | File Count | Total Size |
 |-----------|------------|------------|
-| .md | 882 | 9.83 MB |
-| .json | 313 | 6.40 MB |
+| .md | 883 | 10.08 MB |
+| .json | 314 | 7.15 MB |
 | .jpg | 189 | 65.27 MB |
 | .js | 104 | 1.45 MB |
 | .pdf | 67 | 51.52 MB |
@@ -72,7 +72,7 @@ Case 2025-137857 (Jacqueline Faucitt and Daniel James Faucitt vs Peter Faucitt).
 | evidence | 141 | 6.69 MB |
 | FINAL_AFFIDAVIT_PACKAGE | 140 | 39.54 MB |
 | case_2025_137857 | 129 | 65.96 MB |
-| root | 63 | 2.08 MB |
+| root | 65 | 3.07 MB |
 | tests | 56 | 778.58 KB |
 | db | 21 | 166.42 KB |
 | 1-CIVIL-RESPONSE | 21 | 422.59 KB |
@@ -118,7 +118,7 @@ Case 2025-137857 (Jacqueline Faucitt and Daniel James Faucitt vs Peter Faucitt).
 
 ## Complete File Listing by Category
 
-### Documents (570 files)
+### Documents (571 files)
 
 | File Path | Size | Evidence Codes |
 |-----------|------|----------------|
@@ -129,6 +129,7 @@ Case 2025-137857 (Jacqueline Faucitt and Daniel James Faucitt vs Peter Faucitt).
 | .openhands/microagents/repo.md | 4.57 KB | - |
 | 3-EXTERNAL-VALIDATION/EXTERNAL_VALIDATION_PACKAGE.md | 18.05 KB | - |
 | 3-EXTERNAL-VALIDATION/README.md | 10.81 KB | - |
+| COMPREHENSIVE_EVIDENCE_INDEX.md | 252.76 KB | - |
 | FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/ANNEXURES_INDEX.md | 15.69 KB | - |
 | FINAL_AFFIDAVIT_PACKAGE/ANNEXURES_INDEX.md | 15.69 KB | - |
 | FINAL_AFFIDAVIT_PACKAGE/ANSWERING_AFFIDAVIT_JACQUELINE_FAUCITT.md | 28.49 KB | - |
@@ -1281,7 +1282,7 @@ Case 2025-137857 (Jacqueline Faucitt and Daniel James Faucitt vs Peter Faucitt).
 | evidence/annexures/JF-RP1/section-d-correspondence/README.md | 1.93 KB | JF, JF- |
 | evidence/annexures/JF-RP1/section-e-certificates/README.md | 2.75 KB | JF, JF- |
 
-### Configuration/Data (176 files)
+### Configuration/Data (177 files)
 
 | File Path | Size | Evidence Codes |
 |-----------|------|----------------|
@@ -1294,6 +1295,7 @@ Case 2025-137857 (Jacqueline Faucitt and Daniel James Faucitt vs Peter Faucitt).
 | .github/workflows/todo-to-issues.yml | 56.98 KB | - |
 | .github/workflows/workflow-monitoring.yml | 15.75 KB | - |
 | .idx/mcp.json | 2.00 B | - |
+| COMPREHENSIVE_EVIDENCE_INDEX.json | 761.84 KB | - |
 | EVIDENCE_MAPPING.json | 6.60 KB | - |
 | HYPERGRAPH_CASE_STRUCTURE.json | 34.44 KB | - |
 | HYPERGRAPH_CASE_STRUCTURE_UPDATED.json | 46.34 KB | - |
@@ -1930,10 +1932,12 @@ Case 2025-137857 (Jacqueline Faucitt and Daniel James Faucitt vs Peter Faucitt).
 
 Complete directory-by-directory listing:
 
-### `./` (63 files, 2.08 MB)
+### `./` (65 files, 3.07 MB)
 
 - **.gitignore** (1.03 KB)
 - **.replit** (503.00 B)
+- **COMPREHENSIVE_EVIDENCE_INDEX.json** (761.84 KB)
+- **COMPREHENSIVE_EVIDENCE_INDEX.md** (252.76 KB)
 - **EVIDENCE_MAPPING.json** (6.60 KB)
 - **FINAL_ANSWERING_AFFIDAVIT_ABRIDGED.docx** (52.80 KB)
 - **FINAL_ANSWERING_AFFIDAVIT_COMPLETE.docx** (68.71 KB)
@@ -4383,6 +4387,6 @@ python scripts/generate_comprehensive_evidence_index.py
 
 ---
 
-**Last Generated:** 2025-10-21 19:00:07  
+**Last Generated:** 2025-10-21 19:01:38  
 **Script:** `scripts/generate_comprehensive_evidence_index.py`  
 **Repository:** https://github.com/cogpy/ad-res-j7
