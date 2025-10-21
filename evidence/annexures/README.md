@@ -191,6 +191,24 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - **Affidavit References:** Paragraph 129, Section 11.1.1, Necessity defense
 - **Status:** ⚠️ **Template** - Requires qualified insolvency practitioner assessment
 
+### Correspondence and Documentation Evidence
+
+#### JF-CORR1: Correspondence Evidence - Documentation Provision
+- **File:** `JF-CORR1_CORRESPONDENCE_EVIDENCE.md`
+- **Purpose:** Comprehensive correspondence and documentation logs showing Daniel provided extensive documentation to accountant and cooperated fully despite systematic access restrictions
+- **Priority:** CRITICAL (HIGH PRIORITY - Phase 2)
+- **Affidavit References:** AD Paragraphs 7.2-7.5, 7.7-7.8, 8.2, Section 13B
+- **Status:** ✅ **COMPLETE** - Evidence collected and documented
+- **Primary Components:**
+  - JF8: Primary correspondence evidence (email chains)
+  - JF8A: Comprehensive documentation log
+  - JF8B: Email cooperation chains
+  - JF8C: Peter's refusal to engage evidence
+  - JF8D: System access restrictions evidence
+- **Key Evidence:** Daniel's cooperation (June 6 & 10, 2025), Peter's obstruction timeline, material non-disclosure proof
+- **Added:** 2025-10-21
+- **Collection Status:** Evidence package complete in `../correspondence/` directory
+
 ---
 
 ## Strategic Framework

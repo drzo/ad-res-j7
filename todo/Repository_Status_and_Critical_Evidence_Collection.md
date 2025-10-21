@@ -35,7 +35,7 @@ The repository has grown significantly:
 ### Should-Do (Phase 2) - High Priority Evidence
 
 1. Obtain system access restriction logs (JF-SAL1, JF-EAL1, JF-FSL1)
-2. Collect correspondence showing Daniel provided documentation (JF-CORR1)
+2. ✅ **COMPLETED** - Collect correspondence showing Daniel provided documentation (JF-CORR1) - **Annexure Created**: `evidence/annexures/JF-CORR1_CORRESPONDENCE_EVIDENCE.md` - Consolidates JF8, JF8A, JF8B, JF8C, JF8D evidence packages
 3. Gather IT service invoices and contracts
 4. Document historical collaborative model evidence (JF-HIST1, JF-HIST2, JF-HIST3)
 5. Collect Rynette's expanding access documentation (JF-RF1, JF-RF2, JF-RF3)
