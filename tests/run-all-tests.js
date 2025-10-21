@@ -9,6 +9,7 @@ const APIIntegrationTests = require('./api-integration-tests.js');
 const ComprehensiveWorkflowTest = require('./comprehensive-workflow-test.js');
 const SecurityValidationTest = require('./security-validation-test.js');
 const EndToEndWorkflowTest = require('./end-to-end-workflow-test.js');
+const EmptyTodoFileValidator = require('./empty-todo-file-validation.test.js');
 const MalformedMarkdownTest = require('./malformed-markdown-test.js');
 const NoActionableTasksValidator = require('./no-actionable-tasks-test.js');
 const ComprehensiveTodoFileValidation = require('./comprehensive-todo-file-validation.test.js');
@@ -24,6 +25,7 @@ class TestRunner {
       comprehensive: null,
       security: null,
       endToEnd: null,
+      emptyTodoValidation: null,
       malformedMarkdown: null,
       noActionableTasks: null,
       todoValidation: null,
@@ -142,6 +144,19 @@ class TestRunner {
     return success;
   }
 
+  async runEmptyTodoValidationTests() {
+    console.log('\n📋 Running Empty Todo File Validation Tests...\n');
+    
+    const emptyTodoValidator = new EmptyTodoFileValidator();
+    const success = emptyTodoValidator.runAllTests();
+    
+    this.results.emptyTodoValidation = {
+      success: success,
+      total: emptyTodoValidator.testResults.length,
+      passed: emptyTodoValidator.testResults.filter(t => t.passed).length,
+      failed: emptyTodoValidator.testResults.filter(t => !t.passed).length,
+      errors: emptyTodoValidator.errors,
+      requirement_source: 'todo/workflow-validation-tests.md line 71'
   async runTodoValidationTests() {
     console.log('\n📋 Running Comprehensive Todo File Validation Tests...\n');
     
@@ -202,6 +217,8 @@ class TestRunner {
                                        this.results.api.total +
                                        this.results.comprehensive.total + 
                                        this.results.security.total + 
+                                       this.results.endToEnd.total + 
+                                       this.results.emptyTodoValidation.total;
                                        this.results.endToEnd.total +
                                        this.results.malformedMarkdown.total +
                                        this.results.noActionableTasks.total +
@@ -212,6 +229,8 @@ class TestRunner {
                                         this.results.api.passed +
                                         this.results.comprehensive.passed + 
                                         this.results.security.passed + 
+                                        this.results.endToEnd.passed + 
+                                        this.results.emptyTodoValidation.passed;
                                         this.results.endToEnd.passed +
                                         this.results.malformedMarkdown.passed +
                                         this.results.noActionableTasks.passed +
@@ -222,6 +241,8 @@ class TestRunner {
                                         this.results.api.failed +
                                         this.results.comprehensive.failed + 
                                         this.results.security.failed + 
+                                        this.results.endToEnd.failed + 
+                                        this.results.emptyTodoValidation.failed;
                                         this.results.endToEnd.failed +
                                         this.results.malformedMarkdown.failed +
                                         this.results.noActionableTasks.failed +
@@ -266,6 +287,12 @@ class TestRunner {
     console.log(`   ❌ Failed: ${this.results.endToEnd.failed}`);
     console.log(`   📈 Success Rate: ${Math.round((this.results.endToEnd.passed / this.results.endToEnd.total) * 100)}%`);
     console.log(`   🔄 Simulated Issues: ${this.results.endToEnd.simulated_issues}`);
+
+    console.log('\n📂 Empty Todo File Validation Tests:');
+    console.log(`   ✅ Passed: ${this.results.emptyTodoValidation.passed}/${this.results.emptyTodoValidation.total}`);
+    console.log(`   ❌ Failed: ${this.results.emptyTodoValidation.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.emptyTodoValidation.passed / this.results.emptyTodoValidation.total) * 100)}%`);
+    console.log(`   📋 Requirement: ${this.results.emptyTodoValidation.requirement_source}`);
     
     console.log('\n🧨 Malformed Markdown Tests:');
     console.log(`   ✅ Passed: ${this.results.malformedMarkdown.passed}/${this.results.malformedMarkdown.total}`);
@@ -413,6 +440,7 @@ class TestRunner {
       testType: 'comprehensive-test',
       metadata: {
         runner_version: '1.0.0',
+        test_suites: ['validation', 'integration', 'comprehensive', 'security', 'end-to-end', 'empty-todo-validation']
         test_suites: ['validation', 'integration', 'api', 'comprehensive', 'security', 'end-to-end', 'malformed-markdown', 'todo-validation']
       },
       summary: this.results.overall
@@ -433,6 +461,7 @@ class TestRunner {
       const comprehensiveSuccess = await this.runComprehensiveTests();
       const securitySuccess = await this.runSecurityTests();
       const endToEndSuccess = await this.runEndToEndTests();
+      const emptyTodoSuccess = await this.runEmptyTodoValidationTests();
       const malformedMarkdownSuccess = await this.runMalformedMarkdownTests();
       const noActionableTasksSuccess = await this.runNoActionableTasksTests();
       const todoValidationSuccess = await this.runTodoValidationTests();
@@ -447,6 +476,7 @@ class TestRunner {
       console.log(`⏱️  Total execution time: ${duration}s`);
       
       // Exit with appropriate code
+      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && emptyTodoSuccess;
       const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && malformedMarkdownSuccess && noActionableTasksSuccess && todoValidationSuccess;
       process.exit(overallSuccess ? 0 : 1);
       
