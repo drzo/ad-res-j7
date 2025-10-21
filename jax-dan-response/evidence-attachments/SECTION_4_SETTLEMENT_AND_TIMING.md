@@ -27,9 +27,9 @@ The temporal proximity between settlement negotiations and interdict filing is n
 
 | Event | Date | Days to Interdict | Strategic Significance |
 |-------|------|------------------|----------------------|
-| Settlement agreement signed | [Date TBD - approx. August 6, 2025] | **8 days before** | Strategic timing for leverage |
-| Peter files founding affidavit | August 14, 2025 | **Day 0** | Interdict application |
-| Ex parte interdict granted | August 19, 2025 | **+5 days** | Court order obtained |
+| Settlement agreement signed | **August 5, 2025** | **8 days before** | Strategic timing for leverage |
+| Peter files founding affidavit | **August 13, 2025** | **Day 0** | Interdict application |
+| Ex parte interdict granted | **August 19, 2025** | **+6 days** | Court order obtained |
 
 ### Legal Implications of Strategic Timing
 
@@ -63,8 +63,8 @@ The temporal proximity between settlement negotiations and interdict filing is n
 The timing of Peter's legal action correlates directly with an upcoming investment payout, revealing the underlying financial motive:
 
 **Investment Payout Schedule:**
-- Settlement agreement: August 6, 2025 (approximate)
-- Interdict filing: August 14, 2025
+- Settlement agreement: **August 5, 2025**
+- Interdict filing: **August 13, 2025**
 - **Investment payout due: May 2026 (9 months after interdict)**
 
 ### Strategic Control Motive
@@ -92,8 +92,8 @@ This is consistent with Peter's broader pattern of strategic financial maneuveri
 |------|-------|------------------|
 | February 25, 2025 | SLG Stock Missing (R5.2M) | Asset positioning |
 | June 7, 2025 | Worldwide cards cancelled | Financial control seizure |
-| August 6, 2025 (approx.) | Settlement signed | Pre-interdict positioning |
-| August 14, 2025 | Interdict filed | Control acquisition |
+| **August 5, 2025** | **Settlement signed** | **Pre-interdict positioning** |
+| **August 13, 2025** | **Interdict filed** | **Control acquisition** |
 | **May 2026** | **Investment payout due** | **Ultimate objective** |
 
 ---
@@ -124,8 +124,8 @@ Peter's use of the interdict process reveals systematic abuse of court procedure
 **Pre-Interdict Preparation (June-August 2025):**
 1. **June 7**: Card cancellations create documentation crisis
 2. **June-July**: Manufactured "concerns" about IT expenses
-3. **August 6** (approx.): Settlement agreement finalized
-4. **August 14**: Interdict filed citing manufactured concerns
+3. **August 5**: Settlement agreement finalized
+4. **August 13**: Interdict filed citing manufactured concerns
 
 **Post-Interdict Strategy:**
 - Settlement negotiations conducted with interdict as leverage
@@ -153,8 +153,8 @@ Peter's own timeline contradicts any claim of urgency:
 - **June 7, 2025**: Peter cancels cards (creating the problems he later complains about)
 - **June-July 2025**: Peter raises routine tax season documentation questions
 - **July 16, 2025**: R500K director loan payment (which Peter later characterizes as problematic)
-- **August 6, 2025** (approx.): Settlement agreement signed
-- **August 14, 2025**: Interdict filed (2+ months after alleged "discovery")
+- **August 5, 2025**: Settlement agreement signed
+- **August 13, 2025**: Interdict filed (2+ months after alleged "discovery")
 
 ### Contradicting Urgency Claims
 
@@ -289,6 +289,7 @@ The settlement and timing evidence demonstrates that this matter should never ha
 
 ---
 
-**Document Status:** Draft - requires exact settlement agreement date and investment payout details  
-**Integration Notes:** Links to PETERS_BAD_FAITH_TIMELINE_ANALYSIS.md and COMPREHENSIVE_TIMELINE_ANALYSIS.md  
-**Evidence Dependencies:** Settlement agreement, investment documentation, correspondence files
+**Document Status:** Complete - settlement dates confirmed (August 5, 2025) and integrated  
+**Integration Notes:** Links to PETERS_BAD_FAITH_TIMELINE_ANALYSIS.md, COMPREHENSIVE_TIMELINE_ANALYSIS.md, and JF5_FINAL_SETTLEMENT_AGREEMENT.md  
+**Evidence Dependencies:** Settlement agreement (JF5), investment documentation, correspondence files  
+**Last Updated:** 2025-10-21
