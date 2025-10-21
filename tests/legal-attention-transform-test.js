@@ -42,7 +42,7 @@ runTest('Legal Attention Transform file exists', () => {
 
 // Test 2: Verify Peters causation file has attention analysis
 runTest('Peters causation file includes attention analysis', () => {
-    const causationPath = path.join(__dirname, '..', 'jax-dan-response', 'peters_causation.md');
+    const causationPath = path.join(__dirname, '..', 'jax-response', 'dan-response-materials', 'peters_causation.md');
     const content = fs.readFileSync(causationPath, 'utf8');
     return content.includes('Legal Attention Transform') && 
            content.includes('juridical heat map') &&
@@ -98,7 +98,7 @@ runTest('Causation analysis functions implemented', () => {
 
 // Test 6: Verify attention scores in causation file
 runTest('Peters causation includes attention scores', () => {
-    const causationPath = path.join(__dirname, '..', 'jax-dan-response', 'peters_causation.md');
+    const causationPath = path.join(__dirname, '..', 'jax-response', 'dan-response-materials', 'peters_causation.md');
     const content = fs.readFileSync(causationPath, 'utf8');
     
     return content.includes('Salience Score') && 
@@ -109,7 +109,7 @@ runTest('Peters causation includes attention scores', () => {
 
 // Test 7: Verify mathematical proof integration
 runTest('Mathematical proof integration present', () => {
-    const causationPath = path.join(__dirname, '..', 'jax-dan-response', 'peters_causation.md');
+    const causationPath = path.join(__dirname, '..', 'jax-response', 'dan-response-materials', 'peters_causation.md');
     const content = fs.readFileSync(causationPath, 'utf8');
     
     return content.includes('Mathematical Proof') && 
@@ -164,7 +164,7 @@ runTest('Counterfactual analysis implementation', () => {
 
 // Test 12: Verify legal conclusions in causation file
 runTest('Legal conclusions enhanced with attention analysis', () => {
-    const causationPath = path.join(__dirname, '..', 'jax-dan-response', 'peters_causation.md');
+    const causationPath = path.join(__dirname, '..', 'jax-response', 'dan-response-materials', 'peters_causation.md');
     const content = fs.readFileSync(causationPath, 'utf8');
     
     return content.includes('Primary Causation') &&

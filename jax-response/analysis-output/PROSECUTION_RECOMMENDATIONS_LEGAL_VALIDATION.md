@@ -30,6 +30,11 @@ The recommendations align with established legal frameworks, cite accurate statu
 - Validated Trust Property Control Act section references and trustee obligations  
 - Confirmed Electronic Communications and Transactions Act computer fraud provisions
 - Verified Prevention of Organised Crime Act racketeering requirements
+<<<<<<< HEAD
+=======
+- Validated Companies Act 71 of 2008 director fiduciary duty provisions
+- Confirmed Close Corporations Act 69 of 1984 member duty requirements
+>>>>>>> origin/main
 
 ---
 
@@ -96,6 +101,17 @@ The recommendations align with established legal frameworks, cite accurate statu
 **Status:** ✅ LEGALLY SOUND  
 **Validation:** Unauthorized system access through email and platform manipulation
 
+<<<<<<< HEAD
+=======
+#### Companies Act and Close Corporations Act Violations
+**Status:** ✅ LEGALLY SOUND  
+**Validation:** 
+- Companies Act 71 of 2008, Section 162: Director fiduciary duty breaches
+- Close Corporations Act 69 of 1984, Section 42: Member fiduciary duty violations
+- Pattern of self-dealing and conflicts of interest properly characterized
+- Delinquency provisions appropriately cited for serious misconduct
+
+>>>>>>> origin/main
 ---
 
 ## CATEGORY 2: FAMILY TRUST - LEGAL VALIDATION

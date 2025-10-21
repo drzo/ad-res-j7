@@ -1,12 +1,57 @@
+<<<<<<< HEAD
 # Jax Response - Case 2025-137857 (Consolidated)
 
 Complete collection of documents, evidence, and analysis for Jacqueline and Daniel Faucitt's answering affidavit in response to Peter Faucitt's interdict application.
 
 **📝 Note:** This directory has been consolidated to eliminate duplication. It now contains the complete response materials from both Jacqueline and Daniel Faucitt, previously split across jax-response and jax-dan-response directories.
+=======
+# Consolidated Response - Case 2025-137857
+
+**CONSOLIDATED STRUCTURE - Post Directory Consolidation (2025-10-19)**
+
+Complete collection of documents, evidence, and analysis for both Jacqueline Faucitt's and Daniel Faucitt's responses to Peter Faucitt's interdict application. This consolidated directory eliminates duplication between the former `jax-response` and `jax-dan-response` directories while preserving all content and perspectives.
+
+## Structure Changes
+- **Merged**: `jax-response` + `jax-dan-response` → `jax-consolidated-response`
+- **Preserved**: All original content with clear separation of perspectives
+- **Enhanced**: Unified evidence collection with technical and general categories
+>>>>>>> origin/main
 
 ---
 
 ## Directory Structure
+
+### 📁 `/AD/` - **Structured Response Framework**
+**Primary Response Structure**: Paragraph-by-paragraph analysis organized by priority rating.
+
+**Sub-directories:**
+- **`1-Critical/` through `5-Meaningless/`** - Jacqueline's comprehensive legal responses
+- **`dan-perspective/`** - **NEW** - Daniel's technical perspective mirroring the AD structure
+  - Daniel's responses as CIO, focusing on technical infrastructure and regulatory compliance
+  - Specialized technical analysis for IT, compliance systems, and business continuity
+
+### 📁 `/evidence-attachments/` - **Unified Evidence Collection**
+**Comprehensive Evidence Package**: All supporting evidence and analysis documents for both respondents.
+
+**Primary Evidence** (from original jax-response):
+- Settlement agreement evidence (JF5 draft vs final)
+- Chesno fraud documentation (JF-CHESNO1-4)
+- Financial analysis and director loan evidence
+- UK tax residency and restoration evidence
+
+**Technical Evidence** (from dan-technical/):
+- **`dan-technical/`** - **NEW** - Daniel's technical infrastructure evidence
+  - Technical Infrastructure Affidavit
+  - IT spend industry comparative analysis
+  - System access audit and regulatory crisis documentation
+  - Business continuity impact assessments
+
+### 📁 `/dan-response-materials/` - **NEW** - Daniel's Response Documents
+**Daniel's Strategic Documents**: Core response materials from Daniel's perspective including:
+- Comprehensive response structure and evidence mapping
+- Criminal enterprise evidence structure
+- Burden of proof analysis from technical perspective
+- Implementation optimization and strategy reports
 
 ### 📁 `/revenue-theft/`
 **FORENSIC EVIDENCE ANALYSIS - Revenue Hijacking Criminal Scheme**
@@ -24,6 +69,7 @@ Comprehensive forensic analysis of the coordinated revenue hijacking scheme targ
 - **`README.md`** - Complete forensic analysis overview
 - **`FORENSIC_EVIDENCE_INDEX.md`** - Comprehensive evidence catalog and prosecution framework
 
+<<<<<<< HEAD
 ### 📁 `/source-documents/`
 Original affidavit drafts and source materials (consolidated from both Jacqueline and Daniel):
 
@@ -36,6 +82,19 @@ Original affidavit drafts and source materials (consolidated from both Jacquelin
 
 #### Daniel's Response Materials (consolidated from jax-dan-response):
 - **DRAFTOFMAINPOINTS-RESPONSE.docx** - Draft response to main points raised
+=======
+### 📁 `/source-documents/` - **Unified Source Materials**
+**Combined Source Documents**: Original affidavit drafts and source materials from both respondents.
+
+**Jacqueline's Materials**:
+- Enhanced answering affidavit with AD PARAGRAPH structure
+- Final draft for review and reconstructed versions
+
+**Daniel's Materials** (from dan-materials/):
+- **`dan-materials/`** - **NEW** - Daniel's source documents and drafts
+  - Technical affidavit drafts and supporting materials
+  - Infrastructure documentation and analysis
+>>>>>>> origin/main
 
 ### 📁 `/evidence-attachments/`
 Supporting evidence and analysis documents (consolidated from both Jacqueline and Daniel's response materials):
@@ -218,6 +277,7 @@ Peter failed to disclose in his ex parte application:
 ☐ Director loan account statements (all 3 directors) - JF-DLA1, JF-DLA2, JF-DLA3
 ☐ Peter's own withdrawals (minimum 4 examples) - JF-PA1 through JF-PA4
 ☐ R500K payment bank statement (16 July 2025) - JF-BS1
+<<<<<<< HEAD
 ☐ JF5 draft agreement (initial version reviewed)
 ☐ JF5 final agreement (signed version with changes)
 ☐ Comparison document highlighting all changes
@@ -231,6 +291,14 @@ Peter failed to disclose in his ex parte application:
 ☐ Daniel's witness statement re: "Has anything changed?" exchange
 ☐ UK tax residency documentation
 ☑️ Chesno fraud documentation - JF-CHESNO1 through JF-CHESNO4 - **COMPREHENSIVE FRAMEWORK ESTABLISHED**
+=======
+☐ JF5 draft agreement (initial version reviewed) - **Template created**: `evidence/annexures/JF5-DRAFT_SETTLEMENT_AGREEMENT_INITIAL_VERSION.md`
+☐ JF5 final agreement (signed version with changes) - **Template created**: `evidence/annexures/JF5-FINAL_SETTLEMENT_AGREEMENT_SIGNED_VERSION.md`
+☐ Comparison document highlighting all changes - **Template created**: `evidence/annexures/JF5-COMPARISON_DRAFT_VS_FINAL_CHANGES.md`
+☐ Daniel's witness statement re: "Has anything changed?" exchange
+☐ UK tax residency documentation - **JF-UKTAX1** ✅ Template Created (Corrected: SA tax residency for British citizens)
+☐ Chesno fraud documentation - JF-CHESNO1 through JF-CHESNO4
+>>>>>>> origin/main
 ☐ Daniel's 8-year restoration evidence - JF-RESTORE1 through JF-RESTORE4
 
 ### High Priority:
