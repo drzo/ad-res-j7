@@ -108,7 +108,8 @@ This addition:
 - [x] Dan's Technical Infrastructure Affidavit exists (evidence-attachments/Dan_Technical_Infrastructure_Affidavit.md)
 - [x] Text prepared for Section 3.4 insertion
 - [x] Annexure reference prepared
-- [ ] Manual insertion into DRAFTOFMAINPOINTS-RESPONSE.docx required
+- [x] Section 3.4 inserted into DRAFTOFMAINPOINTS-RESPONSE.docx
+- [x] Annexure DF1 added to annexure list
 - [ ] Legal review recommended before filing
 
 ---

@@ -36,6 +36,8 @@ This comprehensive technical affidavit from Daniel Faucitt (CIO) addresses Peter
 
 This affidavit directly refutes the "unexplained IT expenses" allegations and demonstrates that Peter created the documentation problem he now complains about.
 
+**Integration Status**: ✅ This affidavit has been integrated into the main response document (DRAFTOFMAINPOINTS-RESPONSE.docx) as Section 3.4 and referenced as Annexure DF1.
+
 ### Director Loan Practice Analysis
 **Location**: `evidence-attachments/DIRECTOR_LOAN_PRACTICE_ANALYSIS.md`
 
