@@ -11,42 +11,90 @@ const HypergraphQL = require('./docs/models/hypergnn/hypergraphql');
 
 class OptimalEvidenceCollector {
   constructor() {
-    this.evidenceMapping = this.loadEvidenceMapping();
-    this.hypergraph = new HypergraphQL();
-    this.criticalEvidence = this.loadCriticalEvidenceRequirements();
+    // Lazy loading for better performance
+    this._evidenceMapping = null;
+    this._hypergraph = null;
+    this._criticalEvidence = null;
+    
     this.evidenceDirectory = './evidence';
     this.jaxResponseDirectory = './jax-response';
     
-    // Initialize evidence tracking
+    // Initialize evidence tracking with optimized data structures
     this.evidenceStatus = {
       completed: new Set(),
       pending: new Set(),
       missing: new Set()
     };
     
+    // Cache for frequently accessed data
+    this._cache = new Map();
+    this._cacheTimeout = 5 * 60 * 1000; // 5 minutes
+    
     this.loadExistingEvidence();
   }
 
   /**
-   * Load evidence mapping from JSON file
+   * Cache management methods
    */
-  loadEvidenceMapping() {
-    try {
-      const mappingPath = './EVIDENCE_MAPPING.json';
-      if (fs.existsSync(mappingPath)) {
-        return JSON.parse(fs.readFileSync(mappingPath, 'utf8'));
-      }
-    } catch (error) {
-      console.warn('Could not load evidence mapping:', error.message);
+  _getFromCache(key) {
+    const cached = this._cache.get(key);
+    if (cached && Date.now() - cached.timestamp < this._cacheTimeout) {
+      return cached.data;
     }
-    return {};
+    return null;
+  }
+
+  _setCache(key, data) {
+    this._cache.set(key, {
+      data: data,
+      timestamp: Date.now()
+    });
+  }
+
+  clearCache() {
+    this._cache.clear();
   }
 
   /**
-   * Load critical evidence requirements from the todo file
+   * Load evidence mapping from JSON file with caching
    */
-  loadCriticalEvidenceRequirements() {
-    return {
+  get evidenceMapping() {
+    if (this._evidenceMapping === null) {
+      const cacheKey = 'evidence_mapping';
+      const cached = this._getFromCache(cacheKey);
+      
+      if (cached) {
+        this._evidenceMapping = cached;
+      } else {
+        try {
+          const mappingPath = './EVIDENCE_MAPPING.json';
+          if (fs.existsSync(mappingPath)) {
+            this._evidenceMapping = JSON.parse(fs.readFileSync(mappingPath, 'utf8'));
+            this._setCache(cacheKey, this._evidenceMapping);
+          } else {
+            this._evidenceMapping = {};
+          }
+        } catch (error) {
+          console.warn('Could not load evidence mapping:', error.message);
+          this._evidenceMapping = {};
+        }
+      }
+    }
+    return this._evidenceMapping;
+  }
+
+  /**
+   * Load critical evidence requirements with caching
+   */
+  get criticalEvidence() {
+    if (this._criticalEvidence === null) {
+      const cacheKey = 'critical_evidence';
+      const cached = this._getFromCache(cacheKey);
+      
+      if (cached) {
+        this._criticalEvidence = cached;
+      } else {
+        this._criticalEvidence = {
       phase1_critical: [
         { code: 'JF-RP1', description: 'Responsible Person documentation for 37 jurisdictions', priority: 1 },
         { code: 'JF-RP2', description: 'Regulatory risk analysis documentation', priority: 1 },
@@ -89,6 +137,9 @@ class OptimalEvidenceCollector {
         { code: 'JF-EX4', description: 'Director exclusion evidence 4', priority: 2 }
       ]
     };
+    this._setCache(cacheKey, this._criticalEvidence);
+    }
+    return this._criticalEvidence;
   }
 
   /**

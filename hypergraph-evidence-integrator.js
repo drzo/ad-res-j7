@@ -15,19 +15,51 @@ class HypergraphEvidenceIntegrator {
     this.strategicDataPath = './STRATEGIC_DYNAMICS_ANALYSIS.json';
     this.outputPath = './HYPERGRAPH_CASE_STRUCTURE_UPDATED.json';
     
-    this.hypergraphData = this.loadHypergraphData();
+    // Lazy loading for better performance
+    this._hypergraphData = null;
+    this._cache = new Map();
+    this._cacheTimeout = 5 * 60 * 1000; // 5 minutes
   }
 
   /**
-   * Load existing hypergraph structure
+   * Load existing hypergraph structure with caching
    */
-  loadHypergraphData() {
-    try {
-      return JSON.parse(fs.readFileSync(this.hypergraphDataPath, 'utf8'));
-    } catch (error) {
-      console.error('Could not load hypergraph data:', error.message);
-      return { nodes: [], hyperedges: [], metadata: {} };
+  get hypergraphData() {
+    if (this._hypergraphData === null) {
+      const cacheKey = 'hypergraph_data';
+      const cached = this._getFromCache(cacheKey);
+      
+      if (cached) {
+        this._hypergraphData = cached;
+      } else {
+        try {
+          this._hypergraphData = JSON.parse(fs.readFileSync(this.hypergraphDataPath, 'utf8'));
+          this._setCache(cacheKey, this._hypergraphData);
+        } catch (error) {
+          console.error('Could not load hypergraph data:', error.message);
+          this._hypergraphData = { nodes: [], hyperedges: [], metadata: {} };
+        }
+      }
     }
+    return this._hypergraphData;
+  }
+
+  /**
+   * Cache management methods
+   */
+  _getFromCache(key) {
+    const cached = this._cache.get(key);
+    if (cached && Date.now() - cached.timestamp < this._cacheTimeout) {
+      return cached.data;
+    }
+    return null;
+  }
+
+  _setCache(key, data) {
+    this._cache.set(key, {
+      data: data,
+      timestamp: Date.now()
+    });
   }
 
   /**
