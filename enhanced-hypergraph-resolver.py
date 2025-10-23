@@ -21,58 +21,71 @@ class EnhancedHypergraphResolver:
         self.evidence_collector_path = './optimal-evidence-collector.js'
         self.integrator_path = './hypergraph-evidence-integrator.js'
         
-        # Try to load updated hypergraph data first, fallback to original
-        self.hypergraph_data = self.load_hypergraph_data()
-        self.strategic_data = self.load_strategic_data()
+        # Use lazy loading for better performance
+        self._hypergraph_data = None
+        self._strategic_data = None
+        self._evidence_optimization = None
         
-        # Load evidence optimization data
-        self.evidence_optimization = self.load_evidence_optimization()
+        # Cache for frequently accessed data
+        self._cache = {}
+        self._cache_ttl = 300  # 5 minutes
+        self._last_cache_update = 0
     
-    def load_hypergraph_data(self):
-        """Load hypergraph data, preferring updated version"""
-        updated_path = self.repo_root / "HYPERGRAPH_CASE_STRUCTURE_UPDATED.json"
-        original_path = self.repo_root / "HYPERGRAPH_CASE_STRUCTURE.json"
-        
-        if updated_path.exists():
+    @property
+    def hypergraph_data(self):
+        """Lazy load hypergraph data with caching"""
+        if self._hypergraph_data is None:
+            updated_path = self.repo_root / "HYPERGRAPH_CASE_STRUCTURE_UPDATED.json"
+            original_path = self.repo_root / "HYPERGRAPH_CASE_STRUCTURE.json"
+            
+            if updated_path.exists():
+                try:
+                    with open(updated_path) as f:
+                        self._hypergraph_data = json.load(f)
+                except Exception as e:
+                    print(f"Warning: Could not load updated hypergraph data: {e}")
+                    with open(original_path) as f:
+                        self._hypergraph_data = json.load(f)
+            else:
+                with open(original_path) as f:
+                    self._hypergraph_data = json.load(f)
+        return self._hypergraph_data
+    
+    @property
+    def strategic_data(self):
+        """Lazy load strategic data"""
+        if self._strategic_data is None:
             try:
-                with open(updated_path) as f:
-                    return json.load(f)
+                with open(self.repo_root / "STRATEGIC_DYNAMICS_ANALYSIS.json") as f:
+                    self._strategic_data = json.load(f)
             except Exception as e:
-                print(f"Warning: Could not load updated hypergraph data: {e}")
-        
-        # Fallback to original
-        with open(original_path) as f:
-            return json.load(f)
+                print(f"Warning: Could not load strategic data: {e}")
+                self._strategic_data = {}
+        return self._strategic_data
     
-    def load_strategic_data(self):
-        """Load strategic dynamics data"""
-        try:
-            with open(self.repo_root / "STRATEGIC_DYNAMICS_ANALYSIS.json") as f:
-                return json.load(f)
-        except Exception as e:
-            print(f"Warning: Could not load strategic data: {e}")
-            return {}
-    
-    def load_evidence_optimization(self):
-        """Load evidence optimization data"""
-        try:
-            workflow_path = self.repo_root / "evidence-collection-workflow.json"
-            report_path = self.repo_root / "hypergraph-evidence-integration-report.json"
-            
-            optimization_data = {}
-            
-            if workflow_path.exists():
-                with open(workflow_path) as f:
-                    optimization_data['workflow'] = json.load(f)
-            
-            if report_path.exists():
-                with open(report_path) as f:
-                    optimization_data['integration_report'] = json.load(f)
-            
-            return optimization_data
-        except Exception as e:
-            print(f"Warning: Could not load evidence optimization data: {e}")
-            return {}
+    @property
+    def evidence_optimization(self):
+        """Lazy load evidence optimization data with caching"""
+        if self._evidence_optimization is None:
+            try:
+                workflow_path = self.repo_root / "evidence-collection-workflow.json"
+                report_path = self.repo_root / "hypergraph-evidence-integration-report.json"
+                
+                optimization_data = {}
+                
+                if workflow_path.exists():
+                    with open(workflow_path) as f:
+                        optimization_data['workflow'] = json.load(f)
+                
+                if report_path.exists():
+                    with open(report_path) as f:
+                        optimization_data['integration_report'] = json.load(f)
+                
+                self._evidence_optimization = optimization_data
+            except Exception as e:
+                print(f"Warning: Could not load evidence optimization data: {e}")
+                self._evidence_optimization = {}
+        return self._evidence_optimization
     
     def run_evidence_collection_update(self):
         """Run evidence collection system to get latest data"""

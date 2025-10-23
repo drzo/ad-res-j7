@@ -1,21 +1,56 @@
 """
-HypergraphQL Resolver for Case 2025-137857
-Implements GraphQL resolvers for querying the case hypergraph structure
+Optimized HypergraphQL Resolver for Case 2025-137857
+Implements high-performance GraphQL resolvers with caching and lazy loading
 """
 
 import json
 from pathlib import Path
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Set, Tuple
 from dataclasses import dataclass, field
 from enum import Enum
+from functools import lru_cache
+import weakref
+from collections import defaultdict
 
-# Load hypergraph data
-REPO_ROOT = Path(__file__).parent
-with open(REPO_ROOT / "HYPERGRAPH_CASE_STRUCTURE.json") as f:
-    HYPERGRAPH_DATA = json.load(f)
+# Lazy loading and caching for better performance
+class OptimizedDataLoader:
+    """Optimized data loader with caching and lazy loading"""
+    
+    def __init__(self):
+        self._hypergraph_data = None
+        self._strategic_data = None
+        self._node_cache = {}
+        self._edge_cache = {}
+        self._stats_cache = {}
+        self._repo_root = Path(__file__).parent
+    
+    @property
+    def hypergraph_data(self):
+        if self._hypergraph_data is None:
+            with open(self._repo_root / "HYPERGRAPH_CASE_STRUCTURE.json") as f:
+                self._hypergraph_data = json.load(f)
+        return self._hypergraph_data
+    
+    @property
+    def strategic_data(self):
+        if self._strategic_data is None:
+            try:
+                with open(self._repo_root / "STRATEGIC_DYNAMICS_ANALYSIS.json") as f:
+                    self._strategic_data = json.load(f)
+            except FileNotFoundError:
+                self._strategic_data = {}
+        return self._strategic_data
+    
+    def clear_cache(self):
+        """Clear all caches to free memory"""
+        self._node_cache.clear()
+        self._edge_cache.clear()
+        self._stats_cache.clear()
 
-with open(REPO_ROOT / "STRATEGIC_DYNAMICS_ANALYSIS.json") as f:
-    STRATEGIC_DATA = json.load(f)
+# Global data loader instance
+_data_loader = OptimizedDataLoader()
+HYPERGRAPH_DATA = _data_loader.hypergraph_data
+STRATEGIC_DATA = _data_loader.strategic_data
 
 # Enums
 class NodeType(Enum):
@@ -197,22 +232,29 @@ class Hyperedge:
         """Get node objects for all nodes in this hyperedge"""
         return [get_node_by_id(node_id) for node_id in self.nodes]
 
-# Helper functions
+# Optimized helper functions with caching
+@lru_cache(maxsize=1000)
 def get_node_by_id(node_id: str) -> Optional[Node]:
-    """Get a node by its ID"""
+    """Get a node by its ID with caching for performance"""
+    # Check cache first
+    if node_id in _data_loader._node_cache:
+        return _data_loader._node_cache[node_id]
+    
+    # Search in data
     for node_data in HYPERGRAPH_DATA["nodes"]:
         if node_data["id"] == node_id:
             node_type = NodeType(node_data["type"])
+            node = None
             
             if node_type == NodeType.PARAGRAPH:
-                return ParagraphNode(
+                node = ParagraphNode(
                     id=node_data["id"],
                     type=node_type,
                     name=node_data["name"],
                     properties=node_data["properties"]
                 )
             elif node_type == NodeType.CATEGORY:
-                return CategoryNode(
+                node = CategoryNode(
                     id=node_data["id"],
                     type=node_type,
                     name=node_data["name"],
@@ -220,7 +262,7 @@ def get_node_by_id(node_id: str) -> Optional[Node]:
                     theme_type=node_data["properties"].get("type", "")
                 )
             elif node_type == NodeType.EVIDENCE:
-                return EvidenceNode(
+                node = EvidenceNode(
                     id=node_data["id"],
                     type=node_type,
                     name=node_data["name"],
@@ -228,23 +270,39 @@ def get_node_by_id(node_id: str) -> Optional[Node]:
                     evidence_type=node_data["properties"].get("type", "")
                 )
             elif node_type == NodeType.ACTOR:
-                return ActorNode(
+                node = ActorNode(
                     id=node_data["id"],
                     type=node_type,
                     name=node_data["name"],
                     properties=node_data["properties"],
                     role=node_data["properties"].get("role", "")
                 )
+            
+            if node:
+                _data_loader._node_cache[node_id] = node
+                return node
     return None
 
+@lru_cache(maxsize=100)
 def get_nodes(node_type: Optional[NodeType] = None, limit: int = 100, offset: int = 0) -> List[Node]:
-    """Get all nodes, optionally filtered by type"""
+    """Get all nodes with optimized filtering and caching"""
+    cache_key = f"{node_type}_{limit}_{offset}"
+    if cache_key in _data_loader._node_cache:
+        return _data_loader._node_cache[cache_key]
+    
     nodes = []
-    for node_data in HYPERGRAPH_DATA["nodes"][offset:offset+limit]:
-        if node_type is None or NodeType(node_data["type"]) == node_type:
-            node = get_node_by_id(node_data["id"])
-            if node:
-                nodes.append(node)
+    # Use list comprehension for better performance
+    filtered_data = [
+        node_data for node_data in HYPERGRAPH_DATA["nodes"][offset:offset+limit]
+        if node_type is None or NodeType(node_data["type"]) == node_type
+    ]
+    
+    for node_data in filtered_data:
+        node = get_node_by_id(node_data["id"])
+        if node:
+            nodes.append(node)
+    
+    _data_loader._node_cache[cache_key] = nodes
     return nodes
 
 def get_paragraphs_by_priority(level: int) -> List[ParagraphNode]:
@@ -290,27 +348,29 @@ def get_strategic_clusters() -> List[Dict]:
     
     return clusters
 
+@lru_cache(maxsize=10)
 def get_network_stats() -> Dict:
-    """Calculate network statistics"""
+    """Calculate network statistics with caching"""
+    cache_key = "network_stats"
+    if cache_key in _data_loader._stats_cache:
+        return _data_loader._stats_cache[cache_key]
+    
     nodes = HYPERGRAPH_DATA["nodes"]
     edges = HYPERGRAPH_DATA["hyperedges"]
     
-    node_types = {"actors": 0, "categories": 0, "paragraphs": 0, "evidence": 0}
-    for node in nodes:
-        node_type = node["type"]
-        if node_type == "actor":
-            node_types["actors"] += 1
-        elif node_type == "category":
-            node_types["categories"] += 1
-        elif node_type == "paragraph":
-            node_types["paragraphs"] += 1
-        elif node_type == "evidence":
-            node_types["evidence"] += 1
+    # Use Counter for better performance
+    from collections import Counter
+    node_types = Counter(node["type"] for node in nodes)
+    edge_types = Counter(edge["type"] for edge in edges)
     
-    edge_types = {"categorization": 0, "supports": 0, "strategic_cluster": 0}
-    for edge in edges:
-        edge_type = edge["type"]
-        edge_types[edge_type] = edge_types.get(edge_type, 0) + 1
+    # Convert to expected format
+    node_type_map = {
+        "actor": "actors",
+        "category": "categories", 
+        "paragraph": "paragraphs",
+        "evidence": "evidence"
+    }
+    formatted_node_types = {node_type_map.get(k, k): v for k, v in node_types.items()}
     
     total_connections = sum(len(edge["nodes"]) for edge in edges)
     avg_degree = total_connections / len(nodes) if nodes else 0
@@ -318,16 +378,19 @@ def get_network_stats() -> Dict:
     max_possible_edges = len(nodes) * (len(nodes) - 1) / 2
     density = len(edges) / max_possible_edges if max_possible_edges > 0 else 0
     
-    return {
+    stats = {
         "total_nodes": len(nodes),
         "total_edges": len(edges),
-        "nodes_by_type": node_types,
-        "edges_by_type": edge_types,
+        "nodes_by_type": formatted_node_types,
+        "edges_by_type": dict(edge_types),
         "average_degree": avg_degree,
         "density": density,
         "connected_components": 1,  # Simplified
         "clustering_coefficient": 0.0  # Simplified
     }
+    
+    _data_loader._stats_cache[cache_key] = stats
+    return stats
 
 def get_evidence_coverage() -> Dict:
     """Analyze evidence coverage"""
