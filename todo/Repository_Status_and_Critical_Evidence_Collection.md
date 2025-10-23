@@ -125,7 +125,12 @@ The repository has grown significantly:
 
 1. Add visual aids (timelines, financial flow diagrams) as annexures
 2. Create executive summary of key evidence for attorney review
-3. Prepare witness statement templates for Daniel and other witnesses
+3. ✅ **COMPLETED** - Prepare witness statement templates for Daniel and other witnesses
+   - **Templates Created:** 4 comprehensive witness statement templates
+   - **Location:** `evidence/witness-statements/templates/`
+   - **Templates:** Daniel (JF-WS2), Kayla posthumous (JF-WS3), Jacqueline (JF-WS4), Generic (JF-WS[X])
+   - **Core Revelation Linked:** All templates link to platform ownership by RegimA Zone Ltd (UK) and RWD ZA's lack of independent revenue stream
+   - **Completion Date:** October 23, 2025
 4. Develop evidence presentation strategy for court
 5. Create quick reference guide for all 50+ annexures
 
