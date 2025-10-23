@@ -30,6 +30,8 @@
     "test:json-validation": "python3 scripts/validate_json_files.py",
     "validate-dates": "python3 scripts/validate_analysis_dates.py",
     "validate-file-paths": "node scripts/validate_file_paths.js",
+    "validate-evidence-completeness": "node scripts/validate-evidence-completeness.js",
+    "validate-evidence-completeness-py": "python3 scripts/validate_evidence_completeness.py",
     "fix-file-paths": "node scripts/fix_file_paths.js file-path-validation-report.json",
     "hypergraph:example": "node docs/models/hypergnn/case-hypergraph.js",
     "validate-workflows": "node tests/run-all-tests.js",
