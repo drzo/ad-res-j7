@@ -239,21 +239,21 @@
     "revenue_revelation_paragraphs": [
       {
         "paragraph_id": "REV_1",
-        "title": "Shopify Revenue Structure Revelation",
+        "title": "Shopify Revenue Structure Analysis",
         "content": "The Shopify sales data reveals that Dan & Kay's platform was paid by Dan & Jax's UK company RegimA Zone Ltd throughout the entire period, while RWD ZA actually has no revenue stream of its own. All revenue flowed through the UK Shopify platform, constituting systematic financial misconduct and material non-disclosure.",
         "evidence_references": ["Shopify Revenue Data", "Revenue Analysis"],
         "legal_implications": ["Material Non-Disclosure", "Financial Misconduct", "Breach of Fiduciary Duties"]
       },
       {
         "paragraph_id": "REV_2",
-        "title": "Revenue Diversion Quantification",
+        "title": "Revenue Structure Quantification",
         "content": "The total Shopify revenue for the period July 2023 to May 2025 was R60,251,961.01, with R22,613,741.71 (37.5%) controlled by the UK company RegimA Zone Ltd, while RWD ZA companies were completely dependent on this platform for revenue generation.",
         "evidence_references": ["Shopify Revenue Data", "Revenue Analysis"],
         "legal_implications": ["Unauthorized Revenue Diversion", "Systematic Financial Misconduct"]
       },
       {
         "paragraph_id": "REV_3",
-        "title": "Material Non-Disclosure of Revenue Structure",
+        "title": "Revenue Structure Documentation",
         "content": "The complete concealment of the revenue structure, whereby all revenue flowed through the UK company's Shopify platform, constitutes material non-disclosure and systematic deception regarding the true financial position of the companies.",
         "evidence_references": ["Shopify Revenue Data", "Revenue Analysis"],
         "legal_implications": ["Material Non-Disclosure", "Systematic Deception", "False Representation"]
