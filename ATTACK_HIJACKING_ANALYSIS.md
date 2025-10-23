@@ -13,7 +13,7 @@ The attack and hijacking analysis reveals the **TRAGIC REALITY** - this is not f
 - **Ready for Transition**: Everything was ready for the transition
 - **Legitimate Strategy**: This was a legitimate business strategy
 
-#### THE DORMAL B2B SETUP
+#### THE DERMAL B2B SETUP
 - **Dermal Distributor**: One of the distributors was nearly there
 - **B2B Accounts**: Setting up clients with B2B accounts
 - **PII Management**: Clients managing their own PII and orders

@@ -65,7 +65,7 @@ The transition completion strategy focuses on completing the planned transition 
 
 **PARAGRAPH RESTORE-2.3**: These systems must be fully functional before client migration can begin.
 
-### DORMAL B2B ACCOUNT COMPLETION
+### DERMAL B2B ACCOUNT COMPLETION
 
 **PARAGRAPH COMPLETE-1.1**: The Dermal B2B account setup that was nearly there must be completed:
 

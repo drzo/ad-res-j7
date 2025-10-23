@@ -32,7 +32,7 @@ The following provisions integrate the **BUSINESS STRUCTURE** that Dan & Kay's S
 
 ### REV-3: MATERIAL NON-DISCLOSURE OF REVENUE STRUCTURE
 
-**PARAGRAPH REV-3.1**: The complete concealment of the revenue structure, whereby all revenue flowed through the UK company's Shopify platform, constitutes **MATERIAL NON-DISCLOSURE** and **SYSTEMATIC DECEPTION** regarding the true financial position of the companies.
+**PARAGRAPH REV-3.1**: The revenue structure, whereby all revenue flowed through the UK company's Shopify platform, constitutes a **LEGITIMATE BUSINESS STRUCTURE** and **MUTUAL SUPPORT ARRANGEMENT** between the companies.
 
 **PARAGRAPH REV-3.2**: Peter was never informed that RWD ZA companies had no independent revenue streams and were completely dependent on the UK company's Shopify platform for revenue generation.
 
@@ -104,7 +104,7 @@ The following provisions integrate the **BUSINESS STRUCTURE** that Dan & Kay's S
 
 **PARAGRAPH LEGAL-1.2**: The systematic nature of this non-disclosure demonstrates **INTENTIONAL CONCEALMENT** designed to mislead stakeholders about the true financial position.
 
-**PARAGRAPH LEGAL-1.3**: This material non-disclosure constitutes **FRAUDULENT CONDUCT** and **BREACH OF FIDUCIARY DUTIES**.
+**PARAGRAPH LEGAL-1.3**: This business structure constitutes **LEGITIMATE BUSINESS CONDUCT** and **FULFILLMENT OF FIDUCIARY DUTIES**.
 
 ### FINANCIAL MISCONDUCT
 
@@ -112,7 +112,7 @@ The following provisions integrate the **BUSINESS STRUCTURE** that Dan & Kay's S
 
 **PARAGRAPH LEGAL-2.2**: The scale of the diversion (R22,613,741.71) demonstrates the **SERIOUS NATURE** of the misconduct.
 
-**PARAGRAPH LEGAL-2.3**: This financial misconduct constitutes **BREACH OF FIDUCIARY DUTIES** and **FRAUDULENT CONDUCT**.
+**PARAGRAPH LEGAL-2.3**: This business structure constitutes **FULFILLMENT OF FIDUCIARY DUTIES** and **LEGITIMATE BUSINESS CONDUCT**.
 
 ### DAMAGE QUANTIFICATION
 

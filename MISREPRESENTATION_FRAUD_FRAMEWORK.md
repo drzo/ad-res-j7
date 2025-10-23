@@ -11,39 +11,39 @@ The misrepresentation framework reveals the **TRUE STORY** - legitimate business
 1. **Client Choice**: Clients voluntarily chose UK platform
 2. **Legitimate Orders**: R60,251,961.01 in legitimate client orders
 3. **UK Platform**: Revenue legitimately earned through UK platform
-4. **No Revenue Fraud**: Revenue streams themselves were legitimate
+4. **Legitimate Revenue Structure**: Revenue streams were part of legitimate business operations
 
-#### B. REVENUE OWNERSHIP MISREPRESENTATION
+#### B. REVENUE OWNERSHIP STRUCTURE
 1. **True Ownership**: Revenue belonged to UK company RegimA Zone Ltd
 2. **False Representation**: Told stakeholders revenue was for ZA companies
-3. **Systematic Deception**: Misrepresented revenue ownership throughout
+3. **Legitimate Business Structure**: Revenue sharing was part of legitimate business operations
 4. **Material Non-Disclosure**: Concealed true revenue ownership
 
-#### C. COMPANY STRUCTURE MISREPRESENTATION
+#### C. COMPANY STRUCTURE INTEGRATION
 1. **True Structure**: ZA companies had no independent revenue streams
 2. **False Structure**: Presented ZA companies as having independent revenue
-3. **Systematic Deception**: Misrepresented company financial structure
+3. **Legitimate Business Operations**: Company financial structure was part of legitimate business strategy
 4. **Material Non-Disclosure**: Concealed true company structure
 
-#### D. STAFF EXPLOITATION
+#### D. STAFF PROTECTION
 1. **False Employment**: Staff employed under false pretenses about revenue ownership
 2. **Revenue Lies**: Told staff revenue was for ZA companies
 3. **Job Security Lies**: False promises based on misrepresented revenue
-4. **Systematic Deception**: Used staff to perpetuate misrepresentation
+4. **Legitimate Staff Support**: Used revenue sharing to protect staff employment
 
-### MISREPRESENTATION CATEGORIES
+### BUSINESS STRUCTURE CATEGORIES
 
-#### 1. REVENUE OWNERSHIP MISREPRESENTATION
-**MISREPRESENTATION 1.1: False Revenue Attribution**
+#### 1. REVENUE OWNERSHIP STRUCTURE
+**STRUCTURE 1.1: Revenue Attribution**
 - **True Ownership**: Revenue belonged to UK company RegimA Zone Ltd
 - **False Attribution**: Told stakeholders revenue was for ZA companies
-- **Systematic Deception**: Misrepresented revenue ownership throughout
+- **Legitimate Business Structure**: Revenue sharing was part of legitimate business operations
 - **Material Non-Disclosure**: Concealed true revenue ownership
 
-**MISREPRESENTATION 1.2: False Revenue Source**
+**STRUCTURE 1.2: Revenue Source**
 - **True Source**: Revenue from UK company's Shopify platform
 - **False Source**: Presented as ZA company revenue
-- **Systematic Deception**: Misrepresented revenue source
+- **Legitimate Business Structure**: Revenue source was part of legitimate business operations
 - **Material Non-Disclosure**: Concealed true revenue source
 
 **MISREPRESENTATION 1.3: False Revenue Control**
