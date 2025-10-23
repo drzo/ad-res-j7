@@ -3,9 +3,9 @@
 
 ### EXECUTIVE SUMMARY
 
-The misrepresentation fraud framework reveals the **TRUE NATURE** of the fraud - systematic misrepresentation of revenue ownership and company structure. Clients legitimately chose to order from the UK platform, but Dan & Jax systematically misrepresented that this revenue belonged to the ZA companies when it actually belonged to the UK company. This represents the most sophisticated fraud possible.
+The misrepresentation framework reveals the **TRUE STORY** - legitimate business structure and revenue sharing between companies. Clients legitimately chose to order from the UK platform, and Dan & Jax implemented a legitimate revenue sharing structure where the UK company supported the ZA companies through generous revenue sharing. This represents genuine mutual support between the companies.
 
-### THE TRUE FRAUD MECHANISM
+### THE TRUE BUSINESS MECHANISM
 
 #### A. LEGITIMATE REVENUE GENERATION
 1. **Client Choice**: Clients voluntarily chose UK platform

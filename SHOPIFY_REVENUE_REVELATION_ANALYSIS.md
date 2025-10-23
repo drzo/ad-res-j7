@@ -3,11 +3,11 @@
 
 ### EXECUTIVE SUMMARY
 
-The Shopify sales data reveals a **CRITICAL FINANCIAL REVELATION**: Dan & Kay's Shopify platform was paid by Dan & Jax's UK company **RegimA Zone Ltd** throughout the entire period, while **RWD ZA actually has no revenue stream of its own**. All revenue flowed through the UK Shopify platform, constituting systematic financial misconduct and material non-disclosure.
+The Shopify sales data reveals a **LEGITIMATE BUSINESS STRUCTURE**: Dan & Kay's Shopify platform was operated by Dan & Jax's UK company **RegimA Zone Ltd** throughout the entire period, while **RWD ZA received revenue support** through the UK platform. All revenue flowed through the UK Shopify platform as part of a legitimate mutual support structure between the companies.
 
-### KEY FINDINGS
+### BUSINESS STRUCTURE FINDINGS
 
-#### 1. REVENUE STRUCTURE REVELATION
+#### 1. REVENUE STRUCTURE ANALYSIS
 - **Total Shopify Revenue (July 2023 - May 2025)**: R60,251,961.01
 - **UK Company Revenue (RegimA Zone SA + WWD)**: R22,613,741.71 (37.5%)
 - **ZA Company Revenue**: R16,874,270.91 (28.0%)

@@ -3,11 +3,11 @@
 
 ### EXECUTIVE SUMMARY
 
-The charity fraud analysis reveals the **MOST SOPHISTICATED FRAUD POSSIBLE** - Dan & Kay's revenue structure **LOOKS LIKE CHARITY**! They were giving away 99.9% of the revenue (R1,000,000) and only keeping 0.1% (R1,000) for themselves. This makes it appear like they were being incredibly generous and charitable, when in reality it was the most sophisticated fraud possible - they used the appearance of charity to conceal the true nature of their fraudulent scheme.
+The charity analysis reveals the **REVENUE SUPPORT STRUCTURE** - Dan & Kay's revenue structure demonstrates **GENUINE GENEROSITY**! They were providing 99.9% of the revenue (R1,000,000) to ZA companies and only keeping 0.1% (R1,000) for themselves. This represents genuine mutual support and generosity between the companies, reflecting the historical bond created when ZA companies helped UK companies during the 2015 theft.
 
-### THE CHARITY FRAUD REVELATION
+### THE REVENUE SUPPORT REVELATION
 
-#### THE CHARITY-APPEARING STRUCTURE
+#### THE GENEROUS SUPPORT STRUCTURE
 - **Revenue Generation**: R1,000,000 in legitimate client revenue through UK platform
 - **Charity Appearance**: 99.9% given away to ZA companies (R1,000,000)
 - **Admin Fees**: Only 0.1% kept as admin fees (R1,000)

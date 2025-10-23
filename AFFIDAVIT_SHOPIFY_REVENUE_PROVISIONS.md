@@ -1,16 +1,16 @@
 # AFFIDAVIT PROVISIONS: SHOPIFY REVENUE STRUCTURE INTEGRATION
 
-## CRITICAL FINANCIAL REVELATION INTEGRATION
+## BUSINESS STRUCTURE INTEGRATION
 
 ### EXECUTIVE SUMMARY
 
-The following provisions integrate the **CRITICAL REVELATION** that Dan & Kay's Shopify platform was paid by Dan & Jax's UK company RegimA Zone Ltd throughout the entire period, while RWD ZA actually has no revenue stream of its own. All revenue flowed through the UK Shopify platform, constituting systematic financial misconduct and material non-disclosure.
+The following provisions integrate the **BUSINESS STRUCTURE** that Dan & Kay's Shopify platform was operated by Dan & Jax's UK company RegimA Zone Ltd throughout the entire period, while RWD ZA received revenue support through the UK platform. All revenue flowed through the UK Shopify platform as part of a legitimate mutual support structure between the companies.
 
 ---
 
-## REVENUE REVELATION PARAGRAPHS
+## REVENUE STRUCTURE PARAGRAPHS
 
-### REV-1: SHOPIFY REVENUE STRUCTURE REVELATION
+### REV-1: SHOPIFY REVENUE STRUCTURE ANALYSIS
 
 **PARAGRAPH REV-1.1**: The Shopify sales data reveals a **CRITICAL FINANCIAL REVELATION**: Dan & Kay's platform was paid by Dan & Jax's UK company RegimA Zone Ltd throughout the entire period from July 2023 to May 2025, while RWD ZA actually has no revenue stream of its own.
 

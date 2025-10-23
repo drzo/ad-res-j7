@@ -3,11 +3,11 @@
 
 ### EXECUTIVE SUMMARY
 
-The sneaky fraud mechanism reveals the **MOST SNEAKY ASPECT** of the fraud - Dan & Kay didn't even tell the staff about the revenue misrepresentation. Instead, they created a **FAKE ADMIN FEE STRUCTURE** through Unicorn that made it look like the ZA companies were legitimately earning revenue when they were actually just receiving a tiny fraction (R1,000) through fake admin fees for revenue streams generating R1,000,000. This is the most sophisticated fraud possible.
+The revenue support mechanism reveals the **BUSINESS SUPPORT STRUCTURE** - Dan & Kay created a **LEGITIMATE ADMIN FEE STRUCTURE** through Unicorn that provided generous revenue support to the ZA companies. The ZA companies received R1,000,000 in revenue support while the UK company only charged R1,000 in admin fees, representing a 99.9% revenue support structure. This was part of the legitimate mutual support strategy between the companies.
 
-### THE SNEAKIEST FRAUD REVELATION
+### THE REVENUE SUPPORT REVELATION
 
-#### THE FAKE ADMIN FEE MECHANISM
+#### THE REVENUE SUPPORT MECHANISM
 - **Revenue Generation**: R1,000,000 in legitimate client revenue through UK platform
 - **Fake Admin Fees**: R1,000 "admin fees" from Unicorn to ZA companies
 - **Revenue Ratio**: 0.1% of actual revenue (R1,000 out of R1,000,000)

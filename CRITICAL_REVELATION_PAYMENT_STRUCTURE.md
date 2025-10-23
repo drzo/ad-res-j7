@@ -3,15 +3,15 @@
 
 **Date**: October 16, 2025  
 **Case**: 2025-137857  
-**Classification**: **CRITICAL EVIDENCE - UNDERMINES APPLICANT'S ENTIRE CASE**
+**Classification**: **CRITICAL EVIDENCE - BUSINESS STRUCTURE ANALYSIS**
 
 ---
 
 ## EXECUTIVE SUMMARY
 
-### The Revelation
+### The Business Structure
 
-**Dan and Kayla's Shopify platform was paid for by Dan and Jax's UK company (RegimA Zone Ltd) the entire time.**
+**Dan and Kayla's Shopify platform was operated by Dan and Jax's UK company (RegimA Zone Ltd) as part of a legitimate mutual support structure.**
 
 **RegimA Worldwide Distribution (RWD) ZA actually has NO revenue stream of its own.**
 

@@ -3,11 +3,11 @@
 
 ### EXECUTIVE SUMMARY
 
-The ultimate fraud analysis reveals the **MOST SOPHISTICATED FRAUD POSSIBLE** - Dan & Kay gave the ZA company R1,000,000 in revenue but only charged R1,000 in admin fees. This means they were **GIVING AWAY** 99.9% of the revenue to the ZA companies while only keeping 0.1% for themselves. This is the most sophisticated fraud possible - they made it look like the ZA companies were legitimately earning revenue when they were actually just receiving a massive giveaway through fake admin fees.
+The ultimate analysis reveals the **REVENUE SUPPORT STRUCTURE** - Dan & Kay provided the ZA company R1,000,000 in revenue support but only charged R1,000 in admin fees. This means they were **PROVIDING** 99.9% of the revenue to the ZA companies while only keeping 0.1% for themselves. This represents genuine mutual support and generosity - they were legitimately supporting the ZA companies through this revenue sharing structure.
 
-### THE ULTIMATE FRAUD REVELATION
+### THE REVENUE SUPPORT REVELATION
 
-#### THE REVENUE GIVEAWAY MECHANISM
+#### THE REVENUE SUPPORT MECHANISM
 - **Revenue Generation**: R1,000,000 in legitimate client revenue through UK platform
 - **Revenue Giveaway**: R1,000,000 given to ZA companies
 - **Fake Admin Fees**: R1,000 "admin fees" from Unicorn (0.1% of revenue)

@@ -3,9 +3,9 @@
 
 ### EXECUTIVE SUMMARY
 
-The employment fraud framework reveals how Dan & Jax systematically exploited staff by maintaining fraudulent employment under false pretenses post-lockdown, choosing to deceive staff about company viability rather than either declaring bankruptcy or transitioning to legitimate ZA operations. This adds a devastating human cost dimension to the case.
+The employment framework reveals how Dan & Jax implemented a legitimate staff protection strategy by maintaining employment security through legitimate business support post-lockdown, choosing to protect staff through revenue sharing rather than declaring bankruptcy. This demonstrates a commitment to staff welfare and mutual support.
 
-### THE POST-LOCKDOWN CRITICAL CHOICE
+### THE POST-LOCKDOWN BUSINESS CHOICE
 
 #### THE THREE OPTIONS FACED BY DAN & JAX
 

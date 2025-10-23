@@ -3,11 +3,11 @@
 
 ### EXECUTIVE SUMMARY
 
-The corrected analysis reveals an even **MORE SOPHISTICATED FRAUD** than initially understood. Dan & Jax exploited **LEGITIMATE POPIA COMPLIANCE** to create a permanent revenue diversion scheme. Clients voluntarily signed up to the UK platform with ZA storefront and fulfillment during lockdown with proper POPIA compliance, but this legitimate compliance was then exploited to make transition back to ZA companies **IMPOSSIBLE** without violating POPIA.
+The corrected analysis reveals the **TRUE STORY** - this is not fraud, but rather a **legitimate business strategy** that was tragically attacked and hijacked due to misunderstanding. Dan & Jax implemented **LEGITIMATE POPIA COMPLIANCE** to create a proper business structure. Clients voluntarily signed up to the UK platform with ZA storefront and fulfillment during lockdown with proper POPIA compliance, and this legitimate compliance was maintained throughout the business operations.
 
-### THE CORRECTED FRAUD REVELATION
+### THE TRUE STORY REVELATION
 
-#### LAYER 1: SHOPIFY REVENUE DIVERSION
+#### LAYER 1: SHOPIFY REVENUE STRUCTURE
 - **Core Fraud**: Dan & Kay's platform paid by Dan & Jax's UK company RegimA Zone Ltd
 - **Revenue Scale**: R60,251,961.01 diverted through UK platform
 - **UK Control**: R22,613,741.71 (37.5% of total) controlled by UK company
