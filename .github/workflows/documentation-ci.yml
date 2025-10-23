@@ -1,0 +1,375 @@
+# Documentation Continuous Integration Workflow
+# Validates documentation updates and ensures evidence cross-referencing integrity
+# Special focus on RegimA Zone Ltd payment evidence for Shopify platform
+
+name: Documentation CI
+
+on:
+  push:
+    paths:
+      - '**.md'
+      - 'docs/**'
+      - 'todo/**'
+      - 'jax-response/**'
+      - 'revenue-stream-hijacking-rynette/**'
+      - 'FINAL_AFFIDAVIT_PACKAGE/**'
+      - 'ANNEXURES/**'
+      - 'affidavit_work/**'
+  pull_request:
+    paths:
+      - '**.md'
+      - 'docs/**'
+      - 'todo/**'
+      - 'jax-response/**'
+      - 'revenue-stream-hijacking-rynette/**'
+      - 'FINAL_AFFIDAVIT_PACKAGE/**'
+      - 'ANNEXURES/**'
+      - 'affidavit_work/**'
+  workflow_dispatch:
+    inputs:
+      full_validation:
+        description: 'Run full repository validation (including all files)'
+        required: false
+        default: 'false'
+        type: boolean
+
+jobs:
+  validate-markdown:
+    name: Validate Markdown Files
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: |
+          npm install -g markdownlint-cli
+          npm install -g markdown-link-check
+      
+      - name: Run markdown linting
+        run: |
+          echo "Running markdown linting..."
+          markdownlint '**/*.md' --ignore node_modules --ignore .git --config .markdownlint.json || true
+        continue-on-error: true
+      
+      - name: Check for broken links
+        run: |
+          echo "Checking for broken internal links..."
+          find . -name "*.md" -not -path "./node_modules/*" -not -path "./.git/*" | \
+            xargs -I {} markdown-link-check {} --config .markdown-link-check.json || true
+        continue-on-error: true
+
+  validate-evidence-links:
+    name: Validate Evidence Cross-References
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Validate evidence cross-references
+        run: |
+          echo "Validating evidence cross-references..."
+          node scripts/validate_cross_references.js || true
+        continue-on-error: true
+      
+      - name: Check file paths
+        run: |
+          echo "Validating file paths..."
+          node scripts/validate_file_paths.js || true
+        continue-on-error: true
+
+  validate-shopify-platform-evidence:
+    name: Validate Shopify Platform Ownership Documentation
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Validate Shopify platform evidence
+        id: validate
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            
+            // Key evidence points to validate
+            const requiredEvidence = {
+              'RegimA Zone Ltd': {
+                description: 'UK company owned by Dan & Jax that paid for Shopify platform',
+                found: false,
+                files: []
+              },
+              'Dan & Kay Shopify': {
+                description: 'Shopify platform paid by RegimA Zone Ltd',
+                found: false,
+                files: []
+              },
+              'RWD ZA revenue stream': {
+                description: 'Evidence that RWD ZA has no independent revenue stream',
+                found: false,
+                files: []
+              },
+              'Platform payment evidence': {
+                description: 'Documentation of R140,000-R280,000 platform payments',
+                found: false,
+                files: []
+              }
+            };
+            
+            // Search for evidence in key files
+            const searchTerms = {
+              'RegimA Zone Ltd': ['RegimA Zone Ltd', 'RegimA Zone Limited'],
+              'Dan & Kay Shopify': ['Dan & Kay', 'Dan and Kay', 'Shopify platform'],
+              'RWD ZA revenue stream': ['RWD ZA', 'no revenue stream', 'no independent revenue'],
+              'Platform payment evidence': ['R140,000', 'R280,000', 'platform payment', 'Shopify Plus']
+            };
+            
+            // Directories to search
+            const searchDirs = [
+              'jax-response',
+              'revenue-stream-hijacking-rynette',
+              'FINAL_AFFIDAVIT_PACKAGE',
+              'todo',
+              'affidavit_work'
+            ];
+            
+            function searchInFile(filePath, searchTerms) {
+              try {
+                const content = fs.readFileSync(filePath, 'utf8');
+                const matches = {};
+                
+                for (const [category, terms] of Object.entries(searchTerms)) {
+                  for (const term of terms) {
+                    if (content.toLowerCase().includes(term.toLowerCase())) {
+                      if (!matches[category]) {
+                        matches[category] = [];
+                      }
+                      matches[category].push(term);
+                    }
+                  }
+                }
+                
+                return matches;
+              } catch (error) {
+                return {};
+              }
+            }
+            
+            function walkDir(dir) {
+              const files = [];
+              try {
+                const items = fs.readdirSync(dir);
+                for (const item of items) {
+                  const fullPath = path.join(dir, item);
+                  const stat = fs.statSync(fullPath);
+                  if (stat.isDirectory() && !item.startsWith('.') && item !== 'node_modules') {
+                    files.push(...walkDir(fullPath));
+                  } else if (stat.isFile() && item.endsWith('.md')) {
+                    files.push(fullPath);
+                  }
+                }
+              } catch (error) {
+                // Directory doesn't exist or not accessible
+              }
+              return files;
+            }
+            
+            // Search for evidence
+            let allFiles = [];
+            for (const dir of searchDirs) {
+              allFiles.push(...walkDir(dir));
+            }
+            
+            // Also check root level important files
+            const rootFiles = [
+              'FINAL_ANSWERING_AFFIDAVIT_ABRIDGED.md',
+              'FINAL_ANSWERING_AFFIDAVIT_COMPLETE.md',
+              'AFFIDAVIT_shopify_evidence_comprehensive.md',
+              'COMPREHENSIVE_EVIDENCE_INDEX.md'
+            ];
+            
+            for (const file of rootFiles) {
+              if (fs.existsSync(file)) {
+                allFiles.push(file);
+              }
+            }
+            
+            console.log(`Searching ${allFiles.length} markdown files for evidence...`);
+            
+            for (const file of allFiles) {
+              const matches = searchInFile(file, searchTerms);
+              for (const [category, terms] of Object.entries(matches)) {
+                if (terms.length > 0) {
+                  requiredEvidence[category].found = true;
+                  requiredEvidence[category].files.push(file);
+                }
+              }
+            }
+            
+            // Generate report
+            let report = '## Shopify Platform Ownership Evidence Validation\n\n';
+            report += 'This report validates that documentation properly links the Shopify platform payment evidence.\n\n';
+            report += '### Key Evidence Points\n\n';
+            
+            let allFound = true;
+            for (const [category, data] of Object.entries(requiredEvidence)) {
+              const status = data.found ? '✅' : '⚠️';
+              report += `${status} **${category}**: ${data.description}\n`;
+              if (data.found) {
+                report += `   - Found in ${data.files.length} file(s)\n`;
+                // Show first 3 files
+                for (const file of data.files.slice(0, 3)) {
+                  report += `   - \`${file}\`\n`;
+                }
+                if (data.files.length > 3) {
+                  report += `   - ... and ${data.files.length - 3} more\n`;
+                }
+              } else {
+                report += `   - **Not found** - Consider adding documentation\n`;
+                allFound = false;
+              }
+              report += '\n';
+            }
+            
+            report += '### Summary\n\n';
+            if (allFound) {
+              report += '✅ All key evidence points are documented and cross-referenced.\n\n';
+            } else {
+              report += '⚠️ Some evidence points are missing or not well-documented.\n\n';
+              report += 'Consider adding or improving documentation for:\n';
+              report += '- The relationship between RegimA Zone Ltd (UK) and the Shopify platform\n';
+              report += '- Evidence that RWD ZA has no independent revenue stream\n';
+              report += '- Documentation of platform payment amounts (R140,000-R280,000)\n';
+            }
+            
+            report += '### Key Context\n\n';
+            report += 'The documentation should clearly establish that:\n';
+            report += '1. **RegimA Zone Ltd** (UK company owned by Dan & Jax) paid for the Shopify platform\n';
+            report += '2. **Dan & Kay Shopify platform** was the e-commerce infrastructure\n';
+            report += '3. **RWD ZA** has no independent revenue stream of its own\n';
+            report += '4. Platform costs of **R140,000-R280,000** over 28 months were borne by RegimA Zone Ltd\n\n';
+            
+            console.log(report);
+            
+            // Save report as artifact
+            fs.writeFileSync('shopify-evidence-validation-report.md', report);
+            
+            return {
+              allFound,
+              report
+            };
+      
+      - name: Upload validation report
+        uses: actions/upload-artifact@v4
+        with:
+          name: shopify-evidence-validation-report
+          path: shopify-evidence-validation-report.md
+      
+      - name: Comment on PR with validation results
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('shopify-evidence-validation-report.md', 'utf8');
+            
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: report
+            });
+
+  validate-json-files:
+    name: Validate JSON Files
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Validate JSON files
+        run: |
+          echo "Validating JSON files..."
+          python3 scripts/validate_json_files.py || true
+        continue-on-error: true
+
+  validate-dates:
+    name: Validate Date Formats
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Validate dates in documentation
+        run: |
+          echo "Validating date formats..."
+          python3 scripts/validate_analysis_dates.py || true
+        continue-on-error: true
+
+  summary:
+    name: Documentation CI Summary
+    runs-on: ubuntu-latest
+    needs: [validate-markdown, validate-evidence-links, validate-shopify-platform-evidence, validate-json-files, validate-dates]
+    if: always()
+    
+    steps:
+      - name: Generate summary
+        run: |
+          echo "## Documentation CI Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "All documentation validation checks have been completed." >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Validation Jobs" >> $GITHUB_STEP_SUMMARY
+          echo "- Markdown Linting: ${{ needs.validate-markdown.result }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Evidence Cross-References: ${{ needs.validate-evidence-links.result }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Shopify Platform Evidence: ${{ needs.validate-shopify-platform-evidence.result }}" >> $GITHUB_STEP_SUMMARY
+          echo "- JSON Validation: ${{ needs.validate-json-files.result }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Date Format Validation: ${{ needs.validate-dates.result }}" >> $GITHUB_STEP_SUMMARY

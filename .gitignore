@@ -54,6 +54,7 @@ test-data/
 duplicate-cleanup-report.json
 specific-duplicates-summary.json
 repository_tree.txt
+shopify-evidence-validation-report.md
 
 # Build outputs
 dist/
