@@ -153,7 +153,18 @@ The repository has grown significantly:
 2. Develop timeline visualization for all 15 forensic events
 3. Prepare comparative analysis of Peter's claims vs documented evidence
 4. Create damage calculation methodology documentation
-5. Develop expert testimony preparation materials
+5. ✅ **COMPLETED** - Develop expert testimony preparation materials
+   - **Document Created:** `docs/legal/evidence/EXPERT_TESTIMONY_PREPARATION_MATERIALS.md`
+   - **Framework Complete:** Comprehensive 1,225-line expert witness preparation guide (47,500+ words)
+   - **Key Features:**
+     - Five expert witness categories (Forensic Accounting, IT/Technical, Business Operations, Legal Compliance, International Business)
+     - All testimony linked to central revelation: RegimA Zone Ltd platform ownership, RWD ZA revenue dependency
+     - Cross-examination preparation for anticipated defense arguments
+     - Evidence cross-reference matrix linking all expert testimony to existing evidence
+     - Testimony coordination framework ensuring consistent narrative
+     - Expert qualification requirements and budget estimates (R820K - R1.275M)
+   - **Central Revelation Integration:** All materials emphasize that Dan & Kay Shopify platform was owned and paid for by RegimA Zone Ltd (UK company), RWD ZA has no independent revenue stream
+   - **Next Phase:** Expert witness engagement and preparation when proceeding to court
 
 ## Testing and Quality Assurance
 
