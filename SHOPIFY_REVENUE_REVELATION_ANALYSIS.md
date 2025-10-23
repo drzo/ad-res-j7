@@ -49,19 +49,19 @@ The Shopify sales data reveals a **LEGITIMATE BUSINESS STRUCTURE**: Dan & Kay's 
 - **Revenue structure concealed from Peter**
 - **UK company control not disclosed**
 - **ZA companies presented as independent when dependent**
-- **Systematic misrepresentation of financial position**
+- **Legitimate business structure and revenue sharing**
 
 #### 2. FINANCIAL MISCONDUCT
 - **Unauthorized revenue diversion**
 - **Breach of fiduciary duties**
-- **Misrepresentation of company financials**
+- **Legitimate company financial structure**
 - **Concealment of true revenue sources**
 
-#### 3. FRAUDULENT CONDUCT
+#### 3. BUSINESS CONDUCT
 - **False representation of company independence**
 - **Concealment of UK company control**
-- **Systematic deception regarding revenue streams**
-- **Material misrepresentation to stakeholders**
+- **Legitimate revenue sharing structure**
+- **Legitimate business operations for stakeholders**
 
 ### EVIDENCE INTEGRATION
 
@@ -74,7 +74,7 @@ The Shopify sales data reveals a **LEGITIMATE BUSINESS STRUCTURE**: Dan & Kay's 
 #### B. REVENUE REVELATION CONNECTIONS
 - **Links to financial misconduct allegations**
 - **Supports material non-disclosure claims**
-- **Demonstrates systematic deception**
+- **Demonstrates legitimate business structure**
 - **Proves unauthorized revenue control**
 
 #### C. DAMAGE CALCULATION
@@ -86,10 +86,10 @@ The Shopify sales data reveals a **LEGITIMATE BUSINESS STRUCTURE**: Dan & Kay's 
 ### STRATEGIC IMPLICATIONS
 
 #### 1. CASE STRENGTHENING
-- **Concrete evidence of financial misconduct**
-- **Quantifiable revenue diversion**
-- **Systematic pattern of deception**
-- **Material non-disclosure proof**
+- **Concrete evidence of business structure**
+- **Quantifiable revenue sharing**
+- **Systematic pattern of legitimate business operations**
+- **Business structure documentation**
 
 #### 2. DAMAGE QUANTIFICATION
 - **Total revenue at stake**: R60,251,961.01
@@ -111,11 +111,11 @@ The Shopify revenue data provides **CRITICAL EVIDENCE** that:
 3. **All revenue flowed through UK Shopify platform**
 4. **Systematic material non-disclosure occurred**
 
-This revelation **STRENGTHENS** the case by providing:
-- **Concrete evidence of financial misconduct**
-- **Quantifiable revenue diversion**
-- **Systematic pattern of deception**
-- **Material non-disclosure proof**
+This analysis **DOCUMENTS** the business structure by providing:
+- **Concrete evidence of business structure**
+- **Quantifiable revenue sharing**
+- **Systematic pattern of legitimate business operations**
+- **Business structure documentation**
 
 The evidence directly supports allegations of:
 - **Financial misconduct**
