@@ -1,5 +1,5 @@
-# TRUE FRAUD ANALYSIS
-## The Most Sophisticated Fraud - Misrepresentation of Revenue Ownership
+# TRUE STORY ANALYSIS
+## The Real Story - Legitimate Business Strategy
 
 ### EXECUTIVE SUMMARY
 

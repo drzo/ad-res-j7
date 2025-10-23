@@ -1,5 +1,5 @@
-# MISREPRESENTATION FRAUD FRAMEWORK
-## Systematic Misrepresentation of Revenue Ownership and Company Structure
+# MISREPRESENTATION FRAMEWORK
+## Business Structure and Revenue Ownership
 
 ### EXECUTIVE SUMMARY
 

@@ -1,5 +1,5 @@
-# FINAL CORRECTED FRAUD PROVISIONS
-## Affidavit Integration for True Misrepresentation Fraud
+# FINAL CORRECTED PROVISIONS
+## Affidavit Integration for Legitimate Business Strategy
 
 ### EXECUTIVE SUMMARY
 

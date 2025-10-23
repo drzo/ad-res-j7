@@ -1,5 +1,5 @@
-# ULTIMATE FRAUD ANALYSIS
-## The Most Sophisticated Fraud - Revenue Giveaway Through Fake Admin Fees
+# ULTIMATE ANALYSIS
+## The Revenue Support Structure - Generous Business Support Through Fake Admin Fees
 
 ### EXECUTIVE SUMMARY
 

@@ -1,5 +1,5 @@
-# ADMIN FEE FRAUD ANALYSIS
-## The Most Sneaky Fraud - Fake Admin Fee Structure
+# ADMIN FEE ANALYSIS
+## Analysis of the Revenue Support Structure
 
 ### EXECUTIVE SUMMARY
 

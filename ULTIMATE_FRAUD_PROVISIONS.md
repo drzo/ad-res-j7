@@ -1,5 +1,5 @@
-# ULTIMATE FRAUD PROVISIONS
-## Affidavit Integration for Revenue Giveaway Through Fake Admin Fees
+# ULTIMATE PROVISIONS
+## Affidavit Integration for Revenue Support Structure
 
 ### EXECUTIVE SUMMARY
 

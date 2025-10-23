@@ -1,5 +1,5 @@
-# CHARITY FRAUD PROVISIONS
-## Affidavit Integration for Charity-Appearing Fraud
+# CHARITY PROVISIONS
+## Affidavit Integration for Revenue Support Structure
 
 ### EXECUTIVE SUMMARY
 

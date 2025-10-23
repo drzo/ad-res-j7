@@ -1,5 +1,5 @@
-# CHARITY FRAUD ANALYSIS
-## The Most Sophisticated Fraud - Disguised as Charity
+# CHARITY ANALYSIS
+## The Revenue Support Structure - Generous Business Support
 
 ### EXECUTIVE SUMMARY
 

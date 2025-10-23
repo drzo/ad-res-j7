@@ -1,5 +1,5 @@
-# EMPLOYMENT FRAUD FRAMEWORK
-## Systematic Staff Exploitation Through Revenue Diversion
+# EMPLOYMENT FRAMEWORK
+## Staff Protection and Employment Security
 
 ### EXECUTIVE SUMMARY
 

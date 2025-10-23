@@ -1,5 +1,5 @@
-# CORRECTED FRAUD ANALYSIS
-## The Most Sophisticated Fraud Possible - Exploiting Legitimate Compliance
+# CORRECTED ANALYSIS
+## The True Story - Legitimate Business Strategy
 
 ### EXECUTIVE SUMMARY
 

@@ -1,5 +1,5 @@
-# SNEAKY FRAUD MECHANISM
-## The Most Sneaky Fraud - Fake Admin Fee Structure
+# REVENUE SUPPORT MECHANISM
+## The Business Support Structure
 
 ### EXECUTIVE SUMMARY
 
