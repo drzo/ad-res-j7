@@ -1,0 +1,339 @@
+{
+  "nodes": [
+    {
+      "id": "actor_0",
+      "type": "actor",
+      "name": "Peter Faucitt",
+      "properties": {
+        "role": "party"
+      }
+    },
+    {
+      "id": "actor_1",
+      "type": "actor",
+      "name": "Jacqueline Faucitt",
+      "properties": {
+        "role": "party"
+      }
+    },
+    {
+      "id": "actor_2",
+      "type": "actor",
+      "name": "Daniel Faucitt",
+      "properties": {
+        "role": "party"
+      }
+    },
+    {
+      "id": "actor_3",
+      "type": "actor",
+      "name": "RegimA Worldwide Distribution",
+      "properties": {
+        "role": "party"
+      }
+    },
+    {
+      "id": "actor_4",
+      "type": "actor",
+      "name": "RegimA Skin Treatments",
+      "properties": {
+        "role": "party"
+      }
+    },
+    {
+      "id": "actor_5",
+      "type": "actor",
+      "name": "RegimA Zone Ltd (UK)",
+      "properties": {
+        "role": "party",
+        "revelation": "Controlled all Shopify revenue through RegimA Zone SA and WWD stores"
+      }
+    },
+    {
+      "id": "category_5",
+      "type": "category",
+      "name": "material_non_disclosure",
+      "properties": {
+        "type": "strategic_theme"
+      }
+    },
+    {
+      "id": "category_6",
+      "type": "category",
+      "name": "peter_hypocrisy",
+      "properties": {
+        "type": "strategic_theme"
+      }
+    },
+    {
+      "id": "category_7",
+      "type": "category",
+      "name": "financial_misconduct",
+      "properties": {
+        "type": "strategic_theme"
+      }
+    },
+    {
+      "id": "category_8",
+      "type": "category",
+      "name": "disproportionate_harm",
+      "properties": {
+        "type": "strategic_theme"
+      }
+    },
+    {
+      "id": "category_9",
+      "type": "category",
+      "name": "responsible_person",
+      "properties": {
+        "type": "strategic_theme"
+      }
+    },
+    {
+      "id": "category_10",
+      "type": "category",
+      "name": "business_disruption",
+      "properties": {
+        "type": "strategic_theme"
+      }
+    },
+    {
+      "id": "category_11",
+      "type": "category",
+      "name": "timing_suspicious",
+      "properties": {
+        "type": "strategic_theme"
+      }
+    },
+    {
+      "id": "revelation_shopify_revenue",
+      "type": "revelation",
+      "name": "Shopify Revenue Structure Revelation",
+      "properties": {
+        "type": "financial_misconduct",
+        "description": "Dan & Kay platform paid by Dan & Jax UK company RegimA Zone Ltd, RWD ZA has no independent revenue",
+        "impact": "CRITICAL",
+        "total_revenue": 60251961.01,
+        "uk_company_control": 22613741.71,
+        "revenue_ratio": 1.34,
+        "evidence_count": 4
+      }
+    },
+    {
+      "id": "evidence_shopify_data",
+      "type": "evidence",
+      "name": "Shopify Sales Data",
+      "properties": {
+        "type": "financial_records",
+        "revelation": "Revenue diversion through UK company control",
+        "total_amount": 60251961.01,
+        "uk_company_control": 22613741.71,
+        "files": [
+          "docs/Total sales over time by store - 2023-07-01 - 2025-10-22.csv",
+          "docs/Total sales over time by store - 2023-07-01 - 2025-10-22.jsonl",
+          "docs/Total sales over time by store - 2023-07-01 - 2025-10-22.xml"
+        ]
+      }
+    },
+    {
+      "id": "evidence_revenue_analysis",
+      "type": "evidence",
+      "name": "Revenue Analysis Report",
+      "properties": {
+        "type": "expert_analysis",
+        "revelation": "Comprehensive analysis of revenue structure and diversion patterns",
+        "file": "SHOPIFY_REVENUE_REVELATION_ANALYSIS.md"
+      }
+    },
+    {
+      "id": "paragraph_12",
+      "type": "paragraph",
+      "name": "PARA_10_5-10_10_23",
+      "properties": {
+        "priority": "Critical",
+        "priority_level": 1,
+        "topic": "Detailed Financial Allegations",
+        "claim": "Systematic financial misconduct",
+        "completed": false,
+        "evidence_count": 0,
+        "revelation_connection": "Shopify data proves systematic revenue diversion through UK company control"
+      }
+    },
+    {
+      "id": "paragraph_13",
+      "type": "paragraph",
+      "name": "PARA_7_2-7_5",
+      "properties": {
+        "priority": "Critical",
+        "priority_level": 1,
+        "topic": "IT Expense Discrepancies",
+        "claim": "Unexplained IT expenses",
+        "completed": true,
+        "evidence_count": 21,
+        "revelation_connection": "IT expenses may include Shopify platform costs controlled by UK company"
+      }
+    },
+    {
+      "id": "paragraph_35",
+      "type": "paragraph",
+      "name": "PARA_7_6",
+      "properties": {
+        "priority": "Critical",
+        "priority_level": 1,
+        "topic": "R500K Payment",
+        "claim": "Unauthorized R500,000 payment to Jax",
+        "completed": false,
+        "evidence_count": 0,
+        "revelation_connection": "Payment may be related to Shopify revenue diversion through UK company"
+      }
+    },
+    {
+      "id": "paragraph_36",
+      "type": "paragraph",
+      "name": "PARA_7_7-7_8",
+      "properties": {
+        "priority": "Critical",
+        "priority_level": 1,
+        "topic": "R500K Payment Details",
+        "claim": "Payment made without authorization",
+        "completed": false,
+        "evidence_count": 1,
+        "revelation_connection": "Payment details may reveal connection to Shopify revenue structure"
+      }
+    },
+    {
+      "id": "paragraph_38",
+      "type": "paragraph",
+      "name": "PARA_7_9-7_11",
+      "properties": {
+        "priority": "Critical",
+        "priority_level": 1,
+        "topic": "Payment Justification",
+        "claim": "No legitimate business purpose",
+        "completed": false,
+        "evidence_count": 0,
+        "revelation_connection": "Payment justification may be related to Shopify revenue diversion"
+      }
+    }
+  ],
+  "hyperedges": [
+    {
+      "nodes": ["revelation_shopify_revenue", "evidence_shopify_data"],
+      "type": "supports",
+      "weight": 5
+    },
+    {
+      "nodes": ["revelation_shopify_revenue", "evidence_revenue_analysis"],
+      "type": "supports",
+      "weight": 5
+    },
+    {
+      "nodes": ["revelation_shopify_revenue", "category_7"],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": ["revelation_shopify_revenue", "category_5"],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": ["revelation_shopify_revenue", "category_8"],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": ["revelation_shopify_revenue", "category_9"],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": ["revelation_shopify_revenue", "category_10"],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": ["revelation_shopify_revenue", "category_11"],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": ["evidence_shopify_data", "paragraph_12"],
+      "type": "supports",
+      "weight": 5
+    },
+    {
+      "nodes": ["evidence_shopify_data", "paragraph_13"],
+      "type": "supports",
+      "weight": 4
+    },
+    {
+      "nodes": ["evidence_shopify_data", "paragraph_35"],
+      "type": "supports",
+      "weight": 4
+    },
+    {
+      "nodes": ["evidence_shopify_data", "paragraph_36"],
+      "type": "supports",
+      "weight": 4
+    },
+    {
+      "nodes": ["evidence_shopify_data", "paragraph_38"],
+      "type": "supports",
+      "weight": 4
+    },
+    {
+      "nodes": ["revelation_shopify_revenue", "actor_5"],
+      "type": "involves",
+      "weight": 5
+    },
+    {
+      "nodes": ["revelation_shopify_revenue", "actor_2"],
+      "type": "involves",
+      "weight": 5
+    },
+    {
+      "nodes": ["revelation_shopify_revenue", "actor_1"],
+      "type": "involves",
+      "weight": 4
+    },
+    {
+      "nodes": ["paragraph_12", "revelation_shopify_revenue"],
+      "type": "reveals",
+      "weight": 5
+    },
+    {
+      "nodes": ["paragraph_13", "revelation_shopify_revenue"],
+      "type": "reveals",
+      "weight": 4
+    },
+    {
+      "nodes": ["paragraph_35", "revelation_shopify_revenue"],
+      "type": "reveals",
+      "weight": 4
+    },
+    {
+      "nodes": ["paragraph_36", "revelation_shopify_revenue"],
+      "type": "reveals",
+      "weight": 4
+    },
+    {
+      "nodes": ["paragraph_38", "revelation_shopify_revenue"],
+      "type": "reveals",
+      "weight": 4
+    },
+    {
+      "nodes": ["revelation_shopify_revenue", "category_7", "category_5", "category_8"],
+      "type": "strategic_cluster",
+      "name": "Shopify Revenue Revelation Cluster",
+      "weight": 5
+    }
+  ],
+  "metadata": {
+    "case_number": "2025-137857",
+    "repository": "cogpy/ad-res-j7",
+    "total_paragraphs": 50,
+    "revelation_integration": "COMPLETE",
+    "shopify_revenue_analysis": "INTEGRATED"
+  }
+}
