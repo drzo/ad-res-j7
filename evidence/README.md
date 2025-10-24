@@ -22,4 +22,6 @@ This directory contains raw evidence collected for Case 2025-137857.
 - **`IT_EXPENSES_BREAKDOWN.json`**: Structured data version of the IT expenses breakdown for programmatic access.
 - **`correspondence/JF8A_DOCUMENTATION_LOG.md`**: Detailed log of all documentation provided to Peter Faucitt (Annexure JF8A/JF-CORR1). Critical evidence countering "unexplained transactions" allegations.
 - **`director_loan_accounts/ACCOUNTING_RECORDS_DIRECTOR_LOAN_ALLOCATION.md`**: Comprehensive accounting records showing proper allocation of transactions to director loan accounts, specifically the R500,000 payment dated 16 July 2025 (Annexure JF-AR1/JF7D).
+- **`bantjies_investment_payout_forecast.txt`**: Plain text OCR transcription of legal document (Page 15 of 33) detailing call option agreement with payout forecast amounts (R18.685M, R23.165M, R28.73M) over three time periods.
+- **`bantjies_investment_payout_forecast.md`**: Formatted markdown version of the call option agreement document, including structured payout forecast summary table.
 
