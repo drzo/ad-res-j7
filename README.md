@@ -22,7 +22,8 @@ All documentation has been organized into a comprehensive structure for easy nav
 ### 🎯 **Quick Navigation**
 - **Repository Overview**: Start with [📋 Comprehensive Evidence Index](COMPREHENSIVE_EVIDENCE_INDEX.md)
 - **Legal Team**: Browse [📋 Documentation Catalog](/docs/README.md)
-- **Case Materials**: See [📁 Legal Annexures](/docs/legal/annexures/ANNEXURES_INDEX.md)  
+- **Case Materials**: See [📁 Legal Annexures](/docs/legal/annexures/ANNEXURES_INDEX.md)
+- **⭐ Annexures Quick Reference**: See [🔑 All 60+ Annexures Linked to Core Revelation](ANNEXURES_QUICK_REFERENCE_GUIDE.md)
 - **Technical Team**: Reference [⚙️ Technical Documentation](/docs/technical/)
 - **Evidence**: Browse [📂 Evidence Collections](/evidence/)
 - **Directory Consolidation**: See [📖 Jax Response Consolidation Guide](/docs/JAX_RESPONSE_DIRECTORY_CONSOLIDATION.md)
