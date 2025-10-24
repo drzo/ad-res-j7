@@ -15,6 +15,8 @@
 
 **RegimA Worldwide Distribution (RWD) ZA actually has NO revenue stream of its own.**
 
+> **NOTE**: For clarification on why the minimal admin fee (0.1% = R1,000 on R1,000,000) is LEGITIMATE business practice and not fraud, see **PAYMENT_STRUCTURE_CLARIFICATION.md** and **PAYMENT_STRUCTURE_QUICK_ANSWER.md**.
+
 ### Why This Is Critical
 
 This revelation **completely demolishes** the Applicant's claims because it proves:
