@@ -91,8 +91,8 @@ the original share certificates in respect of the Option Shares;
 **Note:** The handwritten annotations on the original document highlight these three specific payout amounts and their corresponding date ranges.
 
 **Date Range Concerns:**  
-\* Year 2 shows a 10-year period (2017-2027), which may be a typographical error for 2017-2018  
-\** Year 3 shows MAY 2029 - APR 2029, which is logically impossible within the same year. This likely should be MAY 2028 - APR 2029 or MAY 2018 - APR 2019 depending on whether the "2029" dates are typos for "2019"
+\* Year 2 shows a 10-year period (2017-2027), which appears to be a transcription error for a sequential second year period (2017-2018)  
+\** Year 3 shows MAY 2029 - APR 2029 (logically impossible within same year). Given the sequential pattern of option periods, this most likely should be MAY 2018 - APR 2019, completing a three-year sequential option period from 2016-2019. The "29" may be a handwriting interpretation error for "19".
 
 ---
 
