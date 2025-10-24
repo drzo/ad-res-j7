@@ -56,7 +56,7 @@ the purchase price of the Option Shares shall be as follows:
 
 ##### 15.1.2.3 Final Year of Option Period
 
-**Period:** MAY 2029 - APR 2029  
+**Period:** MAY 2029 - APR 2029 *(Note: This date range as transcribed appears inconsistent - may be OCR error or document typo)*  
 **Total Amount:** R28 730 000  
 **Price per Option Share:** R5,746
 
@@ -85,10 +85,14 @@ the original share certificates in respect of the Option Shares;
 | Year Period | Total Payout Amount | Price per Share | Period Description |
 |-------------|--------------------|-----------------|--------------------|
 | Year 1 | R18,685,000 | R3,737 | MAY 2016 - APR 2017 |
-| Year 2 | R23,165,000 | R4,633 | MAY 2017 - APR 2027 |
-| Year 3 | R28,730,000 | R5,746 | MAY 2029 - APR 2029 |
+| Year 2 | R23,165,000 | R4,633 | MAY 2017 - APR 2027* |
+| Year 3 | R28,730,000 | R5,746 | MAY 2029 - APR 2029** |
 
 **Note:** The handwritten annotations on the original document highlight these three specific payout amounts and their corresponding date ranges.
+
+**Date Range Concerns:**  
+\* Year 2 shows a 10-year period (2017-2027), which may be a typographical error for 2017-2018  
+\** Year 3 shows MAY 2029 - APR 2029, which is logically impossible within the same year. This likely should be MAY 2028 - APR 2029 or MAY 2018 - APR 2019 depending on whether the "2029" dates are typos for "2019"
 
 ---
 
