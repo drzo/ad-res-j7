@@ -201,7 +201,56 @@ fig = visualizer.plot_complete_analysis(results, events, agents, norms)
 
 ## Testing
 
+### Evidence Completeness Validation
+
+**Phase 3 - Advanced QA Scripts** (from Repository_Status_and_Critical_Evidence_Collection.md line 150)
+
+Validate evidence completeness and link to the core revelation:
+- Dan & Kay Shopify platform was paid by Dan & Jax UK company RegimA Zone Ltd
+- RWD ZA actually has no revenue stream of its own
+
+```bash
+# Run evidence completeness validation (JavaScript)
+npm run validate-evidence-completeness
+
+# Or use Python version
+npm run validate-evidence-completeness-py
+
+# Or run directly
+node scripts/validate-evidence-completeness.js
+python3 scripts/validate_evidence_completeness.py
+```
+
+**Features:**
+- ✅ Validates Phase 1 Critical Evidence (80% threshold): 22 evidence items
+- ✅ Validates Phase 2 High Priority Evidence (60% threshold): 15 evidence items  
+- ✅ Validates Revenue Stream Evidence (100% threshold): Links to RegimA Zone Ltd revelation
+- 🔗 Checks linkage between evidence and core revenue stream revelation
+- 📊 Generates comprehensive JSON validation reports
+- 💡 Provides actionable recommendations for missing evidence
+
+**Current Status:** All validation checks passing at 100% completeness
+
+### Test Suite
+
 Run the comprehensive test suite:
+
+```bash
+# Run all tests
+npm test
+
+# Run specific test categories
+npm run test:evidence-completeness    # Evidence completeness validation tests
+npm run test:validation                # Workflow validation tests
+npm run test:security                  # Security validation tests
+npm run test:json-validation          # JSON file validation
+npm run validate-dates                # Date consistency validation
+npm run validate-file-paths           # File path validation
+```
+
+### Legal Attention Engine Tests
+
+Run the legal attention inference tests:
 
 ```bash
 python test_legal_attention.py
