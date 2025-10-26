@@ -1488,3 +1488,350 @@
 ;; South African civil law in a rule-based system. The placeholder functions
 ;; can be replaced with specific implementations, machine learning models,
 ;; or integration with legal databases and APIs.
+
+
+;; =============================================================================
+;; UNJUST ENRICHMENT AND RESTITUTION FRAMEWORK
+;; =============================================================================
+;; Added: 2025-10-26
+;; Purpose: Comprehensive unjust enrichment framework for platform usage claims
+;; Coverage: Four elements test, quantum meruit, restitution remedies, defenses
+
+;; Core Unjust Enrichment Principle
+(define unjust-enrichment-principle
+  (make-principle
+   'name 'unjust-enrichment-principle
+   'description "No one should be enriched at another's expense without legal ground"
+   'domain '(civil restitution)
+   'confidence 1.0
+   'provenance "Roman law, South African common law"
+   'related-principles '(quantum-meruit restitution equity)
+   'inference-type 'deductive
+   'application-context "Restitutionary claims and enrichment without cause"))
+
+;; Four Elements of Unjust Enrichment
+(define enrichment-element
+  (make-principle
+   'name 'enrichment-element
+   'description "Defendant must have been enriched (received benefit or avoided expense)"
+   'domain '(civil restitution)
+   'confidence 1.0
+   'provenance "Unjust enrichment law"
+   'related-principles '(unjust-enrichment-principle benefit-received)
+   'inference-type 'deductive
+   'application-context "Enrichment element in unjust enrichment claims"))
+
+(define at-expense-of-element
+  (make-principle
+   'name 'at-expense-of-element
+   'description "Enrichment must have been at expense of plaintiff"
+   'domain '(civil restitution)
+   'confidence 1.0
+   'provenance "Unjust enrichment law"
+   'related-principles '(unjust-enrichment-principle causation)
+   'inference-type 'deductive
+   'application-context "At expense of element in unjust enrichment claims"))
+
+(define no-legal-ground-element
+  (make-principle
+   'name 'no-legal-ground-element
+   'description "Enrichment must lack legal justification"
+   'domain '(civil restitution)
+   'confidence 1.0
+   'provenance "Unjust enrichment law"
+   'related-principles '(unjust-enrichment-principle legal-justification)
+   'inference-type 'deductive
+   'application-context "Absence of legal ground in unjust enrichment claims"))
+
+;; Quantum Meruit
+(define quantum-meruit-principle
+  (make-principle
+   'name 'quantum-meruit-principle
+   'description "Reasonable value for services rendered without contract"
+   'domain '(civil restitution)
+   'confidence 1.0
+   'provenance "Common law restitution principles"
+   'related-principles '(unjust-enrichment-principle reasonable-value)
+   'inference-type 'deductive
+   'application-context "Valuation of services in unjust enrichment claims"))
+
+;; Platform Usage Unjust Enrichment
+(define platform-usage-unjust-enrichment
+  (make-principle
+   'name 'platform-usage-unjust-enrichment
+   'description "Using another's platform without compensation constitutes unjust enrichment"
+   'domain '(civil restitution technology)
+   'confidence 1.0
+   'provenance "Unjust enrichment principles, technology law"
+   'related-principles '(unjust-enrichment-principle quantum-meruit)
+   'inference-type 'deductive
+   'application-context "Technology platform usage and service valuation"))
+
+;; Restitution Remedies
+(define restitution-remedy-principle
+  (make-principle
+   'name 'restitution-remedy-principle
+   'description "Unjust enrichment remedied by restitution of value received"
+   'domain '(civil restitution remedies)
+   'confidence 1.0
+   'provenance "Common law restitution principles"
+   'related-principles '(unjust-enrichment-principle remedies)
+   'inference-type 'deductive
+   'application-context "Restitution remedies for unjust enrichment"))
+
+;; Defenses to Unjust Enrichment
+(define change-of-position-defense
+  (make-principle
+   'name 'change-of-position-defense
+   'description "Defendant who changed position in good faith may have defense"
+   'domain '(civil restitution defenses)
+   'confidence 1.0
+   'provenance "Common law unjust enrichment defenses"
+   'related-principles '(unjust-enrichment-principle bona-fides)
+   'inference-type 'deductive
+   'application-context "Defenses to unjust enrichment claims"))
+
+;; =============================================================================
+;; UNJUST ENRICHMENT TESTS AND FUNCTIONS
+;; =============================================================================
+
+;; Four Elements Test
+(define unjust-enrichment-test
+  (lambda (claim)
+    (and (enrichment-exists? claim)
+         (at-expense-of-plaintiff? claim)
+         (no-legal-ground? claim)
+         (no-valid-defense? claim))))
+
+;; Enrichment Test
+(define enrichment-exists?
+  (lambda (claim)
+    (or (benefit-received? claim)
+        (expense-avoided? claim)
+        (service-received? claim)
+        (property-received? claim))))
+
+;; At Expense Of Test
+(define at-expense-of-plaintiff?
+  (lambda (claim)
+    (and (plaintiff-provided-benefit? claim)
+         (plaintiff-incurred-expense? claim)
+         (causal-connection? claim))))
+
+;; No Legal Ground Test
+(define no-legal-ground?
+  (lambda (claim)
+    (and (no-contract? claim)
+         (no-statutory-authorization? claim)
+         (no-gift-intention? claim)
+         (no-other-legal-justification? claim))))
+
+;; Valid Defense Test
+(define no-valid-defense?
+  (lambda (claim)
+    (not (or (change-of-position-defense-applies? claim)
+             (estoppel-defense-applies? claim)
+             (counter-restitution-impossible? claim)))))
+
+;; Quantum Meruit Calculation
+(define quantum-meruit-calculation
+  (lambda (service-provided market-value)
+    (let ((reasonable-value (calculate-reasonable-value service-provided market-value)))
+      reasonable-value)))
+
+;; Platform Service Valuation
+(define platform-service-valuation
+  (lambda (platform usage-period customer-count revenue-generated)
+    (let ((subscription-costs (calculate-subscription-costs platform usage-period))
+          (customer-acquisition-costs (estimate-customer-acquisition customer-count))
+          (infrastructure-costs (estimate-infrastructure-costs platform))
+          (lost-profits (calculate-lost-profits revenue-generated)))
+      (+ subscription-costs customer-acquisition-costs infrastructure-costs lost-profits))))
+
+;; =============================================================================
+;; BUSINESS SUBSTANCE AND SHAM TRANSACTIONS
+;; =============================================================================
+
+(define business-substance-test
+  (make-principle
+   'name 'business-substance-test
+   'description "Transactions must have economic substance beyond legal form"
+   'domain '(civil company tax)
+   'confidence 1.0
+   'provenance "Substance over form doctrine, common law"
+   'related-principles '(economic-reality-analysis sham-transaction-test)
+   'inference-type 'abductive
+   'application-context "Transaction validity and substance analysis"))
+
+(define economic-reality-analysis
+  (make-principle
+   'name 'economic-reality-analysis
+   'description "Legal form must reflect economic reality of transaction"
+   'domain '(civil company tax)
+   'confidence 1.0
+   'provenance "Substance over form doctrine"
+   'related-principles '(business-substance-test)
+   'inference-type 'abductive
+   'application-context "Economic substance analysis"))
+
+(define sham-transaction-test
+  (make-principle
+   'name 'sham-transaction-test
+   'description "Transactions lacking substance may be deemed sham"
+   'domain '(civil company tax)
+   'confidence 1.0
+   'provenance "Substance over form doctrine, tax law"
+   'related-principles '(business-substance-test economic-reality-analysis)
+   'inference-type 'abductive
+   'application-context "Sham transaction identification"))
+
+;; Sham Transaction Indicators
+(define sham-transaction-indicators
+  (lambda (transaction)
+    (or (no-business-assets? transaction)
+        (no-operational-capacity? transaction)
+        (revenue-without-substance? transaction)
+        (circular-payments? transaction)
+        (no-independent-economic-purpose? transaction))))
+
+;; Business Substance Test Function
+(define business-substance-test-function
+  (lambda (entity transaction)
+    (and (has-business-assets? entity)
+         (has-operational-capacity? entity)
+         (has-independent-economic-purpose? transaction)
+         (substance-matches-form? transaction))))
+
+;; =============================================================================
+;; EVIDENCE SPOLIATION AND ADVERSE INFERENCE
+;; =============================================================================
+
+(define evidence-spoliation-principle
+  (make-principle
+   'name 'evidence-spoliation-principle
+   'description "Party who destroys or prevents evidence creation faces adverse inference"
+   'domain '(evidence procedure)
+   'confidence 1.0
+   'provenance "Evidence law, spoliation doctrine"
+   'related-principles '(burden-of-proof adverse-inference)
+   'inference-type 'abductive
+   'application-context "Evidence destruction and burden shifting"))
+
+(define adverse-inference-rule
+  (make-principle
+   'name 'adverse-inference-rule
+   'description "Court may draw adverse inference against party who destroys evidence"
+   'domain '(evidence procedure)
+   'confidence 1.0
+   'provenance "Evidence law, procedural fairness"
+   'related-principles '(evidence-spoliation-principle burden-of-proof)
+   'inference-type 'abductive
+   'application-context "Adverse inferences from evidence destruction"))
+
+(define documentation-prevention-principle
+  (make-principle
+   'name 'documentation-prevention-principle
+   'description "Preventing evidence documentation is form of spoliation"
+   'domain '(evidence procedure)
+   'confidence 1.0
+   'provenance "Evidence law, spoliation doctrine"
+   'related-principles '(evidence-spoliation-principle)
+   'inference-type 'abductive
+   'application-context "Prevention of evidence creation"))
+
+;; Documentation Prevention Test
+(define documentation-prevention-test
+  (lambda (action party evidence)
+    (and (prevents-documentation? action evidence)
+         (party-benefits-from-gap? party evidence)
+         (later-alleges-lack-of-evidence? party evidence)
+         (strategic-timing? action))))
+
+;; =============================================================================
+;; RETALIATORY CONDUCT AND BAD FAITH
+;; =============================================================================
+
+(define retaliatory-conduct-principle
+  (make-principle
+   'name 'retaliatory-conduct-principle
+   'description "Retaliatory conduct following legitimate actions demonstrates bad faith"
+   'domain '(civil delict)
+   'confidence 0.9
+   'provenance "Common law, bad faith doctrine"
+   'related-principles '(bona-fides ulterior-motive wrongfulness)
+   'inference-type 'abductive
+   'application-context "Bad faith analysis and motive inference"))
+
+(define ulterior-motive-principle
+  (make-principle
+   'name 'ulterior-motive-principle
+   'description "Actions taken for ulterior motives may be wrongful"
+   'domain '(civil delict)
+   'confidence 0.9
+   'provenance "Common law, wrongfulness doctrine"
+   'related-principles '(wrongfulness bona-fides)
+   'inference-type 'abductive
+   'application-context "Ulterior motive analysis"))
+
+;; Temporal Proximity Inference
+(define temporal-proximity-inference
+  (lambda (action1 action2 time-gap)
+    (if (< time-gap 2) ; days
+        'strong-causal-inference
+        'weak-causal-inference)))
+
+;; Retaliatory Conduct Test
+(define retaliatory-conduct-test
+  (lambda (action1 action2 actor)
+    (and (legitimate-action? action1)
+         (harmful-action? action2)
+         (temporal-proximity? action1 action2)
+         (same-actor-or-associate? actor action2)
+         (no-legitimate-justification? action2))))
+
+;; =============================================================================
+;; PLACEHOLDER FUNCTIONS FOR UNJUST ENRICHMENT
+;; =============================================================================
+
+(define benefit-received? (lambda (claim) #f))
+(define expense-avoided? (lambda (claim) #f))
+(define service-received? (lambda (claim) #f))
+(define property-received? (lambda (claim) #f))
+(define plaintiff-provided-benefit? (lambda (claim) #f))
+(define plaintiff-incurred-expense? (lambda (claim) #f))
+(define causal-connection? (lambda (claim) #f))
+(define no-contract? (lambda (claim) #f))
+(define no-statutory-authorization? (lambda (claim) #f))
+(define no-gift-intention? (lambda (claim) #f))
+(define no-other-legal-justification? (lambda (claim) #f))
+(define change-of-position-defense-applies? (lambda (claim) #f))
+(define estoppel-defense-applies? (lambda (claim) #f))
+(define counter-restitution-impossible? (lambda (claim) #f))
+(define calculate-reasonable-value (lambda (service market-value) 0))
+(define calculate-subscription-costs (lambda (platform period) 0))
+(define estimate-customer-acquisition (lambda (count) 0))
+(define estimate-infrastructure-costs (lambda (platform) 0))
+(define calculate-lost-profits (lambda (revenue) 0))
+(define no-business-assets? (lambda (transaction) #f))
+(define no-operational-capacity? (lambda (transaction) #f))
+(define revenue-without-substance? (lambda (transaction) #f))
+(define circular-payments? (lambda (transaction) #f))
+(define no-independent-economic-purpose? (lambda (transaction) #f))
+(define has-business-assets? (lambda (entity) #f))
+(define has-operational-capacity? (lambda (entity) #f))
+(define has-independent-economic-purpose? (lambda (transaction) #f))
+(define substance-matches-form? (lambda (transaction) #f))
+(define prevents-documentation? (lambda (action evidence) #f))
+(define party-benefits-from-gap? (lambda (party evidence) #f))
+(define later-alleges-lack-of-evidence? (lambda (party evidence) #f))
+(define strategic-timing? (lambda (action) #f))
+(define legitimate-action? (lambda (action) #f))
+(define harmful-action? (lambda (action) #f))
+(define temporal-proximity? (lambda (action1 action2) #f))
+(define same-actor-or-associate? (lambda (actor action) #f))
+(define no-legitimate-justification? (lambda (action) #f))
+
+;; =============================================================================
+;; END OF UNJUST ENRICHMENT AND RESTITUTION FRAMEWORK
+;; =============================================================================
+
