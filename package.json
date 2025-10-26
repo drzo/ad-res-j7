@@ -55,7 +55,11 @@
     "db:hierarchy:setup": "node db/hierarchical-issues-migrate.js",
     "db:hierarchy:stats": "node db/hierarchical-issue-manager.js stats",
     "db:hierarchy:demo": "node db/hierarchical-issue-manager.js demo",
-    "db:hierarchy:populate": "node db/populate-hierarchical-issues.js"
+    "db:hierarchy:populate": "node db/populate-hierarchical-issues.js",
+    "hierarchy:parse": "node scripts/parse-hierarchy-file.js",
+    "hierarchy:create-issues": "node scripts/create-github-issues.js dry-run",
+    "hierarchy:batch-populate": "node scripts/batch-populate.js populate-all",
+    "hierarchy:list-templates": "node scripts/batch-populate.js list-templates"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",
