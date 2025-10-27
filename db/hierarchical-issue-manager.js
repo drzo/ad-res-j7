@@ -764,9 +764,9 @@ if (require.main === module) {
           break;
 
         case 'xref-stats':
-          const stats = await manager.getCrossReferenceStatistics();
+          const xrefStatsOnly = await manager.getCrossReferenceStatistics();
           console.log('📊 Cross-Reference Statistics:');
-          console.log(JSON.stringify(stats, null, 2));
+          console.log(JSON.stringify(xrefStatsOnly, null, 2));
           break;
 
         default:
