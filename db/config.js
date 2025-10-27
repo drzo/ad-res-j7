@@ -8,11 +8,20 @@ if (!process.env.DATABASE_URL) {
 
 const databaseUrl = process.env.DATABASE_URL;
 
-// Detect if using Neon database (has specific Neon patterns in URL)
-// or standard PostgreSQL (postgres:// or postgresql://)
-const isNeonDatabase = databaseUrl.includes('neon.tech') || 
-                       databaseUrl.includes('neon.') ||
-                       databaseUrl.startsWith('neon://');
+// Detect if using Neon database by checking the hostname
+// Neon databases have URLs like: postgres://user:pass@ep-xxx.region.neon.tech/dbname
+// Standard PostgreSQL: postgres://user:pass@localhost:5432/dbname
+let isNeonDatabase = false;
+try {
+  const url = new URL(databaseUrl);
+  isNeonDatabase = url.hostname.includes('neon.tech') || 
+                   url.hostname.endsWith('.neon.tech') ||
+                   url.protocol === 'neon:';
+} catch (e) {
+  // If URL parsing fails, fall back to string matching
+  isNeonDatabase = databaseUrl.includes('neon.tech') || 
+                   databaseUrl.startsWith('neon://');
+}
 
 let pool, db;
 
