@@ -1,0 +1,24 @@
+[submodule "ad-hypergraph-mapping/repos/ad-res-j7"]
+	path = ad-hypergraph-mapping/repos/ad-res-j7
+	url = https://github.com/cogpy/ad-res-j7.git
+[submodule "ad-hypergraph-mapping/repos/analysss"]
+	path = ad-hypergraph-mapping/repos/analysss
+	url = https://github.com/cogpy/analysss.git
+[submodule "ad-hypergraph-mapping/repos/analyticase"]
+	path = ad-hypergraph-mapping/repos/analyticase
+	url = https://github.com/cogpy/analyticase.git
+[submodule "ad-hypergraph-mapping/repos/avtomaatoctory"]
+	path = ad-hypergraph-mapping/repos/avtomaatoctory
+	url = https://github.com/cogpy/avtomaatoctory.git
+[submodule "repo-analysis/ad-res-j7"]
+	path = repo-analysis/ad-res-j7
+	url = https://github.com/cogpy/ad-res-j7.git
+[submodule "repo-analysis/analysss"]
+	path = repo-analysis/analysss
+	url = https://github.com/cogpy/analysss.git
+[submodule "repo-analysis/analyticase"]
+	path = repo-analysis/analyticase
+	url = https://github.com/cogpy/analyticase.git
+[submodule "repo-analysis/avtomaatoctory"]
+	path = repo-analysis/avtomaatoctory
+	url = https://github.com/cogpy/avtomaatoctory.git

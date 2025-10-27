@@ -5,7 +5,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # Package manager files
-package-lock.json
+# Note: package-lock.json is now committed for CI caching support
+# package-lock.json
 yarn.lock
 
 # Temporary files
