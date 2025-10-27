@@ -299,6 +299,84 @@ npm run test:hierarchical-issues
 **Structure:**
 ```
 Legal Argument (Strategy)
+├── Feature Issue (Proves/Disproves) 
+│   ├── Paragraph 1 (Rank 1, Weight 100)
+│   │   ├── Task 1 (Rank 1, Weight 100)
+│   │   └── Task 2 (Rank 2, Weight 90)
+│   └── Paragraph 2 (Rank 2, Weight 90)
+│       └── Task 3 (Rank 1, Weight 85)
+```
+
+**Documentation:**
+- [HIERARCHICAL_ISSUES_SUMMARY.md](HIERARCHICAL_ISSUES_SUMMARY.md) - Complete overview
+- [HIERARCHICAL_ISSUES_QUICKSTART.md](HIERARCHICAL_ISSUES_QUICKSTART.md) - Quick start guide
+- [db/HIERARCHICAL_ISSUES_GUIDE.md](db/HIERARCHICAL_ISSUES_GUIDE.md) - User guide and API
+
+### Cross-Reference Integration (Issue Consolidation)
+
+**NEW: Prevent issue combinatorial explosion through cross-reference integration**
+
+Link issues to evidence/documents/annexures to automatically detect consolidation opportunities and reduce 120+ issues to ~10-15 well-organized features:
+
+```bash
+# Setup cross-reference tables
+npm run db:xref:setup
+
+# View consolidation opportunities
+npm run db:xref:consolidations
+
+# Generate full consolidation report
+npm run db:xref:report
+
+# Check cross-reference coverage
+npm run db:xref:coverage
+
+# View cross-reference statistics
+npm run db:xref:stats
+
+# Run tests
+npm run test:cross-reference
+```
+
+**Key Features:**
+- **Automatic Consolidation Detection**: System detects when 2+ issues reference same evidence
+- **Evidence-Based Deduplication**: Group issues by shared references
+- **Consolidation Analytics**: Reports and recommendations for issue reduction
+- **Cross-Reference Tracking**: Link issues to documents, evidence, annexures, timelines
+
+**Impact:**
+- 120+ issues → 10-15 feature issues (90% reduction)
+- Clear evidence mapping for each issue
+- No manual consolidation review needed
+- Evidence-based organization
+
+**Documentation:**
+- [CROSS_REFERENCE_QUICKSTART.md](CROSS_REFERENCE_QUICKSTART.md) - Get started in 5 minutes
+- [db/CROSS_REFERENCE_GUIDE.md](db/CROSS_REFERENCE_GUIDE.md) - Complete guide with API reference
+- [HIERARCHICAL_ISSUES_SUMMARY.md](HIERARCHICAL_ISSUES_SUMMARY.md) - Integration with hierarchical structure
+
+**Example Usage:**
+```javascript
+const manager = new HierarchicalIssueManager();
+
+// Link issue to evidence
+await manager.addCrossReference(
+  taskId,
+  'evidence',
+  'BANK_TRANSFER_R1M_001',
+  'evidence/bank_records/transfer.pdf',
+  'Bank Transfer Evidence',
+  'Page 3',
+  'proves'
+);
+
+// Automatic consolidation detection when 2+ issues reference same evidence
+// View opportunities: npm run db:xref:consolidations
+```
+
+### Test Suite
+```
+Legal Argument (Strategy)
   └─ Feature Issue (Proves/disproves argument)
      └─ Paragraph (Fact grouping - ranked by influence)
         └─ Task Issue (Individual work - ranked by influence)
@@ -328,6 +406,7 @@ npm test
 # Run specific test categories
 npm run test:evidence-completeness    # Evidence completeness validation tests
 npm run test:hierarchical-issues      # Hierarchical issue structure tests
+npm run test:cross-reference          # Cross-reference integration tests
 npm run test:validation                # Workflow validation tests
 npm run test:security                  # Security validation tests
 npm run test:json-validation          # JSON file validation

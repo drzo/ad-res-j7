@@ -60,6 +60,8 @@
     "db:xref:setup": "node db/cross-reference-migrate.js",
     "db:xref:consolidations": "node db/hierarchical-issue-manager.js consolidations",
     "db:xref:stats": "node db/hierarchical-issue-manager.js xref-stats",
+    "db:xref:report": "node db/issue-consolidator.js report",
+    "db:xref:coverage": "node db/issue-consolidator.js coverage",
     "hierarchy:parse": "node scripts/parse-hierarchy-file.js",
     "hierarchy:create-issues": "node scripts/create-github-issues.js dry-run",
     "hierarchy:batch-populate": "node scripts/batch-populate.js populate-all",
