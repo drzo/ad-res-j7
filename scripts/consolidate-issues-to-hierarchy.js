@@ -159,7 +159,7 @@ This consolidation reduces 648 fragmented issues to ~10-15 properly structured f
         if (!dryRun) {
           // Add comment explaining closure
           execSync(
-            `gh issue comment ${issue.number} --body "${closeMessage.replace(/"/g, '\\"')}"`,
+            `gh issue comment ${issue.number} --body "${closeMessage.replace(/\\/g, '\\\\').replace(/"/g, '\\"')}"`,
             { encoding: 'utf8', stdio: 'pipe' }
           );
           
