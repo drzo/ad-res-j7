@@ -61,6 +61,11 @@ dist/
 build/
 *.log
 
+# Environment variables
+.env
+.env.local
+.env.*.local
+
 # Auto-generated workflow scripts (temporary exclusion)
 file-converter.js
 ocr-file-converter.js.merge-marker
