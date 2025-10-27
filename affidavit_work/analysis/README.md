@@ -6,6 +6,36 @@ This directory contains comprehensive analysis documents supporting the answerin
 
 ## Directory Contents
 
+### Comparative Analysis Documents (NEW)
+
+#### 1. **PETERS_CLAIMS_VS_DOCUMENTED_EVIDENCE_COMPARATIVE_ANALYSIS.md** ⭐ PRIMARY
+- **Purpose:** Systematic comparison of Peter's claims against documented evidence
+- **Central Revelation:** Dan & Kay's Shopify platform was paid for by Dan & Jax's UK company RegimA Zone Ltd the entire time - RWD ZA has no independent revenue stream
+- **Contents:**
+  - Executive summary of RegimA Zone Ltd payment revelation
+  - Comparative analysis of all five major claim categories
+  - Unjust enrichment calculation (R2.94M-R6.88M)
+  - Five Critical Questions framework (shifting burden of proof)
+  - Trust asset abandonment analysis
+  - Comparative misconduct analysis
+  - Strategic legal recommendations
+- **Key Finding:** Every financial allegation Peter makes collapses when confronted with RWD ZA's appropriation of revenue from RegimA Zone Ltd's platform
+- **Usage:** Primary counter-attack document, interrogatory foundation, unjust enrichment counterclaim basis
+
+#### 2. **COMPARATIVE_ANALYSIS_QUICK_REFERENCE.md** ⭐ QUICK REFERENCE
+- **Purpose:** Quick reference guide for comparative analysis arguments
+- **Contents:**
+  - One-sentence summary
+  - Five Critical Questions (memorize these)
+  - Unjust enrichment quick numbers
+  - Comparative misconduct quick facts
+  - Key arguments by claim
+  - Soundbites for affidavit/court
+  - Strategic application guide
+  - Emergency reference card (printable)
+- **Usage:** Keep open during affidavit drafting, court preparation, rapid argument deployment
+
+### Timeline Analysis Documents
 ### Network Analysis Documents (NEW - October 23, 2025)
 
 #### 1. **NETWORK_ANALYSIS_FUND_FLOWS.md**
@@ -103,6 +133,13 @@ This directory contains comprehensive analysis documents supporting the answerin
 
 ### For Affidavit Drafting
 
+1. **Start with Comparative Analysis** (`PETERS_CLAIMS_VS_DOCUMENTED_EVIDENCE_COMPARATIVE_ANALYSIS.md`)
+   - Review RegimA Zone Ltd revelation as foundation
+   - Use Five Critical Questions to shift burden of proof
+   - Reference unjust enrichment calculation (R2.94M-R6.88M)
+   - Apply comparative misconduct analysis
+   
+2. **Integrate Timeline Analysis** (`COMPREHENSIVE_TIMELINE_ANALYSIS.md`)
 1. **Start with Network Analysis** (`NETWORK_ANALYSIS_FUND_FLOWS.md`)
    - Review entity relationship network to establish key players
    - Use fund flow diagrams to prove payment discrepancy
@@ -119,6 +156,7 @@ This directory contains comprehensive analysis documents supporting the answerin
    - Copy soundbites for consistent phrasing
    - Reference key arguments by section
 
+4. **Prepare Visual Exhibits** (`TIMELINE_VISUAL_DIAGRAM.md`)
 4. **Prepare Visual Exhibits** (`TIMELINE_VISUAL_DIAGRAM.md` + `NETWORK_ANALYSIS_FUND_FLOWS.md`)
    - Export Mermaid diagrams to PNG/PDF
    - Attach as annexures (JF-TIMELINE-VISUAL series + JF-NETWORK-ANALYSIS series)
@@ -145,6 +183,13 @@ This directory contains comprehensive analysis documents supporting the answerin
 
 ### For Legal Argument Development
 
+**Comparative Analysis as Foundation:**
+- Every expenditure allegation must be countered with revenue legitimacy question
+- Use Five Critical Questions to shift burden of proof to Peter
+- Establish unjust enrichment claim (R2.94M-R6.88M) as primary counter-attack
+- Demonstrate comparative misconduct (Peter questions R500K while conducting R7.6M-R12.4M)
+
+**Timeline as Supporting Framework:**
 **Network Analysis as Foundation:**
 - Use entity relationships to establish platform ownership (RegimA Zone Ltd UK)
 - Use fund flow diagrams to prove payment discrepancy
@@ -173,6 +218,30 @@ This directory contains comprehensive analysis documents supporting the answerin
 - Every major argument should reference timeline
 - Timeline demonstrates pattern, not isolated incidents
 - Use timeline to rebut Peter's narrative
+
+**Key Comparative Analysis Arguments:**
+
+1. **Revenue Stream Impossibility**
+   - RWD ZA has no stock, inventory, or assets
+   - All revenue from RegimA Zone Ltd's Shopify platform
+   - Platform paid by Daniel's UK company for 28 months
+
+2. **Unjust Enrichment**
+   - R140K-R280K platform costs never compensated
+   - R2.94M-R6.88M total unjust enrichment claim
+   - RWD ZA appropriated revenue without authorization
+
+3. **Five Critical Questions**
+   - Trust structure consistency (Catch-22)
+   - Revenue generation capacity (unanswerable)
+   - Platform owner compensation (missing)
+   - Distributor payment discrepancy (inconsistent)
+   - RSA tax filing consistency (contradictory)
+
+4. **Comparative Misconduct**
+   - Peter questions R500K with authorization
+   - Peter conducts/ignores R7.6M-R12.4M unauthorized activities
+   - Hypocrisy exposed through side-by-side comparison
 
 **Key Timeline Arguments:**
 
@@ -296,6 +365,13 @@ This directory contains comprehensive analysis documents supporting the answerin
 ### Changes Log
 
 **October 23, 2025:**
+- ✅ Created Peters Claims vs Documented Evidence Comparative Analysis (818 lines)
+- ✅ Created Comparative Analysis Quick Reference Guide (287 lines)
+- ✅ Established RegimA Zone Ltd payment revelation as central thread
+- ✅ Documented Five Critical Questions framework
+- ✅ Calculated unjust enrichment (R2.94M-R6.88M)
+- ✅ Completed comparative misconduct analysis
+- ✅ Updated analysis directory README
 - ✅ Created network analysis fund flows diagrams
 - ✅ Created network diagrams index and navigation guide
 - ✅ Integrated network analysis with timeline documents
@@ -348,6 +424,19 @@ This directory contains comprehensive analysis documents supporting the answerin
 ### New to Network & Timeline Analysis?
 
 **Start Here:**
+1. **CRITICAL:** Read `COMPARATIVE_ANALYSIS_QUICK_REFERENCE.md` for rapid understanding
+2. **FOUNDATION:** Read `PETERS_CLAIMS_VS_DOCUMENTED_EVIDENCE_COMPARATIVE_ANALYSIS.md` for comprehensive analysis
+3. Read Executive Summary in `COMPREHENSIVE_TIMELINE_ANALYSIS.md`
+2. Review Key Timeline Events table
+3. Study the six Timeline Analysis Insights
+4. Review visual diagrams in `TIMELINE_VISUAL_DIAGRAM.md`
+
+**Time Required:**
+- Quick reference review: 10-15 minutes
+- Critical comparative analysis: 30-45 minutes
+- Quick overview: 15 minutes
+- Detailed review: 1-2 hours
+- Complete mastery: 4-6 hours
 1. Read Executive Summary in `NETWORK_ANALYSIS_FUND_FLOWS.md` (network analysis)
 2. Review Entity Relationship Network diagram
 3. Study Fund Flow Analysis diagram
@@ -402,6 +491,19 @@ For questions about timeline analysis or these documents:
 
 ## Document Status
 
+**Comprehensive Timeline Analysis:** ✅ Complete  
+**Comparative Analysis (Peter's Claims vs Evidence):** ✅ Complete ⭐ PRIMARY COUNTER-ATTACK
+**Comparative Analysis Quick Reference:** ✅ Complete ⭐ MEMORIZATION TOOL
+**Visual Timeline Diagrams:** ✅ Complete  
+**Quick Reference Guide:** ✅ Complete  
+**README.md Documentation:** ✅ Complete  
+
+**Integration Status:**
+- [x] Comparative analysis document created with RegimA Zone Ltd revelation
+- [x] Quick reference guide created for rapid deployment
+- [x] Five Critical Questions framework established
+- [x] Unjust enrichment calculation completed
+- [ ] Comparative analysis referenced in draft affidavit
 **Network Analysis Diagrams:** ✅ Complete (October 23, 2025)  
 **Network Diagrams Index:** ✅ Complete (October 23, 2025)  
 **Comprehensive Timeline Analysis:** ✅ Complete (October 15, 2025)  
