@@ -112,7 +112,7 @@ jq '.metadata' structured-todo.json
 
 ```json
 {
-  "generated_at": "2025-10-27T22:00:00.000Z",
+  "generated_at": "2024-10-27T22:00:00.000Z",
   "parser_version": "1.0.0",
   "schema_version": "1.0",
   "total_arguments": 1,
