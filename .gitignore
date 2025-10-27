@@ -49,10 +49,13 @@ test-data/
 !test-data/.gitkeep
 
 # Temporary summary and report files (should be generated dynamically)
+# Exclude auto-generated summaries but allow important documentation
 *SUMMARY*.md
 *REPORT*.md
 *_SUMMARY.md
 *_REPORT.md
+!IMPLEMENTATION_SUMMARY.md
+!HIERARCHICAL_ISSUES_SUMMARY.md
 duplicate-cleanup-report.json
 specific-duplicates-summary.json
 repository_tree.txt
