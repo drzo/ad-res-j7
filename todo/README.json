@@ -1,11 +1,14 @@
 {
   "title": "Todo Folder",
   "purpose": "Central location for tracking improvements, recommendations, and action items for Case 2025-137857",
-  "last_updated": "2025-10-13",
-  "workflow": "Automatic issue generation via GitHub Actions",
+  "last_updated": "2025-10-27",
+  "workflow": "DISABLED - Automatic issue generation workflows have been disabled to prevent fragmentation",
+  "note": "Do NOT use automated workflows to create issues from these files. Use hierarchical issue structure instead (see HIERARCHICAL_ISSUES_SUMMARY.md)",
+  "hierarchical_structure": "Legal Arguments → Features → Paragraphs → Tasks (1 Feature = 3 Paragraphs = 9 Tasks)",
   "repository_status": {
     "overall_readiness": "78%",
     "documented_losses": "R10.227M+",
-    "affidavit_versions": 5
+    "affidavit_versions": 5,
+    "issue_consolidation": "In progress - reducing 648 → ~12 feature issues"
   }
 }

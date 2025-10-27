@@ -1,0 +1,182 @@
+name: Issue Consolidation
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'Action to perform'
+        required: true
+        type: choice
+        options:
+          - report
+          - dry-run
+          - execute
+        default: 'dry-run'
+      confirm_execution:
+        description: 'Type "I CONFIRM" to execute (only for execute action)'
+        required: false
+        default: ''
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  consolidate-issues:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Validate execution confirmation
+        if: github.event.inputs.action == 'execute'
+        run: |
+          if [ "${{ github.event.inputs.confirm_execution }}" != "I CONFIRM" ]; then
+            echo "❌ Execution not confirmed"
+            echo "To execute consolidation, you must type 'I CONFIRM' in the confirmation field"
+            exit 1
+          fi
+          echo "✅ Execution confirmed"
+      
+      - name: Run consolidation script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "🔧 Running issue consolidation tool"
+          echo "Action: ${{ github.event.inputs.action }}"
+          echo ""
+          
+          # Authenticate gh CLI
+          echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
+          
+          # Verify authentication
+          gh auth status
+          
+          # Run appropriate action
+          case "${{ github.event.inputs.action }}" in
+            report)
+              node scripts/consolidate-issues-to-hierarchy.js report
+              ;;
+            dry-run)
+              node scripts/consolidate-issues-to-hierarchy.js dry-run
+              ;;
+            execute)
+              # Create confirmation file for script
+              echo "I confirm closing auto-generated issues" > CONFIRM_CLOSE_ISSUES.txt
+              node scripts/consolidate-issues-to-hierarchy.js execute
+              ;;
+            *)
+              echo "Unknown action: ${{ github.event.inputs.action }}"
+              exit 1
+              ;;
+          esac
+      
+      - name: Upload consolidation report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: consolidation-report-${{ github.event.inputs.action }}
+          path: |
+            issue-consolidation-report.json
+          retention-days: 90
+      
+      - name: Generate workflow summary
+        if: always()
+        run: |
+          echo "# 🔧 Issue Consolidation - ${{ github.event.inputs.action }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -f "issue-consolidation-report.json" ]; then
+            echo "## 📊 Summary" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            
+            TOTAL_OPEN=$(jq -r '.summary.total_open_issues // 0' issue-consolidation-report.json)
+            TO_CLOSE=$(jq -r '.summary.auto_generated_to_close // 0' issue-consolidation-report.json)
+            TO_KEEP=$(jq -r '.summary.issues_to_keep // 0' issue-consolidation-report.json)
+            HIERARCHICAL=$(jq -r '.summary.hierarchical_issues // 0' issue-consolidation-report.json)
+            
+            echo "- **Total Open Issues**: $TOTAL_OPEN" >> $GITHUB_STEP_SUMMARY
+            echo "- **Auto-generated (to close)**: $TO_CLOSE" >> $GITHUB_STEP_SUMMARY
+            echo "- **Issues to Keep**: $TO_KEEP" >> $GITHUB_STEP_SUMMARY
+            echo "- **Hierarchical Issues**: $HIERARCHICAL" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            
+            if [ "${{ github.event.inputs.action }}" = "execute" ]; then
+              echo "✅ **Consolidation executed!**" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "Closed $TO_CLOSE auto-generated issues." >> $GITHUB_STEP_SUMMARY
+              echo "Kept $TO_KEEP issues (including $HIERARCHICAL hierarchical issues)." >> $GITHUB_STEP_SUMMARY
+            elif [ "${{ github.event.inputs.action }}" = "dry-run" ]; then
+              echo "ℹ️ **This was a dry run - no issues were closed.**" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "Would close: $TO_CLOSE issues" >> $GITHUB_STEP_SUMMARY
+              echo "Would keep: $TO_KEEP issues" >> $GITHUB_STEP_SUMMARY
+            fi
+          else
+            echo "⚠️ No report generated - check logs for errors" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "---" >> $GITHUB_STEP_SUMMARY
+          echo "*View the full report in the workflow artifacts*" >> $GITHUB_STEP_SUMMARY
+      
+      - name: Report failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issueBody = `## ❌ Issue Consolidation Workflow Failed
+            
+            The issue consolidation workflow has failed.
+            
+            **Action**: ${{ github.event.inputs.action }}
+            **Run**: [View Run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            **Triggered by**: @${{ github.actor }}
+            **Time**: ${new Date().toISOString()}
+            
+            Please check the workflow logs for details.
+            `;
+            
+            // Only create issue if not already exists in last 24h
+            const existingIssues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: ['workflow-failure', 'consolidation'],
+              per_page: 5
+            });
+            
+            const recentFailure = existingIssues.data.find(issue => {
+              const issueDate = new Date(issue.created_at);
+              const hoursSinceIssue = (new Date() - issueDate) / (1000 * 60 * 60);
+              return hoursSinceIssue < 24;
+            });
+            
+            if (!recentFailure) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `Issue Consolidation Failed - ${new Date().toISOString().split('T')[0]}`,
+                body: issueBody,
+                labels: ['workflow-failure', 'consolidation', 'bug']
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: recentFailure.number,
+                body: issueBody
+              });
+            }
