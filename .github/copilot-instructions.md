@@ -83,7 +83,7 @@ This repository implements a 4-level hierarchical structure for legal case manag
 4. **Use descriptive titles**
    - Feature: "[FEATURE] Payment Structure Proves Legitimate Investment"
    - Paragraph: "[PARA 1.1] R1M Investment Evidence (Rank 1, Weight 100)"
-   - Task: "[TASK] Document R1M bank transfer (#2001)"
+   - Task: "[TASK] Document R1M bank transfer (cogpy/ad-res-j7#2001)"
 
 5. **Link relationships clearly**
    - Reference parent feature in task issues
@@ -124,7 +124,7 @@ This repository implements a 4-level hierarchical structure for legal case manag
 Examples:
 [FEATURE] Payment Structure Analysis - R1M Investment vs R1K Fee
 [PARA 1.1] Investment Amount Evidence (Rank 1, Weight 100)
-[TASK] Obtain bank transfer documentation for R1M (#2001)
+[TASK] Obtain bank transfer documentation for R1M (cogpy/ad-res-j7#2001)
 ```
 
 ---
@@ -160,23 +160,23 @@ npm run test:hierarchical-issues # Run tests
 ### Legal Argument: Revenue Stream Legitimate Investment Defense
 **Strategy**: Prove RegimA Zone Ltd made a legitimate R1M investment, not profiteering
 
-#### Feature Issue #1001: Payment Structure Proves Legitimate Investment
+#### Feature Issue cogpy/ad-res-j7#1001: Payment Structure Proves Legitimate Investment
 **Description**: Analysis of R1M investment vs R1K admin fee structure demonstrates legitimate business operation and proper transfer pricing.
 
 **Paragraph 1 (Rank 1, Weight 100)**: R1M Investment Evidence
-- Task #2001 (Rank 1, Weight 100): Document R1M bank transfer from RegimA Zone Ltd
-- Task #2002 (Rank 2, Weight 90): Compile investment allocation breakdown
-- Task #2003 (Rank 3, Weight 85): Cross-reference investment against business expenses
+- Task cogpy/ad-res-j7#2001 (Rank 1, Weight 100): Document R1M bank transfer from RegimA Zone Ltd
+- Task cogpy/ad-res-j7#2002 (Rank 2, Weight 90): Compile investment allocation breakdown
+- Task cogpy/ad-res-j7#2003 (Rank 3, Weight 85): Cross-reference investment against business expenses
 
 **Paragraph 2 (Rank 2, Weight 95)**: Admin Fee Structure (0.1%)
-- Task #2004 (Rank 1, Weight 100): Document R1K admin fee invoices
-- Task #2005 (Rank 2, Weight 80): Obtain industry standard comparisons
-- Task #2006 (Rank 3, Weight 75): Compile transfer pricing documentation
+- Task cogpy/ad-res-j7#2004 (Rank 1, Weight 100): Document R1K admin fee invoices
+- Task cogpy/ad-res-j7#2005 (Rank 2, Weight 80): Obtain industry standard comparisons
+- Task cogpy/ad-res-j7#2006 (Rank 3, Weight 75): Compile transfer pricing documentation
 
 **Paragraph 3 (Rank 3, Weight 85)**: Tax Compliance Evidence
-- Task #2007 (Rank 1, Weight 90): Obtain tax clearance certificates
-- Task #2008 (Rank 2, Weight 75): Document SARS compliance
-- Task #2009 (Rank 3, Weight 70): Compile financial statements
+- Task cogpy/ad-res-j7#2007 (Rank 1, Weight 90): Obtain tax clearance certificates
+- Task cogpy/ad-res-j7#2008 (Rank 2, Weight 75): Document SARS compliance
+- Task cogpy/ad-res-j7#2009 (Rank 3, Weight 70): Compile financial statements
 
 **Feature Strength**: 88.3% (calculated from paragraph and task weights)
 
