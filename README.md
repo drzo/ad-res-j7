@@ -130,6 +130,50 @@ class LegalAttentionEngine:
         return guilt_scores, attention_weights
 ```
 
+## Setup
+
+### Prerequisites
+
+- **Node.js** (v20 or higher)
+- **PostgreSQL** (v12 or higher)
+- **Python** (v3.8 or higher) - for legal attention engine
+
+### Quick Start
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/cogpy/ad-res-j7.git
+   cd ad-res-j7
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm ci
+   ```
+
+3. **Configure database** (see [db/README.md](db/README.md) for detailed instructions)
+   ```bash
+   # Copy example configuration
+   cp .env.example .env
+   
+   # Edit .env and set your PostgreSQL connection:
+   # DATABASE_URL=postgres://postgres:postgres@localhost:5432/ad_res_j7
+   ```
+
+4. **Setup database schema**
+   ```bash
+   npm run db:migrate
+   npm run db:hierarchy:setup    # Optional: for hierarchical issues
+   npm run db:hypergraph:setup   # Optional: for hypergraph schema
+   ```
+
+5. **Test connection**
+   ```bash
+   npm run db:test
+   ```
+
+For detailed database setup instructions, troubleshooting, and configuration options, see [**db/README.md**](db/README.md).
+
 ## Usage
 
 ```python
