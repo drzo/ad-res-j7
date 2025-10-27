@@ -6,6 +6,12 @@ const { sql } = require('drizzle-orm');
 async function testConnection() {
   console.log('Testing PostgreSQL database connection...\n');
   
+  // Show configuration (hide password)
+  const dbUrl = process.env.DATABASE_URL || '';
+  const safeUrl = dbUrl.replace(/:([^:@]+)@/, ':****@');
+  console.log('📊 Using DATABASE_URL:', safeUrl || '(not set)');
+  console.log('');
+  
   try {
     // Test basic connection
     const result = await db.execute(sql`SELECT NOW() as current_time, version() as db_version`);
@@ -14,16 +20,17 @@ async function testConnection() {
     console.log('Current time:', result.rows[0].current_time);
     console.log('Database version:', result.rows[0].db_version);
     
-    // Test environment variables
-    console.log('\n📊 Database Configuration:');
-    console.log('- Database:', process.env.PGDATABASE);
-    console.log('- Host:', process.env.PGHOST);
-    console.log('- Port:', process.env.PGPORT);
-    console.log('- User:', process.env.PGUSER);
-    
+    await pool.end();
     process.exit(0);
   } catch (error) {
     console.error('❌ Database connection failed:', error.message);
+    console.error('\n💡 Troubleshooting:');
+    console.error('1. Ensure PostgreSQL is running');
+    console.error('2. Check DATABASE_URL in .env file');
+    console.error('3. Verify user has correct permissions');
+    console.error('4. See db/README.md for setup instructions');
+    
+    await pool.end();
     process.exit(1);
   }
 }

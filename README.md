@@ -22,7 +22,8 @@ All documentation has been organized into a comprehensive structure for easy nav
 ### 🎯 **Quick Navigation**
 - **Repository Overview**: Start with [📋 Comprehensive Evidence Index](COMPREHENSIVE_EVIDENCE_INDEX.md)
 - **Legal Team**: Browse [📋 Documentation Catalog](/docs/README.md)
-- **Case Materials**: See [📁 Legal Annexures](/docs/legal/annexures/ANNEXURES_INDEX.md)  
+- **Case Materials**: See [📁 Legal Annexures](/docs/legal/annexures/ANNEXURES_INDEX.md)
+- **⭐ Annexures Quick Reference**: See [🔑 All 60+ Annexures Linked to Core Revelation](ANNEXURES_QUICK_REFERENCE_GUIDE.md)
 - **Technical Team**: Reference [⚙️ Technical Documentation](/docs/technical/)
 - **Evidence**: Browse [📂 Evidence Collections](/evidence/)
 - **Directory Consolidation**: See [📖 Jax Response Consolidation Guide](/docs/JAX_RESPONSE_DIRECTORY_CONSOLIDATION.md)
@@ -44,6 +45,29 @@ The consolidated structure includes:
 - Unified evidence collection
 - Forensic analyses (R10.227M+ documented losses)
 - Multiple affidavit versions with tracked changes
+
+---
+
+---
+
+## 🔍 **CRITICAL EVIDENCE: Payment Structure Analysis**
+
+**NEW: October 23, 2025** - Complete documentation addressing the R1,000,000 vs R1,000 admin fee structure
+
+### Quick Access
+- **Quick Answer**: [PAYMENT_STRUCTURE_QUICK_ANSWER.md](PAYMENT_STRUCTURE_QUICK_ANSWER.md) - Is 99.9% giveaway fraud? (NO - it's normal business practice)
+- **Full Analysis**: [PAYMENT_STRUCTURE_CLARIFICATION.md](PAYMENT_STRUCTURE_CLARIFICATION.md) - Comprehensive legal and business analysis
+- **Visual Guide**: [PAYMENT_STRUCTURE_VISUAL_DIAGRAM.md](PAYMENT_STRUCTURE_VISUAL_DIAGRAM.md) - Diagrams and flow charts
+- **Navigation**: [PAYMENT_STRUCTURE_INDEX.md](PAYMENT_STRUCTURE_INDEX.md) - Complete document index
+
+### Key Finding
+The revelation that RegimA Zone Ltd (UK) invested R1,000,000 in ZA operations while charging only R1,000 (0.1%) admin fee:
+- ✅ **PROVES legitimate investment** by Dan & Jax (not profiteering)
+- ✅ **PROVES proper business structure** (tax compliant transfer pricing)
+- ✅ **STRENGTHENS case** against Peter (he stole what he never funded)
+- ✅ **EXPOSES fraud** - Peter appropriated R1M investment he never made
+
+This is **CASE-WINNING** evidence documented across 37,000+ characters of comprehensive analysis.
 
 ---
 
@@ -105,6 +129,51 @@ class LegalAttentionEngine:
         
         return guilt_scores, attention_weights
 ```
+
+## Setup
+
+### Prerequisites
+
+- **Node.js** (v20 or higher)
+- **PostgreSQL** (v12 or higher)
+- **Python** (v3.8 or higher) - for legal attention engine
+
+### Quick Start
+
+1. **Clone the repository**
+   ```bash
+   # Clone this repository
+   git clone https://github.com/cogpy/ad-res-j7.git
+   cd ad-res-j7
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm ci
+   ```
+
+3. **Configure database** (see [db/README.md](db/README.md) for detailed instructions)
+   ```bash
+   # Copy example configuration
+   cp .env.example .env
+   
+   # Edit .env and set your PostgreSQL connection:
+   # DATABASE_URL=postgres://postgres:postgres@localhost:5432/ad_res_j7
+   ```
+
+4. **Setup database schema**
+   ```bash
+   npm run db:migrate
+   npm run db:hierarchy:setup    # Optional: for hierarchical issues
+   npm run db:hypergraph:setup   # Optional: for hypergraph schema
+   ```
+
+5. **Test connection**
+   ```bash
+   npm run db:test
+   ```
+
+For detailed database setup instructions, troubleshooting, and configuration options, see [**db/README.md**](db/README.md).
 
 ## Usage
 
@@ -177,7 +246,98 @@ fig = visualizer.plot_complete_analysis(results, events, agents, norms)
 
 ## Testing
 
+### Evidence Completeness Validation
+
+**Phase 3 - Advanced QA Scripts** (from Repository_Status_and_Critical_Evidence_Collection.md line 150)
+
+Validate evidence completeness and link to the core revelation:
+- Dan & Kay Shopify platform was paid by Dan & Jax UK company RegimA Zone Ltd
+- RWD ZA actually has no revenue stream of its own
+
+```bash
+# Run evidence completeness validation (JavaScript)
+npm run validate-evidence-completeness
+
+# Or use Python version
+npm run validate-evidence-completeness-py
+
+# Or run directly
+node scripts/validate-evidence-completeness.js
+python3 scripts/validate_evidence_completeness.py
+```
+
+**Features:**
+- ✅ Validates Phase 1 Critical Evidence (80% threshold): 22 evidence items
+- ✅ Validates Phase 2 High Priority Evidence (60% threshold): 15 evidence items  
+- ✅ Validates Revenue Stream Evidence (100% threshold): Links to RegimA Zone Ltd revelation
+- 🔗 Checks linkage between evidence and core revenue stream revelation
+- 📊 Generates comprehensive JSON validation reports
+- 💡 Provides actionable recommendations for missing evidence
+
+**Current Status:** All validation checks passing at 100% completeness
+
+### Hierarchical Issue Structure
+
+**NEW: Hierarchical organization of legal issues by argument strength**
+
+Organize task-level issues under feature-level issues with paragraphs and rank-ordered weighting:
+
+```bash
+# Setup database tables
+npm run db:hierarchy:setup
+
+# Populate demo data (2 arguments, 3 features, 7 paragraphs, 13 tasks)
+npm run db:hierarchy:populate
+
+# View statistics
+npm run db:hierarchy:stats
+
+# Run tests
+npm run test:hierarchical-issues
+```
+
+**Structure:**
+```
+Legal Argument (Strategy)
+  └─ Feature Issue (Proves/disproves argument)
+     └─ Paragraph (Fact grouping - ranked by influence)
+        └─ Task Issue (Individual work - ranked by influence)
+```
+
+**Key Features:**
+- ✅ 4-level hierarchy: Argument → Feature → Paragraph → Task
+- ✅ Rank ordering (1 = highest importance)
+- ✅ Weighting system (0-100 = degree of influence)
+- ✅ Aggregate strength calculation for features
+- ✅ Integration with hypergraph for evidence linking
+
+**Documentation:**
+- [Quick Start Guide](HIERARCHICAL_ISSUES_QUICKSTART.md)
+- [User Guide](db/HIERARCHICAL_ISSUES_GUIDE.md)
+- [Implementation Details](HIERARCHICAL_ISSUES_IMPLEMENTATION.md)
+- [Visual Diagrams](HIERARCHICAL_ISSUES_DIAGRAM.md)
+
+### Test Suite
+
 Run the comprehensive test suite:
+
+```bash
+# Run all tests
+npm test
+
+# Run specific test categories
+npm run test:evidence-completeness    # Evidence completeness validation tests
+npm run test:hierarchical-issues      # Hierarchical issue structure tests
+npm run test:validation                # Workflow validation tests
+npm run test:security                  # Security validation tests
+npm run test:json-validation          # JSON file validation
+npm run validate-dates                # Date consistency validation
+npm run validate-file-paths           # File path validation
+```
+
+### Legal Attention Engine Tests
+
+Run the legal attention inference tests:
 
 ```bash
 python test_legal_attention.py

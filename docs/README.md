@@ -28,6 +28,7 @@ This document serves as the master index for all legal case documentation, evide
 
 #### Legal Analysis (`/docs/legal/analysis/`)
 - `CIVIL_CRIMINAL_CASE_SPLIT.md` - Civil vs criminal case split analysis
+- `DAMAGE_CALCULATION_METHODOLOGY.md` - **Comprehensive damage calculation methodology (R10.269M+) with UK payment structure analysis**
 - `DJF_AD_HYPERGRAPH_VERIFICATION.md` - DJF AD hypergraph verification
 - `DJF_CROSS_REFERENCE_MATRIX.md` - DJF cross-reference matrix
 - `DJF_VERIFICATION_README.md` - DJF verification README

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forensic Events Timeline - Case 2025-137857</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        .revelation-box {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .revelation-box h2 {
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        .revelation-box p {
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+        
+        .revelation-box strong {
+            background: rgba(255,255,255,0.2);
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .timeline-controls {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.95em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .filter-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        
+        .filter-btn.active {
+            transform: scale(1.05);
+        }
+        
+        .filter-btn.all { background: #95a5a6; color: white; }
+        .filter-btn.all.active { background: #7f8c8d; }
+        
+        .filter-btn.revenue { background: #e74c3c; color: white; }
+        .filter-btn.revenue.active { background: #c0392b; }
+        
+        .filter-btn.trust { background: #3498db; color: white; }
+        .filter-btn.trust.active { background: #2980b9; }
+        
+        .filter-btn.financial { background: #2ecc71; color: white; }
+        .filter-btn.financial.active { background: #27ae60; }
+        
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .timeline-item {
+            display: flex;
+            margin-bottom: 40px;
+            position: relative;
+            opacity: 1;
+            transition: all 0.3s ease;
+        }
+        
+        .timeline-item.hidden {
+            display: none;
+        }
+        
+        .timeline-item.left {
+            flex-direction: row;
+        }
+        
+        .timeline-item.right {
+            flex-direction: row-reverse;
+        }
+        
+        .timeline-content {
+            width: 45%;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-left: 5px solid;
+            transition: all 0.3s ease;
+        }
+        
+        .timeline-item:hover .timeline-content {
+            transform: scale(1.02);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .timeline-content.revenue { border-color: #e74c3c; }
+        .timeline-content.trust { border-color: #3498db; }
+        .timeline-content.financial { border-color: #2ecc71; }
+        
+        .timeline-marker {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 0 0 4px;
+            z-index: 10;
+        }
+        
+        .timeline-marker.revenue { background: #e74c3c; box-shadow: 0 0 0 4px #e74c3c; }
+        .timeline-marker.trust { background: #3498db; box-shadow: 0 0 0 4px #3498db; }
+        .timeline-marker.financial { background: #2ecc71; box-shadow: 0 0 0 4px #2ecc71; }
+        
+        .event-date {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .event-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .event-category {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: white;
+        }
+        
+        .event-category.revenue { background: #e74c3c; }
+        .event-category.trust { background: #3498db; }
+        .event-category.financial { background: #2ecc71; }
+        
+        .event-description {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .event-impact {
+            font-style: italic;
+            color: #e74c3c;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        
+        .shopify-connection {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #856404;
+        }
+        
+        .shopify-connection strong {
+            color: #d39e00;
+        }
+        
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 30px;
+            }
+            
+            .timeline-item.left,
+            .timeline-item.right {
+                flex-direction: row;
+            }
+            
+            .timeline-content {
+                width: calc(100% - 60px);
+                margin-left: 60px;
+            }
+            
+            .timeline-marker {
+                left: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Forensic Events Timeline</h1>
+        <p class="subtitle">Case 2025-137857: Peter Faucitt v. Jacqueline Faucitt et al.</p>
+        
+        <div class="revelation-box">
+            <h2>💡 Critical Revelation</h2>
+            <p>
+                The <strong>Dan & Kay Shopify platform</strong> has been <strong>paid by Dan & Jax UK company RegimA Zone Ltd</strong> 
+                since July 2023 (28+ months, R140K-R280K total). <strong>RWD ZA actually has no revenue stream of its own</strong> - 
+                all revenues were generated through a platform owned, paid for, and operated by Daniel's independent UK entity. 
+                RWD merely issued invoices for sales occurring on infrastructure it neither owned nor funded.
+            </p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-value">15</div>
+                <div class="stat-label">Forensic Events</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">R10.27M+</div>
+                <div class="stat-label">Total Documented Losses</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">156</div>
+                <div class="stat-label">Days of Criminal Activity</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">3</div>
+                <div class="stat-label">Crime Categories</div>
+            </div>
+        </div>
+        
+        <div class="timeline-controls">
+            <button class="filter-btn all active" onclick="filterEvents('all')">All Events</button>
+            <button class="filter-btn revenue" onclick="filterEvents('revenue')">Revenue Theft (R3.14M)</button>
+            <button class="filter-btn trust" onclick="filterEvents('trust')">Family Trust (R2.85M)</button>
+            <button class="filter-btn financial" onclick="filterEvents('financial')">Financial Flows (R4.28M)</button>
+        </div>
+        
+        <div class="timeline" id="timeline"></div>
+    </div>
+    
+    <script>
+        const forensicEvents = [
+            // Revenue Theft Events
+            {
+                date: '2025-03-15',
+                title: 'Trust Structure Establishment',
+                category: 'trust',
+                description: 'Fraudulent trust establishment with intentional structural flaws creating foundation for systematic asset misappropriation.',
+                impact: 'Foundation for R2.85M+ trust violations',
+                shopifyConnection: false
+            },
+            {
+                date: '2025-04-01',
+                title: 'Payment Redirection Scheme',
+                category: 'financial',
+                description: 'Systematic redirection of customer payments to unauthorized accounts, beginning coordinated financial fraud.',
+                impact: 'Part of R4.28M+ financial diversions',
+                shopifyConnection: true,
+                shopifyNote: 'Payments redirected from platform owned and paid for by RegimA Zone Ltd (UK)'
+            },
+            {
+                date: '2025-04-14',
+                title: 'Bank Account Change Letter',
+                category: 'revenue',
+                description: 'Rynette Farrar sends fraudulent letter to clients redirecting payments to unauthorized accounts.',
+                impact: 'Setup for R3.14M+ revenue theft',
+                shopifyConnection: true,
+                shopifyNote: 'Bank changes targeted revenue from Shopify platform paid by Dan\'s UK company'
+            },
+            {
+                date: '2025-05-02',
+                title: 'Unauthorized Beneficiary Changes',
+                category: 'trust',
+                description: 'Peter Faucitt and Rynette Farrar coordinate unauthorized modifications to trust beneficiaries.',
+                impact: 'Exclusion of legitimate beneficiaries',
+                shopifyConnection: false
+            },
+            {
+                date: '2025-05-15',
+                title: 'Unauthorized Transfers (R850K+)',
+                category: 'financial',
+                description: 'Large-scale unauthorized financial transfers from business accounts by Peter Faucitt.',
+                impact: 'R850,000+ unauthorized transfers',
+                shopifyConnection: true,
+                shopifyNote: 'Transfers included revenue from Shopify platform funded by RegimA Zone Ltd'
+            },
+            {
+                date: '2025-05-22',
+                title: 'Shopify Audit Trail Hijacking',
+                category: 'revenue',
+                description: 'Complete destruction of Shopify audit trails 7 days after Jax confrontation. 100% business shutdown.',
+                impact: 'R1M+ monthly revenue → R0',
+                shopifyConnection: true,
+                shopifyNote: 'CRITICAL: Audit trail destroyed for platform continuously paid by Dan & Jax UK company (RegimA Zone Ltd) - evidence that RWD ZA has no independent revenue stream'
+            },
+            {
+                date: '2025-05-29',
+                title: 'Domain Registration (Identity Fraud)',
+                category: 'revenue',
+                description: 'Rynette\'s son (Addarory) registers domain for customer base theft and revenue diversion infrastructure.',
+                impact: 'Customer hijacking platform',
+                shopifyConnection: true,
+                shopifyNote: 'Domain registered to impersonate platform owned by RegimA Zone Ltd (UK)'
+            },
+            {
+                date: '2025-06-18',
+                title: 'Systematic Trust Violations',
+                category: 'trust',
+                description: 'Peter Faucitt breaches fiduciary duties with unauthorized use of trust assets for personal benefit.',
+                impact: 'Trustee misconduct and self-dealing',
+                shopifyConnection: false
+            },
+            {
+                date: '2025-06-20',
+                title: 'Email Impersonation Pattern',
+                category: 'revenue',
+                description: 'Rynette Farrar controls pete@regima.com email for systematic hijacking and fraudulent directives.',
+                impact: 'R3.1M+ losses enabled by email control',
+                shopifyConnection: true,
+                shopifyNote: 'Email control used to issue directives about platform paid by RegimA Zone Ltd'
+            },
+            {
+                date: '2025-06-30',
+                title: 'Coordinated Fund Diversions',
+                category: 'financial',
+                description: 'Multi-account coordination involving multiple financial institutions in complex transaction structuring.',
+                impact: 'Complex financial flow manipulation',
+                shopifyConnection: true,
+                shopifyNote: 'Diverted funds from Shopify sales on platform owned by Dan\'s UK entity'
+            },
+            {
+                date: '2025-07-08',
+                title: 'Warehouse POPI Violations',
+                category: 'revenue',
+                description: 'Pete stops warehouse Shopify operations with POPI violations and employee endangerment.',
+                impact: 'Complete operational shutdown',
+                shopifyConnection: true,
+                shopifyNote: 'Shutdown of operations for platform continuously funded by RegimA Zone Ltd (28 months)'
+            },
+            {
+                date: '2025-07-12',
+                title: 'Account Manipulation',
+                category: 'financial',
+                description: 'Bank account manipulation and complete control seizure of legitimate business banking operations.',
+                impact: 'Financial control seizure',
+                shopifyConnection: true,
+                shopifyNote: 'Control seized over accounts receiving Shopify revenue from Dan\'s UK-paid platform'
+            },
+            {
+                date: '2025-07-25',
+                title: 'Trust Asset Misappropriation',
+                category: 'trust',
+                description: 'Systematic removal of trust assets from legitimate control through coordinated asset removal scheme.',
+                impact: 'Trust property theft',
+                shopifyConnection: false
+            },
+            {
+                date: '2025-08-10',
+                title: 'Trust Breach Evidence',
+                category: 'trust',
+                description: 'Comprehensive documentation of continuing trust violations and evidence concealment attempts.',
+                impact: 'Complete compromise of trust integrity',
+                shopifyConnection: false
+            },
+            {
+                date: '2025-08-20',
+                title: 'Financial Evidence Concealment',
+                category: 'financial',
+                description: 'Systematic concealment of financial crime evidence through record destruction and transaction manipulation.',
+                impact: 'Cover-up operations demonstrating guilt',
+                shopifyConnection: true,
+                shopifyNote: 'Concealment of evidence showing Shopify platform paid by RegimA Zone Ltd, not RWD ZA'
+            }
+        ];
+        
+        let currentFilter = 'all';
+        
+        function renderTimeline() {
+            const timeline = document.getElementById('timeline');
+            timeline.innerHTML = '';
+            
+            forensicEvents.forEach((event, index) => {
+                const item = document.createElement('div');
+                item.className = `timeline-item ${index % 2 === 0 ? 'left' : 'right'} ${currentFilter !== 'all' && currentFilter !== event.category ? 'hidden' : ''}`;
+                item.dataset.category = event.category;
+                
+                const marker = document.createElement('div');
+                marker.className = `timeline-marker ${event.category}`;
+                
+                const content = document.createElement('div');
+                content.className = `timeline-content ${event.category}`;
+                
+                let shopifyHtml = '';
+                if (event.shopifyConnection) {
+                    shopifyHtml = `
+                        <div class="shopify-connection">
+                            <strong>🔗 Shopify Platform Connection:</strong> ${event.shopifyNote}
+                        </div>
+                    `;
+                }
+                
+                content.innerHTML = `
+                    <div class="event-date">📅 ${formatDate(event.date)}</div>
+                    <div class="event-title">${event.title}</div>
+                    <span class="event-category ${event.category}">${event.category.toUpperCase()}</span>
+                    <div class="event-description">${event.description}</div>
+                    <div class="event-impact">💰 ${event.impact}</div>
+                    ${shopifyHtml}
+                `;
+                
+                item.appendChild(marker);
+                item.appendChild(content);
+                timeline.appendChild(item);
+            });
+        }
+        
+        function formatDate(dateStr) {
+            const date = new Date(dateStr);
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            return date.toLocaleDateString('en-US', options);
+        }
+        
+        function filterEvents(category) {
+            currentFilter = category;
+            
+            // Update button states
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector(`.filter-btn.${category}`).classList.add('active');
+            
+            // Filter timeline items
+            renderTimeline();
+        }
+        
+        // Initial render
+        renderTimeline();
+    </script>
+</body>
+</html>

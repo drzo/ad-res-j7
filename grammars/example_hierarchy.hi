@@ -1,0 +1,204 @@
+// Example Hierarchical Issue Definition
+// This file can be parsed by the ANTLR/Yacc/Lex grammars
+
+argument revenue_defense {
+    type: defense;
+    description: "Prove RegimA Zone Ltd made legitimate R1M investment showing proper business structure";
+    strategy: "Demonstrate R1,000,000 investment vs R1,000 admin fee (0.1%) proves no profiteering intent";
+    status: active;
+    
+    features {
+        feature 1001 {
+            title: "Payment Structure Analysis";
+            description: "Detailed analysis of RegimA Zone Ltd payment flows and investment structure";
+            priority: critical;
+            link_strength: 95;
+            
+            paragraphs {
+                paragraph 1 {
+                    title: "R1M Investment Evidence";
+                    content: "RegimA Zone Ltd (UK) invested R1,000,000 in South African operations, funding all infrastructure, staff, and systems";
+                    rank: 1;
+                    weight: 100;
+                    
+                    tasks {
+                        task 2001 {
+                            title: "Document R1M bank transfer";
+                            description: "Obtain and attach bank records showing the R1,000,000 transfer from RegimA Zone Ltd UK to ZA operations";
+                            priority: critical;
+                            rank: 1;
+                            weight: 100;
+                        }
+                        
+                        task 2002 {
+                            title: "Compile investment allocation breakdown";
+                            description: "Detail how R1M was allocated: infrastructure, salaries, systems, operations";
+                            priority: high;
+                            rank: 2;
+                            weight: 90;
+                        }
+                        
+                        task 2003 {
+                            title: "Cross-reference with expense records";
+                            description: "Match investment amount with actual expenses incurred for business setup";
+                            priority: high;
+                            rank: 3;
+                            weight: 85;
+                        }
+                    }
+                }
+                
+                paragraph 2 {
+                    title: "R1K Admin Fee Structure";
+                    content: "Despite R1M investment, RegimA Zone Ltd charged only R1,000 admin fee (0.1%), proving no profiteering intent";
+                    rank: 2;
+                    weight: 95;
+                    
+                    tasks {
+                        task 2004 {
+                            title: "Document admin fee invoices";
+                            description: "Gather all invoices showing R1K admin fee structure";
+                            priority: critical;
+                            rank: 1;
+                            weight: 100;
+                        }
+                        
+                        task 2005 {
+                            title: "Compare industry standard fees";
+                            description: "Research typical admin fees for similar business structures to prove 0.1% is exceptionally low";
+                            priority: medium;
+                            rank: 2;
+                            weight: 80;
+                        }
+                    }
+                }
+                
+                paragraph 3 {
+                    title: "Transfer Pricing Tax Compliance";
+                    content: "Structure complies with arm's-length transfer pricing rules, showing legitimate business practice";
+                    rank: 3;
+                    weight: 85;
+                    
+                    tasks {
+                        task 2006 {
+                            title: "Obtain tax compliance certificates";
+                            description: "Get documentation proving structure meets transfer pricing requirements";
+                            priority: high;
+                            rank: 1;
+                            weight: 90;
+                        }
+                        
+                        task 2007 {
+                            title: "Reference SARS transfer pricing guidelines";
+                            description: "Show structure aligns with SARS requirements for international transactions";
+                            priority: medium;
+                            rank: 2;
+                            weight: 75;
+                        }
+                    }
+                }
+            }
+        }
+        
+        feature 1002 {
+            title: "Peter's Zero Investment Exposure";
+            description: "Contrast Peter's zero financial contribution with his appropriation of R1M+ funded operations";
+            priority: critical;
+            link_strength: 98;
+            
+            paragraphs {
+                paragraph 1 {
+                    title: "No Capital Contribution Evidence";
+                    content: "Peter contributed R0 to business operations while Dan & Jax invested R1M through RegimA Zone Ltd";
+                    rank: 1;
+                    weight: 100;
+                    
+                    tasks {
+                        task 2008 {
+                            title: "Document Peter's zero contributions";
+                            description: "Show bank records proving Peter made no investments in the business";
+                            priority: critical;
+                            rank: 1;
+                            weight: 100;
+                        }
+                        
+                        task 2009 {
+                            title: "Create funding timeline";
+                            description: "Timeline showing all funding came from Dan & Jax, nothing from Peter";
+                            priority: high;
+                            rank: 2;
+                            weight: 95;
+                        }
+                    }
+                }
+                
+                paragraph 2 {
+                    title: "Appropriation Acts";
+                    content: "Peter seized control of business operations, systems, and revenue streams funded entirely by others";
+                    rank: 2;
+                    weight: 98;
+                    
+                    tasks {
+                        task 2010 {
+                            title: "Document card cancellations";
+                            description: "Show how Peter cancelled business cards to cut off access";
+                            priority: critical;
+                            rank: 1;
+                            weight: 100;
+                        }
+                        
+                        task 2011 {
+                            title: "Document email control seizure";
+                            description: "Evidence of Peter taking control of business email systems";
+                            priority: critical;
+                            rank: 2;
+                            weight: 95;
+                        }
+                        
+                        task 2012 {
+                            title: "Quantify losses from appropriation";
+                            description: "Calculate R10.227M+ financial harm from Peter's actions";
+                            priority: high;
+                            rank: 3;
+                            weight: 90;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+argument bad_faith_litigation {
+    type: counterclaim;
+    description: "Expose Peter's strategic delays and document destruction to undermine respondents' defense";
+    strategy: "Timeline analysis shows Peter deliberately delayed proceedings while causing maximum business harm";
+    
+    features {
+        feature 1003 {
+            title: "Timeline Evidence of Bad Faith";
+            description: "Chronological analysis of Peter's actions demonstrates calculated delay tactics";
+            priority: critical;
+            link_strength: 92;
+            
+            paragraphs {
+                paragraph 1 {
+                    title: "Document Destruction Timeline";
+                    content: "Timeline shows Peter cancelled cards/emails, then filed interdict claiming respondents couldn't prove ownership";
+                    rank: 1;
+                    weight: 100;
+                    
+                    tasks {
+                        task 2013 {
+                            title: "Map destruction to interdict timing";
+                            description: "Show how document destruction preceded interdict filing";
+                            priority: critical;
+                            rank: 1;
+                            weight: 100;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

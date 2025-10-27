@@ -28,8 +28,12 @@
     "test:empty-todo-validation": "node tests/empty-todo-file-validation.test.js",
     "test:malformed-markdown": "node tests/malformed-markdown-test.js",
     "test:json-validation": "python3 scripts/validate_json_files.py",
+    "test:evidence-completeness": "node tests/evidence-completeness-validation.test.js",
+    "test:hierarchical-issues": "node tests/hierarchical-issue-manager.test.js",
     "validate-dates": "python3 scripts/validate_analysis_dates.py",
     "validate-file-paths": "node scripts/validate_file_paths.js",
+    "validate-evidence-completeness": "node scripts/validate-evidence-completeness.js",
+    "validate-evidence-completeness-py": "python3 scripts/validate_evidence_completeness.py",
     "fix-file-paths": "node scripts/fix_file_paths.js file-path-validation-report.json",
     "hypergraph:example": "node docs/models/hypergnn/case-hypergraph.js",
     "validate-workflows": "node tests/run-all-tests.js",
@@ -47,13 +51,22 @@
     "db:hypergraph:populate": "node db/populate-case-hypergraph.js",
     "db:lex:setup": "node db/lex-inference-migrate.js",
     "db:lex:demo": "node db/lex-demo-case.js",
-    "db:lex:analyze": "node db/lex-inference-engine.js"
+    "db:lex:analyze": "node db/lex-inference-engine.js",
+    "db:hierarchy:setup": "node db/hierarchical-issues-migrate.js",
+    "db:hierarchy:stats": "node db/hierarchical-issue-manager.js stats",
+    "db:hierarchy:demo": "node db/hierarchical-issue-manager.js demo",
+    "db:hierarchy:populate": "node db/populate-hierarchical-issues.js",
+    "hierarchy:parse": "node scripts/parse-hierarchy-file.js",
+    "hierarchy:create-issues": "node scripts/create-github-issues.js dry-run",
+    "hierarchy:batch-populate": "node scripts/batch-populate.js populate-all",
+    "hierarchy:list-templates": "node scripts/batch-populate.js list-templates"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",
     "dotenv": "^17.2.3",
     "drizzle-orm": "^0.44.6",
     "glob": "^11.0.3",
+    "pg": "^8.16.3",
     "ws": "^8.18.3"
   },
   "keywords": [

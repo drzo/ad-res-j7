@@ -36,9 +36,60 @@ const issues = pgTable('issues', {
   status: varchar('status', { length: 50 }).default('open'),
   labels: jsonb('labels'),
   assignee: varchar('assignee', { length: 100 }),
+  issueType: varchar('issue_type', { length: 50 }).default('task'), // 'feature', 'task'
+  parentIssueId: integer('parent_issue_id'), // Reference to parent feature issue
+  rankOrder: integer('rank_order'), // Rank within parent (1 = highest)
+  weight: integer('weight'), // Influence weight (0-100)
   createdAt: timestamp('created_at').defaultNow(),
   updatedAt: timestamp('updated_at').defaultNow(),
   completedAt: timestamp('completed_at')
+});
+
+// Legal arguments/strategies table
+const legalArguments = pgTable('legal_arguments', {
+  id: serial('id').primaryKey(),
+  argumentName: varchar('argument_name', { length: 255 }).notNull(),
+  description: text('description'),
+  argumentType: varchar('argument_type', { length: 100 }), // 'offense', 'defense', 'counterclaim', etc.
+  strategy: text('strategy'),
+  status: varchar('status', { length: 50 }).default('active'),
+  metadata: jsonb('metadata'),
+  createdAt: timestamp('created_at').defaultNow(),
+  updatedAt: timestamp('updated_at').defaultNow()
+});
+
+// Paragraphs within feature issues
+const issueParagraphs = pgTable('issue_paragraphs', {
+  id: serial('id').primaryKey(),
+  featureIssueId: integer('feature_issue_id').notNull(), // Reference to parent feature issue
+  paragraphNumber: integer('paragraph_number').notNull(),
+  title: varchar('title', { length: 255 }),
+  content: text('content'),
+  rankOrder: integer('rank_order').notNull(), // Rank by influence (1 = highest)
+  weight: integer('weight').notNull(), // Influence on feature strength (0-100)
+  metadata: jsonb('metadata'),
+  createdAt: timestamp('created_at').defaultNow(),
+  updatedAt: timestamp('updated_at').defaultNow()
+});
+
+// Link issues to legal arguments
+const issueArgumentLinks = pgTable('issue_argument_links', {
+  id: serial('id').primaryKey(),
+  issueId: integer('issue_id').notNull(),
+  argumentId: integer('argument_id').notNull(),
+  linkType: varchar('link_type', { length: 50 }), // 'proves', 'disproves', 'supports', etc.
+  strength: integer('strength'), // 0-100
+  createdAt: timestamp('created_at').defaultNow()
+});
+
+// Link paragraphs to issues
+const paragraphIssueLinks = pgTable('paragraph_issue_links', {
+  id: serial('id').primaryKey(),
+  paragraphId: integer('paragraph_id').notNull(),
+  issueId: integer('issue_id').notNull(),
+  rankOrder: integer('rank_order').notNull(), // Rank of issue within paragraph
+  weight: integer('weight').notNull(), // Influence on paragraph (0-100)
+  createdAt: timestamp('created_at').defaultNow()
 });
 
 // Test results table
@@ -72,5 +123,9 @@ module.exports = {
   evidenceRecords,
   issues,
   testResults,
-  affidavitAmendments
+  affidavitAmendments,
+  legalArguments,
+  issueParagraphs,
+  issueArgumentLinks,
+  paragraphIssueLinks
 };

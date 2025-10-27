@@ -36,6 +36,41 @@ This directory contains comprehensive analysis documents supporting the answerin
 - **Usage:** Keep open during affidavit drafting, court preparation, rapid argument deployment
 
 ### Timeline Analysis Documents
+### Network Analysis Documents (NEW - October 23, 2025)
+
+#### 1. **NETWORK_ANALYSIS_FUND_FLOWS.md**
+- **Purpose:** Network analysis diagrams showing fund flows and entity relationships
+- **Contents:**
+  - Entity relationship network (ownership and control)
+  - Fund flow analysis (platform costs vs revenue appropriation)
+  - RWD revenue stream analysis (proves no independent revenue)
+  - Unjust enrichment timeline (2017-2025)
+  - Payment pattern comparison (manufacturer vs distributor)
+  - Trust structure inconsistency analysis (Peter's catch-22)
+  - Evidence cross-references (complete linking)
+  - Legal implications (unjust enrichment, breach, conversion, fraud)
+  - Quantum of damages (R2.94M - R6.88M)
+  - Strategic arguments with proof
+- **Key Revelation:** Dan & Kay's Shopify platform paid by Dan & Jax's UK company (RegimA Zone Ltd); RWD ZA has no independent revenue stream
+- **Format:** 10 comprehensive Mermaid diagrams with detailed analysis
+- **Usage:** Court exhibits, visual proof of revenue hijacking, damages calculation
+
+#### 2. **NETWORK_DIAGRAMS_INDEX.md**
+- **Purpose:** Quick reference guide and navigation for all network diagrams
+- **Contents:**
+  - Overview of diagram collection
+  - Diagram quick reference (what each shows)
+  - Using diagrams for legal arguments
+  - Affidavit integration guidance
+  - Court presentation order
+  - Evidence integration cross-reference table
+  - Critical revelations highlighted
+  - Damage calculations summary
+  - Integration with timeline documents
+  - Technical notes on Mermaid format
+- **Usage:** Navigation guide, presentation planning, evidence integration
+
+### Timeline Analysis Documents (October 15, 2025)
 
 #### 3. **COMPREHENSIVE_TIMELINE_ANALYSIS.md**
 - **Purpose:** Complete timeline analysis demonstrating Peter's bad faith
@@ -105,6 +140,13 @@ This directory contains comprehensive analysis documents supporting the answerin
    - Apply comparative misconduct analysis
    
 2. **Integrate Timeline Analysis** (`COMPREHENSIVE_TIMELINE_ANALYSIS.md`)
+1. **Start with Network Analysis** (`NETWORK_ANALYSIS_FUND_FLOWS.md`)
+   - Review entity relationship network to establish key players
+   - Use fund flow diagrams to prove payment discrepancy
+   - Reference RWD revenue analysis to prove no independent revenue stream
+   - Cite damages quantum for unjust enrichment claims
+
+2. **Continue with Timeline Analysis** (`COMPREHENSIVE_TIMELINE_ANALYSIS.md`)
    - Review executive summary for core argument
    - Reference specific timeline events in relevant affidavit sections
    - Use timeline insights to structure bad faith arguments
@@ -115,8 +157,9 @@ This directory contains comprehensive analysis documents supporting the answerin
    - Reference key arguments by section
 
 4. **Prepare Visual Exhibits** (`TIMELINE_VISUAL_DIAGRAM.md`)
+4. **Prepare Visual Exhibits** (`TIMELINE_VISUAL_DIAGRAM.md` + `NETWORK_ANALYSIS_FUND_FLOWS.md`)
    - Export Mermaid diagrams to PNG/PDF
-   - Attach as annexures (JF-TIMELINE-VISUAL series)
+   - Attach as annexures (JF-TIMELINE-VISUAL series + JF-NETWORK-ANALYSIS series)
    - Reference in affidavit text
 
 ### For Court Preparation
@@ -147,6 +190,31 @@ This directory contains comprehensive analysis documents supporting the answerin
 - Demonstrate comparative misconduct (Peter questions R500K while conducting R7.6M-R12.4M)
 
 **Timeline as Supporting Framework:**
+**Network Analysis as Foundation:**
+- Use entity relationships to establish platform ownership (RegimA Zone Ltd UK)
+- Use fund flow diagrams to prove payment discrepancy
+- Use RWD revenue analysis to prove no independent revenue stream
+- Use damages quantum to quantify unjust enrichment claims
+
+**Key Network Analysis Arguments:**
+
+1. **Platform Ownership**
+   - RegimA Zone Ltd (UK) owns and pays for Shopify platform
+   - Argument: Establishes ownership for conversion and unjust enrichment claims
+
+2. **No Independent Revenue**
+   - RWD has no stock, manufacturing, platform, or customers
+   - Argument: All "revenue" is appropriated from Daniel's UK company's platform
+
+3. **Payment Discrepancy**
+   - RWD pays manufacturer but never pays platform owner/distributor
+   - Argument: Discriminatory treatment proves unjust enrichment
+
+4. **Trust Abandonment**
+   - FFT/Peter never funded RWD; Daniel's UK company funded all operations
+   - Argument: Trust abandoned asset; Daniel has superior claim
+
+**Timeline as Foundation:**
 - Every major argument should reference timeline
 - Timeline demonstrates pattern, not isolated incidents
 - Use timeline to rebut Peter's narrative
@@ -304,6 +372,10 @@ This directory contains comprehensive analysis documents supporting the answerin
 - ✅ Calculated unjust enrichment (R2.94M-R6.88M)
 - ✅ Completed comparative misconduct analysis
 - ✅ Updated analysis directory README
+- ✅ Created network analysis fund flows diagrams
+- ✅ Created network diagrams index and navigation guide
+- ✅ Integrated network analysis with timeline documents
+- ✅ Updated README.md with network analysis sections
 
 **October 15, 2025:**
 - ✅ Created comprehensive timeline analysis
@@ -349,7 +421,7 @@ This directory contains comprehensive analysis documents supporting the answerin
 
 ## Quick Start Guide
 
-### New to Timeline Analysis?
+### New to Network & Timeline Analysis?
 
 **Start Here:**
 1. **CRITICAL:** Read `COMPARATIVE_ANALYSIS_QUICK_REFERENCE.md` for rapid understanding
@@ -365,30 +437,45 @@ This directory contains comprehensive analysis documents supporting the answerin
 - Quick overview: 15 minutes
 - Detailed review: 1-2 hours
 - Complete mastery: 4-6 hours
+1. Read Executive Summary in `NETWORK_ANALYSIS_FUND_FLOWS.md` (network analysis)
+2. Review Entity Relationship Network diagram
+3. Study Fund Flow Analysis diagram
+4. Read Executive Summary in `COMPREHENSIVE_TIMELINE_ANALYSIS.md` (timeline analysis)
+5. Review Key Timeline Events table
+6. Study the six Timeline Analysis Insights
+7. Review visual diagrams in `TIMELINE_VISUAL_DIAGRAM.md`
+
+**Time Required:**
+- Quick overview: 20 minutes
+- Detailed review: 2-3 hours
+- Complete mastery: 6-8 hours
 
 ### Preparing for Court?
 
 **Focus On:**
-1. `TIMELINE_QUICK_REFERENCE.md` - memorization aid
-2. Print emergency reference card
-3. Practice five key soundbites
-4. Prepare visual exhibits from `TIMELINE_VISUAL_DIAGRAM.md`
+1. `NETWORK_DIAGRAMS_INDEX.md` - quick reference for fund flow diagrams
+2. `TIMELINE_QUICK_REFERENCE.md` - memorization aid for timeline
+3. Print emergency reference card (timeline)
+4. Practice five key soundbites (timeline)
+5. Prepare visual exhibits from `NETWORK_ANALYSIS_FUND_FLOWS.md` and `TIMELINE_VISUAL_DIAGRAM.md`
 
 **Time Required:**
-- Basic preparation: 30 minutes
-- Thorough preparation: 2-3 hours
+- Basic preparation: 45 minutes
+- Thorough preparation: 3-4 hours
 
 ### Drafting Affidavit Section?
 
 **Use This Process:**
-1. Identify relevant timeline events for your section
-2. Review corresponding analysis in comprehensive document
-3. Copy appropriate soundbites from quick reference
-4. Cross-reference evidence using evidence table
-5. Reference visual diagram for that topic
+1. For unjust enrichment/revenue claims: Start with `NETWORK_ANALYSIS_FUND_FLOWS.md`
+2. For bad faith/timing claims: Start with timeline analysis
+3. Identify relevant network diagrams or timeline events for your section
+4. Review corresponding analysis in comprehensive documents
+5. Copy appropriate soundbites from quick reference
+6. Cross-reference evidence using evidence tables
+7. Reference visual diagrams for that topic
 
 **Time Required:**
-- Per section: 15-30 minutes
+- Per section: 20-40 minutes
 
 ---
 
@@ -417,18 +504,30 @@ For questions about timeline analysis or these documents:
 - [x] Five Critical Questions framework established
 - [x] Unjust enrichment calculation completed
 - [ ] Comparative analysis referenced in draft affidavit
+**Network Analysis Diagrams:** ✅ Complete (October 23, 2025)  
+**Network Diagrams Index:** ✅ Complete (October 23, 2025)  
+**Comprehensive Timeline Analysis:** ✅ Complete (October 15, 2025)  
+**Visual Timeline Diagrams:** ✅ Complete (October 15, 2025)  
+**Quick Reference Guide:** ✅ Complete (October 15, 2025)  
+**README.md Documentation:** ✅ Complete (Updated October 23, 2025)
+
+**Integration Status:**
+- [x] Network analysis diagrams created
+- [x] Network diagrams index created
+- [ ] Network diagrams referenced in draft affidavit
 - [ ] Timeline referenced in draft affidavit
 - [ ] Visual diagrams exported for exhibits
 - [ ] Evidence gaps filled
 - [ ] Cross-references completed
 
 **Next Steps:**
-1. Integrate timeline into answering affidavit
-2. Export visual diagrams as annexures
-3. Fill evidence gaps (settlement date, card cancellation records)
-4. Cross-reference all timeline events to evidence
-5. Prepare court presentation materials
+1. Integrate network analysis into answering affidavit (unjust enrichment claims)
+2. Integrate timeline into answering affidavit (bad faith demonstration)
+3. Export visual diagrams as annexures (both network and timeline)
+4. Fill evidence gaps (settlement date, card cancellation records)
+5. Cross-reference all timeline events and fund flows to evidence
+6. Prepare court presentation materials (network + timeline)
 
 ---
 
-*This analysis directory contains the complete timeline analysis package demonstrating Peter's bad faith through strategic coordination, self-created crises, and coordinated perjury. All documents ready for immediate use in affidavit preparation and court proceedings.*
+*This analysis directory contains the complete network analysis and timeline analysis packages. Network diagrams prove revenue hijacking and unjust enrichment (R2.94M-R6.88M). Timeline demonstrates Peter's bad faith through strategic coordination, self-created crises, and coordinated perjury. All documents ready for immediate use in affidavit preparation and court proceedings.*

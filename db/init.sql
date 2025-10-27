@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS workflow_test (
+    id SERIAL PRIMARY KEY,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    note TEXT
+);

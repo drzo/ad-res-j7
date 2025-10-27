@@ -1,6 +1,23 @@
-# GitHub Actions Workflows
+# GitHub Configuration
 
-This directory contains automated workflows for the AD Response J7 repository.
+This directory contains automated workflows and configuration for the AD Response J7 repository.
+
+## GitHub Copilot Instructions
+
+### `copilot-instructions.md`
+
+**🔴 HIGHEST PRIORITY**: Comprehensive instructions for GitHub Copilot to help consolidate and structure the 120+ outstanding issues according to the hierarchical legal framework.
+
+**Key Features**:
+- Issue consolidation guidelines (1 feature = 3 components = 9 tasks)
+- Hierarchical structure: Legal Arguments → Features → Paragraphs → Tasks
+- Rank ordering and weighting system
+- Integration with existing hierarchical issue manager
+- Examples and templates for proper issue structure
+
+See `copilot-instructions.md` for complete details.
+
+---
 
 ## Workflows
 

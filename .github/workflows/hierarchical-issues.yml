@@ -1,0 +1,405 @@
+name: Hierarchical Issues - Setup and Population
+permissions:
+  contents: read
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'Action to perform'
+        required: true
+        type: choice
+        options:
+          - setup
+          - populate
+          - setup-and-populate
+          - demo
+          - stats
+        default: 'demo'
+      case_number:
+        description: 'Case number (default: 2025-137857)'
+        required: false
+        default: '2025-137857'
+
+jobs:
+  setup-database:
+    name: Setup Hierarchical Issues Database
+    runs-on: ubuntu-latest
+    if: github.event.inputs.action == 'setup' || github.event.inputs.action == 'setup-and-populate'
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_USER: testuser
+          POSTGRES_PASSWORD: testpass
+          POSTGRES_DB: testdb
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      DATABASE_URL: postgres://testuser:testpass@localhost:5432/testdb
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install PostgreSQL client
+        run: sudo apt-get update && sudo apt-get install -y postgresql-client
+
+      - name: Run DB migration for workflow table
+        run: psql $DATABASE_URL -f db/init.sql
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run base database migration
+        run: |
+          echo "🔄 Setting up base database schema..."
+          npm run db:migrate
+          echo "✅ Base schema setup complete!"
+
+      - name: Run hierarchical issues migration
+        run: |
+          echo "🔄 Setting up hierarchical issues database schema..."
+          npm run db:hierarchy:setup
+          echo "✅ Database schema setup complete!"
+
+      - name: Upload migration logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: migration-logs
+          path: |
+            *.log
+            db/*.log
+          retention-days: 7
+
+  populate-issues:
+    name: Populate Hierarchical Issues
+    runs-on: ubuntu-latest
+    needs: [setup-database]
+    if: |
+      always() &&
+      (github.event.inputs.action == 'populate' ||
+       github.event.inputs.action == 'setup-and-populate')
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_USER: testuser
+          POSTGRES_PASSWORD: testpass
+          POSTGRES_DB: testdb
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      DATABASE_URL: postgres://testuser:testpass@localhost:5432/testdb
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install PostgreSQL client
+        run: sudo apt-get update && sudo apt-get install -y postgresql-client
+
+      - name: Run DB migration for workflow table
+        run: psql $DATABASE_URL -f db/init.sql
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run base database migration
+        run: |
+          echo "🔄 Setting up base database schema..."
+          npm run db:migrate
+          echo "✅ Base schema setup complete!"
+
+      - name: Run hierarchical issues migration
+        run: |
+          echo "🔄 Setting up hierarchical issues database schema..."
+          npm run db:hierarchy:setup
+          echo "✅ Hierarchical schema setup complete!"
+
+      - name: Populate hierarchical issues
+        run: |
+          echo "📊 Populating hierarchical issues for case ${{ github.event.inputs.case_number }}..."
+          npm run db:hierarchy:populate
+          echo "✅ Population complete!"
+
+      - name: Get statistics
+        run: |
+          echo "📈 Hierarchy statistics:"
+          npm run db:hierarchy:stats
+
+      - name: Upload population report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: population-report
+          path: |
+            hierarchy-report.json
+            hierarchy-stats.json
+          retention-days: 30
+
+  run-demo:
+    name: Run Hierarchical Issues Demo
+    runs-on: ubuntu-latest
+    if: github.event.inputs.action == 'demo'
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_USER: testuser
+          POSTGRES_PASSWORD: testpass
+          POSTGRES_DB: testdb
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      DATABASE_URL: postgres://testuser:testpass@localhost:5432/testdb
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install PostgreSQL client
+        run: sudo apt-get update && sudo apt-get install -y postgresql-client
+
+      - name: Run DB migration for workflow table
+        run: psql $DATABASE_URL -f db/init.sql
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run base database migration
+        run: |
+          echo "🔄 Setting up base database schema..."
+          npm run db:migrate
+          echo "✅ Base schema setup complete!"
+
+      - name: Run hierarchical issues migration
+        run: |
+          echo "🔄 Setting up hierarchical issues database schema..."
+          npm run db:hierarchy:setup
+          echo "✅ Hierarchical schema setup complete!"
+
+      - name: Run demo
+        run: |
+          echo "🎬 Running hierarchical issues demo..."
+          npm run db:hierarchy:demo
+
+      - name: Capture demo output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: demo-output
+          path: demo-*.json
+          retention-days: 7
+
+  show-stats:
+    name: Show Hierarchy Statistics
+    runs-on: ubuntu-latest
+    if: github.event.inputs.action == 'stats'
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_USER: testuser
+          POSTGRES_PASSWORD: testpass
+          POSTGRES_DB: testdb
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      DATABASE_URL: postgres://testuser:testpass@localhost:5432/testdb
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install PostgreSQL client
+        run: sudo apt-get update && sudo apt-get install -y postgresql-client
+
+      - name: Run DB migration for workflow table
+        run: psql $DATABASE_URL -f db/init.sql
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run base database migration
+        run: |
+          echo "🔄 Setting up base database schema..."
+          npm run db:migrate
+          echo "✅ Base schema setup complete!"
+
+      - name: Run hierarchical issues migration
+        run: |
+          echo "🔄 Setting up hierarchical issues database schema..."
+          npm run db:hierarchy:setup
+          echo "✅ Hierarchical schema setup complete!"
+
+      - name: Get statistics
+        run: |
+          echo "📊 Hierarchical Issues Statistics"
+          echo "=================================="
+          npm run db:hierarchy:stats
+
+      - name: Save statistics
+        run: |
+          npm run db:hierarchy:stats > hierarchy-stats.txt 2>&1 || true
+
+      - name: Upload statistics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hierarchy-statistics
+          path: hierarchy-stats.txt
+          retention-days: 30
+
+  parse-grammar-files:
+    name: Parse Grammar Files to Issues
+    runs-on: ubuntu-latest
+    if: github.event.inputs.action == 'setup-and-populate'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install ANTLR4
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y antlr4
+
+      - name: Parse grammar files
+        run: |
+          echo "🔍 Parsing hierarchical issue grammar files..."
+
+          if [ -f "grammars/example_hierarchy.hi" ]; then
+            echo "Found example hierarchy file"
+            node scripts/parse-hierarchy-file.js grammars/example_hierarchy.hi
+          fi
+
+      - name: Upload parsed data
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: parsed-hierarchy
+          path: |
+            parsed-*.json
+            hierarchy-ast.json
+          retention-days: 7
+
+  test-hierarchy:
+    name: Test Hierarchical Issues
+    runs-on: ubuntu-latest
+    needs: [populate-issues]
+    if: |
+      always() &&
+      (github.event.inputs.action == 'setup-and-populate' ||
+       github.event.inputs.action == 'populate')
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_USER: testuser
+          POSTGRES_PASSWORD: testpass
+          POSTGRES_DB: testdb
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      DATABASE_URL: postgres://testuser:testpass@localhost:5432/testdb
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install PostgreSQL client
+        run: sudo apt-get update && sudo apt-get install -y postgresql-client
+
+      - name: Run DB migration for workflow table
+        run: psql $DATABASE_URL -f db/init.sql
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run base database migration
+        run: |
+          echo "🔄 Setting up base database schema..."
+          npm run db:migrate
+          echo "✅ Base schema setup complete!"
+
+      - name: Run hierarchical issues migration
+        run: |
+          echo "🔄 Setting up hierarchical issues database schema..."
+          npm run db:hierarchy:setup
+          echo "✅ Hierarchical schema setup complete!"
+
+      - name: Run tests
+        run: |
+          echo "🧪 Running hierarchical issues tests..."
+          npm run test:hierarchical-issues
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: |
+            test-results.json
+            coverage/
+          retention-days: 30

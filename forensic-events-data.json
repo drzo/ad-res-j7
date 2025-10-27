@@ -1,0 +1,293 @@
+{
+  "caseNumber": "2025-137857",
+  "caseName": "Peter Faucitt v. Jacqueline Faucitt et al.",
+  "criticalRevelation": {
+    "summary": "Dan & Kay Shopify platform paid by Dan & Jax UK company RegimA Zone Ltd",
+    "details": "The Shopify platform has been owned and paid for since July 2023 by Daniel Faucitt's independent UK entity RegimA Zone Ltd (28+ months, R140K-R280K total investment).",
+    "implication": "RWD ZA actually has no revenue stream of its own - all revenues were generated through infrastructure owned, paid for, and operated by Daniel's UK company.",
+    "significance": "RWD merely issued invoices for sales occurring on a platform it neither owned nor funded, undermining claims of independent business operations."
+  },
+  "totalLosses": {
+    "revenue": "R3,141,647.70",
+    "trust": "R2,851,247.35",
+    "financial": "R4,276,832.85",
+    "total": "R10,269,727.90"
+  },
+  "timeline": {
+    "startDate": "2025-03-15",
+    "endDate": "2025-08-20",
+    "durationDays": 158,
+    "activeCriminalDays": 156
+  },
+  "categories": [
+    {
+      "id": "revenue",
+      "name": "Revenue Theft",
+      "color": "#e74c3c",
+      "eventCount": 5,
+      "totalLoss": "R3,141,647.70",
+      "description": "Systematic revenue hijacking scheme targeting RegimA business operations"
+    },
+    {
+      "id": "trust",
+      "name": "Family Trust Violations",
+      "color": "#3498db",
+      "eventCount": 5,
+      "totalLoss": "R2,851,247.35",
+      "description": "Coordinated family trust manipulation and fiduciary duty breaches"
+    },
+    {
+      "id": "financial",
+      "name": "Financial Flows",
+      "color": "#2ecc71",
+      "eventCount": 5,
+      "totalLoss": "R4,276,832.85",
+      "description": "Systematic financial manipulation and unauthorized fund diversions"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "date": "2025-03-15",
+      "title": "Trust Structure Establishment",
+      "category": "trust",
+      "perpetrators": ["Peter Faucitt"],
+      "crimeType": "Fraudulent trust establishment, fiduciary duty violations",
+      "description": "Fraudulent trust establishment with intentional structural flaws creating foundation for systematic asset misappropriation.",
+      "impact": "Foundation for R2.85M+ trust violations",
+      "legalSignificance": "Initial documentation of trust structure manipulation",
+      "shopifyConnection": false,
+      "evidenceReferences": ["backups/pre-consolidation/jax-response/family-trust/15-mar-trust-establishment/"]
+    },
+    {
+      "id": 2,
+      "date": "2025-04-01",
+      "title": "Payment Redirection Scheme",
+      "category": "financial",
+      "perpetrators": ["Rynette Farrar", "Peter Faucitt"],
+      "crimeType": "Payment fraud, unauthorized fund redirection",
+      "description": "Systematic redirection of customer payments to unauthorized accounts, beginning coordinated financial fraud.",
+      "impact": "Part of R4.28M+ financial diversions",
+      "legalSignificance": "Initial implementation of systematic financial fraud scheme",
+      "shopifyConnection": true,
+      "shopifyNote": "Payments redirected from platform owned and paid for by RegimA Zone Ltd (UK)",
+      "shopifyRevelation": "Customer payments were for sales on a Shopify platform continuously funded by Dan's UK company, not RWD ZA",
+      "evidenceReferences": ["backups/pre-consolidation/jax-response/financial-flows/01-apr-payment-redirection/"]
+    },
+    {
+      "id": 3,
+      "date": "2025-04-14",
+      "title": "Bank Account Change Letter",
+      "category": "revenue",
+      "perpetrators": ["Rynette Farrar"],
+      "crimeType": "Fraudulent redirection of funds, theft by conversion",
+      "description": "Rynette Farrar sends fraudulent letter to clients redirecting payments to unauthorized accounts.",
+      "impact": "Setup for R3.14M+ revenue theft",
+      "legalSignificance": "First documented act in coordinated scheme",
+      "shopifyConnection": true,
+      "shopifyNote": "Bank changes targeted revenue from Shopify platform paid by Dan's UK company",
+      "shopifyRevelation": "Attempted to redirect payments for sales on infrastructure owned and paid by RegimA Zone Ltd",
+      "evidenceReferences": ["backups/pre-consolidation/jax-response/revenue-theft/14-apr-bank-letter/"]
+    },
+    {
+      "id": 4,
+      "date": "2025-05-02",
+      "title": "Unauthorized Beneficiary Changes",
+      "category": "trust",
+      "perpetrators": ["Peter Faucitt", "Rynette Farrar"],
+      "crimeType": "Trust deed violations, unauthorized beneficiary amendments",
+      "description": "Peter Faucitt and Rynette Farrar coordinate unauthorized modifications to trust beneficiaries.",
+      "impact": "Exclusion of legitimate beneficiaries",
+      "legalSignificance": "Direct violation of trust obligations and beneficiary rights",
+      "shopifyConnection": false,
+      "evidenceReferences": ["backups/pre-consolidation/jax-response/family-trust/02-may-beneficiary-changes/"]
+    },
+    {
+      "id": 5,
+      "date": "2025-05-15",
+      "title": "Unauthorized Transfers (R850K+)",
+      "category": "financial",
+      "perpetrators": ["Peter Faucitt"],
+      "crimeType": "Unauthorized fund transfers, breach of fiduciary duty",
+      "description": "Large-scale unauthorized financial transfers from business accounts by Peter Faucitt.",
+      "impact": "R850,000+ unauthorized transfers",
+      "legalSignificance": "Direct evidence of financial authority abuse and theft",
+      "shopifyConnection": true,
+      "shopifyNote": "Transfers included revenue from Shopify platform funded by RegimA Zone Ltd",
+      "shopifyRevelation": "R850K+ transferred included revenue from platform paid by Dan's UK company over 28 months",
+      "evidenceReferences": ["backups/pre-consolidation/jax-response/financial-flows/15-may-unauthorized-transfers/"]
+    },
+    {
+      "id": 6,
+      "date": "2025-05-22",
+      "title": "Shopify Audit Trail Hijacking",
+      "category": "revenue",
+      "perpetrators": ["Coordinated action"],
+      "crimeType": "Evidence destruction, computer fraud, business sabotage",
+      "description": "Complete destruction of Shopify audit trails 7 days after Jax confrontation. 100% business shutdown.",
+      "impact": "R1M+ monthly revenue → R0",
+      "legalSignificance": "Central evidence destruction event proving consciousness of guilt",
+      "shopifyConnection": true,
+      "shopifyNote": "CRITICAL: Audit trail destroyed for platform continuously paid by Dan & Jax UK company (RegimA Zone Ltd) - evidence that RWD ZA has no independent revenue stream",
+      "shopifyRevelation": "Destruction of audit trails for platform owned, paid for, and operated by RegimA Zone Ltd (UK) since July 2023, proving RWD ZA generated no independent revenue",
+      "evidenceReferences": ["backups/pre-consolidation/jax-response/revenue-theft/22-may-shopify-audit/"]
+    },
+    {
+      "id": 7,
+      "date": "2025-05-29",
+      "title": "Domain Registration (Identity Fraud)",
+      "category": "revenue",
+      "perpetrators": ["Rynette Farrar", "Addarory (son)"],
+      "crimeType": "Identity fraud, family criminal conspiracy",
+      "description": "Rynette's son (Addarory) registers domain for customer base theft and revenue diversion infrastructure.",
+      "impact": "Customer hijacking platform",
+      "legalSignificance": "Family conspiracy escalation and digital impersonation",
+      "shopifyConnection": true,
+      "shopifyNote": "Domain registered to impersonate platform owned by RegimA Zone Ltd (UK)",
+      "shopifyRevelation": "Identity fraud to impersonate legitimate business operating on Dan's UK-funded infrastructure",
+      "evidenceReferences": ["backups/pre-consolidation/jax-response/revenue-theft/29-may-domain-registration/"]
+    },
+    {
+      "id": 8,
+      "date": "2025-06-18",
+      "title": "Systematic Trust Violations",
+      "category": "trust",
+      "perpetrators": ["Peter Faucitt"],
+      "crimeType": "Fiduciary duty breach, trust asset mismanagement",
+      "description": "Peter Faucitt breaches fiduciary duties with unauthorized use of trust assets for personal benefit.",
+      "impact": "Trustee misconduct and self-dealing",
+      "legalSignificance": "Clear evidence of trustee misconduct and self-dealing",
+      "shopifyConnection": false,
+      "evidenceReferences": ["backups/pre-consolidation/jax-response/family-trust/18-june-trust-violation/"]
+    },
+    {
+      "id": 9,
+      "date": "2025-06-20",
+      "title": "Email Impersonation Pattern",
+      "category": "revenue",
+      "perpetrators": ["Rynette Farrar"],
+      "crimeType": "Email hijacking, identity theft, business impersonation, computer fraud",
+      "description": "Rynette Farrar controls pete@regima.com email for systematic hijacking and fraudulent directives.",
+      "impact": "R3.1M+ losses enabled by email control",
+      "legalSignificance": "Pattern of impersonation supporting criminal conspiracy charges",
+      "shopifyConnection": true,
+      "shopifyNote": "Email control used to issue directives about platform paid by RegimA Zone Ltd",
+      "shopifyRevelation": "Email impersonation facilitated fraud related to Shopify platform Dan's UK company had been paying for since July 2023",
+      "evidenceReferences": ["backups/pre-consolidation/jax-response/revenue-theft/email-impersonation-pattern-jf3a/"]
+    },
+    {
+      "id": 10,
+      "date": "2025-06-30",
+      "title": "Coordinated Fund Diversions",
+      "category": "financial",
+      "perpetrators": ["Peter Faucitt", "Rynette Farrar", "Associates"],
+      "crimeType": "Systematic fund diversion, money laundering indicators",
+      "description": "Multi-account coordination involving multiple financial institutions in complex transaction structuring.",
+      "impact": "Complex financial flow manipulation",
+      "legalSignificance": "Evidence of sophisticated financial crime coordination",
+      "shopifyConnection": true,
+      "shopifyNote": "Diverted funds from Shopify sales on platform owned by Dan's UK entity",
+      "shopifyRevelation": "Fund diversions targeted revenue generated on infrastructure continuously funded by RegimA Zone Ltd",
+      "evidenceReferences": ["backups/pre-consolidation/jax-response/financial-flows/30-june-fund-diversions/"]
+    },
+    {
+      "id": 11,
+      "date": "2025-07-08",
+      "title": "Warehouse POPI Violations",
+      "category": "revenue",
+      "perpetrators": ["Peter Faucitt"],
+      "crimeType": "Business sabotage, POPI violations, employee endangerment",
+      "description": "Pete stops warehouse Shopify operations with POPI violations and employee endangerment.",
+      "impact": "Complete operational shutdown",
+      "legalSignificance": "Documented evidence of systematic business destruction",
+      "shopifyConnection": true,
+      "shopifyNote": "Shutdown of operations for platform continuously funded by RegimA Zone Ltd (28 months)",
+      "shopifyRevelation": "Business sabotage of operations running on platform paid by Dan & Jax UK company since July 2023",
+      "evidenceReferences": ["backups/pre-consolidation/jax-response/revenue-theft/08-july-warehouse-popi/"]
+    },
+    {
+      "id": 12,
+      "date": "2025-07-12",
+      "title": "Account Manipulation",
+      "category": "financial",
+      "perpetrators": ["Peter Faucitt"],
+      "crimeType": "Bank account manipulation, unauthorized control seizure",
+      "description": "Bank account manipulation and complete control seizure of legitimate business banking operations.",
+      "impact": "Financial control seizure",
+      "legalSignificance": "Documented evidence of financial system abuse and unauthorized control",
+      "shopifyConnection": true,
+      "shopifyNote": "Control seized over accounts receiving Shopify revenue from Dan's UK-paid platform",
+      "shopifyRevelation": "Seized control of accounts receiving revenue from Shopify platform owned and funded by RegimA Zone Ltd",
+      "evidenceReferences": ["backups/pre-consolidation/jax-response/financial-flows/12-july-account-manipulations/"]
+    },
+    {
+      "id": 13,
+      "date": "2025-07-25",
+      "title": "Trust Asset Misappropriation",
+      "category": "trust",
+      "perpetrators": ["Peter Faucitt"],
+      "crimeType": "Trust asset theft, breach of fiduciary duty",
+      "description": "Systematic removal of trust assets from legitimate control through coordinated asset removal scheme.",
+      "impact": "Trust property theft",
+      "legalSignificance": "Documented theft of trust property and breach of fiduciary duty",
+      "shopifyConnection": false,
+      "evidenceReferences": ["backups/pre-consolidation/jax-response/family-trust/25-july-asset-misappropriation/"]
+    },
+    {
+      "id": 14,
+      "date": "2025-08-10",
+      "title": "Trust Breach Evidence",
+      "category": "trust",
+      "perpetrators": ["Peter Faucitt"],
+      "crimeType": "Continuing trust violations, evidence concealment",
+      "description": "Comprehensive documentation of continuing trust violations and evidence concealment attempts.",
+      "impact": "Complete compromise of trust integrity",
+      "legalSignificance": "Systematic evidence of ongoing trust law violations",
+      "shopifyConnection": false,
+      "evidenceReferences": ["backups/pre-consolidation/jax-response/family-trust/10-aug-trust-breach-evidence/"]
+    },
+    {
+      "id": 15,
+      "date": "2025-08-20",
+      "title": "Financial Evidence Concealment",
+      "category": "financial",
+      "perpetrators": ["Coordinated network"],
+      "crimeType": "Evidence destruction, financial record manipulation",
+      "description": "Systematic concealment of financial crime evidence through record destruction and transaction manipulation.",
+      "impact": "Cover-up operations demonstrating guilt",
+      "legalSignificance": "Consciousness of guilt through evidence destruction attempts",
+      "shopifyConnection": true,
+      "shopifyNote": "Concealment of evidence showing Shopify platform paid by RegimA Zone Ltd, not RWD ZA",
+      "shopifyRevelation": "Cover-up attempt to conceal fact that RWD ZA has no independent revenue stream - all revenue from Dan's UK-funded Shopify platform",
+      "evidenceReferences": ["backups/pre-consolidation/jax-response/financial-flows/20-aug-financial-concealment/"]
+    }
+  ],
+  "shopifyPlatformFacts": {
+    "owner": "RegimA Zone Ltd (UK)",
+    "paidBy": "Daniel Faucitt's UK company",
+    "since": "July 2023",
+    "duration": "28+ months",
+    "totalInvestment": "R140,000 - R280,000",
+    "monthlyInvoice": "$1,000 - $2,000 USD",
+    "operators": ["Daniel Faucitt", "Jacqueline Faucitt"],
+    "rwdZARole": "Issued invoices for sales on platform it did not own or fund",
+    "keyImplication": "RWD ZA has no independent revenue stream"
+  },
+  "legalFramework": {
+    "criminalCharges": [
+      "Organized Crime/Racketeering (POCA Section 2-3)",
+      "Computer Fraud (ECTA Sections 86-88)",
+      "Identity Fraud (ECTA Section 87-88)",
+      "Theft and Fraud (Common Law)",
+      "Money Laundering (FIC Act)",
+      "Trust Law Violations (Trust Property Control Act)"
+    ],
+    "civilRemedies": [
+      "Asset forfeiture under POCA",
+      "Delictual damages",
+      "Trust asset recovery",
+      "Constructive trust",
+      "Account of profits"
+    ]
+  }
+}
