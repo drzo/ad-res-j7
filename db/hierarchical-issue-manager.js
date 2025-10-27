@@ -7,6 +7,11 @@ const { sql } = require('drizzle-orm');
  * Hierarchical Issue Manager for Case 2025-137857
  * Manages feature-level issues, paragraphs, and task-level issues
  * with rank ordering and weighting for legal argument strength analysis
+ * 
+ * ENHANCED WITH CROSS-REFERENCE INTEGRATION:
+ * - Links issues to documents, evidence, and annexures
+ * - Detects consolidation opportunities to prevent issue explosion
+ * - Enables evidence-based deduplication
  */
 class HierarchicalIssueManager {
 
@@ -375,6 +380,217 @@ class HierarchicalIssueManager {
     return result.rows;
   }
 
+  // ===== CROSS-REFERENCE OPERATIONS =====
+
+  /**
+   * Add a cross-reference linking an issue to a document, evidence, or annexure
+   * 
+   * @param {number} issueId - The issue ID
+   * @param {string} referenceType - Type: 'document', 'evidence', 'annexure', 'paragraph', 'timeline_event', 'analysis'
+   * @param {string} referenceId - Identifier for the referenced item
+   * @param {string} referencePath - File path or location
+   * @param {string} referenceTitle - Human-readable title
+   * @param {string} referenceSection - Specific section within the reference
+   * @param {string} relationshipType - How the issue relates: 'proves', 'supports', 'contradicts', 'analyzes', etc.
+   * @param {string} notes - Additional context
+   * @returns {Object} The created cross-reference
+   */
+  async addCrossReference(
+    issueId,
+    referenceType,
+    referenceId,
+    referencePath = null,
+    referenceTitle = null,
+    referenceSection = null,
+    relationshipType = 'references',
+    notes = null
+  ) {
+    try {
+      const result = await db.execute(sql`
+        INSERT INTO issue_cross_references (
+          issue_id, reference_type, reference_id, reference_path,
+          reference_title, reference_section, relationship_type, notes
+        )
+        VALUES (
+          ${issueId}, ${referenceType}, ${referenceId}, ${referencePath},
+          ${referenceTitle}, ${referenceSection}, ${relationshipType}, ${notes}
+        )
+        RETURNING *
+      `);
+      
+      // Trigger consolidation analysis
+      await this.detectConsolidationOpportunities(referenceType, referenceId);
+      
+      return result.rows[0];
+    } catch (error) {
+      console.error('Error adding cross-reference:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Get all cross-references for an issue
+   */
+  async getIssueCrossReferences(issueId) {
+    const result = await db.execute(sql`
+      SELECT * FROM issue_cross_references
+      WHERE issue_id = ${issueId}
+      ORDER BY created_at DESC
+    `);
+    return result.rows;
+  }
+
+  /**
+   * Get all issues that reference a specific document/evidence/annexure
+   */
+  async getIssuesByReference(referenceType, referenceId) {
+    const result = await db.execute(sql`
+      SELECT i.*, icr.relationship_type, icr.reference_section, icr.notes
+      FROM issues i
+      JOIN issue_cross_references icr ON i.id = icr.issue_id
+      WHERE icr.reference_type = ${referenceType}
+        AND icr.reference_id = ${referenceId}
+      ORDER BY i.priority DESC, i.created_at ASC
+    `);
+    return result.rows;
+  }
+
+  /**
+   * Detect consolidation opportunities when multiple issues reference the same evidence
+   */
+  async detectConsolidationOpportunities(referenceType, referenceId) {
+    // Count how many issues reference this item
+    const result = await db.execute(sql`
+      SELECT 
+        COUNT(DISTINCT issue_id) as issue_count,
+        json_agg(DISTINCT issue_id) as issue_ids
+      FROM issue_cross_references
+      WHERE reference_type = ${referenceType}
+        AND reference_id = ${referenceId}
+    `);
+    
+    const { issue_count, issue_ids } = result.rows[0];
+    
+    // If 2+ issues reference the same thing, flag for consolidation
+    if (parseInt(issue_count) >= 2) {
+      // Check if already tracked
+      const existing = await db.execute(sql`
+        SELECT id FROM cross_reference_consolidations
+        WHERE reference_type = ${referenceType}
+          AND reference_id = ${referenceId}
+          AND consolidation_status != 'resolved'
+      `);
+      
+      if (existing.rows.length === 0) {
+        // Create new consolidation opportunity
+        const recommendedAction = `${issue_count} issues reference the same ${referenceType}: ${referenceId}. Consider consolidating into a single feature issue with ${issue_count} task issues.`;
+        
+        await db.execute(sql`
+          INSERT INTO cross_reference_consolidations (
+            reference_type, reference_id, issue_count, issue_ids, recommended_action
+          )
+          VALUES (
+            ${referenceType}, ${referenceId}, ${issue_count}, ${JSON.stringify(issue_ids)}, ${recommendedAction}
+          )
+        `);
+      } else {
+        // Update existing
+        await db.execute(sql`
+          UPDATE cross_reference_consolidations
+          SET issue_count = ${issue_count},
+              issue_ids = ${JSON.stringify(issue_ids)},
+              updated_at = NOW()
+          WHERE reference_type = ${referenceType}
+            AND reference_id = ${referenceId}
+            AND consolidation_status != 'resolved'
+        `);
+      }
+    }
+  }
+
+  /**
+   * Get all detected consolidation opportunities
+   */
+  async getConsolidationOpportunities(status = 'detected') {
+    const result = await db.execute(sql`
+      SELECT * FROM cross_reference_consolidations
+      WHERE consolidation_status = ${status}
+      ORDER BY issue_count DESC, created_at ASC
+    `);
+    return result.rows;
+  }
+
+  /**
+   * Mark a consolidation opportunity as reviewed or consolidated
+   */
+  async updateConsolidationStatus(consolidationId, status, resolvedAt = null) {
+    const result = await db.execute(sql`
+      UPDATE cross_reference_consolidations
+      SET consolidation_status = ${status},
+          resolved_at = ${resolvedAt || sql`NOW()`},
+          updated_at = NOW()
+      WHERE id = ${consolidationId}
+      RETURNING *
+    `);
+    return result.rows[0];
+  }
+
+  /**
+   * Find related issues based on shared cross-references
+   * Useful for identifying issues that should be consolidated
+   */
+  async findRelatedIssues(issueId, minSharedReferences = 1) {
+    const result = await db.execute(sql`
+      SELECT 
+        i2.id,
+        i2.issue_number,
+        i2.title,
+        i2.issue_type,
+        COUNT(DISTINCT icr2.reference_id) as shared_reference_count,
+        json_agg(DISTINCT jsonb_build_object(
+          'type', icr2.reference_type,
+          'id', icr2.reference_id,
+          'title', icr2.reference_title
+        )) as shared_references
+      FROM issue_cross_references icr1
+      JOIN issue_cross_references icr2 
+        ON icr1.reference_type = icr2.reference_type 
+        AND icr1.reference_id = icr2.reference_id
+      JOIN issues i2 ON icr2.issue_id = i2.id
+      WHERE icr1.issue_id = ${issueId}
+        AND icr2.issue_id != ${issueId}
+      GROUP BY i2.id, i2.issue_number, i2.title, i2.issue_type
+      HAVING COUNT(DISTINCT icr2.reference_id) >= ${minSharedReferences}
+      ORDER BY shared_reference_count DESC
+    `);
+    return result.rows;
+  }
+
+  /**
+   * Get comprehensive cross-reference statistics
+   */
+  async getCrossReferenceStatistics() {
+    const totalRefs = await db.execute(sql`SELECT COUNT(*) FROM issue_cross_references`);
+    const byType = await db.execute(sql`
+      SELECT reference_type, COUNT(*) as count
+      FROM issue_cross_references
+      GROUP BY reference_type
+      ORDER BY count DESC
+    `);
+    const consolidations = await db.execute(sql`
+      SELECT consolidation_status, COUNT(*) as count
+      FROM cross_reference_consolidations
+      GROUP BY consolidation_status
+      ORDER BY count DESC
+    `);
+    
+    return {
+      total_cross_references: parseInt(totalRefs.rows[0].count),
+      references_by_type: byType.rows,
+      consolidation_opportunities: consolidations.rows
+    };
+  }
+
   // ===== STATISTICS =====
 
   /**
@@ -490,6 +706,32 @@ if (require.main === module) {
           );
           console.log(`✅ Created task issue #${task2.issue_number} under paragraph 2`);
           
+          // Add cross-references
+          console.log('\n🔗 Adding cross-references...');
+          await manager.addCrossReference(
+            task1.id,
+            'evidence',
+            'BANK_TRANSFER_R1M_001',
+            'evidence/bank_records/regima_zone_transfer.pdf',
+            'Bank Transfer Evidence - R1M Investment',
+            'Page 3',
+            'proves',
+            'Primary evidence of R1M investment from UK entity'
+          );
+          console.log(`✅ Cross-referenced task #${task1.issue_number} to bank transfer evidence`);
+          
+          await manager.addCrossReference(
+            task2.id,
+            'document',
+            'INVOICE_R1K_ADMIN_FEE',
+            'evidence/invoices/admin_fee_invoice.pdf',
+            'Admin Fee Invoice - R1K',
+            null,
+            'proves',
+            'Shows 0.1% admin fee structure'
+          );
+          console.log(`✅ Cross-referenced task #${task2.issue_number} to admin fee invoice`);
+          
           // Show hierarchy
           console.log('\n📊 Hierarchy Structure:');
           const hierarchy = await manager.getArgumentHierarchy(arg.id);
@@ -499,13 +741,41 @@ if (require.main === module) {
           const strength = await manager.calculateFeatureStrength(feature.id);
           console.log(`\n💪 Feature Strength: ${strength.toFixed(2)}%`);
           
+          // Show cross-reference stats
+          const xrefStats = await manager.getCrossReferenceStatistics();
+          console.log('\n🔗 Cross-Reference Statistics:');
+          console.log(JSON.stringify(xrefStats, null, 2));
+          
+          break;
+
+        case 'consolidations':
+          const opportunities = await manager.getConsolidationOpportunities();
+          console.log('🔍 Consolidation Opportunities:');
+          if (opportunities.length === 0) {
+            console.log('  No consolidation opportunities detected.');
+          } else {
+            opportunities.forEach(opp => {
+              console.log(`\n📦 ${opp.reference_type}: ${opp.reference_id}`);
+              console.log(`   Issues affected: ${opp.issue_count}`);
+              console.log(`   Status: ${opp.consolidation_status}`);
+              console.log(`   Recommendation: ${opp.recommended_action}`);
+            });
+          }
+          break;
+
+        case 'xref-stats':
+          const xrefStatsOnly = await manager.getCrossReferenceStatistics();
+          console.log('📊 Cross-Reference Statistics:');
+          console.log(JSON.stringify(xrefStatsOnly, null, 2));
           break;
 
         default:
           console.log('Hierarchical Issue Manager for Case 2025-137857');
           console.log('\nUsage:');
-          console.log('  node hierarchical-issue-manager.js stats  - Show statistics');
-          console.log('  node hierarchical-issue-manager.js demo   - Run demo');
+          console.log('  node hierarchical-issue-manager.js stats           - Show hierarchy statistics');
+          console.log('  node hierarchical-issue-manager.js demo            - Run demo with cross-references');
+          console.log('  node hierarchical-issue-manager.js consolidations  - Show consolidation opportunities');
+          console.log('  node hierarchical-issue-manager.js xref-stats      - Show cross-reference statistics');
       }
       process.exit(0);
     } catch (error) {

@@ -92,6 +92,36 @@ const paragraphIssueLinks = pgTable('paragraph_issue_links', {
   createdAt: timestamp('created_at').defaultNow()
 });
 
+// Cross-references linking issues to documents, evidence, and annexures
+const issueCrossReferences = pgTable('issue_cross_references', {
+  id: serial('id').primaryKey(),
+  issueId: integer('issue_id').notNull(),
+  referenceType: varchar('reference_type', { length: 100 }).notNull(), // 'document', 'evidence', 'annexure', 'paragraph', 'timeline_event', 'analysis'
+  referenceId: varchar('reference_id', { length: 500 }).notNull(),
+  referencePath: varchar('reference_path', { length: 1000 }),
+  referenceTitle: varchar('reference_title', { length: 500 }),
+  referenceSection: varchar('reference_section', { length: 255 }),
+  relationshipType: varchar('relationship_type', { length: 100 }), // 'proves', 'supports', 'contradicts', 'analyzes', etc.
+  notes: text('notes'),
+  metadata: jsonb('metadata'),
+  createdAt: timestamp('created_at').defaultNow(),
+  updatedAt: timestamp('updated_at').defaultNow()
+});
+
+// Track consolidation opportunities where multiple issues reference the same evidence
+const crossReferenceConsolidations = pgTable('cross_reference_consolidations', {
+  id: serial('id').primaryKey(),
+  referenceType: varchar('reference_type', { length: 100 }).notNull(),
+  referenceId: varchar('reference_id', { length: 500 }).notNull(),
+  issueCount: integer('issue_count').notNull(),
+  issueIds: jsonb('issue_ids').notNull(),
+  consolidationStatus: varchar('consolidation_status', { length: 50 }).default('detected'), // 'detected', 'reviewed', 'consolidated', 'dismissed'
+  recommendedAction: text('recommended_action'),
+  createdAt: timestamp('created_at').defaultNow(),
+  updatedAt: timestamp('updated_at').defaultNow(),
+  resolvedAt: timestamp('resolved_at')
+});
+
 // Test results table
 const testResults = pgTable('test_results', {
   id: serial('id').primaryKey(),
@@ -127,5 +157,7 @@ module.exports = {
   legalArguments,
   issueParagraphs,
   issueArgumentLinks,
-  paragraphIssueLinks
+  paragraphIssueLinks,
+  issueCrossReferences,
+  crossReferenceConsolidations
 };
