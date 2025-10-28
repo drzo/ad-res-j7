@@ -66,7 +66,9 @@
     "hierarchy:parse": "node scripts/parse-hierarchy-file.js",
     "hierarchy:create-issues": "node scripts/create-github-issues.js dry-run",
     "hierarchy:batch-populate": "node scripts/batch-populate.js populate-all",
-    "hierarchy:list-templates": "node scripts/batch-populate.js list-templates"
+    "hierarchy:list-templates": "node scripts/batch-populate.js list-templates",
+    "issues:generate": "node scripts/generate-issues-from-structured-todo.js /tmp/structured-todo.md --dry-run",
+    "issues:generate:create": "node scripts/generate-issues-from-structured-todo.js /tmp/structured-todo.md --create-issues"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",

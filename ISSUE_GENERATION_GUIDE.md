@@ -12,7 +12,26 @@ The structured-todo.md file contains a hierarchical structure of:
 
 ## Process
 
-### Step 1: Parse structured-todo.md to JSON
+### Quick Start (Recommended)
+
+Use the all-in-one wrapper script:
+
+```bash
+# Preview issues without creating them
+npm run issues:generate
+
+# Or run directly:
+node scripts/generate-issues-from-structured-todo.js /tmp/structured-todo.md --dry-run
+```
+
+This will:
+1. Parse structured-todo.md to JSON
+2. Generate 146 issue definitions
+3. Display a preview of the issues
+
+### Step-by-Step Process
+
+#### Step 1: Parse structured-todo.md to JSON
 
 The first step converts the markdown file to JSON format:
 
@@ -22,7 +41,7 @@ node scripts/parse-structured-todo-md.js /tmp/structured-todo.md structured-todo
 
 This creates `structured-todo.json` with the hierarchical data structure.
 
-### Step 2: Generate GitHub Issues
+#### Step 2: Generate GitHub Issues
 
 The second step generates issue definitions from the JSON:
 
@@ -36,20 +55,25 @@ This creates `todo-issues.json` containing 146 issue definitions with:
 - Labels (priority, rank, weight, legal argument type)
 - Metadata for tracking
 
-### Step 3: Create GitHub Issues
+#### Step 3: Create GitHub Issues
 
-The GitHub Actions workflow (`.github/workflows/todo-to-issues.yml`) will:
-1. Parse the structured TODO data
-2. Generate issue definitions
-3. Create actual GitHub issues using the `gh` CLI
+**Option A: Using the wrapper script (recommended)**
+```bash
+npm run issues:generate:create
+# This will create all 146 issues via GitHub API
+```
 
-You can trigger this manually with:
-
+**Option B: Using GitHub Actions workflow**
 ```bash
 gh workflow run todo-to-issues.yml --ref main
 ```
 
-Or it runs automatically when TODO files are modified.
+The workflow will automatically:
+1. Parse the structured TODO data
+2. Generate issue definitions
+3. Create actual GitHub issues using the `gh` CLI
+
+The workflow runs automatically when TODO files are modified.
 
 ## File Structure
 
