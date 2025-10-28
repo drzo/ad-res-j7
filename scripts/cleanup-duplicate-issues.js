@@ -308,11 +308,19 @@ class DuplicateIssueCleaner {
     }
 
     // Check authentication
-    try {
-      execSync('gh auth status', { stdio: 'ignore' });
-    } catch (error) {
-      console.error('❌ Not authenticated with GitHub CLI. Run: gh auth login');
-      process.exit(1);
+    // In GitHub Actions, GH_TOKEN is set and gh CLI uses it automatically
+    // So we check if we're in GitHub Actions or if gh auth status succeeds
+    const isGitHubActions = process.env.GITHUB_ACTIONS === 'true' || !!process.env.GH_TOKEN;
+    
+    if (!isGitHubActions) {
+      try {
+        execSync('gh auth status', { stdio: 'ignore' });
+      } catch (error) {
+        console.error('❌ Not authenticated with GitHub CLI. Run: gh auth login');
+        process.exit(1);
+      }
+    } else {
+      console.log('✅ Running in GitHub Actions environment with GH_TOKEN');
     }
 
     // Load issues
