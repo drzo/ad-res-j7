@@ -1,10874 +1,2258 @@
-{
-  "metadata": {
-    "generated_at": "2025-10-28T07:20:15.586Z",
-    "parser_version": "1.0.0",
-    "schema_version": "1.0",
-    "total_arguments": 12,
-    "total_features": 88,
-    "total_paragraphs": 182,
-    "total_tasks": 146
-  },
-  "hierarchy": {
-    "legal_arguments": [
-      {
-        "id": "arg_1",
-        "name": "Workflow Validation Tests",
-        "description": "Legal argument extracted from todo/workflow-validation-tests.md",
-        "type": "defense",
-        "strategy": "Support legal position",
-        "source": "todo/workflow-validation-tests.md"
-      },
-      {
-        "id": "arg_2",
-        "name": "Workflow Test Tasks",
-        "description": "Legal argument extracted from todo/workflow-test.md",
-        "type": "defense",
-        "strategy": "Support legal position",
-        "source": "todo/workflow-test.md"
-      },
-      {
-        "id": "arg_3",
-        "name": "Special Characters Test Sample",
-        "description": "Legal argument extracted from todo/special-characters-test-sample.md",
-        "type": "defense",
-        "strategy": "Support legal position",
-        "source": "todo/special-characters-test-sample.md"
-      },
-      {
-        "id": "arg_4",
-        "name": "Special Characters Integration Test",
-        "description": "Legal argument extracted from todo/special-characters-integration-test.md",
-        "type": "defense",
-        "strategy": "Support legal position",
-        "source": "todo/special-characters-integration-test.md"
-      },
-      {
-        "id": "arg_5",
-        "name": "Simple Workflow Test",
-        "description": "Legal argument extracted from todo/simple-workflow-test.md",
-        "type": "defense",
-        "strategy": "Support legal position",
-        "source": "todo/simple-workflow-test.md"
-      },
-      {
-        "id": "arg_6",
-        "name": "Optimal Strategies Implementation - Burden of Proof Validation",
-        "description": "Legal argument extracted from todo/optimal-strategies-burden-of-proof.md",
-        "type": "evidence",
-        "strategy": "Support legal position",
-        "source": "todo/optimal-strategies-burden-of-proof.md"
-      },
-      {
-        "id": "arg_7",
-        "name": "Burden of Proof Workflow Test",
-        "description": "Legal argument extracted from todo/burden-of-proof-test.md",
-        "type": "evidence",
-        "strategy": "Support legal position",
-        "source": "todo/burden-of-proof-test.md"
-      },
-      {
-        "id": "arg_8",
-        "name": "Repository Status and Critical Evidence Collection",
-        "description": "Legal argument extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "type": "evidence",
-        "strategy": "Support legal position",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md"
-      },
-      {
-        "id": "arg_9",
-        "name": "Todo Folder",
-        "description": "Legal argument extracted from todo/README.md",
-        "type": "defense",
-        "strategy": "Support legal position",
-        "source": "todo/README.md"
-      },
-      {
-        "id": "arg_10",
-        "name": "Jax-Dan Response Expansion Plan",
-        "description": "Legal argument extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "type": "defense",
-        "strategy": "Support legal position",
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md"
-      },
-      {
-        "id": "arg_11",
-        "name": "Improvements for Jax-Dan Response Based on AD Elements",
-        "description": "Legal argument extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "type": "defense",
-        "strategy": "Support legal position",
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md"
-      },
-      {
-        "id": "arg_12",
-        "name": "Executive Summary: Jax-Dan Response Improvements",
-        "description": "Legal argument extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "type": "defense",
-        "strategy": "Support legal position",
-        "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md"
-      }
-    ],
-    "features": [
-      {
-        "id": "feature_1",
-        "title": "Must-Do (Critical Priority)",
-        "description": "Feature extracted from todo/workflow-validation-tests.md",
-        "priority": "critical",
-        "argumentId": "arg_1",
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 5,
-        "paragraphs": [
-          {
-            "id": "para_136",
-            "featureId": "feature_1",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/workflow-validation-tests.md",
-            "lineNumber": 5,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_2",
-        "title": "Should-Do (High Priority)",
-        "description": "Feature extracted from todo/workflow-validation-tests.md",
-        "priority": "high",
-        "argumentId": "arg_1",
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 12,
-        "paragraphs": [
-          {
-            "id": "para_137",
-            "featureId": "feature_2",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/workflow-validation-tests.md",
-            "lineNumber": 12,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_3",
-        "title": "Nice-to-Have (Low Priority)",
-        "description": "Feature extracted from todo/workflow-validation-tests.md",
-        "priority": "low",
-        "argumentId": "arg_1",
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 19,
-        "paragraphs": [
-          {
-            "id": "para_138",
-            "featureId": "feature_3",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/workflow-validation-tests.md",
-            "lineNumber": 19,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_4",
-        "title": "Improvements Needed:",
-        "description": "Feature extracted from todo/workflow-validation-tests.md",
-        "priority": "medium",
-        "argumentId": "arg_1",
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 24,
-        "paragraphs": [
-          {
-            "id": "para_139",
-            "featureId": "feature_4",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/workflow-validation-tests.md",
-            "lineNumber": 24,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_5",
-        "title": "**Action Required**:",
-        "description": "Feature extracted from todo/workflow-validation-tests.md",
-        "priority": "medium",
-        "argumentId": "arg_1",
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 31,
-        "paragraphs": [
-          {
-            "id": "para_140",
-            "featureId": "feature_5",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/workflow-validation-tests.md",
-            "lineNumber": 31,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_6",
-        "title": "Edge Case Testing",
-        "description": "Feature extracted from todo/workflow-validation-tests.md",
-        "priority": "medium",
-        "argumentId": "arg_1",
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 36,
-        "paragraphs": [
-          {
-            "id": "para_1",
-            "featureId": "feature_6",
-            "number": 1,
-            "title": "Tasks with Various Formats",
-            "content": "Paragraph extracted from todo/workflow-validation-tests.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/workflow-validation-tests.md",
-            "lineNumber": 38,
-            "tasks": [
-              {
-                "id": "task_1",
-                "paragraphId": "para_1",
-                "featureId": "feature_6",
-                "title": "Create unit tests for markdown parsing logic",
-                "description": "Create unit tests for markdown parsing logic",
-                "rankOrder": 1,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/workflow-validation-tests.md",
-                "lineNumber": 40
-              },
-              {
-                "id": "task_2",
-                "paragraphId": "para_1",
-                "featureId": "feature_6",
-                "title": "Implement integration tests for GitHub API interaction",
-                "description": "Implement integration tests for GitHub API interaction",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/workflow-validation-tests.md",
-                "lineNumber": 41
-              },
-              {
-                "id": "task_3",
-                "paragraphId": "para_1",
-                "featureId": "feature_6",
-                "title": "Add regression tests to prevent workflow breaking changes",
-                "description": "Add regression tests to prevent workflow breaking changes",
-                "rankOrder": 3,
-                "weight": 85,
-                "priority": "low",
-                "source": "todo/workflow-validation-tests.md",
-                "lineNumber": 42
-              }
-            ]
-          },
-          {
-            "id": "para_2",
-            "featureId": "feature_6",
-            "number": 2,
-            "title": "Special Characters and Formatting",
-            "content": "Paragraph extracted from todo/workflow-validation-tests.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/workflow-validation-tests.md",
-            "lineNumber": 45,
-            "tasks": [
-              {
-                "id": "task_4",
-                "paragraphId": "para_2",
-                "featureId": "feature_6",
-                "title": "Test with émojis and ünicode characters in task descriptions",
-                "description": "Test with émojis and ünicode characters in task descriptions",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/workflow-validation-tests.md",
-                "lineNumber": 47
-              },
-              {
-                "id": "task_5",
-                "paragraphId": "para_2",
-                "featureId": "feature_6",
-                "title": "Validate proper handling of tasks with \"quotes\" and 'apostrophes'",
-                "description": "Validate proper handling of tasks with \"quotes\" and 'apostrophes'",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/workflow-validation-tests.md",
-                "lineNumber": 48
-              }
-            ]
-          },
-          {
-            "id": "para_3",
-            "featureId": "feature_6",
-            "number": 3,
-            "title": "Long Task Descriptions",
-            "content": "Paragraph extracted from todo/workflow-validation-tests.md",
-            "rankOrder": 3,
-            "weight": 85,
-            "source": "todo/workflow-validation-tests.md",
-            "lineNumber": 51,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_7",
-        "title": "Priority Section Variations",
-        "description": "Feature extracted from todo/workflow-validation-tests.md",
-        "priority": "medium",
-        "argumentId": "arg_1",
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 56,
-        "paragraphs": [
-          {
-            "id": "para_4",
-            "featureId": "feature_7",
-            "number": 1,
-            "title": "Priority 1 Tasks",
-            "content": "Paragraph extracted from todo/workflow-validation-tests.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/workflow-validation-tests.md",
-            "lineNumber": 58,
-            "tasks": []
-          },
-          {
-            "id": "para_5",
-            "featureId": "feature_7",
-            "number": 2,
-            "title": "Phase 2 Tasks",
-            "content": "Paragraph extracted from todo/workflow-validation-tests.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/workflow-validation-tests.md",
-            "lineNumber": 62,
-            "tasks": []
-          },
-          {
-            "id": "para_6",
-            "featureId": "feature_7",
-            "number": 3,
-            "title": "Framework Phase 3",
-            "content": "Paragraph extracted from todo/workflow-validation-tests.md",
-            "rankOrder": 3,
-            "weight": 85,
-            "source": "todo/workflow-validation-tests.md",
-            "lineNumber": 66,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_8",
-        "title": "**Recommended Actions**:",
-        "description": "Feature extracted from todo/workflow-validation-tests.md",
-        "priority": "medium",
-        "argumentId": "arg_1",
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 70,
-        "paragraphs": [
-          {
-            "id": "para_141",
-            "featureId": "feature_8",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/workflow-validation-tests.md",
-            "lineNumber": 70,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_9",
-        "title": "Quality Filter Testing",
-        "description": "Feature extracted from todo/workflow-validation-tests.md",
-        "priority": "medium",
-        "argumentId": "arg_1",
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 76,
-        "paragraphs": [
-          {
-            "id": "para_142",
-            "featureId": "feature_9",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/workflow-validation-tests.md",
-            "lineNumber": 76,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_10",
-        "title": "Multiple Label Testing",
-        "description": "Feature extracted from todo/workflow-validation-tests.md",
-        "priority": "medium",
-        "argumentId": "arg_1",
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 92,
-        "paragraphs": [
-          {
-            "id": "para_7",
-            "featureId": "feature_10",
-            "number": 1,
-            "title": "Critical Section with Bug Label",
-            "content": "Paragraph extracted from todo/workflow-validation-tests.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/workflow-validation-tests.md",
-            "lineNumber": 94,
-            "tasks": [
-              {
-                "id": "task_6",
-                "paragraphId": "para_7",
-                "featureId": "feature_10",
-                "title": "Fix security vulnerability in authentication system",
-                "description": "Fix security vulnerability in authentication system",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/workflow-validation-tests.md",
-                "lineNumber": 95
-              }
-            ]
-          },
-          {
-            "id": "para_8",
-            "featureId": "feature_10",
-            "number": 2,
-            "title": "Enhancement Section",
-            "content": "Paragraph extracted from todo/workflow-validation-tests.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/workflow-validation-tests.md",
-            "lineNumber": 98,
-            "tasks": [
-              {
-                "id": "task_7",
-                "paragraphId": "para_8",
-                "featureId": "feature_10",
-                "title": "Add new feature for improved user experience",
-                "description": "Add new feature for improved user experience",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/workflow-validation-tests.md",
-                "lineNumber": 99
-              },
-              {
-                "id": "task_8",
-                "paragraphId": "para_8",
-                "featureId": "feature_10",
-                "title": "Implement advanced analytics dashboard",
-                "description": "Implement advanced analytics dashboard",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/workflow-validation-tests.md",
-                "lineNumber": 100
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "feature_11",
-        "title": "Force Regeneration Testing",
-        "description": "Feature extracted from todo/workflow-validation-tests.md",
-        "priority": "medium",
-        "argumentId": "arg_1",
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 102,
-        "paragraphs": [
-          {
-            "id": "para_143",
-            "featureId": "feature_11",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/workflow-validation-tests.md",
-            "lineNumber": 102,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_12",
-        "title": "Core Workflow Tests",
-        "description": "Feature extracted from todo/workflow-test.md",
-        "priority": "low",
-        "argumentId": "arg_2",
-        "source": "todo/workflow-test.md",
-        "lineNumber": 3,
-        "paragraphs": [
-          {
-            "id": "para_9",
-            "featureId": "feature_12",
-            "number": 1,
-            "title": "Must-Do (Critical Priority)",
-            "content": "Paragraph extracted from todo/workflow-test.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/workflow-test.md",
-            "lineNumber": 5,
-            "tasks": []
-          },
-          {
-            "id": "para_10",
-            "featureId": "feature_12",
-            "number": 2,
-            "title": "Should-Do (High Priority)",
-            "content": "Paragraph extracted from todo/workflow-test.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/workflow-test.md",
-            "lineNumber": 10,
-            "tasks": [
-              {
-                "id": "task_9",
-                "paragraphId": "para_10",
-                "featureId": "feature_12",
-                "title": "Verify proper issue creation with multiple labels",
-                "description": "Verify proper issue creation with multiple labels",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/workflow-test.md",
-                "lineNumber": 13
-              }
-            ]
-          },
-          {
-            "id": "para_11",
-            "featureId": "feature_12",
-            "number": 3,
-            "title": "Nice-to-Have (Low Priority)",
-            "content": "Paragraph extracted from todo/workflow-test.md",
-            "rankOrder": 3,
-            "weight": 85,
-            "source": "todo/workflow-test.md",
-            "lineNumber": 15,
-            "tasks": [
-              {
-                "id": "task_10",
-                "paragraphId": "para_11",
-                "featureId": "feature_12",
-                "title": "Add metrics collection for workflow performance",
-                "description": "Add metrics collection for workflow performance",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "low",
-                "source": "todo/workflow-test.md",
-                "lineNumber": 17
-              },
-              {
-                "id": "task_11",
-                "paragraphId": "para_11",
-                "featureId": "feature_12",
-                "title": "Implement batching for large numbers of issues",
-                "description": "Implement batching for large numbers of issues",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/workflow-test.md",
-                "lineNumber": 18
-              }
-            ]
-          },
-          {
-            "id": "para_12",
-            "featureId": "feature_12",
-            "number": 4,
-            "title": "Improvements Needed:",
-            "content": "Paragraph extracted from todo/workflow-test.md",
-            "rankOrder": 4,
-            "weight": 60,
-            "source": "todo/workflow-test.md",
-            "lineNumber": 20,
-            "tasks": [
-              {
-                "id": "task_12",
-                "paragraphId": "para_12",
-                "featureId": "feature_12",
-                "title": "Create validation tests for workflow changes",
-                "description": "Create validation tests for workflow changes",
-                "rankOrder": 1,
-                "weight": 90,
-                "priority": "low",
-                "source": "todo/workflow-test.md",
-                "lineNumber": 21
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "feature_13",
-        "title": "Burden of Proof Strategy Implementation - Target Task",
-        "description": "Feature extracted from todo/workflow-test.md",
-        "priority": "medium",
-        "argumentId": "arg_2",
-        "source": "todo/workflow-test.md",
-        "lineNumber": 27,
-        "paragraphs": [
-          {
-            "id": "para_13",
-            "featureId": "feature_13",
-            "number": 1,
-            "title": "Must-Do Requirements",
-            "content": "Paragraph extracted from todo/workflow-test.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/workflow-test.md",
-            "lineNumber": 31,
-            "tasks": []
-          },
-          {
-            "id": "para_14",
-            "featureId": "feature_13",
-            "number": 2,
-            "title": "Should-Do Enhancements",
-            "content": "Paragraph extracted from todo/workflow-test.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/workflow-test.md",
-            "lineNumber": 37,
-            "tasks": []
-          },
-          {
-            "id": "para_15",
-            "featureId": "feature_13",
-            "number": 3,
-            "title": "Nice-to-Have Extensions",
-            "content": "Paragraph extracted from todo/workflow-test.md",
-            "rankOrder": 3,
-            "weight": 85,
-            "source": "todo/workflow-test.md",
-            "lineNumber": 42,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_14",
-        "title": "Improvements Needed",
-        "description": "Feature extracted from todo/workflow-test.md",
-        "priority": "medium",
-        "argumentId": "arg_2",
-        "source": "todo/workflow-test.md",
-        "lineNumber": 47,
-        "paragraphs": [
-          {
-            "id": "para_144",
-            "featureId": "feature_14",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/workflow-test.md",
-            "lineNumber": 47,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_15",
-        "title": "Must-Do (Critical Priority)",
-        "description": "Feature extracted from todo/special-characters-test-sample.md",
-        "priority": "critical",
-        "argumentId": "arg_3",
-        "source": "todo/special-characters-test-sample.md",
-        "lineNumber": 5,
-        "paragraphs": [
-          {
-            "id": "para_145",
-            "featureId": "feature_15",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/special-characters-test-sample.md",
-            "lineNumber": 5,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_16",
-        "title": "Should-Do (High Priority)",
-        "description": "Feature extracted from todo/special-characters-test-sample.md",
-        "priority": "high",
-        "argumentId": "arg_3",
-        "source": "todo/special-characters-test-sample.md",
-        "lineNumber": 11,
-        "paragraphs": [
-          {
-            "id": "para_146",
-            "featureId": "feature_16",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/special-characters-test-sample.md",
-            "lineNumber": 11,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_17",
-        "title": "Nice-to-Have (Low Priority)",
-        "description": "Feature extracted from todo/special-characters-test-sample.md",
-        "priority": "low",
-        "argumentId": "arg_3",
-        "source": "todo/special-characters-test-sample.md",
-        "lineNumber": 20,
-        "paragraphs": [
-          {
-            "id": "para_147",
-            "featureId": "feature_17",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/special-characters-test-sample.md",
-            "lineNumber": 20,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_18",
-        "title": "Improvements Needed:",
-        "description": "Feature extracted from todo/special-characters-test-sample.md",
-        "priority": "medium",
-        "argumentId": "arg_3",
-        "source": "todo/special-characters-test-sample.md",
-        "lineNumber": 26,
-        "paragraphs": [
-          {
-            "id": "para_148",
-            "featureId": "feature_18",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/special-characters-test-sample.md",
-            "lineNumber": 26,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_19",
-        "title": "Long Task Descriptions",
-        "description": "Feature extracted from todo/special-characters-test-sample.md",
-        "priority": "medium",
-        "argumentId": "arg_3",
-        "source": "todo/special-characters-test-sample.md",
-        "lineNumber": 33,
-        "paragraphs": [
-          {
-            "id": "para_149",
-            "featureId": "feature_19",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/special-characters-test-sample.md",
-            "lineNumber": 33,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_20",
-        "title": "**Action Required**:",
-        "description": "Feature extracted from todo/special-characters-test-sample.md",
-        "priority": "medium",
-        "argumentId": "arg_3",
-        "source": "todo/special-characters-test-sample.md",
-        "lineNumber": 38,
-        "paragraphs": [
-          {
-            "id": "para_150",
-            "featureId": "feature_20",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/special-characters-test-sample.md",
-            "lineNumber": 38,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_21",
-        "title": "Edge Case Testing",
-        "description": "Feature extracted from todo/special-characters-test-sample.md",
-        "priority": "medium",
-        "argumentId": "arg_3",
-        "source": "todo/special-characters-test-sample.md",
-        "lineNumber": 44,
-        "paragraphs": [
-          {
-            "id": "para_16",
-            "featureId": "feature_21",
-            "number": 1,
-            "title": "Combined Special Characters",
-            "content": "Paragraph extracted from todo/special-characters-test-sample.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/special-characters-test-sample.md",
-            "lineNumber": 46,
-            "tasks": [
-              {
-                "id": "task_13",
-                "paragraphId": "para_16",
-                "featureId": "feature_21",
-                "title": "Test \"quoted text\" with émojis 🎯, numbers 123, and symbols @#$ all together",
-                "description": "Test \"quoted text\" with émojis 🎯, numbers 123, and symbols @#$ all together",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/special-characters-test-sample.md",
-                "lineNumber": 48
-              },
-              {
-                "id": "task_14",
-                "paragraphId": "para_16",
-                "featureId": "feature_21",
-                "title": "Create système de gestion with 50% performance using $1,000 budget and 🚀 dep...",
-                "description": "Create système de gestion with 50% performance using $1,000 budget and 🚀 deployment",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/special-characters-test-sample.md",
-                "lineNumber": 49
-              },
-              {
-                "id": "task_15",
-                "paragraphId": "para_16",
-                "featureId": "feature_21",
-                "title": "Validate Peter's fiduciary claims with €500K damages at 95% confidence level",
-                "description": "Validate Peter's fiduciary claims with €500K damages at 95% confidence level",
-                "rankOrder": 3,
-                "weight": 85,
-                "priority": "medium",
-                "source": "todo/special-characters-test-sample.md",
-                "lineNumber": 50
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "feature_22",
-        "title": "Must-Do (Critical Priority)",
-        "description": "Feature extracted from todo/special-characters-integration-test.md",
-        "priority": "critical",
-        "argumentId": "arg_4",
-        "source": "todo/special-characters-integration-test.md",
-        "lineNumber": 5,
-        "paragraphs": [
-          {
-            "id": "para_151",
-            "featureId": "feature_22",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/special-characters-integration-test.md",
-            "lineNumber": 5,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_23",
-        "title": "Should-Do (High Priority)",
-        "description": "Feature extracted from todo/special-characters-integration-test.md",
-        "priority": "high",
-        "argumentId": "arg_4",
-        "source": "todo/special-characters-integration-test.md",
-        "lineNumber": 12,
-        "paragraphs": [
-          {
-            "id": "para_152",
-            "featureId": "feature_23",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/special-characters-integration-test.md",
-            "lineNumber": 12,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_24",
-        "title": "Nice-to-Have (Medium Priority)",
-        "description": "Feature extracted from todo/special-characters-integration-test.md",
-        "priority": "low",
-        "argumentId": "arg_4",
-        "source": "todo/special-characters-integration-test.md",
-        "lineNumber": 19,
-        "paragraphs": [
-          {
-            "id": "para_153",
-            "featureId": "feature_24",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/special-characters-integration-test.md",
-            "lineNumber": 19,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_25",
-        "title": "Improvements Needed:",
-        "description": "Feature extracted from todo/special-characters-integration-test.md",
-        "priority": "medium",
-        "argumentId": "arg_4",
-        "source": "todo/special-characters-integration-test.md",
-        "lineNumber": 26,
-        "paragraphs": [
-          {
-            "id": "para_154",
-            "featureId": "feature_25",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/special-characters-integration-test.md",
-            "lineNumber": 26,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_26",
-        "title": "**Action Required**:",
-        "description": "Feature extracted from todo/special-characters-integration-test.md",
-        "priority": "medium",
-        "argumentId": "arg_4",
-        "source": "todo/special-characters-integration-test.md",
-        "lineNumber": 32,
-        "paragraphs": [
-          {
-            "id": "para_155",
-            "featureId": "feature_26",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/special-characters-integration-test.md",
-            "lineNumber": 32,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_27",
-        "title": "Edge Cases and Advanced Testing",
-        "description": "Feature extracted from todo/special-characters-integration-test.md",
-        "priority": "medium",
-        "argumentId": "arg_4",
-        "source": "todo/special-characters-integration-test.md",
-        "lineNumber": 37,
-        "paragraphs": [
-          {
-            "id": "para_17",
-            "featureId": "feature_27",
-            "number": 1,
-            "title": "Emoji Combinations and Modifiers",
-            "content": "Paragraph extracted from todo/special-characters-integration-test.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/special-characters-integration-test.md",
-            "lineNumber": 39,
-            "tasks": []
-          },
-          {
-            "id": "para_18",
-            "featureId": "feature_27",
-            "number": 2,
-            "title": "Unicode Normalization Tests",
-            "content": "Paragraph extracted from todo/special-characters-integration-test.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/special-characters-integration-test.md",
-            "lineNumber": 45,
-            "tasks": [
-              {
-                "id": "task_16",
-                "paragraphId": "para_18",
-                "featureId": "feature_27",
-                "title": "Test café vs cafe\\u0301 (composed vs decomposed unicode) for consistency",
-                "description": "Test café vs cafe\\u0301 (composed vs decomposed unicode) for consistency",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/special-characters-integration-test.md",
-                "lineNumber": 46
-              },
-              {
-                "id": "task_17",
-                "paragraphId": "para_18",
-                "featureId": "feature_27",
-                "title": "Validate unicode bidirectional text: English text with العربية mixed content",
-                "description": "Validate unicode bidirectional text: English text with العربية mixed content",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/special-characters-integration-test.md",
-                "lineNumber": 49
-              }
-            ]
-          },
-          {
-            "id": "para_19",
-            "featureId": "feature_27",
-            "number": 3,
-            "title": "Complex Punctuation and Symbols",
-            "content": "Paragraph extracted from todo/special-characters-integration-test.md",
-            "rankOrder": 3,
-            "weight": 85,
-            "source": "todo/special-characters-integration-test.md",
-            "lineNumber": 51,
-            "tasks": [
-              {
-                "id": "task_18",
-                "paragraphId": "para_19",
-                "featureId": "feature_27",
-                "title": "Test various quote styles: \"straight\", \"smart\", „German\", «French», 「Japanese」",
-                "description": "Test various quote styles: \"straight\", \"smart\", „German\", «French», 「Japanese」",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/special-characters-integration-test.md",
-                "lineNumber": 52
-              },
-              {
-                "id": "task_19",
-                "paragraphId": "para_19",
-                "featureId": "feature_27",
-                "title": "Validate time/date formats: 14:30–16:00 on 2024/12/25, T±2hr accuracy",
-                "description": "Validate time/date formats: 14:30–16:00 on 2024/12/25, T±2hr accuracy",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/special-characters-integration-test.md",
-                "lineNumber": 55
-              }
-            ]
-          },
-          {
-            "id": "para_20",
-            "featureId": "feature_27",
-            "number": 4,
-            "title": "Programming and Technical Characters",
-            "content": "Paragraph extracted from todo/special-characters-integration-test.md",
-            "rankOrder": 4,
-            "weight": 60,
-            "source": "todo/special-characters-integration-test.md",
-            "lineNumber": 57,
-            "tasks": [
-              {
-                "id": "task_20",
-                "paragraphId": "para_20",
-                "featureId": "feature_27",
-                "title": "Test regex patterns: /^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$/",
-                "description": "Test regex patterns: `/^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$/`",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/special-characters-integration-test.md",
-                "lineNumber": 58
-              },
-              {
-                "id": "task_21",
-                "paragraphId": "para_20",
-                "featureId": "feature_27",
-                "title": "Validate XML/HTML: <title>Café & Restaurant: \"Best Naïve Service\"</title>",
-                "description": "Validate XML/HTML: `<title>Café & Restaurant: \"Best Naïve Service\"</title>`",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/special-characters-integration-test.md",
-                "lineNumber": 61
-              }
-            ]
-          },
-          {
-            "id": "para_21",
-            "featureId": "feature_27",
-            "number": 5,
-            "title": "International and Accessibility",
-            "content": "Paragraph extracted from todo/special-characters-integration-test.md",
-            "rankOrder": 5,
-            "weight": 50,
-            "source": "todo/special-characters-integration-test.md",
-            "lineNumber": 63,
-            "tasks": [
-              {
-                "id": "task_22",
-                "paragraphId": "para_21",
-                "featureId": "feature_27",
-                "title": "Implement screen reader support for émojis: 🚀 → \"rocket ship emoji\"",
-                "description": "Implement screen reader support for émojis: 🚀 → \"rocket ship emoji\"",
-                "rankOrder": 1,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/special-characters-integration-test.md",
-                "lineNumber": 64
-              },
-              {
-                "id": "task_23",
-                "paragraphId": "para_21",
-                "featureId": "feature_27",
-                "title": "Test accessibility descriptions: ♿ → \"wheelchair accessible\", 👁️ → \"eye symbol\"",
-                "description": "Test accessibility descriptions: ♿ → \"wheelchair accessible\", 👁️ → \"eye symbol\"",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/special-characters-integration-test.md",
-                "lineNumber": 66
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "feature_28",
-        "title": "Must-Do (Critical Priority)",
-        "description": "Feature extracted from todo/simple-workflow-test.md",
-        "priority": "critical",
-        "argumentId": "arg_5",
-        "source": "todo/simple-workflow-test.md",
-        "lineNumber": 3,
-        "paragraphs": [
-          {
-            "id": "para_156",
-            "featureId": "feature_28",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/simple-workflow-test.md",
-            "lineNumber": 3,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_29",
-        "title": "Should-Do (High Priority)",
-        "description": "Feature extracted from todo/simple-workflow-test.md",
-        "priority": "high",
-        "argumentId": "arg_5",
-        "source": "todo/simple-workflow-test.md",
-        "lineNumber": 8,
-        "paragraphs": [
-          {
-            "id": "para_157",
-            "featureId": "feature_29",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/simple-workflow-test.md",
-            "lineNumber": 8,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_30",
-        "title": "Improvements Needed:",
-        "description": "Feature extracted from todo/simple-workflow-test.md",
-        "priority": "medium",
-        "argumentId": "arg_5",
-        "source": "todo/simple-workflow-test.md",
-        "lineNumber": 13,
-        "paragraphs": [
-          {
-            "id": "para_158",
-            "featureId": "feature_30",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/simple-workflow-test.md",
-            "lineNumber": 13,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_31",
-        "title": "Nice-to-Have (Low Priority)",
-        "description": "Feature extracted from todo/simple-workflow-test.md",
-        "priority": "low",
-        "argumentId": "arg_5",
-        "source": "todo/simple-workflow-test.md",
-        "lineNumber": 18,
-        "paragraphs": [
-          {
-            "id": "para_159",
-            "featureId": "feature_31",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/simple-workflow-test.md",
-            "lineNumber": 18,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_32",
-        "title": "Test Results Summary",
-        "description": "Feature extracted from todo/simple-workflow-test.md",
-        "priority": "medium",
-        "argumentId": "arg_5",
-        "source": "todo/simple-workflow-test.md",
-        "lineNumber": 22,
-        "paragraphs": [
-          {
-            "id": "para_160",
-            "featureId": "feature_32",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/simple-workflow-test.md",
-            "lineNumber": 22,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_33",
-        "title": "Civil Standard - Balance of Probabilities",
-        "description": "Feature extracted from todo/optimal-strategies-burden-of-proof.md",
-        "priority": "medium",
-        "argumentId": "arg_6",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 5,
-        "paragraphs": [
-          {
-            "id": "para_22",
-            "featureId": "feature_33",
-            "number": 1,
-            "title": "Critical Priority Tasks",
-            "content": "Paragraph extracted from todo/optimal-strategies-burden-of-proof.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 7,
-            "tasks": [
-              {
-                "id": "task_24",
-                "paragraphId": "para_22",
-                "featureId": "feature_33",
-                "title": "Implement comprehensive test suite for civil evidence standards validation (>...",
-                "description": "Implement comprehensive test suite for **civil evidence standards** validation (>50% likelihood)",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 9
-              },
-              {
-                "id": "task_25",
-                "paragraphId": "para_22",
-                "featureId": "feature_33",
-                "title": "Create automated testing pipeline for preponderance of evidence assessment fr...",
-                "description": "Create automated testing pipeline for **preponderance of evidence** assessment framework",
-                "rankOrder": 2,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 10
-              },
-              {
-                "id": "task_26",
-                "paragraphId": "para_22",
-                "featureId": "feature_33",
-                "title": "Add monitoring and alerting for documentary evidence validation protocols",
-                "description": "Add monitoring and alerting for **documentary evidence** validation protocols",
-                "rankOrder": 3,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 11
-              },
-              {
-                "id": "task_27",
-                "paragraphId": "para_22",
-                "featureId": "feature_33",
-                "title": "Fix workflow functionality for witness credibility assessment mechanisms",
-                "description": "Fix workflow functionality for **witness credibility** assessment mechanisms",
-                "rankOrder": 4,
-                "weight": 60,
-                "priority": "low",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 12
-              },
-              {
-                "id": "task_28",
-                "paragraphId": "para_22",
-                "featureId": "feature_33",
-                "title": "Update duplicate prevention for circumstantial evidence evaluation systems",
-                "description": "Update duplicate prevention for **circumstantial evidence** evaluation systems",
-                "rankOrder": 5,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 13
-              }
-            ]
-          },
-          {
-            "id": "para_23",
-            "featureId": "feature_33",
-            "number": 2,
-            "title": "High Priority Tasks",
-            "content": "Paragraph extracted from todo/optimal-strategies-burden-of-proof.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 15,
-            "tasks": [
-              {
-                "id": "task_29",
-                "paragraphId": "para_23",
-                "featureId": "feature_33",
-                "title": "Implement comprehensive test suite for balance of probabilities standard vali...",
-                "description": "Implement comprehensive test suite for **balance of probabilities** standard validation",
-                "rankOrder": 1,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 17
-              },
-              {
-                "id": "task_30",
-                "paragraphId": "para_23",
-                "featureId": "feature_33",
-                "title": "Create automated testing pipeline for more likely than not evidence evaluation",
-                "description": "Create automated testing pipeline for **more likely than not** evidence evaluation",
-                "rankOrder": 2,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 18
-              },
-              {
-                "id": "task_31",
-                "paragraphId": "para_23",
-                "featureId": "feature_33",
-                "title": "Add monitoring and alerting for civil burden of proof tracking systems",
-                "description": "Add monitoring and alerting for **civil burden of proof** tracking systems",
-                "rankOrder": 3,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 19
-              },
-              {
-                "id": "task_32",
-                "paragraphId": "para_23",
-                "featureId": "feature_33",
-                "title": "Fix workflow functionality for liability assessment frameworks",
-                "description": "Fix workflow functionality for **liability assessment** frameworks",
-                "rankOrder": 4,
-                "weight": 60,
-                "priority": "low",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 20
-              },
-              {
-                "id": "task_33",
-                "paragraphId": "para_23",
-                "featureId": "feature_33",
-                "title": "Update duplicate prevention for damages calculation validation",
-                "description": "Update duplicate prevention for **damages calculation** validation",
-                "rankOrder": 5,
-                "weight": 50,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 21
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "feature_34",
-        "title": "Criminal Standard - Beyond Reasonable Doubt",
-        "description": "Feature extracted from todo/optimal-strategies-burden-of-proof.md",
-        "priority": "medium",
-        "argumentId": "arg_6",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 23,
-        "paragraphs": [
-          {
-            "id": "para_24",
-            "featureId": "feature_34",
-            "number": 1,
-            "title": "Critical Priority Tasks",
-            "content": "Paragraph extracted from todo/optimal-strategies-burden-of-proof.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 25,
-            "tasks": [
-              {
-                "id": "task_34",
-                "paragraphId": "para_24",
-                "featureId": "feature_34",
-                "title": "Implement comprehensive test suite for criminal evidence standards (>95% cert...",
-                "description": "Implement comprehensive test suite for **criminal evidence standards** (>95% certainty)",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 27
-              },
-              {
-                "id": "task_35",
-                "paragraphId": "para_24",
-                "featureId": "feature_34",
-                "title": "Create automated testing pipeline for beyond reasonable doubt assessment fram...",
-                "description": "Create automated testing pipeline for **beyond reasonable doubt** assessment framework",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 28
-              },
-              {
-                "id": "task_36",
-                "paragraphId": "para_24",
-                "featureId": "feature_34",
-                "title": "Add monitoring and alerting for prosecutorial burden validation protocols",
-                "description": "Add monitoring and alerting for **prosecutorial burden** validation protocols",
-                "rankOrder": 3,
-                "weight": 85,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 29
-              },
-              {
-                "id": "task_37",
-                "paragraphId": "para_24",
-                "featureId": "feature_34",
-                "title": "Fix workflow functionality for reasonable doubt evaluation mechanisms",
-                "description": "Fix workflow functionality for **reasonable doubt** evaluation mechanisms",
-                "rankOrder": 4,
-                "weight": 60,
-                "priority": "low",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 30
-              },
-              {
-                "id": "task_38",
-                "paragraphId": "para_24",
-                "featureId": "feature_34",
-                "title": "Update duplicate prevention for evidence sufficiency assessment systems",
-                "description": "Update duplicate prevention for **evidence sufficiency** assessment systems",
-                "rankOrder": 5,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 31
-              }
-            ]
-          },
-          {
-            "id": "para_25",
-            "featureId": "feature_34",
-            "number": 2,
-            "title": "High Priority Tasks",
-            "content": "Paragraph extracted from todo/optimal-strategies-burden-of-proof.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 33,
-            "tasks": [
-              {
-                "id": "task_39",
-                "paragraphId": "para_25",
-                "featureId": "feature_34",
-                "title": "Implement comprehensive test suite for moral certainty standard validation",
-                "description": "Implement comprehensive test suite for **moral certainty** standard validation",
-                "rankOrder": 1,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 35
-              },
-              {
-                "id": "task_40",
-                "paragraphId": "para_25",
-                "featureId": "feature_34",
-                "title": "Create automated testing pipeline for evidence exclusion rule frameworks",
-                "description": "Create automated testing pipeline for **evidence exclusion** rule frameworks",
-                "rankOrder": 2,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 36
-              },
-              {
-                "id": "task_41",
-                "paragraphId": "para_25",
-                "featureId": "feature_34",
-                "title": "Add monitoring and alerting for criminal burden of proof tracking systems",
-                "description": "Add monitoring and alerting for **criminal burden of proof** tracking systems",
-                "rankOrder": 3,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 37
-              },
-              {
-                "id": "task_42",
-                "paragraphId": "para_25",
-                "featureId": "feature_34",
-                "title": "Fix workflow functionality for guilt determination protocols",
-                "description": "Fix workflow functionality for **guilt determination** protocols",
-                "rankOrder": 4,
-                "weight": 60,
-                "priority": "low",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 38
-              },
-              {
-                "id": "task_43",
-                "paragraphId": "para_25",
-                "featureId": "feature_34",
-                "title": "Update duplicate prevention for conviction requirements validation",
-                "description": "Update duplicate prevention for **conviction requirements** validation",
-                "rankOrder": 5,
-                "weight": 50,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 39
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "feature_35",
-        "title": "Mathematical Standard - Invariant Conditions",
-        "description": "Feature extracted from todo/optimal-strategies-burden-of-proof.md",
-        "priority": "medium",
-        "argumentId": "arg_6",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 41,
-        "paragraphs": [
-          {
-            "id": "para_26",
-            "featureId": "feature_35",
-            "number": 1,
-            "title": "Critical Priority Tasks",
-            "content": "Paragraph extracted from todo/optimal-strategies-burden-of-proof.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 43,
-            "tasks": [
-              {
-                "id": "task_44",
-                "paragraphId": "para_26",
-                "featureId": "feature_35",
-                "title": "Implement comprehensive test suite for mathematical proof validation (100% ce...",
-                "description": "Implement comprehensive test suite for **mathematical proof** validation (100% certainty)",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 45
-              },
-              {
-                "id": "task_45",
-                "paragraphId": "para_26",
-                "featureId": "feature_35",
-                "title": "Create automated testing pipeline for logical invariant verification systems",
-                "description": "Create automated testing pipeline for **logical invariant** verification systems",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 46
-              },
-              {
-                "id": "task_46",
-                "paragraphId": "para_26",
-                "featureId": "feature_35",
-                "title": "Add monitoring and alerting for axiom-based proof validation frameworks",
-                "description": "Add monitoring and alerting for **axiom-based** proof validation frameworks",
-                "rankOrder": 3,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 47
-              },
-              {
-                "id": "task_47",
-                "paragraphId": "para_26",
-                "featureId": "feature_35",
-                "title": "Fix workflow functionality for deductive reasoning chain verification",
-                "description": "Fix workflow functionality for **deductive reasoning** chain verification",
-                "rankOrder": 4,
-                "weight": 60,
-                "priority": "low",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 48
-              },
-              {
-                "id": "task_48",
-                "paragraphId": "para_26",
-                "featureId": "feature_35",
-                "title": "Update duplicate prevention for formal verification protocol systems",
-                "description": "Update duplicate prevention for **formal verification** protocol systems",
-                "rankOrder": 5,
-                "weight": 50,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 49
-              }
-            ]
-          },
-          {
-            "id": "para_27",
-            "featureId": "feature_35",
-            "number": 2,
-            "title": "High Priority Tasks",
-            "content": "Paragraph extracted from todo/optimal-strategies-burden-of-proof.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 51,
-            "tasks": [
-              {
-                "id": "task_49",
-                "paragraphId": "para_27",
-                "featureId": "feature_35",
-                "title": "Implement comprehensive test suite for absolute certainty validation frameworks",
-                "description": "Implement comprehensive test suite for **absolute certainty** validation frameworks",
-                "rankOrder": 1,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 53
-              },
-              {
-                "id": "task_50",
-                "paragraphId": "para_27",
-                "featureId": "feature_35",
-                "title": "Create automated testing pipeline for logical consistency verification systems",
-                "description": "Create automated testing pipeline for **logical consistency** verification systems",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 54
-              },
-              {
-                "id": "task_51",
-                "paragraphId": "para_27",
-                "featureId": "feature_35",
-                "title": "Add monitoring and alerting for proof by contradiction validation protocols",
-                "description": "Add monitoring and alerting for **proof by contradiction** validation protocols",
-                "rankOrder": 3,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 55
-              },
-              {
-                "id": "task_52",
-                "paragraphId": "para_27",
-                "featureId": "feature_35",
-                "title": "Fix workflow functionality for mathematical induction verification frameworks",
-                "description": "Fix workflow functionality for **mathematical induction** verification frameworks",
-                "rankOrder": 4,
-                "weight": 60,
-                "priority": "low",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 56
-              },
-              {
-                "id": "task_53",
-                "paragraphId": "para_27",
-                "featureId": "feature_35",
-                "title": "Update duplicate prevention for theorem proving automation systems",
-                "description": "Update duplicate prevention for **theorem proving** automation systems",
-                "rankOrder": 5,
-                "weight": 50,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 57
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "feature_36",
-        "title": "Improvements Needed:",
-        "description": "Feature extracted from todo/optimal-strategies-burden-of-proof.md",
-        "priority": "medium",
-        "argumentId": "arg_6",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 59,
-        "paragraphs": [
-          {
-            "id": "para_161",
-            "featureId": "feature_36",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 59,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_37",
-        "title": "Necessary Conditions for Proof",
-        "description": "Feature extracted from todo/optimal-strategies-burden-of-proof.md",
-        "priority": "medium",
-        "argumentId": "arg_6",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 67,
-        "paragraphs": [
-          {
-            "id": "para_28",
-            "featureId": "feature_37",
-            "number": 1,
-            "title": "Civil Cases (Dan & Jax proving guilt of other agents)",
-            "content": "Paragraph extracted from todo/optimal-strategies-burden-of-proof.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 69,
-            "tasks": [
-              {
-                "id": "task_54",
-                "paragraphId": "para_28",
-                "featureId": "feature_37",
-                "title": "Implement comprehensive test suite for documentary evidence establishing agen...",
-                "description": "Implement comprehensive test suite for **documentary evidence** establishing agent actions",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 72
-              },
-              {
-                "id": "task_55",
-                "paragraphId": "para_28",
-                "featureId": "feature_37",
-                "title": "Create automated testing pipeline for witness testimony corroboration systems",
-                "description": "Create automated testing pipeline for **witness testimony** corroboration systems",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 73
-              },
-              {
-                "id": "task_56",
-                "paragraphId": "para_28",
-                "featureId": "feature_37",
-                "title": "Add monitoring and alerting for financial records analysis frameworks",
-                "description": "Add monitoring and alerting for **financial records** analysis frameworks",
-                "rankOrder": 3,
-                "weight": 85,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 74
-              },
-              {
-                "id": "task_57",
-                "paragraphId": "para_28",
-                "featureId": "feature_37",
-                "title": "Fix workflow functionality for communication patterns evidence validation",
-                "description": "Fix workflow functionality for **communication patterns** evidence validation",
-                "rankOrder": 4,
-                "weight": 100,
-                "priority": "low",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 75
-              },
-              {
-                "id": "task_58",
-                "paragraphId": "para_28",
-                "featureId": "feature_37",
-                "title": "Update duplicate prevention for timeline correlation assessment protocols",
-                "description": "Update duplicate prevention for **timeline correlation** assessment protocols",
-                "rankOrder": 5,
-                "weight": 50,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 76
-              }
-            ]
-          },
-          {
-            "id": "para_29",
-            "featureId": "feature_37",
-            "number": 2,
-            "title": "Criminal Cases (Dan & Jax proving guilt beyond reasonable doubt)",
-            "content": "Paragraph extracted from todo/optimal-strategies-burden-of-proof.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 78,
-            "tasks": [
-              {
-                "id": "task_59",
-                "paragraphId": "para_29",
-                "featureId": "feature_37",
-                "title": "Implement comprehensive test suite for criminal intent evidence validation",
-                "description": "Implement comprehensive test suite for **criminal intent** evidence validation",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 81
-              },
-              {
-                "id": "task_60",
-                "paragraphId": "para_29",
-                "featureId": "feature_37",
-                "title": "Create automated testing pipeline for actus reus (guilty act) verification sy...",
-                "description": "Create automated testing pipeline for **actus reus** (guilty act) verification systems",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 82
-              },
-              {
-                "id": "task_61",
-                "paragraphId": "para_29",
-                "featureId": "feature_37",
-                "title": "Add monitoring and alerting for mens rea (guilty mind) assessment frameworks",
-                "description": "Add monitoring and alerting for **mens rea** (guilty mind) assessment frameworks",
-                "rankOrder": 3,
-                "weight": 85,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 83
-              },
-              {
-                "id": "task_62",
-                "paragraphId": "para_29",
-                "featureId": "feature_37",
-                "title": "Fix workflow functionality for causation establishment protocols",
-                "description": "Fix workflow functionality for **causation** establishment protocols",
-                "rankOrder": 4,
-                "weight": 60,
-                "priority": "low",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 84
-              },
-              {
-                "id": "task_63",
-                "paragraphId": "para_29",
-                "featureId": "feature_37",
-                "title": "Update duplicate prevention for alibi refutation validation systems",
-                "description": "Update duplicate prevention for **alibi refutation** validation systems",
-                "rankOrder": 5,
-                "weight": 50,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 85
-              }
-            ]
-          },
-          {
-            "id": "para_30",
-            "featureId": "feature_37",
-            "number": 3,
-            "title": "Mathematical Invariants (Absolute certainty required)",
-            "content": "Paragraph extracted from todo/optimal-strategies-burden-of-proof.md",
-            "rankOrder": 3,
-            "weight": 85,
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 87,
-            "tasks": [
-              {
-                "id": "task_64",
-                "paragraphId": "para_30",
-                "featureId": "feature_37",
-                "title": "Implement comprehensive test suite for logical axiom validation frameworks",
-                "description": "Implement comprehensive test suite for **logical axiom** validation frameworks",
-                "rankOrder": 1,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 90
-              },
-              {
-                "id": "task_65",
-                "paragraphId": "para_30",
-                "featureId": "feature_37",
-                "title": "Create automated testing pipeline for deductive proof chain verification",
-                "description": "Create automated testing pipeline for **deductive proof** chain verification",
-                "rankOrder": 2,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 91
-              },
-              {
-                "id": "task_66",
-                "paragraphId": "para_30",
-                "featureId": "feature_37",
-                "title": "Add monitoring and alerting for contradiction elimination validation protocols",
-                "description": "Add monitoring and alerting for **contradiction elimination** validation protocols",
-                "rankOrder": 3,
-                "weight": 85,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 92
-              },
-              {
-                "id": "task_67",
-                "paragraphId": "para_30",
-                "featureId": "feature_37",
-                "title": "Fix workflow functionality for exhaustive case analysis systems",
-                "description": "Fix workflow functionality for **exhaustive case** analysis systems",
-                "rankOrder": 4,
-                "weight": 60,
-                "priority": "low",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 93
-              },
-              {
-                "id": "task_68",
-                "paragraphId": "para_30",
-                "featureId": "feature_37",
-                "title": "Update duplicate prevention for formal proof completeness verification",
-                "description": "Update duplicate prevention for **formal proof** completeness verification",
-                "rankOrder": 5,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/optimal-strategies-burden-of-proof.md",
-                "lineNumber": 94
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "feature_38",
-        "title": "Must-Do (Critical Priority)",
-        "description": "Feature extracted from todo/burden-of-proof-test.md",
-        "priority": "critical",
-        "argumentId": "arg_7",
-        "source": "todo/burden-of-proof-test.md",
-        "lineNumber": 3,
-        "paragraphs": [
-          {
-            "id": "para_162",
-            "featureId": "feature_38",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/burden-of-proof-test.md",
-            "lineNumber": 3,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_39",
-        "title": "Should-Do (High Priority)",
-        "description": "Feature extracted from todo/burden-of-proof-test.md",
-        "priority": "high",
-        "argumentId": "arg_7",
-        "source": "todo/burden-of-proof-test.md",
-        "lineNumber": 8,
-        "paragraphs": [
-          {
-            "id": "para_163",
-            "featureId": "feature_39",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/burden-of-proof-test.md",
-            "lineNumber": 8,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_40",
-        "title": "Nice-to-Have (Low Priority)",
-        "description": "Feature extracted from todo/burden-of-proof-test.md",
-        "priority": "low",
-        "argumentId": "arg_7",
-        "source": "todo/burden-of-proof-test.md",
-        "lineNumber": 13,
-        "paragraphs": [
-          {
-            "id": "para_164",
-            "featureId": "feature_40",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/burden-of-proof-test.md",
-            "lineNumber": 13,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_41",
-        "title": "Implementation Notes",
-        "description": "Feature extracted from todo/burden-of-proof-test.md",
-        "priority": "medium",
-        "argumentId": "arg_7",
-        "source": "todo/burden-of-proof-test.md",
-        "lineNumber": 17,
-        "paragraphs": [
-          {
-            "id": "para_31",
-            "featureId": "feature_41",
-            "number": 1,
-            "title": "Target Parties:",
-            "content": "Paragraph extracted from todo/burden-of-proof-test.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/burden-of-proof-test.md",
-            "lineNumber": 26,
-            "tasks": []
-          },
-          {
-            "id": "para_32",
-            "featureId": "feature_41",
-            "number": 2,
-            "title": "Evidence Requirements:",
-            "content": "Paragraph extracted from todo/burden-of-proof-test.md",
-            "rankOrder": 2,
-            "weight": 100,
-            "source": "todo/burden-of-proof-test.md",
-            "lineNumber": 31,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_42",
-        "title": "Overview",
-        "description": "Feature extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "priority": "medium",
-        "argumentId": "arg_8",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 3,
-        "paragraphs": [
-          {
-            "id": "para_165",
-            "featureId": "feature_42",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 3,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_43",
-        "title": "Current Repository Status",
-        "description": "Feature extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "priority": "medium",
-        "argumentId": "arg_8",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 7,
-        "paragraphs": [
-          {
-            "id": "para_166",
-            "featureId": "feature_43",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 7,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_44",
-        "title": "Priority Recommendations",
-        "description": "Feature extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "priority": "medium",
-        "argumentId": "arg_8",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 18,
-        "paragraphs": [
-          {
-            "id": "para_33",
-            "featureId": "feature_44",
-            "number": 1,
-            "title": "Must-Do (Phase 1) - Critical Evidence Collection",
-            "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 20,
-            "tasks": [
-              {
-                "id": "task_69",
-                "paragraphId": "para_33",
-                "featureId": "feature_44",
-                "title": "Gather Responsible Person documentation for 37 jurisdictions (JF-RP1)",
-                "description": "Gather Responsible Person documentation for 37 jurisdictions (JF-RP1)",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 22
-              },
-              {
-                "id": "task_70",
-                "paragraphId": "para_33",
-                "featureId": "feature_44",
-                "title": "Obtain regulatory risk analysis documentation (JF-RP2)",
-                "description": "Obtain regulatory risk analysis documentation (JF-RP2)",
-                "rankOrder": 2,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 23
-              },
-              {
-                "id": "task_71",
-                "paragraphId": "para_33",
-                "featureId": "feature_44",
-                "title": "Collect director loan account statements for all 3 directors (JF-DLA1, JF-DLA...",
-                "description": "Collect director loan account statements for all 3 directors (JF-DLA1, JF-DLA2, JF-DLA3)",
-                "rankOrder": 3,
-                "weight": 85,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 24
-              },
-              {
-                "id": "task_72",
-                "paragraphId": "para_33",
-                "featureId": "feature_44",
-                "title": "Document Peter's own withdrawals with minimum 4 examples (JF-PA1 through JF-PA4)",
-                "description": "Document Peter's own withdrawals with minimum 4 examples (JF-PA1 through JF-PA4)",
-                "rankOrder": 4,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 25
-              },
-              {
-                "id": "task_73",
-                "paragraphId": "para_33",
-                "featureId": "feature_44",
-                "title": "Obtain R500K payment bank statement dated 16 July 2025 (JF-BS1)",
-                "description": "Obtain R500K payment bank statement dated 16 July 2025 (JF-BS1)",
-                "rankOrder": 5,
-                "weight": 50,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 26
-              },
-              {
-                "id": "task_74",
-                "paragraphId": "para_33",
-                "featureId": "feature_44",
-                "title": "Create comparison document highlighting all changes between JF5 draft and fin...",
-                "description": "Create comparison document highlighting all changes between JF5 draft and final - **Template created**: `evidence/annexures/JF5-COMPARISON_DRAFT_VS_FINAL_CHANGES.md` - Requires completion after obtaining both agreements",
-                "rankOrder": 6,
-                "weight": 100,
-                "priority": "high",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 29
-              },
-              {
-                "id": "task_75",
-                "paragraphId": "para_33",
-                "featureId": "feature_44",
-                "title": "Obtain Daniel's witness statement regarding \"Has anything changed?\" exchange",
-                "description": "Obtain Daniel's witness statement regarding \"Has anything changed?\" exchange",
-                "rankOrder": 7,
-                "weight": 50,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 30
-              },
-              {
-                "id": "task_76",
-                "paragraphId": "para_33",
-                "featureId": "feature_44",
-                "title": "Collect Chesno fraud documentation (JF-CHESNO1 through JF-CHESNO4)",
-                "description": "Collect Chesno fraud documentation (JF-CHESNO1 through JF-CHESNO4)",
-                "rankOrder": 8,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 32
-              },
-              {
-                "id": "task_77",
-                "paragraphId": "para_33",
-                "featureId": "feature_44",
-                "title": "Document Daniel's 8-year restoration evidence (JF-RESTORE1 through JF-RESTORE4)",
-                "description": "Document Daniel's 8-year restoration evidence (JF-RESTORE1 through JF-RESTORE4)",
-                "rankOrder": 9,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 33
-              }
-            ]
-          },
-          {
-            "id": "para_34",
-            "featureId": "feature_44",
-            "number": 2,
-            "title": "Should-Do (Phase 2) - High Priority Evidence",
-            "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "rankOrder": 2,
-            "weight": 100,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 35,
-            "tasks": [
-              {
-                "id": "task_78",
-                "paragraphId": "para_34",
-                "featureId": "feature_44",
-                "title": "Obtain system access restriction logs (JF-SAL1, JF-EAL1, JF-FSL1)",
-                "description": "Obtain system access restriction logs (JF-SAL1, JF-EAL1, JF-FSL1)",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 37
-              },
-              {
-                "id": "task_79",
-                "paragraphId": "para_34",
-                "featureId": "feature_44",
-                "title": "Collect correspondence showing Daniel provided documentation (JF-CORR1)",
-                "description": "Collect correspondence showing Daniel provided documentation (JF-CORR1)",
-                "rankOrder": 2,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 39
-              },
-              {
-                "id": "task_80",
-                "paragraphId": "para_34",
-                "featureId": "feature_44",
-                "title": "Gather IT service invoices and contracts",
-                "description": "Gather IT service invoices and contracts",
-                "rankOrder": 3,
-                "weight": 85,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 50
-              },
-              {
-                "id": "task_81",
-                "paragraphId": "para_34",
-                "featureId": "feature_44",
-                "title": "Document historical collaborative model evidence (JF-HIST1, JF-HIST2, JF-HIST3)",
-                "description": "Document historical collaborative model evidence (JF-HIST1, JF-HIST2, JF-HIST3)",
-                "rankOrder": 4,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 51
-              },
-              {
-                "id": "task_82",
-                "paragraphId": "para_34",
-                "featureId": "feature_44",
-                "title": "Document director exclusion evidence (JF-EX1, JF-EX2, JF-EX3, JF-EX4)",
-                "description": "Document director exclusion evidence (JF-EX1, JF-EX2, JF-EX3, JF-EX4)",
-                "rankOrder": 5,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 60
-              }
-            ]
-          },
-          {
-            "id": "para_35",
-            "featureId": "feature_44",
-            "number": 3,
-            "title": "Nice-to-Have (Phase 3) - Supporting Evidence",
-            "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "rankOrder": 3,
-            "weight": 100,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 62,
-            "tasks": [
-              {
-                "id": "task_83",
-                "paragraphId": "para_35",
-                "featureId": "feature_44",
-                "title": "Gather revenue figures for international markets",
-                "description": "Gather revenue figures for international markets",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 65
-              },
-              {
-                "id": "task_84",
-                "paragraphId": "para_35",
-                "featureId": "feature_44",
-                "title": "Collect financial records showing businesses remain profitable",
-                "description": "Collect financial records showing businesses remain profitable",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 66
-              },
-              {
-                "id": "task_85",
-                "paragraphId": "para_35",
-                "featureId": "feature_44",
-                "title": "Document evidence of Peter's participation in informal practices",
-                "description": "Document evidence of Peter's participation in informal practices",
-                "rankOrder": 3,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 67
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "feature_45",
-        "title": "Repository Maintenance Tasks",
-        "description": "Feature extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "priority": "medium",
-        "argumentId": "arg_8",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 69,
-        "paragraphs": [
-          {
-            "id": "para_36",
-            "featureId": "feature_45",
-            "number": 1,
-            "title": "Must-Do (Phase 1) - Critical Maintenance",
-            "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 71,
-            "tasks": [
-              {
-                "id": "task_86",
-                "paragraphId": "para_36",
-                "featureId": "feature_45",
-                "title": "Review and consolidate jax-response and jax-dan-response directories to elimi...",
-                "description": "Review and consolidate jax-response and jax-dan-response directories to eliminate duplication",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 73
-              },
-              {
-                "id": "task_87",
-                "paragraphId": "para_36",
-                "featureId": "feature_45",
-                "title": "Update all README.md files to reflect current repository state",
-                "description": "Update all README.md files to reflect current repository state",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 75
-              },
-              {
-                "id": "task_88",
-                "paragraphId": "para_36",
-                "featureId": "feature_45",
-                "title": "Verify all annexure references in affidavit v3 are correct and complete",
-                "description": "Verify all annexure references in affidavit v3 are correct and complete",
-                "rankOrder": 3,
-                "weight": 85,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 77
-              }
-            ]
-          },
-          {
-            "id": "para_37",
-            "featureId": "feature_45",
-            "number": 2,
-            "title": "Should-Do (Phase 2) - Documentation Updates",
-            "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "rankOrder": 2,
-            "weight": 100,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 79,
-            "tasks": [
-              {
-                "id": "task_89",
-                "paragraphId": "para_37",
-                "featureId": "feature_45",
-                "title": "Update REPOSITORY_STRUCTURE.md to include new jax-response directory structure",
-                "description": "Update REPOSITORY_STRUCTURE.md to include new jax-response directory structure",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 81
-              },
-              {
-                "id": "task_90",
-                "paragraphId": "para_37",
-                "featureId": "feature_45",
-                "title": "Create comprehensive evidence index mapping all 275+ files",
-                "description": "Create comprehensive evidence index mapping all 275+ files",
-                "rankOrder": 2,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 82
-              },
-              {
-                "id": "task_91",
-                "paragraphId": "para_37",
-                "featureId": "feature_45",
-                "title": "Document the relationship between jax-response and jax-dan-response directories",
-                "description": "Document the relationship between jax-response and jax-dan-response directories",
-                "rankOrder": 3,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 83
-              },
-              {
-                "id": "task_92",
-                "paragraphId": "para_37",
-                "featureId": "feature_45",
-                "title": "Update case timeline with all 15 forensic analysis events",
-                "description": "Update case timeline with all 15 forensic analysis events",
-                "rankOrder": 4,
-                "weight": 60,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 84
-              },
-              {
-                "id": "task_93",
-                "paragraphId": "para_37",
-                "featureId": "feature_45",
-                "title": "Create visual timeline diagram for key events from March-August 2025",
-                "description": "Create visual timeline diagram for key events from March-August 2025",
-                "rankOrder": 5,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 85
-              }
-            ]
-          },
-          {
-            "id": "para_38",
-            "featureId": "feature_45",
-            "number": 3,
-            "title": "Nice-to-Have (Phase 3) - Optimization",
-            "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "rankOrder": 3,
-            "weight": 85,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 87,
-            "tasks": [
-              {
-                "id": "task_94",
-                "paragraphId": "para_38",
-                "featureId": "feature_45",
-                "title": "Create automated scripts for evidence cross-referencing",
-                "description": "Create automated scripts for evidence cross-referencing",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 90
-              },
-              {
-                "id": "task_95",
-                "paragraphId": "para_38",
-                "featureId": "feature_45",
-                "title": "Implement database integration for structured case data",
-                "description": "Implement database integration for structured case data",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 91
-              },
-              {
-                "id": "task_96",
-                "paragraphId": "para_38",
-                "featureId": "feature_45",
-                "title": "Develop API for programmatic access to case information",
-                "description": "Develop API for programmatic access to case information",
-                "rankOrder": 3,
-                "weight": 85,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 92
-              },
-              {
-                "id": "task_97",
-                "paragraphId": "para_38",
-                "featureId": "feature_45",
-                "title": "Create automated case status reporting system",
-                "description": "Create automated case status reporting system",
-                "rankOrder": 4,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 93
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "feature_46",
-        "title": "Affidavit Preparation Tasks",
-        "description": "Feature extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "priority": "medium",
-        "argumentId": "arg_8",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 95,
-        "paragraphs": [
-          {
-            "id": "para_39",
-            "featureId": "feature_46",
-            "number": 1,
-            "title": "Must-Do (Phase 1) - Before Legal Review",
-            "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 97,
-            "tasks": []
-          },
-          {
-            "id": "para_40",
-            "featureId": "feature_46",
-            "number": 2,
-            "title": "Should-Do (Phase 2) - Legal Review Preparation",
-            "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 116,
-            "tasks": [
-              {
-                "id": "task_98",
-                "paragraphId": "para_40",
-                "featureId": "feature_46",
-                "title": "Verify all dates in timeline are accurate and consistent",
-                "description": "Verify all dates in timeline are accurate and consistent",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 119
-              },
-              {
-                "id": "task_99",
-                "paragraphId": "para_40",
-                "featureId": "feature_46",
-                "title": "Check all annexure numbering is sequential and complete",
-                "description": "Check all annexure numbering is sequential and complete",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 121
-              }
-            ]
-          },
-          {
-            "id": "para_41",
-            "featureId": "feature_46",
-            "number": 3,
-            "title": "Nice-to-Have (Phase 3) - Enhancement",
-            "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "rankOrder": 3,
-            "weight": 85,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 124,
-            "tasks": [
-              {
-                "id": "task_100",
-                "paragraphId": "para_41",
-                "featureId": "feature_46",
-                "title": "Add visual aids (timelines, financial flow diagrams) as annexures",
-                "description": "Add visual aids (timelines, financial flow diagrams) as annexures",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "low",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 126
-              },
-              {
-                "id": "task_101",
-                "paragraphId": "para_41",
-                "featureId": "feature_46",
-                "title": "Prepare witness statement templates for Daniel and other witnesses",
-                "description": "Prepare witness statement templates for Daniel and other witnesses",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 146
-              },
-              {
-                "id": "task_102",
-                "paragraphId": "para_41",
-                "featureId": "feature_46",
-                "title": "Develop evidence presentation strategy for court",
-                "description": "Develop evidence presentation strategy for court",
-                "rankOrder": 3,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 147
-              },
-              {
-                "id": "task_103",
-                "paragraphId": "para_41",
-                "featureId": "feature_46",
-                "title": "Create quick reference guide for all 50+ annexures",
-                "description": "Create quick reference guide for all 50+ annexures",
-                "rankOrder": 4,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 148
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "feature_47",
-        "title": "Forensic Analysis Enhancement",
-        "description": "Feature extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "priority": "medium",
-        "argumentId": "arg_8",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 150,
-        "paragraphs": [
-          {
-            "id": "para_42",
-            "featureId": "feature_47",
-            "number": 1,
-            "title": "Must-Do (Phase 1) - Critical Analysis",
-            "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 152,
-            "tasks": [
-              {
-                "id": "task_104",
-                "paragraphId": "para_42",
-                "featureId": "feature_47",
-                "title": "Validate all dates in revenue-theft, family-trust, and financial-flows analyses",
-                "description": "Validate all dates in revenue-theft, family-trust, and financial-flows analyses",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "low",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 157
-              }
-            ]
-          },
-          {
-            "id": "para_43",
-            "featureId": "feature_47",
-            "number": 2,
-            "title": "Should-Do (Phase 2) - Analysis Expansion",
-            "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 160,
-            "tasks": [
-              {
-                "id": "task_105",
-                "paragraphId": "para_43",
-                "featureId": "feature_47",
-                "title": "Add cross-border financial flow analysis for UK-SA transactions",
-                "description": "Add cross-border financial flow analysis for UK-SA transactions",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "low",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 162
-              },
-              {
-                "id": "task_106",
-                "paragraphId": "para_43",
-                "featureId": "feature_47",
-                "title": "Create comprehensive evidence cross-reference for all three categories",
-                "description": "Create comprehensive evidence cross-reference for all three categories",
-                "rankOrder": 2,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 164
-              },
-              {
-                "id": "task_107",
-                "paragraphId": "para_43",
-                "featureId": "feature_47",
-                "title": "Develop expert witness requirements list for financial forensics",
-                "description": "Develop expert witness requirements list for financial forensics",
-                "rankOrder": 3,
-                "weight": 85,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 165
-              },
-              {
-                "id": "task_108",
-                "paragraphId": "para_43",
-                "featureId": "feature_47",
-                "title": "Prepare forensic analysis summary for attorney and court",
-                "description": "Prepare forensic analysis summary for attorney and court",
-                "rankOrder": 4,
-                "weight": 60,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 166
-              }
-            ]
-          },
-          {
-            "id": "para_44",
-            "featureId": "feature_47",
-            "number": 3,
-            "title": "Nice-to-Have (Phase 3) - Advanced Analysis",
-            "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "rankOrder": 3,
-            "weight": 85,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 168,
-            "tasks": [
-              {
-                "id": "task_109",
-                "paragraphId": "para_44",
-                "featureId": "feature_47",
-                "title": "Create network analysis diagrams showing fund flows and relationships",
-                "description": "Create network analysis diagrams showing fund flows and relationships",
-                "rankOrder": 1,
-                "weight": 90,
-                "priority": "low",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 170
-              },
-              {
-                "id": "task_110",
-                "paragraphId": "para_44",
-                "featureId": "feature_47",
-                "title": "Develop timeline visualization for all 15 forensic events",
-                "description": "Develop timeline visualization for all 15 forensic events",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 171
-              },
-              {
-                "id": "task_111",
-                "paragraphId": "para_44",
-                "featureId": "feature_47",
-                "title": "Create damage calculation methodology documentation",
-                "description": "Create damage calculation methodology documentation",
-                "rankOrder": 3,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 185
-              },
-              {
-                "id": "task_112",
-                "paragraphId": "para_44",
-                "featureId": "feature_47",
-                "title": "Develop expert testimony preparation materials",
-                "description": "Develop expert testimony preparation materials",
-                "rankOrder": 4,
-                "weight": 60,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 186
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "feature_48",
-        "title": "Testing and Quality Assurance",
-        "description": "Feature extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "priority": "medium",
-        "argumentId": "arg_8",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 188,
-        "paragraphs": [
-          {
-            "id": "para_45",
-            "featureId": "feature_48",
-            "number": 1,
-            "title": "Must-Do (Phase 1) - Critical Testing",
-            "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 190,
-            "tasks": [
-              {
-                "id": "task_113",
-                "paragraphId": "para_45",
-                "featureId": "feature_48",
-                "title": "Verify all GitHub issue generation workflows function correctly",
-                "description": "Verify all GitHub issue generation workflows function correctly",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "low",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 193
-              },
-              {
-                "id": "task_114",
-                "paragraphId": "para_45",
-                "featureId": "feature_48",
-                "title": "Test evidence cross-referencing system for accuracy",
-                "description": "Test evidence cross-referencing system for accuracy",
-                "rankOrder": 2,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 194
-              }
-            ]
-          },
-          {
-            "id": "para_46",
-            "featureId": "feature_48",
-            "number": 2,
-            "title": "Should-Do (Phase 2) - Quality Checks",
-            "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 198,
-            "tasks": [
-              {
-                "id": "task_115",
-                "paragraphId": "para_46",
-                "featureId": "feature_48",
-                "title": "Review all 275+ files for naming consistency",
-                "description": "Review all 275+ files for naming consistency",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 200
-              },
-              {
-                "id": "task_116",
-                "paragraphId": "para_46",
-                "featureId": "feature_48",
-                "title": "Verify all markdown files render correctly on GitHub",
-                "description": "Verify all markdown files render correctly on GitHub",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 201
-              },
-              {
-                "id": "task_117",
-                "paragraphId": "para_46",
-                "featureId": "feature_48",
-                "title": "Check all internal links and cross-references work",
-                "description": "Check all internal links and cross-references work",
-                "rankOrder": 3,
-                "weight": 85,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 202
-              },
-              {
-                "id": "task_118",
-                "paragraphId": "para_46",
-                "featureId": "feature_48",
-                "title": "Validate all financial figures use consistent currency notation",
-                "description": "Validate all financial figures use consistent currency notation",
-                "rankOrder": 4,
-                "weight": 60,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 204
-              }
-            ]
-          },
-          {
-            "id": "para_47",
-            "featureId": "feature_48",
-            "number": 3,
-            "title": "Nice-to-Have (Phase 3) - Advanced QA",
-            "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "rankOrder": 3,
-            "weight": 85,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 206,
-            "tasks": [
-              {
-                "id": "task_119",
-                "paragraphId": "para_47",
-                "featureId": "feature_48",
-                "title": "Implement automated testing for repository structure integrity",
-                "description": "Implement automated testing for repository structure integrity",
-                "rankOrder": 1,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 208
-              },
-              {
-                "id": "task_120",
-                "paragraphId": "para_47",
-                "featureId": "feature_48",
-                "title": "Create validation scripts for evidence completeness",
-                "description": "Create validation scripts for evidence completeness",
-                "rankOrder": 2,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 209
-              },
-              {
-                "id": "task_121",
-                "paragraphId": "para_47",
-                "featureId": "feature_48",
-                "title": "Develop automated cross-reference checking system",
-                "description": "Develop automated cross-reference checking system",
-                "rankOrder": 3,
-                "weight": 85,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 210
-              },
-              {
-                "id": "task_122",
-                "paragraphId": "para_47",
-                "featureId": "feature_48",
-                "title": "Implement continuous integration for documentation updates",
-                "description": "Implement continuous integration for documentation updates",
-                "rankOrder": 4,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 211
-              },
-              {
-                "id": "task_123",
-                "paragraphId": "para_47",
-                "featureId": "feature_48",
-                "title": "Create automated reporting for repository health metrics",
-                "description": "Create automated reporting for repository health metrics",
-                "rankOrder": 5,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 212
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "feature_49",
-        "title": "Timeline and Milestones",
-        "description": "Feature extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "priority": "medium",
-        "argumentId": "arg_8",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 214,
-        "paragraphs": [
-          {
-            "id": "para_48",
-            "featureId": "feature_49",
-            "number": 1,
-            "title": "Week 1 (Immediate)",
-            "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 216,
-            "tasks": [
-              {
-                "id": "task_124",
-                "paragraphId": "para_48",
-                "featureId": "feature_49",
-                "title": "Update critical documentation",
-                "description": "Update critical documentation",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "critical",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 219
-              }
-            ]
-          },
-          {
-            "id": "para_49",
-            "featureId": "feature_49",
-            "number": 2,
-            "title": "Week 2 (Short-term)",
-            "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 222,
-            "tasks": [
-              {
-                "id": "task_125",
-                "paragraphId": "para_49",
-                "featureId": "feature_49",
-                "title": "Gather all Phase 2 high-priority evidence",
-                "description": "Gather all Phase 2 high-priority evidence",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "high",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 224
-              }
-            ]
-          },
-          {
-            "id": "para_50",
-            "featureId": "feature_49",
-            "number": 3,
-            "title": "Week 3 (Medium-term)",
-            "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "rankOrder": 3,
-            "weight": 85,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 228,
-            "tasks": [
-              {
-                "id": "task_126",
-                "paragraphId": "para_50",
-                "featureId": "feature_49",
-                "title": "Prepare for legal review",
-                "description": "Prepare for legal review",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-                "lineNumber": 229
-              }
-            ]
-          },
-          {
-            "id": "para_51",
-            "featureId": "feature_49",
-            "number": 4,
-            "title": "Week 4 (Pre-submission)",
-            "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "rankOrder": 4,
-            "weight": 60,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 234,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_50",
-        "title": "Success Criteria",
-        "description": "Feature extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "priority": "medium",
-        "argumentId": "arg_8",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 240,
-        "paragraphs": [
-          {
-            "id": "para_52",
-            "featureId": "feature_50",
-            "number": 1,
-            "title": "Evidence Collection Complete",
-            "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 242,
-            "tasks": []
-          },
-          {
-            "id": "para_53",
-            "featureId": "feature_50",
-            "number": 2,
-            "title": "Repository Maintenance Complete",
-            "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 248,
-            "tasks": []
-          },
-          {
-            "id": "para_54",
-            "featureId": "feature_50",
-            "number": 3,
-            "title": "Affidavit Ready for Legal Review",
-            "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "rankOrder": 3,
-            "weight": 85,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 254,
-            "tasks": []
-          },
-          {
-            "id": "para_55",
-            "featureId": "feature_50",
-            "number": 4,
-            "title": "Quality Assurance Complete",
-            "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "rankOrder": 4,
-            "weight": 60,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 260,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_51",
-        "title": "Notes",
-        "description": "Feature extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "priority": "medium",
-        "argumentId": "arg_8",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 266,
-        "paragraphs": [
-          {
-            "id": "para_167",
-            "featureId": "feature_51",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 266,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_52",
-        "title": "References",
-        "description": "Feature extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "priority": "medium",
-        "argumentId": "arg_8",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 274,
-        "paragraphs": [
-          {
-            "id": "para_168",
-            "featureId": "feature_52",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 274,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_53",
-        "title": "Purpose",
-        "description": "Feature extracted from todo/README.md",
-        "priority": "medium",
-        "argumentId": "arg_9",
-        "source": "todo/README.md",
-        "lineNumber": 5,
-        "paragraphs": [
-          {
-            "id": "para_169",
-            "featureId": "feature_53",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/README.md",
-            "lineNumber": 5,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_54",
-        "title": "Current Todo Documents",
-        "description": "Feature extracted from todo/README.md",
-        "priority": "medium",
-        "argumentId": "arg_9",
-        "source": "todo/README.md",
-        "lineNumber": 9,
-        "paragraphs": [
-          {
-            "id": "para_56",
-            "featureId": "feature_54",
-            "number": 1,
-            "title": "Active Todo Files",
-            "content": "Paragraph extracted from todo/README.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/README.md",
-            "lineNumber": 11,
-            "tasks": []
-          },
-          {
-            "id": "para_57",
-            "featureId": "feature_54",
-            "number": 2,
-            "title": "Workflow Test Files",
-            "content": "Paragraph extracted from todo/README.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/README.md",
-            "lineNumber": 33,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_55",
-        "title": "How It Works",
-        "description": "Feature extracted from todo/README.md",
-        "priority": "medium",
-        "argumentId": "arg_9",
-        "source": "todo/README.md",
-        "lineNumber": 48,
-        "paragraphs": [
-          {
-            "id": "para_58",
-            "featureId": "feature_55",
-            "number": 1,
-            "title": "Automatic Issue Generation",
-            "content": "Paragraph extracted from todo/README.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/README.md",
-            "lineNumber": 50,
-            "tasks": []
-          },
-          {
-            "id": "para_59",
-            "featureId": "feature_55",
-            "number": 2,
-            "title": "Task Format",
-            "content": "Paragraph extracted from todo/README.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/README.md",
-            "lineNumber": 59,
-            "tasks": []
-          },
-          {
-            "id": "para_60",
-            "featureId": "feature_55",
-            "number": 3,
-            "title": "Must-Do (Phase 1)",
-            "content": "Paragraph extracted from todo/README.md",
-            "rankOrder": 3,
-            "weight": 85,
-            "source": "todo/README.md",
-            "lineNumber": 65,
-            "tasks": []
-          },
-          {
-            "id": "para_61",
-            "featureId": "feature_55",
-            "number": 4,
-            "title": "Should-Do (Phase 2)",
-            "content": "Paragraph extracted from todo/README.md",
-            "rankOrder": 4,
-            "weight": 60,
-            "source": "todo/README.md",
-            "lineNumber": 69,
-            "tasks": []
-          },
-          {
-            "id": "para_62",
-            "featureId": "feature_55",
-            "number": 5,
-            "title": "Nice-to-Have (Phase 3)",
-            "content": "Paragraph extracted from todo/README.md",
-            "rankOrder": 5,
-            "weight": 50,
-            "source": "todo/README.md",
-            "lineNumber": 73,
-            "tasks": [
-              {
-                "id": "task_127",
-                "paragraphId": "para_62",
-                "featureId": "feature_55",
-                "title": "Implement priority-based response architecture",
-                "description": "Implement priority-based response architecture",
-                "rankOrder": 1,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/README.md",
-                "lineNumber": 81
-              },
-              {
-                "id": "task_128",
-                "paragraphId": "para_62",
-                "featureId": "feature_55",
-                "title": "Create comprehensive timeline analysis",
-                "description": "Create comprehensive timeline analysis",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/README.md",
-                "lineNumber": 82
-              }
-            ]
-          },
-          {
-            "id": "para_63",
-            "featureId": "feature_55",
-            "number": 6,
-            "title": "Priority Mapping",
-            "content": "Paragraph extracted from todo/README.md",
-            "rankOrder": 6,
-            "weight": 50,
-            "source": "todo/README.md",
-            "lineNumber": 86,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_56",
-        "title": "Repository Status Context",
-        "description": "Feature extracted from todo/README.md",
-        "priority": "medium",
-        "argumentId": "arg_9",
-        "source": "todo/README.md",
-        "lineNumber": 94,
-        "paragraphs": [
-          {
-            "id": "para_64",
-            "featureId": "feature_56",
-            "number": 1,
-            "title": "Current State (October 13, 2025)",
-            "content": "Paragraph extracted from todo/README.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/README.md",
-            "lineNumber": 96,
-            "tasks": []
-          },
-          {
-            "id": "para_65",
-            "featureId": "feature_56",
-            "number": 2,
-            "title": "Repository Growth",
-            "content": "Paragraph extracted from todo/README.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/README.md",
-            "lineNumber": 110,
-            "tasks": []
-          },
-          {
-            "id": "para_66",
-            "featureId": "feature_56",
-            "number": 3,
-            "title": "Critical Evidence Gaps",
-            "content": "Paragraph extracted from todo/README.md",
-            "rankOrder": 3,
-            "weight": 100,
-            "source": "todo/README.md",
-            "lineNumber": 118,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_57",
-        "title": "Usage Guidelines",
-        "description": "Feature extracted from todo/README.md",
-        "priority": "medium",
-        "argumentId": "arg_9",
-        "source": "todo/README.md",
-        "lineNumber": 134,
-        "paragraphs": [
-          {
-            "id": "para_67",
-            "featureId": "feature_57",
-            "number": 1,
-            "title": "For Contributors",
-            "content": "Paragraph extracted from todo/README.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/README.md",
-            "lineNumber": 136,
-            "tasks": []
-          },
-          {
-            "id": "para_68",
-            "featureId": "feature_57",
-            "number": 2,
-            "title": "For Reviewers",
-            "content": "Paragraph extracted from todo/README.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/README.md",
-            "lineNumber": 144,
-            "tasks": []
-          },
-          {
-            "id": "para_69",
-            "featureId": "feature_57",
-            "number": 3,
-            "title": "For Project Managers",
-            "content": "Paragraph extracted from todo/README.md",
-            "rankOrder": 3,
-            "weight": 85,
-            "source": "todo/README.md",
-            "lineNumber": 151,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_58",
-        "title": "Workflow Documentation",
-        "description": "Feature extracted from todo/README.md",
-        "priority": "low",
-        "argumentId": "arg_9",
-        "source": "todo/README.md",
-        "lineNumber": 158,
-        "paragraphs": [
-          {
-            "id": "para_170",
-            "featureId": "feature_58",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/README.md",
-            "lineNumber": 158,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_59",
-        "title": "Timeline and Milestones",
-        "description": "Feature extracted from todo/README.md",
-        "priority": "medium",
-        "argumentId": "arg_9",
-        "source": "todo/README.md",
-        "lineNumber": 165,
-        "paragraphs": [
-          {
-            "id": "para_70",
-            "featureId": "feature_59",
-            "number": 1,
-            "title": "Week 1 (Immediate)",
-            "content": "Paragraph extracted from todo/README.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/README.md",
-            "lineNumber": 167,
-            "tasks": [
-              {
-                "id": "task_129",
-                "paragraphId": "para_70",
-                "featureId": "feature_59",
-                "title": "Update critical documentation",
-                "description": "Update critical documentation",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "critical",
-                "source": "todo/README.md",
-                "lineNumber": 170
-              }
-            ]
-          },
-          {
-            "id": "para_71",
-            "featureId": "feature_59",
-            "number": 2,
-            "title": "Week 2 (Short-term)",
-            "content": "Paragraph extracted from todo/README.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/README.md",
-            "lineNumber": 173,
-            "tasks": [
-              {
-                "id": "task_130",
-                "paragraphId": "para_71",
-                "featureId": "feature_59",
-                "title": "Gather Phase 2 high-priority evidence",
-                "description": "Gather Phase 2 high-priority evidence",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "high",
-                "source": "todo/README.md",
-                "lineNumber": 175
-              },
-              {
-                "id": "task_131",
-                "paragraphId": "para_71",
-                "featureId": "feature_59",
-                "title": "Verify forensic analysis",
-                "description": "Verify forensic analysis",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/README.md",
-                "lineNumber": 177
-              }
-            ]
-          },
-          {
-            "id": "para_72",
-            "featureId": "feature_59",
-            "number": 3,
-            "title": "Week 3 (Medium-term)",
-            "content": "Paragraph extracted from todo/README.md",
-            "rankOrder": 3,
-            "weight": 85,
-            "source": "todo/README.md",
-            "lineNumber": 179,
-            "tasks": [
-              {
-                "id": "task_132",
-                "paragraphId": "para_72",
-                "featureId": "feature_59",
-                "title": "Prepare for legal review",
-                "description": "Prepare for legal review",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/README.md",
-                "lineNumber": 180
-              }
-            ]
-          },
-          {
-            "id": "para_73",
-            "featureId": "feature_59",
-            "number": 4,
-            "title": "Week 4 (Pre-submission)",
-            "content": "Paragraph extracted from todo/README.md",
-            "rankOrder": 4,
-            "weight": 60,
-            "source": "todo/README.md",
-            "lineNumber": 185,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_60",
-        "title": "Related Documentation",
-        "description": "Feature extracted from todo/README.md",
-        "priority": "medium",
-        "argumentId": "arg_9",
-        "source": "todo/README.md",
-        "lineNumber": 191,
-        "paragraphs": [
-          {
-            "id": "para_171",
-            "featureId": "feature_60",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/README.md",
-            "lineNumber": 191,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_61",
-        "title": "Notes",
-        "description": "Feature extracted from todo/README.md",
-        "priority": "medium",
-        "argumentId": "arg_9",
-        "source": "todo/README.md",
-        "lineNumber": 198,
-        "paragraphs": [
-          {
-            "id": "para_172",
-            "featureId": "feature_61",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/README.md",
-            "lineNumber": 198,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_62",
-        "title": "Systematic AD Paragraph Coverage Implementation",
-        "description": "Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "priority": "medium",
-        "argumentId": "arg_10",
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 2,
-        "paragraphs": [
-          {
-            "id": "para_173",
-            "featureId": "feature_62",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 2,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_63",
-        "title": "Executive Summary",
-        "description": "Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "priority": "medium",
-        "argumentId": "arg_10",
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 11,
-        "paragraphs": [
-          {
-            "id": "para_174",
-            "featureId": "feature_63",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 11,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_64",
-        "title": "Must-Do (Phase 1) - Week 1: Critical Priority Files",
-        "description": "Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "priority": "critical",
-        "argumentId": "arg_10",
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 21,
-        "paragraphs": [
-          {
-            "id": "para_74",
-            "featureId": "feature_64",
-            "number": 1,
-            "title": "1. Create jax-dan-response/AD/1-Critical/ Directory Structure",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 23,
-            "tasks": []
-          },
-          {
-            "id": "para_75",
-            "featureId": "feature_64",
-            "number": 2,
-            "title": "2. Create PARA_7_2-7_5_IT_EXPENSES.md - IT Expense Technical Justification",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 33,
-            "tasks": []
-          },
-          {
-            "id": "para_76",
-            "featureId": "feature_64",
-            "number": 3,
-            "title": "3. Create PARA_7_6_R500K_PAYMENT.md - Director Loan Account System Architecture",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 3,
-            "weight": 85,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 67,
-            "tasks": []
-          },
-          {
-            "id": "para_77",
-            "featureId": "feature_64",
-            "number": 4,
-            "title": "4. Create PARA_7_7-7_8_PAYMENT_AUTHORIZATION.md - Payment Authorization Workflow Details",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 4,
-            "weight": 60,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 101,
-            "tasks": []
-          },
-          {
-            "id": "para_78",
-            "featureId": "feature_64",
-            "number": 5,
-            "title": "5. Create PARA_7_9-7_11_BUSINESS_PURPOSE.md - Platform Ownership Business Purpose",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 5,
-            "weight": 50,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 129,
-            "tasks": []
-          },
-          {
-            "id": "para_79",
-            "featureId": "feature_64",
-            "number": 6,
-            "title": "6. Create PARA_10_5-10_10_23_FINANCIAL_SYSTEMS.md - Financial Systems Perspective",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 6,
-            "weight": 50,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 158,
-            "tasks": []
-          },
-          {
-            "id": "para_80",
-            "featureId": "feature_64",
-            "number": 7,
-            "title": "7. Create jax-dan-response/AD/1-Critical/README.md - Directory Index",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 7,
-            "weight": 50,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 187,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_65",
-        "title": "Should-Do (Phase 2) - Week 2: High Priority Files",
-        "description": "Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "priority": "high",
-        "argumentId": "arg_10",
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 204,
-        "paragraphs": [
-          {
-            "id": "para_81",
-            "featureId": "feature_65",
-            "number": 1,
-            "title": "8. Create jax-dan-response/AD/2-High-Priority/ Additional Files",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 206,
-            "tasks": []
-          },
-          {
-            "id": "para_82",
-            "featureId": "feature_65",
-            "number": 2,
-            "title": "9. Update jax-dan-response/AD/2-High-Priority/README.md",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 270,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_66",
-        "title": "Nice-to-Have (Phase 3) - Week 3: Evidence Integration and Cross-Referencing",
-        "description": "Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "priority": "low",
-        "argumentId": "arg_10",
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 278,
-        "paragraphs": [
-          {
-            "id": "para_83",
-            "featureId": "feature_66",
-            "number": 1,
-            "title": "10. Create EVIDENCE_MAPPING_MATRIX.md",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 280,
-            "tasks": []
-          },
-          {
-            "id": "para_84",
-            "featureId": "feature_66",
-            "number": 2,
-            "title": "11. Create DAN_RESPONSE_SUMMARY.md",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 295,
-            "tasks": []
-          },
-          {
-            "id": "para_85",
-            "featureId": "feature_66",
-            "number": 3,
-            "title": "12. Implement Bidirectional Cross-Referencing",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 3,
-            "weight": 85,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 311,
-            "tasks": [
-              {
-                "id": "task_133",
-                "paragraphId": "para_85",
-                "featureId": "feature_66",
-                "title": "Add \"Daniel's Technical Perspective\" sections to jax-response files",
-                "description": "Add \"Daniel's Technical Perspective\" sections to jax-response files",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-                "lineNumber": 316
-              },
-              {
-                "id": "task_134",
-                "paragraphId": "para_85",
-                "featureId": "feature_66",
-                "title": "Add \"Jacqueline's Legal Perspective\" sections to jax-dan-response files",
-                "description": "Add \"Jacqueline's Legal Perspective\" sections to jax-dan-response files",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-                "lineNumber": 317
-              },
-              {
-                "id": "task_135",
-                "paragraphId": "para_85",
-                "featureId": "feature_66",
-                "title": "Update evidence-attachments files with \"Referenced By\" sections",
-                "description": "Update evidence-attachments files with \"Referenced By\" sections",
-                "rankOrder": 3,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-                "lineNumber": 318
-              },
-              {
-                "id": "task_136",
-                "paragraphId": "para_85",
-                "featureId": "feature_66",
-                "title": "Verify all cross-references are accurate",
-                "description": "Verify all cross-references are accurate",
-                "rankOrder": 4,
-                "weight": 60,
-                "priority": "medium",
-                "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-                "lineNumber": 319
-              }
-            ]
-          },
-          {
-            "id": "para_86",
-            "featureId": "feature_66",
-            "number": 4,
-            "title": "13. Update jax-dan-response/README.md",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 4,
-            "weight": 60,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 325,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_67",
-        "title": "Nice-to-Have (Phase 4) - Week 4: Medium Priority Expansion",
-        "description": "Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "priority": "low",
-        "argumentId": "arg_10",
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 340,
-        "paragraphs": [
-          {
-            "id": "para_87",
-            "featureId": "feature_67",
-            "number": 1,
-            "title": "14. Evaluate Priority 3 (Medium) Paragraphs for Daniel's Relevance",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 342,
-            "tasks": []
-          },
-          {
-            "id": "para_88",
-            "featureId": "feature_67",
-            "number": 2,
-            "title": "15. Create Selected Priority 3 (Medium) Files",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 358,
-            "tasks": []
-          },
-          {
-            "id": "para_89",
-            "featureId": "feature_67",
-            "number": 3,
-            "title": "16. Create jax-dan-response/AD/3-Medium-Priority/README.md",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 3,
-            "weight": 85,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 366,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_68",
-        "title": "Nice-to-Have (Phase 5) - Week 5: Finalization and Quality Assurance",
-        "description": "Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "priority": "low",
-        "argumentId": "arg_10",
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 374,
-        "paragraphs": [
-          {
-            "id": "para_90",
-            "featureId": "feature_68",
-            "number": 1,
-            "title": "17. Comprehensive Consistency Review",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 376,
-            "tasks": [
-              {
-                "id": "task_137",
-                "paragraphId": "para_90",
-                "featureId": "feature_68",
-                "title": "Verify all cross-references are accurate",
-                "description": "Verify all cross-references are accurate",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-                "lineNumber": 381
-              },
-              {
-                "id": "task_138",
-                "paragraphId": "para_90",
-                "featureId": "feature_68",
-                "title": "Check for contradictions between Jacqueline's and Daniel's responses",
-                "description": "Check for contradictions between Jacqueline's and Daniel's responses",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-                "lineNumber": 382
-              }
-            ]
-          },
-          {
-            "id": "para_91",
-            "featureId": "feature_68",
-            "number": 2,
-            "title": "18. Evidence Series Documentation",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 2,
-            "weight": 100,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 391,
-            "tasks": []
-          },
-          {
-            "id": "para_92",
-            "featureId": "feature_68",
-            "number": 3,
-            "title": "19. Quality Assurance Against Template Standards",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 3,
-            "weight": 85,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 406,
-            "tasks": []
-          },
-          {
-            "id": "para_93",
-            "featureId": "feature_68",
-            "number": 4,
-            "title": "20. Final Integration Review with Legal Team",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 4,
-            "weight": 60,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 426,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_69",
-        "title": "Evidence Collection Requirements",
-        "description": "Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "priority": "medium",
-        "argumentId": "arg_10",
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 441,
-        "paragraphs": [
-          {
-            "id": "para_94",
-            "featureId": "feature_69",
-            "number": 1,
-            "title": "Critical Evidence Series (Must Collect)",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 443,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_70",
-        "title": "Strategic Integration Points",
-        "description": "Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "priority": "medium",
-        "argumentId": "arg_10",
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 473,
-        "paragraphs": [
-          {
-            "id": "para_95",
-            "featureId": "feature_70",
-            "number": 1,
-            "title": "1. Platform Ownership Counter-Claim",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 475,
-            "tasks": []
-          },
-          {
-            "id": "para_96",
-            "featureId": "feature_70",
-            "number": 2,
-            "title": "2. Technical Impossibility Argument",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 482,
-            "tasks": []
-          },
-          {
-            "id": "para_97",
-            "featureId": "feature_70",
-            "number": 3,
-            "title": "3. Peter's Bad Faith Evidence",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 3,
-            "weight": 100,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 489,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_71",
-        "title": "Success Metrics",
-        "description": "Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "priority": "medium",
-        "argumentId": "arg_10",
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 496,
-        "paragraphs": [
-          {
-            "id": "para_98",
-            "featureId": "feature_71",
-            "number": 1,
-            "title": "Quantitative Metrics",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 498,
-            "tasks": []
-          },
-          {
-            "id": "para_99",
-            "featureId": "feature_71",
-            "number": 2,
-            "title": "Qualitative Metrics",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 505,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_72",
-        "title": "Risk Mitigation",
-        "description": "Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "priority": "medium",
-        "argumentId": "arg_10",
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 514,
-        "paragraphs": [
-          {
-            "id": "para_100",
-            "featureId": "feature_72",
-            "number": 1,
-            "title": "Risk 1: Redundancy with Jacqueline's Response",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 516,
-            "tasks": []
-          },
-          {
-            "id": "para_101",
-            "featureId": "feature_72",
-            "number": 2,
-            "title": "Risk 2: Contradictions Between Responses",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 519,
-            "tasks": []
-          },
-          {
-            "id": "para_102",
-            "featureId": "feature_72",
-            "number": 3,
-            "title": "Risk 3: Evidence Collection Delays",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 3,
-            "weight": 100,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 522,
-            "tasks": []
-          },
-          {
-            "id": "para_103",
-            "featureId": "feature_72",
-            "number": 4,
-            "title": "Risk 4: Time Constraints",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 4,
-            "weight": 60,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 525,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_73",
-        "title": "Timeline Summary",
-        "description": "Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "priority": "medium",
-        "argumentId": "arg_10",
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 530,
-        "paragraphs": [
-          {
-            "id": "para_175",
-            "featureId": "feature_73",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 530,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_74",
-        "title": "Dependencies",
-        "description": "Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "priority": "medium",
-        "argumentId": "arg_10",
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 543,
-        "paragraphs": [
-          {
-            "id": "para_104",
-            "featureId": "feature_74",
-            "number": 1,
-            "title": "External Dependencies",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 545,
-            "tasks": []
-          },
-          {
-            "id": "para_105",
-            "featureId": "feature_74",
-            "number": 2,
-            "title": "Internal Dependencies",
-            "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 550,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_75",
-        "title": "Next Steps (Immediate Actions)",
-        "description": "Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "priority": "medium",
-        "argumentId": "arg_10",
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 557,
-        "paragraphs": [
-          {
-            "id": "para_176",
-            "featureId": "feature_75",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 557,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_76",
-        "title": "Executive Summary",
-        "description": "Feature extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "priority": "medium",
-        "argumentId": "arg_11",
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 3,
-        "paragraphs": [
-          {
-            "id": "para_177",
-            "featureId": "feature_76",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 3,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_77",
-        "title": "Current State Analysis",
-        "description": "Feature extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "priority": "medium",
-        "argumentId": "arg_11",
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 9,
-        "paragraphs": [
-          {
-            "id": "para_106",
-            "featureId": "feature_77",
-            "number": 1,
-            "title": "Strengths of Current Draft",
-            "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 11,
-            "tasks": []
-          },
-          {
-            "id": "para_107",
-            "featureId": "feature_77",
-            "number": 2,
-            "title": "Critical Gaps Identified",
-            "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 21,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_78",
-        "title": "Recommended Improvements",
-        "description": "Feature extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "priority": "medium",
-        "argumentId": "arg_11",
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 39,
-        "paragraphs": [
-          {
-            "id": "para_108",
-            "featureId": "feature_78",
-            "number": 1,
-            "title": "1. Implement Priority-Based Response Architecture",
-            "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 41,
-            "tasks": [
-              {
-                "id": "task_139",
-                "paragraphId": "para_108",
-                "featureId": "feature_78",
-                "title": "Add Dan's technical affidavit explaining infrastructure requirements",
-                "description": "Add Dan's technical affidavit explaining infrastructure requirements",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-                "lineNumber": 56
-              },
-              {
-                "id": "task_140",
-                "paragraphId": "para_108",
-                "featureId": "feature_78",
-                "title": "Create point-by-point rebuttal matrix for each sub-allegation",
-                "description": "Create point-by-point rebuttal matrix for each sub-allegation",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-                "lineNumber": 86
-              },
-              {
-                "id": "task_141",
-                "paragraphId": "para_108",
-                "featureId": "feature_78",
-                "title": "Add external validation (accountant letters, SARS compliance, bank relationsh...",
-                "description": "Add external validation (accountant letters, SARS compliance, bank relationships)",
-                "rankOrder": 3,
-                "weight": 85,
-                "priority": "medium",
-                "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-                "lineNumber": 90
-              },
-              {
-                "id": "task_142",
-                "paragraphId": "para_108",
-                "featureId": "feature_78",
-                "title": "Analyze suspicious timing of \"discovery\" relative to settlement negotiations",
-                "description": "Analyze suspicious timing of \"discovery\" relative to settlement negotiations",
-                "rankOrder": 4,
-                "weight": 60,
-                "priority": "medium",
-                "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-                "lineNumber": 123
-              },
-              {
-                "id": "task_143",
-                "paragraphId": "para_108",
-                "featureId": "feature_78",
-                "title": "Document Peter's menacing and coercive conduct during confrontation",
-                "description": "Document Peter's menacing and coercive conduct during confrontation",
-                "rankOrder": 5,
-                "weight": 100,
-                "priority": "medium",
-                "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-                "lineNumber": 131
-              },
-              {
-                "id": "task_144",
-                "paragraphId": "para_108",
-                "featureId": "feature_78",
-                "title": "Create standardized response template for each paragraph",
-                "description": "Create standardized response template for each paragraph",
-                "rankOrder": 6,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-                "lineNumber": 158
-              }
-            ]
-          },
-          {
-            "id": "para_109",
-            "featureId": "feature_78",
-            "number": 2,
-            "title": "2. Integrate Dan's Technical and Operational Perspective",
-            "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 199,
-            "tasks": []
-          },
-          {
-            "id": "para_110",
-            "featureId": "feature_78",
-            "number": 3,
-            "title": "3. Enhance Evidence Architecture",
-            "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "rankOrder": 3,
-            "weight": 100,
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 244,
-            "tasks": []
-          },
-          {
-            "id": "para_111",
-            "featureId": "feature_78",
-            "number": 4,
-            "title": "4. Strengthen Counter-Narrative Strategy",
-            "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "rankOrder": 4,
-            "weight": 60,
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 320,
-            "tasks": []
-          },
-          {
-            "id": "para_112",
-            "featureId": "feature_78",
-            "number": 5,
-            "title": "5. Implement Systematic Cross-Referencing",
-            "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "rankOrder": 5,
-            "weight": 50,
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 363,
-            "tasks": []
-          },
-          {
-            "id": "para_113",
-            "featureId": "feature_78",
-            "number": 6,
-            "title": "6. Address Dan-Specific Technical Elements",
-            "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "rankOrder": 6,
-            "weight": 50,
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 402,
-            "tasks": []
-          },
-          {
-            "id": "para_114",
-            "featureId": "feature_78",
-            "number": 7,
-            "title": "7. Enhance Strategic Litigation Positioning",
-            "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "rankOrder": 7,
-            "weight": 50,
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 480,
-            "tasks": []
-          },
-          {
-            "id": "para_115",
-            "featureId": "feature_78",
-            "number": 8,
-            "title": "8. Implement Comprehensive Timeline Analysis",
-            "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "rankOrder": 8,
-            "weight": 50,
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 533,
-            "tasks": []
-          },
-          {
-            "id": "para_116",
-            "featureId": "feature_78",
-            "number": 9,
-            "title": "9. Develop Responsible Person Regulatory Crisis Section",
-            "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "rankOrder": 9,
-            "weight": 50,
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 585,
-            "tasks": []
-          },
-          {
-            "id": "para_117",
-            "featureId": "feature_78",
-            "number": 10,
-            "title": "10. Create Comprehensive Response Structure",
-            "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "rankOrder": 10,
-            "weight": 50,
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 653,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_79",
-        "title": "Implementation Roadmap",
-        "description": "Feature extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "priority": "medium",
-        "argumentId": "arg_11",
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 779,
-        "paragraphs": [
-          {
-            "id": "para_118",
-            "featureId": "feature_79",
-            "number": 1,
-            "title": "✅ Phase 1: Immediate Additions (High Impact, Low Effort) - COMPLETED",
-            "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 781,
-            "tasks": []
-          },
-          {
-            "id": "para_119",
-            "featureId": "feature_79",
-            "number": 2,
-            "title": "Phase 2: Systematic Coverage (Medium Impact, Medium Effort)",
-            "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 815,
-            "tasks": []
-          },
-          {
-            "id": "para_120",
-            "featureId": "feature_79",
-            "number": 3,
-            "title": "Phase 3: Complete Coverage (Lower Impact, Higher Effort)",
-            "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "rankOrder": 3,
-            "weight": 85,
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 838,
-            "tasks": []
-          },
-          {
-            "id": "para_121",
-            "featureId": "feature_79",
-            "number": 4,
-            "title": "Phase 4: Polish and Integration (Quality Enhancement)",
-            "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "rankOrder": 4,
-            "weight": 60,
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 861,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_80",
-        "title": "Total Estimated Effort",
-        "description": "Feature extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "priority": "medium",
-        "argumentId": "arg_11",
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 886,
-        "paragraphs": [
-          {
-            "id": "para_178",
-            "featureId": "feature_80",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 886,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_81",
-        "title": "Priority Recommendations",
-        "description": "Feature extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "priority": "medium",
-        "argumentId": "arg_11",
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 897,
-        "paragraphs": [
-          {
-            "id": "para_122",
-            "featureId": "feature_81",
-            "number": 1,
-            "title": "✅ Must-Do (Phase 1) - COMPLETED & ENHANCED",
-            "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 899,
-            "tasks": []
-          },
-          {
-            "id": "para_123",
-            "featureId": "feature_81",
-            "number": 2,
-            "title": "Should-Do (Phase 2)",
-            "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 908,
-            "tasks": [
-              {
-                "id": "task_145",
-                "paragraphId": "para_123",
-                "featureId": "feature_81",
-                "title": "Add all high-priority paragraph responses",
-                "description": "Add all high-priority paragraph responses",
-                "rankOrder": 1,
-                "weight": 100,
-                "priority": "high",
-                "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-                "lineNumber": 910
-              },
-              {
-                "id": "task_146",
-                "paragraphId": "para_123",
-                "featureId": "feature_81",
-                "title": "Create Dan's technical affidavit",
-                "description": "Create Dan's technical affidavit",
-                "rankOrder": 2,
-                "weight": 90,
-                "priority": "medium",
-                "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-                "lineNumber": 911
-              }
-            ]
-          },
-          {
-            "id": "para_124",
-            "featureId": "feature_81",
-            "number": 3,
-            "title": "Nice-to-Have (Phase 3-4)",
-            "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "rankOrder": 3,
-            "weight": 85,
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 913,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_82",
-        "title": "Conclusion",
-        "description": "Feature extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "priority": "medium",
-        "argumentId": "arg_11",
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 921,
-        "paragraphs": [
-          {
-            "id": "para_179",
-            "featureId": "feature_82",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 921,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_83",
-        "title": "Overview",
-        "description": "Feature extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "priority": "medium",
-        "argumentId": "arg_12",
-        "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "lineNumber": 3,
-        "paragraphs": [
-          {
-            "id": "para_180",
-            "featureId": "feature_83",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "lineNumber": 3,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_84",
-        "title": "Key Findings",
-        "description": "Feature extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "priority": "medium",
-        "argumentId": "arg_12",
-        "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "lineNumber": 7,
-        "paragraphs": [
-          {
-            "id": "para_125",
-            "featureId": "feature_84",
-            "number": 1,
-            "title": "Current Strengths",
-            "content": "Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "lineNumber": 9,
-            "tasks": []
-          },
-          {
-            "id": "para_126",
-            "featureId": "feature_84",
-            "number": 2,
-            "title": "Critical Gaps",
-            "content": "Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "lineNumber": 18,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_85",
-        "title": "Top 5 Priority Recommendations",
-        "description": "Feature extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "priority": "medium",
-        "argumentId": "arg_12",
-        "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "lineNumber": 32,
-        "paragraphs": [
-          {
-            "id": "para_127",
-            "featureId": "feature_85",
-            "number": 1,
-            "title": "✅ 1. COMPLETED - Add Responsible Person Regulatory Crisis Section (CRITICAL)",
-            "content": "Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "lineNumber": 34,
-            "tasks": []
-          },
-          {
-            "id": "para_128",
-            "featureId": "feature_85",
-            "number": 2,
-            "title": "✅ 2. COMPLETED - Add Settlement Timing and Strategic Litigation Section (CRITICAL)",
-            "content": "Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "lineNumber": 51,
-            "tasks": []
-          },
-          {
-            "id": "para_129",
-            "featureId": "feature_85",
-            "number": 3,
-            "title": "✅ 3. COMPLETED - Add Peter's Causation Section (CRITICAL)",
-            "content": "Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "rankOrder": 3,
-            "weight": 85,
-            "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "lineNumber": 65,
-            "tasks": []
-          },
-          {
-            "id": "para_130",
-            "featureId": "feature_85",
-            "number": 4,
-            "title": "✅ 4. COMPLETED - Create Dan's Technical Infrastructure Affidavit (HIGH PRIORITY)",
-            "content": "Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "rankOrder": 4,
-            "weight": 60,
-            "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "lineNumber": 79,
-            "tasks": []
-          },
-          {
-            "id": "para_131",
-            "featureId": "feature_85",
-            "number": 5,
-            "title": "✅ 5. COMPLETED - Create Comprehensive Timeline Analysis (HIGH PRIORITY)",
-            "content": "Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "rankOrder": 5,
-            "weight": 50,
-            "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "lineNumber": 95,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_86",
-        "title": "Implementation Phases",
-        "description": "Feature extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "priority": "medium",
-        "argumentId": "arg_12",
-        "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "lineNumber": 116,
-        "paragraphs": [
-          {
-            "id": "para_132",
-            "featureId": "feature_86",
-            "number": 1,
-            "title": "Phase 1: Critical Additions (11-16 hours total)",
-            "content": "Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "rankOrder": 1,
-            "weight": 95,
-            "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "lineNumber": 118,
-            "tasks": []
-          },
-          {
-            "id": "para_133",
-            "featureId": "feature_86",
-            "number": 2,
-            "title": "Phase 2: Systematic Coverage (24-34 hours)",
-            "content": "Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "rankOrder": 2,
-            "weight": 90,
-            "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "lineNumber": 121,
-            "tasks": []
-          },
-          {
-            "id": "para_134",
-            "featureId": "feature_86",
-            "number": 3,
-            "title": "Phase 3: Complete Coverage (30-42 hours)",
-            "content": "Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "rankOrder": 3,
-            "weight": 85,
-            "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "lineNumber": 124,
-            "tasks": []
-          },
-          {
-            "id": "para_135",
-            "featureId": "feature_86",
-            "number": 4,
-            "title": "Phase 4: Polish and Integration (13-18 hours)",
-            "content": "Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "rankOrder": 4,
-            "weight": 60,
-            "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "lineNumber": 127,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_87",
-        "title": "Strategic Impact",
-        "description": "Feature extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "priority": "medium",
-        "argumentId": "arg_12",
-        "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "lineNumber": 132,
-        "paragraphs": [
-          {
-            "id": "para_181",
-            "featureId": "feature_87",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "lineNumber": 132,
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": "feature_88",
-        "title": "Conclusion",
-        "description": "Feature extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "priority": "medium",
-        "argumentId": "arg_12",
-        "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "lineNumber": 144,
-        "paragraphs": [
-          {
-            "id": "para_182",
-            "featureId": "feature_88",
-            "number": 1,
-            "title": "Implementation Tasks",
-            "content": "Default paragraph for task grouping",
-            "rankOrder": 1,
-            "weight": 100,
-            "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-            "lineNumber": 144,
-            "tasks": []
-          }
-        ]
-      }
-    ],
-    "paragraphs": [
-      {
-        "id": "para_1",
-        "featureId": "feature_6",
-        "number": 1,
-        "title": "Tasks with Various Formats",
-        "content": "Paragraph extracted from todo/workflow-validation-tests.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 38,
-        "tasks": [
-          {
-            "id": "task_1",
-            "paragraphId": "para_1",
-            "featureId": "feature_6",
-            "title": "Create unit tests for markdown parsing logic",
-            "description": "Create unit tests for markdown parsing logic",
-            "rankOrder": 1,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/workflow-validation-tests.md",
-            "lineNumber": 40
-          },
-          {
-            "id": "task_2",
-            "paragraphId": "para_1",
-            "featureId": "feature_6",
-            "title": "Implement integration tests for GitHub API interaction",
-            "description": "Implement integration tests for GitHub API interaction",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/workflow-validation-tests.md",
-            "lineNumber": 41
-          },
-          {
-            "id": "task_3",
-            "paragraphId": "para_1",
-            "featureId": "feature_6",
-            "title": "Add regression tests to prevent workflow breaking changes",
-            "description": "Add regression tests to prevent workflow breaking changes",
-            "rankOrder": 3,
-            "weight": 85,
-            "priority": "low",
-            "source": "todo/workflow-validation-tests.md",
-            "lineNumber": 42
-          }
-        ]
-      },
-      {
-        "id": "para_2",
-        "featureId": "feature_6",
-        "number": 2,
-        "title": "Special Characters and Formatting",
-        "content": "Paragraph extracted from todo/workflow-validation-tests.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 45,
-        "tasks": [
-          {
-            "id": "task_4",
-            "paragraphId": "para_2",
-            "featureId": "feature_6",
-            "title": "Test with émojis and ünicode characters in task descriptions",
-            "description": "Test with émojis and ünicode characters in task descriptions",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/workflow-validation-tests.md",
-            "lineNumber": 47
-          },
-          {
-            "id": "task_5",
-            "paragraphId": "para_2",
-            "featureId": "feature_6",
-            "title": "Validate proper handling of tasks with \"quotes\" and 'apostrophes'",
-            "description": "Validate proper handling of tasks with \"quotes\" and 'apostrophes'",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/workflow-validation-tests.md",
-            "lineNumber": 48
-          }
-        ]
-      },
-      {
-        "id": "para_3",
-        "featureId": "feature_6",
-        "number": 3,
-        "title": "Long Task Descriptions",
-        "content": "Paragraph extracted from todo/workflow-validation-tests.md",
-        "rankOrder": 3,
-        "weight": 85,
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 51,
-        "tasks": []
-      },
-      {
-        "id": "para_4",
-        "featureId": "feature_7",
-        "number": 1,
-        "title": "Priority 1 Tasks",
-        "content": "Paragraph extracted from todo/workflow-validation-tests.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 58,
-        "tasks": []
-      },
-      {
-        "id": "para_5",
-        "featureId": "feature_7",
-        "number": 2,
-        "title": "Phase 2 Tasks",
-        "content": "Paragraph extracted from todo/workflow-validation-tests.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 62,
-        "tasks": []
-      },
-      {
-        "id": "para_6",
-        "featureId": "feature_7",
-        "number": 3,
-        "title": "Framework Phase 3",
-        "content": "Paragraph extracted from todo/workflow-validation-tests.md",
-        "rankOrder": 3,
-        "weight": 85,
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 66,
-        "tasks": []
-      },
-      {
-        "id": "para_7",
-        "featureId": "feature_10",
-        "number": 1,
-        "title": "Critical Section with Bug Label",
-        "content": "Paragraph extracted from todo/workflow-validation-tests.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 94,
-        "tasks": [
-          {
-            "id": "task_6",
-            "paragraphId": "para_7",
-            "featureId": "feature_10",
-            "title": "Fix security vulnerability in authentication system",
-            "description": "Fix security vulnerability in authentication system",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/workflow-validation-tests.md",
-            "lineNumber": 95
-          }
-        ]
-      },
-      {
-        "id": "para_8",
-        "featureId": "feature_10",
-        "number": 2,
-        "title": "Enhancement Section",
-        "content": "Paragraph extracted from todo/workflow-validation-tests.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 98,
-        "tasks": [
-          {
-            "id": "task_7",
-            "paragraphId": "para_8",
-            "featureId": "feature_10",
-            "title": "Add new feature for improved user experience",
-            "description": "Add new feature for improved user experience",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/workflow-validation-tests.md",
-            "lineNumber": 99
-          },
-          {
-            "id": "task_8",
-            "paragraphId": "para_8",
-            "featureId": "feature_10",
-            "title": "Implement advanced analytics dashboard",
-            "description": "Implement advanced analytics dashboard",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/workflow-validation-tests.md",
-            "lineNumber": 100
-          }
-        ]
-      },
-      {
-        "id": "para_9",
-        "featureId": "feature_12",
-        "number": 1,
-        "title": "Must-Do (Critical Priority)",
-        "content": "Paragraph extracted from todo/workflow-test.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/workflow-test.md",
-        "lineNumber": 5,
-        "tasks": []
-      },
-      {
-        "id": "para_10",
-        "featureId": "feature_12",
-        "number": 2,
-        "title": "Should-Do (High Priority)",
-        "content": "Paragraph extracted from todo/workflow-test.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/workflow-test.md",
-        "lineNumber": 10,
-        "tasks": [
-          {
-            "id": "task_9",
-            "paragraphId": "para_10",
-            "featureId": "feature_12",
-            "title": "Verify proper issue creation with multiple labels",
-            "description": "Verify proper issue creation with multiple labels",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/workflow-test.md",
-            "lineNumber": 13
-          }
-        ]
-      },
-      {
-        "id": "para_11",
-        "featureId": "feature_12",
-        "number": 3,
-        "title": "Nice-to-Have (Low Priority)",
-        "content": "Paragraph extracted from todo/workflow-test.md",
-        "rankOrder": 3,
-        "weight": 85,
-        "source": "todo/workflow-test.md",
-        "lineNumber": 15,
-        "tasks": [
-          {
-            "id": "task_10",
-            "paragraphId": "para_11",
-            "featureId": "feature_12",
-            "title": "Add metrics collection for workflow performance",
-            "description": "Add metrics collection for workflow performance",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "low",
-            "source": "todo/workflow-test.md",
-            "lineNumber": 17
-          },
-          {
-            "id": "task_11",
-            "paragraphId": "para_11",
-            "featureId": "feature_12",
-            "title": "Implement batching for large numbers of issues",
-            "description": "Implement batching for large numbers of issues",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/workflow-test.md",
-            "lineNumber": 18
-          }
-        ]
-      },
-      {
-        "id": "para_12",
-        "featureId": "feature_12",
-        "number": 4,
-        "title": "Improvements Needed:",
-        "content": "Paragraph extracted from todo/workflow-test.md",
-        "rankOrder": 4,
-        "weight": 60,
-        "source": "todo/workflow-test.md",
-        "lineNumber": 20,
-        "tasks": [
-          {
-            "id": "task_12",
-            "paragraphId": "para_12",
-            "featureId": "feature_12",
-            "title": "Create validation tests for workflow changes",
-            "description": "Create validation tests for workflow changes",
-            "rankOrder": 1,
-            "weight": 90,
-            "priority": "low",
-            "source": "todo/workflow-test.md",
-            "lineNumber": 21
-          }
-        ]
-      },
-      {
-        "id": "para_13",
-        "featureId": "feature_13",
-        "number": 1,
-        "title": "Must-Do Requirements",
-        "content": "Paragraph extracted from todo/workflow-test.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/workflow-test.md",
-        "lineNumber": 31,
-        "tasks": []
-      },
-      {
-        "id": "para_14",
-        "featureId": "feature_13",
-        "number": 2,
-        "title": "Should-Do Enhancements",
-        "content": "Paragraph extracted from todo/workflow-test.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/workflow-test.md",
-        "lineNumber": 37,
-        "tasks": []
-      },
-      {
-        "id": "para_15",
-        "featureId": "feature_13",
-        "number": 3,
-        "title": "Nice-to-Have Extensions",
-        "content": "Paragraph extracted from todo/workflow-test.md",
-        "rankOrder": 3,
-        "weight": 85,
-        "source": "todo/workflow-test.md",
-        "lineNumber": 42,
-        "tasks": []
-      },
-      {
-        "id": "para_16",
-        "featureId": "feature_21",
-        "number": 1,
-        "title": "Combined Special Characters",
-        "content": "Paragraph extracted from todo/special-characters-test-sample.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/special-characters-test-sample.md",
-        "lineNumber": 46,
-        "tasks": [
-          {
-            "id": "task_13",
-            "paragraphId": "para_16",
-            "featureId": "feature_21",
-            "title": "Test \"quoted text\" with émojis 🎯, numbers 123, and symbols @#$ all together",
-            "description": "Test \"quoted text\" with émojis 🎯, numbers 123, and symbols @#$ all together",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/special-characters-test-sample.md",
-            "lineNumber": 48
-          },
-          {
-            "id": "task_14",
-            "paragraphId": "para_16",
-            "featureId": "feature_21",
-            "title": "Create système de gestion with 50% performance using $1,000 budget and 🚀 dep...",
-            "description": "Create système de gestion with 50% performance using $1,000 budget and 🚀 deployment",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/special-characters-test-sample.md",
-            "lineNumber": 49
-          },
-          {
-            "id": "task_15",
-            "paragraphId": "para_16",
-            "featureId": "feature_21",
-            "title": "Validate Peter's fiduciary claims with €500K damages at 95% confidence level",
-            "description": "Validate Peter's fiduciary claims with €500K damages at 95% confidence level",
-            "rankOrder": 3,
-            "weight": 85,
-            "priority": "medium",
-            "source": "todo/special-characters-test-sample.md",
-            "lineNumber": 50
-          }
-        ]
-      },
-      {
-        "id": "para_17",
-        "featureId": "feature_27",
-        "number": 1,
-        "title": "Emoji Combinations and Modifiers",
-        "content": "Paragraph extracted from todo/special-characters-integration-test.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/special-characters-integration-test.md",
-        "lineNumber": 39,
-        "tasks": []
-      },
-      {
-        "id": "para_18",
-        "featureId": "feature_27",
-        "number": 2,
-        "title": "Unicode Normalization Tests",
-        "content": "Paragraph extracted from todo/special-characters-integration-test.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/special-characters-integration-test.md",
-        "lineNumber": 45,
-        "tasks": [
-          {
-            "id": "task_16",
-            "paragraphId": "para_18",
-            "featureId": "feature_27",
-            "title": "Test café vs cafe\\u0301 (composed vs decomposed unicode) for consistency",
-            "description": "Test café vs cafe\\u0301 (composed vs decomposed unicode) for consistency",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/special-characters-integration-test.md",
-            "lineNumber": 46
-          },
-          {
-            "id": "task_17",
-            "paragraphId": "para_18",
-            "featureId": "feature_27",
-            "title": "Validate unicode bidirectional text: English text with العربية mixed content",
-            "description": "Validate unicode bidirectional text: English text with العربية mixed content",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/special-characters-integration-test.md",
-            "lineNumber": 49
-          }
-        ]
-      },
-      {
-        "id": "para_19",
-        "featureId": "feature_27",
-        "number": 3,
-        "title": "Complex Punctuation and Symbols",
-        "content": "Paragraph extracted from todo/special-characters-integration-test.md",
-        "rankOrder": 3,
-        "weight": 85,
-        "source": "todo/special-characters-integration-test.md",
-        "lineNumber": 51,
-        "tasks": [
-          {
-            "id": "task_18",
-            "paragraphId": "para_19",
-            "featureId": "feature_27",
-            "title": "Test various quote styles: \"straight\", \"smart\", „German\", «French», 「Japanese」",
-            "description": "Test various quote styles: \"straight\", \"smart\", „German\", «French», 「Japanese」",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/special-characters-integration-test.md",
-            "lineNumber": 52
-          },
-          {
-            "id": "task_19",
-            "paragraphId": "para_19",
-            "featureId": "feature_27",
-            "title": "Validate time/date formats: 14:30–16:00 on 2024/12/25, T±2hr accuracy",
-            "description": "Validate time/date formats: 14:30–16:00 on 2024/12/25, T±2hr accuracy",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/special-characters-integration-test.md",
-            "lineNumber": 55
-          }
-        ]
-      },
-      {
-        "id": "para_20",
-        "featureId": "feature_27",
-        "number": 4,
-        "title": "Programming and Technical Characters",
-        "content": "Paragraph extracted from todo/special-characters-integration-test.md",
-        "rankOrder": 4,
-        "weight": 60,
-        "source": "todo/special-characters-integration-test.md",
-        "lineNumber": 57,
-        "tasks": [
-          {
-            "id": "task_20",
-            "paragraphId": "para_20",
-            "featureId": "feature_27",
-            "title": "Test regex patterns: /^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$/",
-            "description": "Test regex patterns: `/^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$/`",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/special-characters-integration-test.md",
-            "lineNumber": 58
-          },
-          {
-            "id": "task_21",
-            "paragraphId": "para_20",
-            "featureId": "feature_27",
-            "title": "Validate XML/HTML: <title>Café & Restaurant: \"Best Naïve Service\"</title>",
-            "description": "Validate XML/HTML: `<title>Café & Restaurant: \"Best Naïve Service\"</title>`",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/special-characters-integration-test.md",
-            "lineNumber": 61
-          }
-        ]
-      },
-      {
-        "id": "para_21",
-        "featureId": "feature_27",
-        "number": 5,
-        "title": "International and Accessibility",
-        "content": "Paragraph extracted from todo/special-characters-integration-test.md",
-        "rankOrder": 5,
-        "weight": 50,
-        "source": "todo/special-characters-integration-test.md",
-        "lineNumber": 63,
-        "tasks": [
-          {
-            "id": "task_22",
-            "paragraphId": "para_21",
-            "featureId": "feature_27",
-            "title": "Implement screen reader support for émojis: 🚀 → \"rocket ship emoji\"",
-            "description": "Implement screen reader support for émojis: 🚀 → \"rocket ship emoji\"",
-            "rankOrder": 1,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/special-characters-integration-test.md",
-            "lineNumber": 64
-          },
-          {
-            "id": "task_23",
-            "paragraphId": "para_21",
-            "featureId": "feature_27",
-            "title": "Test accessibility descriptions: ♿ → \"wheelchair accessible\", 👁️ → \"eye symbol\"",
-            "description": "Test accessibility descriptions: ♿ → \"wheelchair accessible\", 👁️ → \"eye symbol\"",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/special-characters-integration-test.md",
-            "lineNumber": 66
-          }
-        ]
-      },
-      {
-        "id": "para_22",
-        "featureId": "feature_33",
-        "number": 1,
-        "title": "Critical Priority Tasks",
-        "content": "Paragraph extracted from todo/optimal-strategies-burden-of-proof.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 7,
-        "tasks": [
-          {
-            "id": "task_24",
-            "paragraphId": "para_22",
-            "featureId": "feature_33",
-            "title": "Implement comprehensive test suite for civil evidence standards validation (>...",
-            "description": "Implement comprehensive test suite for **civil evidence standards** validation (>50% likelihood)",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 9
-          },
-          {
-            "id": "task_25",
-            "paragraphId": "para_22",
-            "featureId": "feature_33",
-            "title": "Create automated testing pipeline for preponderance of evidence assessment fr...",
-            "description": "Create automated testing pipeline for **preponderance of evidence** assessment framework",
-            "rankOrder": 2,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 10
-          },
-          {
-            "id": "task_26",
-            "paragraphId": "para_22",
-            "featureId": "feature_33",
-            "title": "Add monitoring and alerting for documentary evidence validation protocols",
-            "description": "Add monitoring and alerting for **documentary evidence** validation protocols",
-            "rankOrder": 3,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 11
-          },
-          {
-            "id": "task_27",
-            "paragraphId": "para_22",
-            "featureId": "feature_33",
-            "title": "Fix workflow functionality for witness credibility assessment mechanisms",
-            "description": "Fix workflow functionality for **witness credibility** assessment mechanisms",
-            "rankOrder": 4,
-            "weight": 60,
-            "priority": "low",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 12
-          },
-          {
-            "id": "task_28",
-            "paragraphId": "para_22",
-            "featureId": "feature_33",
-            "title": "Update duplicate prevention for circumstantial evidence evaluation systems",
-            "description": "Update duplicate prevention for **circumstantial evidence** evaluation systems",
-            "rankOrder": 5,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 13
-          }
-        ]
-      },
-      {
-        "id": "para_23",
-        "featureId": "feature_33",
-        "number": 2,
-        "title": "High Priority Tasks",
-        "content": "Paragraph extracted from todo/optimal-strategies-burden-of-proof.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 15,
-        "tasks": [
-          {
-            "id": "task_29",
-            "paragraphId": "para_23",
-            "featureId": "feature_33",
-            "title": "Implement comprehensive test suite for balance of probabilities standard vali...",
-            "description": "Implement comprehensive test suite for **balance of probabilities** standard validation",
-            "rankOrder": 1,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 17
-          },
-          {
-            "id": "task_30",
-            "paragraphId": "para_23",
-            "featureId": "feature_33",
-            "title": "Create automated testing pipeline for more likely than not evidence evaluation",
-            "description": "Create automated testing pipeline for **more likely than not** evidence evaluation",
-            "rankOrder": 2,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 18
-          },
-          {
-            "id": "task_31",
-            "paragraphId": "para_23",
-            "featureId": "feature_33",
-            "title": "Add monitoring and alerting for civil burden of proof tracking systems",
-            "description": "Add monitoring and alerting for **civil burden of proof** tracking systems",
-            "rankOrder": 3,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 19
-          },
-          {
-            "id": "task_32",
-            "paragraphId": "para_23",
-            "featureId": "feature_33",
-            "title": "Fix workflow functionality for liability assessment frameworks",
-            "description": "Fix workflow functionality for **liability assessment** frameworks",
-            "rankOrder": 4,
-            "weight": 60,
-            "priority": "low",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 20
-          },
-          {
-            "id": "task_33",
-            "paragraphId": "para_23",
-            "featureId": "feature_33",
-            "title": "Update duplicate prevention for damages calculation validation",
-            "description": "Update duplicate prevention for **damages calculation** validation",
-            "rankOrder": 5,
-            "weight": 50,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 21
-          }
-        ]
-      },
-      {
-        "id": "para_24",
-        "featureId": "feature_34",
-        "number": 1,
-        "title": "Critical Priority Tasks",
-        "content": "Paragraph extracted from todo/optimal-strategies-burden-of-proof.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 25,
-        "tasks": [
-          {
-            "id": "task_34",
-            "paragraphId": "para_24",
-            "featureId": "feature_34",
-            "title": "Implement comprehensive test suite for criminal evidence standards (>95% cert...",
-            "description": "Implement comprehensive test suite for **criminal evidence standards** (>95% certainty)",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 27
-          },
-          {
-            "id": "task_35",
-            "paragraphId": "para_24",
-            "featureId": "feature_34",
-            "title": "Create automated testing pipeline for beyond reasonable doubt assessment fram...",
-            "description": "Create automated testing pipeline for **beyond reasonable doubt** assessment framework",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 28
-          },
-          {
-            "id": "task_36",
-            "paragraphId": "para_24",
-            "featureId": "feature_34",
-            "title": "Add monitoring and alerting for prosecutorial burden validation protocols",
-            "description": "Add monitoring and alerting for **prosecutorial burden** validation protocols",
-            "rankOrder": 3,
-            "weight": 85,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 29
-          },
-          {
-            "id": "task_37",
-            "paragraphId": "para_24",
-            "featureId": "feature_34",
-            "title": "Fix workflow functionality for reasonable doubt evaluation mechanisms",
-            "description": "Fix workflow functionality for **reasonable doubt** evaluation mechanisms",
-            "rankOrder": 4,
-            "weight": 60,
-            "priority": "low",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 30
-          },
-          {
-            "id": "task_38",
-            "paragraphId": "para_24",
-            "featureId": "feature_34",
-            "title": "Update duplicate prevention for evidence sufficiency assessment systems",
-            "description": "Update duplicate prevention for **evidence sufficiency** assessment systems",
-            "rankOrder": 5,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 31
-          }
-        ]
-      },
-      {
-        "id": "para_25",
-        "featureId": "feature_34",
-        "number": 2,
-        "title": "High Priority Tasks",
-        "content": "Paragraph extracted from todo/optimal-strategies-burden-of-proof.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 33,
-        "tasks": [
-          {
-            "id": "task_39",
-            "paragraphId": "para_25",
-            "featureId": "feature_34",
-            "title": "Implement comprehensive test suite for moral certainty standard validation",
-            "description": "Implement comprehensive test suite for **moral certainty** standard validation",
-            "rankOrder": 1,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 35
-          },
-          {
-            "id": "task_40",
-            "paragraphId": "para_25",
-            "featureId": "feature_34",
-            "title": "Create automated testing pipeline for evidence exclusion rule frameworks",
-            "description": "Create automated testing pipeline for **evidence exclusion** rule frameworks",
-            "rankOrder": 2,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 36
-          },
-          {
-            "id": "task_41",
-            "paragraphId": "para_25",
-            "featureId": "feature_34",
-            "title": "Add monitoring and alerting for criminal burden of proof tracking systems",
-            "description": "Add monitoring and alerting for **criminal burden of proof** tracking systems",
-            "rankOrder": 3,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 37
-          },
-          {
-            "id": "task_42",
-            "paragraphId": "para_25",
-            "featureId": "feature_34",
-            "title": "Fix workflow functionality for guilt determination protocols",
-            "description": "Fix workflow functionality for **guilt determination** protocols",
-            "rankOrder": 4,
-            "weight": 60,
-            "priority": "low",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 38
-          },
-          {
-            "id": "task_43",
-            "paragraphId": "para_25",
-            "featureId": "feature_34",
-            "title": "Update duplicate prevention for conviction requirements validation",
-            "description": "Update duplicate prevention for **conviction requirements** validation",
-            "rankOrder": 5,
-            "weight": 50,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 39
-          }
-        ]
-      },
-      {
-        "id": "para_26",
-        "featureId": "feature_35",
-        "number": 1,
-        "title": "Critical Priority Tasks",
-        "content": "Paragraph extracted from todo/optimal-strategies-burden-of-proof.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 43,
-        "tasks": [
-          {
-            "id": "task_44",
-            "paragraphId": "para_26",
-            "featureId": "feature_35",
-            "title": "Implement comprehensive test suite for mathematical proof validation (100% ce...",
-            "description": "Implement comprehensive test suite for **mathematical proof** validation (100% certainty)",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 45
-          },
-          {
-            "id": "task_45",
-            "paragraphId": "para_26",
-            "featureId": "feature_35",
-            "title": "Create automated testing pipeline for logical invariant verification systems",
-            "description": "Create automated testing pipeline for **logical invariant** verification systems",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 46
-          },
-          {
-            "id": "task_46",
-            "paragraphId": "para_26",
-            "featureId": "feature_35",
-            "title": "Add monitoring and alerting for axiom-based proof validation frameworks",
-            "description": "Add monitoring and alerting for **axiom-based** proof validation frameworks",
-            "rankOrder": 3,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 47
-          },
-          {
-            "id": "task_47",
-            "paragraphId": "para_26",
-            "featureId": "feature_35",
-            "title": "Fix workflow functionality for deductive reasoning chain verification",
-            "description": "Fix workflow functionality for **deductive reasoning** chain verification",
-            "rankOrder": 4,
-            "weight": 60,
-            "priority": "low",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 48
-          },
-          {
-            "id": "task_48",
-            "paragraphId": "para_26",
-            "featureId": "feature_35",
-            "title": "Update duplicate prevention for formal verification protocol systems",
-            "description": "Update duplicate prevention for **formal verification** protocol systems",
-            "rankOrder": 5,
-            "weight": 50,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 49
-          }
-        ]
-      },
-      {
-        "id": "para_27",
-        "featureId": "feature_35",
-        "number": 2,
-        "title": "High Priority Tasks",
-        "content": "Paragraph extracted from todo/optimal-strategies-burden-of-proof.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 51,
-        "tasks": [
-          {
-            "id": "task_49",
-            "paragraphId": "para_27",
-            "featureId": "feature_35",
-            "title": "Implement comprehensive test suite for absolute certainty validation frameworks",
-            "description": "Implement comprehensive test suite for **absolute certainty** validation frameworks",
-            "rankOrder": 1,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 53
-          },
-          {
-            "id": "task_50",
-            "paragraphId": "para_27",
-            "featureId": "feature_35",
-            "title": "Create automated testing pipeline for logical consistency verification systems",
-            "description": "Create automated testing pipeline for **logical consistency** verification systems",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 54
-          },
-          {
-            "id": "task_51",
-            "paragraphId": "para_27",
-            "featureId": "feature_35",
-            "title": "Add monitoring and alerting for proof by contradiction validation protocols",
-            "description": "Add monitoring and alerting for **proof by contradiction** validation protocols",
-            "rankOrder": 3,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 55
-          },
-          {
-            "id": "task_52",
-            "paragraphId": "para_27",
-            "featureId": "feature_35",
-            "title": "Fix workflow functionality for mathematical induction verification frameworks",
-            "description": "Fix workflow functionality for **mathematical induction** verification frameworks",
-            "rankOrder": 4,
-            "weight": 60,
-            "priority": "low",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 56
-          },
-          {
-            "id": "task_53",
-            "paragraphId": "para_27",
-            "featureId": "feature_35",
-            "title": "Update duplicate prevention for theorem proving automation systems",
-            "description": "Update duplicate prevention for **theorem proving** automation systems",
-            "rankOrder": 5,
-            "weight": 50,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 57
-          }
-        ]
-      },
-      {
-        "id": "para_28",
-        "featureId": "feature_37",
-        "number": 1,
-        "title": "Civil Cases (Dan & Jax proving guilt of other agents)",
-        "content": "Paragraph extracted from todo/optimal-strategies-burden-of-proof.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 69,
-        "tasks": [
-          {
-            "id": "task_54",
-            "paragraphId": "para_28",
-            "featureId": "feature_37",
-            "title": "Implement comprehensive test suite for documentary evidence establishing agen...",
-            "description": "Implement comprehensive test suite for **documentary evidence** establishing agent actions",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 72
-          },
-          {
-            "id": "task_55",
-            "paragraphId": "para_28",
-            "featureId": "feature_37",
-            "title": "Create automated testing pipeline for witness testimony corroboration systems",
-            "description": "Create automated testing pipeline for **witness testimony** corroboration systems",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 73
-          },
-          {
-            "id": "task_56",
-            "paragraphId": "para_28",
-            "featureId": "feature_37",
-            "title": "Add monitoring and alerting for financial records analysis frameworks",
-            "description": "Add monitoring and alerting for **financial records** analysis frameworks",
-            "rankOrder": 3,
-            "weight": 85,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 74
-          },
-          {
-            "id": "task_57",
-            "paragraphId": "para_28",
-            "featureId": "feature_37",
-            "title": "Fix workflow functionality for communication patterns evidence validation",
-            "description": "Fix workflow functionality for **communication patterns** evidence validation",
-            "rankOrder": 4,
-            "weight": 100,
-            "priority": "low",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 75
-          },
-          {
-            "id": "task_58",
-            "paragraphId": "para_28",
-            "featureId": "feature_37",
-            "title": "Update duplicate prevention for timeline correlation assessment protocols",
-            "description": "Update duplicate prevention for **timeline correlation** assessment protocols",
-            "rankOrder": 5,
-            "weight": 50,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 76
-          }
-        ]
-      },
-      {
-        "id": "para_29",
-        "featureId": "feature_37",
-        "number": 2,
-        "title": "Criminal Cases (Dan & Jax proving guilt beyond reasonable doubt)",
-        "content": "Paragraph extracted from todo/optimal-strategies-burden-of-proof.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 78,
-        "tasks": [
-          {
-            "id": "task_59",
-            "paragraphId": "para_29",
-            "featureId": "feature_37",
-            "title": "Implement comprehensive test suite for criminal intent evidence validation",
-            "description": "Implement comprehensive test suite for **criminal intent** evidence validation",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 81
-          },
-          {
-            "id": "task_60",
-            "paragraphId": "para_29",
-            "featureId": "feature_37",
-            "title": "Create automated testing pipeline for actus reus (guilty act) verification sy...",
-            "description": "Create automated testing pipeline for **actus reus** (guilty act) verification systems",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 82
-          },
-          {
-            "id": "task_61",
-            "paragraphId": "para_29",
-            "featureId": "feature_37",
-            "title": "Add monitoring and alerting for mens rea (guilty mind) assessment frameworks",
-            "description": "Add monitoring and alerting for **mens rea** (guilty mind) assessment frameworks",
-            "rankOrder": 3,
-            "weight": 85,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 83
-          },
-          {
-            "id": "task_62",
-            "paragraphId": "para_29",
-            "featureId": "feature_37",
-            "title": "Fix workflow functionality for causation establishment protocols",
-            "description": "Fix workflow functionality for **causation** establishment protocols",
-            "rankOrder": 4,
-            "weight": 60,
-            "priority": "low",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 84
-          },
-          {
-            "id": "task_63",
-            "paragraphId": "para_29",
-            "featureId": "feature_37",
-            "title": "Update duplicate prevention for alibi refutation validation systems",
-            "description": "Update duplicate prevention for **alibi refutation** validation systems",
-            "rankOrder": 5,
-            "weight": 50,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 85
-          }
-        ]
-      },
-      {
-        "id": "para_30",
-        "featureId": "feature_37",
-        "number": 3,
-        "title": "Mathematical Invariants (Absolute certainty required)",
-        "content": "Paragraph extracted from todo/optimal-strategies-burden-of-proof.md",
-        "rankOrder": 3,
-        "weight": 85,
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 87,
-        "tasks": [
-          {
-            "id": "task_64",
-            "paragraphId": "para_30",
-            "featureId": "feature_37",
-            "title": "Implement comprehensive test suite for logical axiom validation frameworks",
-            "description": "Implement comprehensive test suite for **logical axiom** validation frameworks",
-            "rankOrder": 1,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 90
-          },
-          {
-            "id": "task_65",
-            "paragraphId": "para_30",
-            "featureId": "feature_37",
-            "title": "Create automated testing pipeline for deductive proof chain verification",
-            "description": "Create automated testing pipeline for **deductive proof** chain verification",
-            "rankOrder": 2,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 91
-          },
-          {
-            "id": "task_66",
-            "paragraphId": "para_30",
-            "featureId": "feature_37",
-            "title": "Add monitoring and alerting for contradiction elimination validation protocols",
-            "description": "Add monitoring and alerting for **contradiction elimination** validation protocols",
-            "rankOrder": 3,
-            "weight": 85,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 92
-          },
-          {
-            "id": "task_67",
-            "paragraphId": "para_30",
-            "featureId": "feature_37",
-            "title": "Fix workflow functionality for exhaustive case analysis systems",
-            "description": "Fix workflow functionality for **exhaustive case** analysis systems",
-            "rankOrder": 4,
-            "weight": 60,
-            "priority": "low",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 93
-          },
-          {
-            "id": "task_68",
-            "paragraphId": "para_30",
-            "featureId": "feature_37",
-            "title": "Update duplicate prevention for formal proof completeness verification",
-            "description": "Update duplicate prevention for **formal proof** completeness verification",
-            "rankOrder": 5,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/optimal-strategies-burden-of-proof.md",
-            "lineNumber": 94
-          }
-        ]
-      },
-      {
-        "id": "para_31",
-        "featureId": "feature_41",
-        "number": 1,
-        "title": "Target Parties:",
-        "content": "Paragraph extracted from todo/burden-of-proof-test.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/burden-of-proof-test.md",
-        "lineNumber": 26,
-        "tasks": []
-      },
-      {
-        "id": "para_32",
-        "featureId": "feature_41",
-        "number": 2,
-        "title": "Evidence Requirements:",
-        "content": "Paragraph extracted from todo/burden-of-proof-test.md",
-        "rankOrder": 2,
-        "weight": 100,
-        "source": "todo/burden-of-proof-test.md",
-        "lineNumber": 31,
-        "tasks": []
-      },
-      {
-        "id": "para_33",
-        "featureId": "feature_44",
-        "number": 1,
-        "title": "Must-Do (Phase 1) - Critical Evidence Collection",
-        "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 20,
-        "tasks": [
-          {
-            "id": "task_69",
-            "paragraphId": "para_33",
-            "featureId": "feature_44",
-            "title": "Gather Responsible Person documentation for 37 jurisdictions (JF-RP1)",
-            "description": "Gather Responsible Person documentation for 37 jurisdictions (JF-RP1)",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 22
-          },
-          {
-            "id": "task_70",
-            "paragraphId": "para_33",
-            "featureId": "feature_44",
-            "title": "Obtain regulatory risk analysis documentation (JF-RP2)",
-            "description": "Obtain regulatory risk analysis documentation (JF-RP2)",
-            "rankOrder": 2,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 23
-          },
-          {
-            "id": "task_71",
-            "paragraphId": "para_33",
-            "featureId": "feature_44",
-            "title": "Collect director loan account statements for all 3 directors (JF-DLA1, JF-DLA...",
-            "description": "Collect director loan account statements for all 3 directors (JF-DLA1, JF-DLA2, JF-DLA3)",
-            "rankOrder": 3,
-            "weight": 85,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 24
-          },
-          {
-            "id": "task_72",
-            "paragraphId": "para_33",
-            "featureId": "feature_44",
-            "title": "Document Peter's own withdrawals with minimum 4 examples (JF-PA1 through JF-PA4)",
-            "description": "Document Peter's own withdrawals with minimum 4 examples (JF-PA1 through JF-PA4)",
-            "rankOrder": 4,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 25
-          },
-          {
-            "id": "task_73",
-            "paragraphId": "para_33",
-            "featureId": "feature_44",
-            "title": "Obtain R500K payment bank statement dated 16 July 2025 (JF-BS1)",
-            "description": "Obtain R500K payment bank statement dated 16 July 2025 (JF-BS1)",
-            "rankOrder": 5,
-            "weight": 50,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 26
-          },
-          {
-            "id": "task_74",
-            "paragraphId": "para_33",
-            "featureId": "feature_44",
-            "title": "Create comparison document highlighting all changes between JF5 draft and fin...",
-            "description": "Create comparison document highlighting all changes between JF5 draft and final - **Template created**: `evidence/annexures/JF5-COMPARISON_DRAFT_VS_FINAL_CHANGES.md` - Requires completion after obtaining both agreements",
-            "rankOrder": 6,
-            "weight": 100,
-            "priority": "high",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 29
-          },
-          {
-            "id": "task_75",
-            "paragraphId": "para_33",
-            "featureId": "feature_44",
-            "title": "Obtain Daniel's witness statement regarding \"Has anything changed?\" exchange",
-            "description": "Obtain Daniel's witness statement regarding \"Has anything changed?\" exchange",
-            "rankOrder": 7,
-            "weight": 50,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 30
-          },
-          {
-            "id": "task_76",
-            "paragraphId": "para_33",
-            "featureId": "feature_44",
-            "title": "Collect Chesno fraud documentation (JF-CHESNO1 through JF-CHESNO4)",
-            "description": "Collect Chesno fraud documentation (JF-CHESNO1 through JF-CHESNO4)",
-            "rankOrder": 8,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 32
-          },
-          {
-            "id": "task_77",
-            "paragraphId": "para_33",
-            "featureId": "feature_44",
-            "title": "Document Daniel's 8-year restoration evidence (JF-RESTORE1 through JF-RESTORE4)",
-            "description": "Document Daniel's 8-year restoration evidence (JF-RESTORE1 through JF-RESTORE4)",
-            "rankOrder": 9,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 33
-          }
-        ]
-      },
-      {
-        "id": "para_34",
-        "featureId": "feature_44",
-        "number": 2,
-        "title": "Should-Do (Phase 2) - High Priority Evidence",
-        "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "rankOrder": 2,
-        "weight": 100,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 35,
-        "tasks": [
-          {
-            "id": "task_78",
-            "paragraphId": "para_34",
-            "featureId": "feature_44",
-            "title": "Obtain system access restriction logs (JF-SAL1, JF-EAL1, JF-FSL1)",
-            "description": "Obtain system access restriction logs (JF-SAL1, JF-EAL1, JF-FSL1)",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 37
-          },
-          {
-            "id": "task_79",
-            "paragraphId": "para_34",
-            "featureId": "feature_44",
-            "title": "Collect correspondence showing Daniel provided documentation (JF-CORR1)",
-            "description": "Collect correspondence showing Daniel provided documentation (JF-CORR1)",
-            "rankOrder": 2,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 39
-          },
-          {
-            "id": "task_80",
-            "paragraphId": "para_34",
-            "featureId": "feature_44",
-            "title": "Gather IT service invoices and contracts",
-            "description": "Gather IT service invoices and contracts",
-            "rankOrder": 3,
-            "weight": 85,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 50
-          },
-          {
-            "id": "task_81",
-            "paragraphId": "para_34",
-            "featureId": "feature_44",
-            "title": "Document historical collaborative model evidence (JF-HIST1, JF-HIST2, JF-HIST3)",
-            "description": "Document historical collaborative model evidence (JF-HIST1, JF-HIST2, JF-HIST3)",
-            "rankOrder": 4,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 51
-          },
-          {
-            "id": "task_82",
-            "paragraphId": "para_34",
-            "featureId": "feature_44",
-            "title": "Document director exclusion evidence (JF-EX1, JF-EX2, JF-EX3, JF-EX4)",
-            "description": "Document director exclusion evidence (JF-EX1, JF-EX2, JF-EX3, JF-EX4)",
-            "rankOrder": 5,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 60
-          }
-        ]
-      },
-      {
-        "id": "para_35",
-        "featureId": "feature_44",
-        "number": 3,
-        "title": "Nice-to-Have (Phase 3) - Supporting Evidence",
-        "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "rankOrder": 3,
-        "weight": 100,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 62,
-        "tasks": [
-          {
-            "id": "task_83",
-            "paragraphId": "para_35",
-            "featureId": "feature_44",
-            "title": "Gather revenue figures for international markets",
-            "description": "Gather revenue figures for international markets",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 65
-          },
-          {
-            "id": "task_84",
-            "paragraphId": "para_35",
-            "featureId": "feature_44",
-            "title": "Collect financial records showing businesses remain profitable",
-            "description": "Collect financial records showing businesses remain profitable",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 66
-          },
-          {
-            "id": "task_85",
-            "paragraphId": "para_35",
-            "featureId": "feature_44",
-            "title": "Document evidence of Peter's participation in informal practices",
-            "description": "Document evidence of Peter's participation in informal practices",
-            "rankOrder": 3,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 67
-          }
-        ]
-      },
-      {
-        "id": "para_36",
-        "featureId": "feature_45",
-        "number": 1,
-        "title": "Must-Do (Phase 1) - Critical Maintenance",
-        "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 71,
-        "tasks": [
-          {
-            "id": "task_86",
-            "paragraphId": "para_36",
-            "featureId": "feature_45",
-            "title": "Review and consolidate jax-response and jax-dan-response directories to elimi...",
-            "description": "Review and consolidate jax-response and jax-dan-response directories to eliminate duplication",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 73
-          },
-          {
-            "id": "task_87",
-            "paragraphId": "para_36",
-            "featureId": "feature_45",
-            "title": "Update all README.md files to reflect current repository state",
-            "description": "Update all README.md files to reflect current repository state",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 75
-          },
-          {
-            "id": "task_88",
-            "paragraphId": "para_36",
-            "featureId": "feature_45",
-            "title": "Verify all annexure references in affidavit v3 are correct and complete",
-            "description": "Verify all annexure references in affidavit v3 are correct and complete",
-            "rankOrder": 3,
-            "weight": 85,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 77
-          }
-        ]
-      },
-      {
-        "id": "para_37",
-        "featureId": "feature_45",
-        "number": 2,
-        "title": "Should-Do (Phase 2) - Documentation Updates",
-        "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "rankOrder": 2,
-        "weight": 100,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 79,
-        "tasks": [
-          {
-            "id": "task_89",
-            "paragraphId": "para_37",
-            "featureId": "feature_45",
-            "title": "Update REPOSITORY_STRUCTURE.md to include new jax-response directory structure",
-            "description": "Update REPOSITORY_STRUCTURE.md to include new jax-response directory structure",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 81
-          },
-          {
-            "id": "task_90",
-            "paragraphId": "para_37",
-            "featureId": "feature_45",
-            "title": "Create comprehensive evidence index mapping all 275+ files",
-            "description": "Create comprehensive evidence index mapping all 275+ files",
-            "rankOrder": 2,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 82
-          },
-          {
-            "id": "task_91",
-            "paragraphId": "para_37",
-            "featureId": "feature_45",
-            "title": "Document the relationship between jax-response and jax-dan-response directories",
-            "description": "Document the relationship between jax-response and jax-dan-response directories",
-            "rankOrder": 3,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 83
-          },
-          {
-            "id": "task_92",
-            "paragraphId": "para_37",
-            "featureId": "feature_45",
-            "title": "Update case timeline with all 15 forensic analysis events",
-            "description": "Update case timeline with all 15 forensic analysis events",
-            "rankOrder": 4,
-            "weight": 60,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 84
-          },
-          {
-            "id": "task_93",
-            "paragraphId": "para_37",
-            "featureId": "feature_45",
-            "title": "Create visual timeline diagram for key events from March-August 2025",
-            "description": "Create visual timeline diagram for key events from March-August 2025",
-            "rankOrder": 5,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 85
-          }
-        ]
-      },
-      {
-        "id": "para_38",
-        "featureId": "feature_45",
-        "number": 3,
-        "title": "Nice-to-Have (Phase 3) - Optimization",
-        "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "rankOrder": 3,
-        "weight": 85,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 87,
-        "tasks": [
-          {
-            "id": "task_94",
-            "paragraphId": "para_38",
-            "featureId": "feature_45",
-            "title": "Create automated scripts for evidence cross-referencing",
-            "description": "Create automated scripts for evidence cross-referencing",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 90
-          },
-          {
-            "id": "task_95",
-            "paragraphId": "para_38",
-            "featureId": "feature_45",
-            "title": "Implement database integration for structured case data",
-            "description": "Implement database integration for structured case data",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 91
-          },
-          {
-            "id": "task_96",
-            "paragraphId": "para_38",
-            "featureId": "feature_45",
-            "title": "Develop API for programmatic access to case information",
-            "description": "Develop API for programmatic access to case information",
-            "rankOrder": 3,
-            "weight": 85,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 92
-          },
-          {
-            "id": "task_97",
-            "paragraphId": "para_38",
-            "featureId": "feature_45",
-            "title": "Create automated case status reporting system",
-            "description": "Create automated case status reporting system",
-            "rankOrder": 4,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 93
-          }
-        ]
-      },
-      {
-        "id": "para_39",
-        "featureId": "feature_46",
-        "number": 1,
-        "title": "Must-Do (Phase 1) - Before Legal Review",
-        "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 97,
-        "tasks": []
-      },
-      {
-        "id": "para_40",
-        "featureId": "feature_46",
-        "number": 2,
-        "title": "Should-Do (Phase 2) - Legal Review Preparation",
-        "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 116,
-        "tasks": [
-          {
-            "id": "task_98",
-            "paragraphId": "para_40",
-            "featureId": "feature_46",
-            "title": "Verify all dates in timeline are accurate and consistent",
-            "description": "Verify all dates in timeline are accurate and consistent",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 119
-          },
-          {
-            "id": "task_99",
-            "paragraphId": "para_40",
-            "featureId": "feature_46",
-            "title": "Check all annexure numbering is sequential and complete",
-            "description": "Check all annexure numbering is sequential and complete",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 121
-          }
-        ]
-      },
-      {
-        "id": "para_41",
-        "featureId": "feature_46",
-        "number": 3,
-        "title": "Nice-to-Have (Phase 3) - Enhancement",
-        "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "rankOrder": 3,
-        "weight": 85,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 124,
-        "tasks": [
-          {
-            "id": "task_100",
-            "paragraphId": "para_41",
-            "featureId": "feature_46",
-            "title": "Add visual aids (timelines, financial flow diagrams) as annexures",
-            "description": "Add visual aids (timelines, financial flow diagrams) as annexures",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "low",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 126
-          },
-          {
-            "id": "task_101",
-            "paragraphId": "para_41",
-            "featureId": "feature_46",
-            "title": "Prepare witness statement templates for Daniel and other witnesses",
-            "description": "Prepare witness statement templates for Daniel and other witnesses",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 146
-          },
-          {
-            "id": "task_102",
-            "paragraphId": "para_41",
-            "featureId": "feature_46",
-            "title": "Develop evidence presentation strategy for court",
-            "description": "Develop evidence presentation strategy for court",
-            "rankOrder": 3,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 147
-          },
-          {
-            "id": "task_103",
-            "paragraphId": "para_41",
-            "featureId": "feature_46",
-            "title": "Create quick reference guide for all 50+ annexures",
-            "description": "Create quick reference guide for all 50+ annexures",
-            "rankOrder": 4,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 148
-          }
-        ]
-      },
-      {
-        "id": "para_42",
-        "featureId": "feature_47",
-        "number": 1,
-        "title": "Must-Do (Phase 1) - Critical Analysis",
-        "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 152,
-        "tasks": [
-          {
-            "id": "task_104",
-            "paragraphId": "para_42",
-            "featureId": "feature_47",
-            "title": "Validate all dates in revenue-theft, family-trust, and financial-flows analyses",
-            "description": "Validate all dates in revenue-theft, family-trust, and financial-flows analyses",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "low",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 157
-          }
-        ]
-      },
-      {
-        "id": "para_43",
-        "featureId": "feature_47",
-        "number": 2,
-        "title": "Should-Do (Phase 2) - Analysis Expansion",
-        "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 160,
-        "tasks": [
-          {
-            "id": "task_105",
-            "paragraphId": "para_43",
-            "featureId": "feature_47",
-            "title": "Add cross-border financial flow analysis for UK-SA transactions",
-            "description": "Add cross-border financial flow analysis for UK-SA transactions",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "low",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 162
-          },
-          {
-            "id": "task_106",
-            "paragraphId": "para_43",
-            "featureId": "feature_47",
-            "title": "Create comprehensive evidence cross-reference for all three categories",
-            "description": "Create comprehensive evidence cross-reference for all three categories",
-            "rankOrder": 2,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 164
-          },
-          {
-            "id": "task_107",
-            "paragraphId": "para_43",
-            "featureId": "feature_47",
-            "title": "Develop expert witness requirements list for financial forensics",
-            "description": "Develop expert witness requirements list for financial forensics",
-            "rankOrder": 3,
-            "weight": 85,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 165
-          },
-          {
-            "id": "task_108",
-            "paragraphId": "para_43",
-            "featureId": "feature_47",
-            "title": "Prepare forensic analysis summary for attorney and court",
-            "description": "Prepare forensic analysis summary for attorney and court",
-            "rankOrder": 4,
-            "weight": 60,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 166
-          }
-        ]
-      },
-      {
-        "id": "para_44",
-        "featureId": "feature_47",
-        "number": 3,
-        "title": "Nice-to-Have (Phase 3) - Advanced Analysis",
-        "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "rankOrder": 3,
-        "weight": 85,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 168,
-        "tasks": [
-          {
-            "id": "task_109",
-            "paragraphId": "para_44",
-            "featureId": "feature_47",
-            "title": "Create network analysis diagrams showing fund flows and relationships",
-            "description": "Create network analysis diagrams showing fund flows and relationships",
-            "rankOrder": 1,
-            "weight": 90,
-            "priority": "low",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 170
-          },
-          {
-            "id": "task_110",
-            "paragraphId": "para_44",
-            "featureId": "feature_47",
-            "title": "Develop timeline visualization for all 15 forensic events",
-            "description": "Develop timeline visualization for all 15 forensic events",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 171
-          },
-          {
-            "id": "task_111",
-            "paragraphId": "para_44",
-            "featureId": "feature_47",
-            "title": "Create damage calculation methodology documentation",
-            "description": "Create damage calculation methodology documentation",
-            "rankOrder": 3,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 185
-          },
-          {
-            "id": "task_112",
-            "paragraphId": "para_44",
-            "featureId": "feature_47",
-            "title": "Develop expert testimony preparation materials",
-            "description": "Develop expert testimony preparation materials",
-            "rankOrder": 4,
-            "weight": 60,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 186
-          }
-        ]
-      },
-      {
-        "id": "para_45",
-        "featureId": "feature_48",
-        "number": 1,
-        "title": "Must-Do (Phase 1) - Critical Testing",
-        "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 190,
-        "tasks": [
-          {
-            "id": "task_113",
-            "paragraphId": "para_45",
-            "featureId": "feature_48",
-            "title": "Verify all GitHub issue generation workflows function correctly",
-            "description": "Verify all GitHub issue generation workflows function correctly",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "low",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 193
-          },
-          {
-            "id": "task_114",
-            "paragraphId": "para_45",
-            "featureId": "feature_48",
-            "title": "Test evidence cross-referencing system for accuracy",
-            "description": "Test evidence cross-referencing system for accuracy",
-            "rankOrder": 2,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 194
-          }
-        ]
-      },
-      {
-        "id": "para_46",
-        "featureId": "feature_48",
-        "number": 2,
-        "title": "Should-Do (Phase 2) - Quality Checks",
-        "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 198,
-        "tasks": [
-          {
-            "id": "task_115",
-            "paragraphId": "para_46",
-            "featureId": "feature_48",
-            "title": "Review all 275+ files for naming consistency",
-            "description": "Review all 275+ files for naming consistency",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 200
-          },
-          {
-            "id": "task_116",
-            "paragraphId": "para_46",
-            "featureId": "feature_48",
-            "title": "Verify all markdown files render correctly on GitHub",
-            "description": "Verify all markdown files render correctly on GitHub",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 201
-          },
-          {
-            "id": "task_117",
-            "paragraphId": "para_46",
-            "featureId": "feature_48",
-            "title": "Check all internal links and cross-references work",
-            "description": "Check all internal links and cross-references work",
-            "rankOrder": 3,
-            "weight": 85,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 202
-          },
-          {
-            "id": "task_118",
-            "paragraphId": "para_46",
-            "featureId": "feature_48",
-            "title": "Validate all financial figures use consistent currency notation",
-            "description": "Validate all financial figures use consistent currency notation",
-            "rankOrder": 4,
-            "weight": 60,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 204
-          }
-        ]
-      },
-      {
-        "id": "para_47",
-        "featureId": "feature_48",
-        "number": 3,
-        "title": "Nice-to-Have (Phase 3) - Advanced QA",
-        "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "rankOrder": 3,
-        "weight": 85,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 206,
-        "tasks": [
-          {
-            "id": "task_119",
-            "paragraphId": "para_47",
-            "featureId": "feature_48",
-            "title": "Implement automated testing for repository structure integrity",
-            "description": "Implement automated testing for repository structure integrity",
-            "rankOrder": 1,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 208
-          },
-          {
-            "id": "task_120",
-            "paragraphId": "para_47",
-            "featureId": "feature_48",
-            "title": "Create validation scripts for evidence completeness",
-            "description": "Create validation scripts for evidence completeness",
-            "rankOrder": 2,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 209
-          },
-          {
-            "id": "task_121",
-            "paragraphId": "para_47",
-            "featureId": "feature_48",
-            "title": "Develop automated cross-reference checking system",
-            "description": "Develop automated cross-reference checking system",
-            "rankOrder": 3,
-            "weight": 85,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 210
-          },
-          {
-            "id": "task_122",
-            "paragraphId": "para_47",
-            "featureId": "feature_48",
-            "title": "Implement continuous integration for documentation updates",
-            "description": "Implement continuous integration for documentation updates",
-            "rankOrder": 4,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 211
-          },
-          {
-            "id": "task_123",
-            "paragraphId": "para_47",
-            "featureId": "feature_48",
-            "title": "Create automated reporting for repository health metrics",
-            "description": "Create automated reporting for repository health metrics",
-            "rankOrder": 5,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 212
-          }
-        ]
-      },
-      {
-        "id": "para_48",
-        "featureId": "feature_49",
-        "number": 1,
-        "title": "Week 1 (Immediate)",
-        "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 216,
-        "tasks": [
-          {
-            "id": "task_124",
-            "paragraphId": "para_48",
-            "featureId": "feature_49",
-            "title": "Update critical documentation",
-            "description": "Update critical documentation",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "critical",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 219
-          }
-        ]
-      },
-      {
-        "id": "para_49",
-        "featureId": "feature_49",
-        "number": 2,
-        "title": "Week 2 (Short-term)",
-        "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 222,
-        "tasks": [
-          {
-            "id": "task_125",
-            "paragraphId": "para_49",
-            "featureId": "feature_49",
-            "title": "Gather all Phase 2 high-priority evidence",
-            "description": "Gather all Phase 2 high-priority evidence",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "high",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 224
-          }
-        ]
-      },
-      {
-        "id": "para_50",
-        "featureId": "feature_49",
-        "number": 3,
-        "title": "Week 3 (Medium-term)",
-        "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "rankOrder": 3,
-        "weight": 85,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 228,
-        "tasks": [
-          {
-            "id": "task_126",
-            "paragraphId": "para_50",
-            "featureId": "feature_49",
-            "title": "Prepare for legal review",
-            "description": "Prepare for legal review",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-            "lineNumber": 229
-          }
-        ]
-      },
-      {
-        "id": "para_51",
-        "featureId": "feature_49",
-        "number": 4,
-        "title": "Week 4 (Pre-submission)",
-        "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "rankOrder": 4,
-        "weight": 60,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 234,
-        "tasks": []
-      },
-      {
-        "id": "para_52",
-        "featureId": "feature_50",
-        "number": 1,
-        "title": "Evidence Collection Complete",
-        "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 242,
-        "tasks": []
-      },
-      {
-        "id": "para_53",
-        "featureId": "feature_50",
-        "number": 2,
-        "title": "Repository Maintenance Complete",
-        "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 248,
-        "tasks": []
-      },
-      {
-        "id": "para_54",
-        "featureId": "feature_50",
-        "number": 3,
-        "title": "Affidavit Ready for Legal Review",
-        "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "rankOrder": 3,
-        "weight": 85,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 254,
-        "tasks": []
-      },
-      {
-        "id": "para_55",
-        "featureId": "feature_50",
-        "number": 4,
-        "title": "Quality Assurance Complete",
-        "content": "Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "rankOrder": 4,
-        "weight": 60,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 260,
-        "tasks": []
-      },
-      {
-        "id": "para_56",
-        "featureId": "feature_54",
-        "number": 1,
-        "title": "Active Todo Files",
-        "content": "Paragraph extracted from todo/README.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/README.md",
-        "lineNumber": 11,
-        "tasks": []
-      },
-      {
-        "id": "para_57",
-        "featureId": "feature_54",
-        "number": 2,
-        "title": "Workflow Test Files",
-        "content": "Paragraph extracted from todo/README.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/README.md",
-        "lineNumber": 33,
-        "tasks": []
-      },
-      {
-        "id": "para_58",
-        "featureId": "feature_55",
-        "number": 1,
-        "title": "Automatic Issue Generation",
-        "content": "Paragraph extracted from todo/README.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/README.md",
-        "lineNumber": 50,
-        "tasks": []
-      },
-      {
-        "id": "para_59",
-        "featureId": "feature_55",
-        "number": 2,
-        "title": "Task Format",
-        "content": "Paragraph extracted from todo/README.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/README.md",
-        "lineNumber": 59,
-        "tasks": []
-      },
-      {
-        "id": "para_60",
-        "featureId": "feature_55",
-        "number": 3,
-        "title": "Must-Do (Phase 1)",
-        "content": "Paragraph extracted from todo/README.md",
-        "rankOrder": 3,
-        "weight": 85,
-        "source": "todo/README.md",
-        "lineNumber": 65,
-        "tasks": []
-      },
-      {
-        "id": "para_61",
-        "featureId": "feature_55",
-        "number": 4,
-        "title": "Should-Do (Phase 2)",
-        "content": "Paragraph extracted from todo/README.md",
-        "rankOrder": 4,
-        "weight": 60,
-        "source": "todo/README.md",
-        "lineNumber": 69,
-        "tasks": []
-      },
-      {
-        "id": "para_62",
-        "featureId": "feature_55",
-        "number": 5,
-        "title": "Nice-to-Have (Phase 3)",
-        "content": "Paragraph extracted from todo/README.md",
-        "rankOrder": 5,
-        "weight": 50,
-        "source": "todo/README.md",
-        "lineNumber": 73,
-        "tasks": [
-          {
-            "id": "task_127",
-            "paragraphId": "para_62",
-            "featureId": "feature_55",
-            "title": "Implement priority-based response architecture",
-            "description": "Implement priority-based response architecture",
-            "rankOrder": 1,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/README.md",
-            "lineNumber": 81
-          },
-          {
-            "id": "task_128",
-            "paragraphId": "para_62",
-            "featureId": "feature_55",
-            "title": "Create comprehensive timeline analysis",
-            "description": "Create comprehensive timeline analysis",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/README.md",
-            "lineNumber": 82
-          }
-        ]
-      },
-      {
-        "id": "para_63",
-        "featureId": "feature_55",
-        "number": 6,
-        "title": "Priority Mapping",
-        "content": "Paragraph extracted from todo/README.md",
-        "rankOrder": 6,
-        "weight": 50,
-        "source": "todo/README.md",
-        "lineNumber": 86,
-        "tasks": []
-      },
-      {
-        "id": "para_64",
-        "featureId": "feature_56",
-        "number": 1,
-        "title": "Current State (October 13, 2025)",
-        "content": "Paragraph extracted from todo/README.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/README.md",
-        "lineNumber": 96,
-        "tasks": []
-      },
-      {
-        "id": "para_65",
-        "featureId": "feature_56",
-        "number": 2,
-        "title": "Repository Growth",
-        "content": "Paragraph extracted from todo/README.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/README.md",
-        "lineNumber": 110,
-        "tasks": []
-      },
-      {
-        "id": "para_66",
-        "featureId": "feature_56",
-        "number": 3,
-        "title": "Critical Evidence Gaps",
-        "content": "Paragraph extracted from todo/README.md",
-        "rankOrder": 3,
-        "weight": 100,
-        "source": "todo/README.md",
-        "lineNumber": 118,
-        "tasks": []
-      },
-      {
-        "id": "para_67",
-        "featureId": "feature_57",
-        "number": 1,
-        "title": "For Contributors",
-        "content": "Paragraph extracted from todo/README.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/README.md",
-        "lineNumber": 136,
-        "tasks": []
-      },
-      {
-        "id": "para_68",
-        "featureId": "feature_57",
-        "number": 2,
-        "title": "For Reviewers",
-        "content": "Paragraph extracted from todo/README.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/README.md",
-        "lineNumber": 144,
-        "tasks": []
-      },
-      {
-        "id": "para_69",
-        "featureId": "feature_57",
-        "number": 3,
-        "title": "For Project Managers",
-        "content": "Paragraph extracted from todo/README.md",
-        "rankOrder": 3,
-        "weight": 85,
-        "source": "todo/README.md",
-        "lineNumber": 151,
-        "tasks": []
-      },
-      {
-        "id": "para_70",
-        "featureId": "feature_59",
-        "number": 1,
-        "title": "Week 1 (Immediate)",
-        "content": "Paragraph extracted from todo/README.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/README.md",
-        "lineNumber": 167,
-        "tasks": [
-          {
-            "id": "task_129",
-            "paragraphId": "para_70",
-            "featureId": "feature_59",
-            "title": "Update critical documentation",
-            "description": "Update critical documentation",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "critical",
-            "source": "todo/README.md",
-            "lineNumber": 170
-          }
-        ]
-      },
-      {
-        "id": "para_71",
-        "featureId": "feature_59",
-        "number": 2,
-        "title": "Week 2 (Short-term)",
-        "content": "Paragraph extracted from todo/README.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/README.md",
-        "lineNumber": 173,
-        "tasks": [
-          {
-            "id": "task_130",
-            "paragraphId": "para_71",
-            "featureId": "feature_59",
-            "title": "Gather Phase 2 high-priority evidence",
-            "description": "Gather Phase 2 high-priority evidence",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "high",
-            "source": "todo/README.md",
-            "lineNumber": 175
-          },
-          {
-            "id": "task_131",
-            "paragraphId": "para_71",
-            "featureId": "feature_59",
-            "title": "Verify forensic analysis",
-            "description": "Verify forensic analysis",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/README.md",
-            "lineNumber": 177
-          }
-        ]
-      },
-      {
-        "id": "para_72",
-        "featureId": "feature_59",
-        "number": 3,
-        "title": "Week 3 (Medium-term)",
-        "content": "Paragraph extracted from todo/README.md",
-        "rankOrder": 3,
-        "weight": 85,
-        "source": "todo/README.md",
-        "lineNumber": 179,
-        "tasks": [
-          {
-            "id": "task_132",
-            "paragraphId": "para_72",
-            "featureId": "feature_59",
-            "title": "Prepare for legal review",
-            "description": "Prepare for legal review",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/README.md",
-            "lineNumber": 180
-          }
-        ]
-      },
-      {
-        "id": "para_73",
-        "featureId": "feature_59",
-        "number": 4,
-        "title": "Week 4 (Pre-submission)",
-        "content": "Paragraph extracted from todo/README.md",
-        "rankOrder": 4,
-        "weight": 60,
-        "source": "todo/README.md",
-        "lineNumber": 185,
-        "tasks": []
-      },
-      {
-        "id": "para_74",
-        "featureId": "feature_64",
-        "number": 1,
-        "title": "1. Create jax-dan-response/AD/1-Critical/ Directory Structure",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 23,
-        "tasks": []
-      },
-      {
-        "id": "para_75",
-        "featureId": "feature_64",
-        "number": 2,
-        "title": "2. Create PARA_7_2-7_5_IT_EXPENSES.md - IT Expense Technical Justification",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 33,
-        "tasks": []
-      },
-      {
-        "id": "para_76",
-        "featureId": "feature_64",
-        "number": 3,
-        "title": "3. Create PARA_7_6_R500K_PAYMENT.md - Director Loan Account System Architecture",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 3,
-        "weight": 85,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 67,
-        "tasks": []
-      },
-      {
-        "id": "para_77",
-        "featureId": "feature_64",
-        "number": 4,
-        "title": "4. Create PARA_7_7-7_8_PAYMENT_AUTHORIZATION.md - Payment Authorization Workflow Details",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 4,
-        "weight": 60,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 101,
-        "tasks": []
-      },
-      {
-        "id": "para_78",
-        "featureId": "feature_64",
-        "number": 5,
-        "title": "5. Create PARA_7_9-7_11_BUSINESS_PURPOSE.md - Platform Ownership Business Purpose",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 5,
-        "weight": 50,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 129,
-        "tasks": []
-      },
-      {
-        "id": "para_79",
-        "featureId": "feature_64",
-        "number": 6,
-        "title": "6. Create PARA_10_5-10_10_23_FINANCIAL_SYSTEMS.md - Financial Systems Perspective",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 6,
-        "weight": 50,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 158,
-        "tasks": []
-      },
-      {
-        "id": "para_80",
-        "featureId": "feature_64",
-        "number": 7,
-        "title": "7. Create jax-dan-response/AD/1-Critical/README.md - Directory Index",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 7,
-        "weight": 50,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 187,
-        "tasks": []
-      },
-      {
-        "id": "para_81",
-        "featureId": "feature_65",
-        "number": 1,
-        "title": "8. Create jax-dan-response/AD/2-High-Priority/ Additional Files",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 206,
-        "tasks": []
-      },
-      {
-        "id": "para_82",
-        "featureId": "feature_65",
-        "number": 2,
-        "title": "9. Update jax-dan-response/AD/2-High-Priority/README.md",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 270,
-        "tasks": []
-      },
-      {
-        "id": "para_83",
-        "featureId": "feature_66",
-        "number": 1,
-        "title": "10. Create EVIDENCE_MAPPING_MATRIX.md",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 280,
-        "tasks": []
-      },
-      {
-        "id": "para_84",
-        "featureId": "feature_66",
-        "number": 2,
-        "title": "11. Create DAN_RESPONSE_SUMMARY.md",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 295,
-        "tasks": []
-      },
-      {
-        "id": "para_85",
-        "featureId": "feature_66",
-        "number": 3,
-        "title": "12. Implement Bidirectional Cross-Referencing",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 3,
-        "weight": 85,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 311,
-        "tasks": [
-          {
-            "id": "task_133",
-            "paragraphId": "para_85",
-            "featureId": "feature_66",
-            "title": "Add \"Daniel's Technical Perspective\" sections to jax-response files",
-            "description": "Add \"Daniel's Technical Perspective\" sections to jax-response files",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 316
-          },
-          {
-            "id": "task_134",
-            "paragraphId": "para_85",
-            "featureId": "feature_66",
-            "title": "Add \"Jacqueline's Legal Perspective\" sections to jax-dan-response files",
-            "description": "Add \"Jacqueline's Legal Perspective\" sections to jax-dan-response files",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 317
-          },
-          {
-            "id": "task_135",
-            "paragraphId": "para_85",
-            "featureId": "feature_66",
-            "title": "Update evidence-attachments files with \"Referenced By\" sections",
-            "description": "Update evidence-attachments files with \"Referenced By\" sections",
-            "rankOrder": 3,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 318
-          },
-          {
-            "id": "task_136",
-            "paragraphId": "para_85",
-            "featureId": "feature_66",
-            "title": "Verify all cross-references are accurate",
-            "description": "Verify all cross-references are accurate",
-            "rankOrder": 4,
-            "weight": 60,
-            "priority": "medium",
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 319
-          }
-        ]
-      },
-      {
-        "id": "para_86",
-        "featureId": "feature_66",
-        "number": 4,
-        "title": "13. Update jax-dan-response/README.md",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 4,
-        "weight": 60,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 325,
-        "tasks": []
-      },
-      {
-        "id": "para_87",
-        "featureId": "feature_67",
-        "number": 1,
-        "title": "14. Evaluate Priority 3 (Medium) Paragraphs for Daniel's Relevance",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 342,
-        "tasks": []
-      },
-      {
-        "id": "para_88",
-        "featureId": "feature_67",
-        "number": 2,
-        "title": "15. Create Selected Priority 3 (Medium) Files",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 358,
-        "tasks": []
-      },
-      {
-        "id": "para_89",
-        "featureId": "feature_67",
-        "number": 3,
-        "title": "16. Create jax-dan-response/AD/3-Medium-Priority/README.md",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 3,
-        "weight": 85,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 366,
-        "tasks": []
-      },
-      {
-        "id": "para_90",
-        "featureId": "feature_68",
-        "number": 1,
-        "title": "17. Comprehensive Consistency Review",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 376,
-        "tasks": [
-          {
-            "id": "task_137",
-            "paragraphId": "para_90",
-            "featureId": "feature_68",
-            "title": "Verify all cross-references are accurate",
-            "description": "Verify all cross-references are accurate",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 381
-          },
-          {
-            "id": "task_138",
-            "paragraphId": "para_90",
-            "featureId": "feature_68",
-            "title": "Check for contradictions between Jacqueline's and Daniel's responses",
-            "description": "Check for contradictions between Jacqueline's and Daniel's responses",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-            "lineNumber": 382
-          }
-        ]
-      },
-      {
-        "id": "para_91",
-        "featureId": "feature_68",
-        "number": 2,
-        "title": "18. Evidence Series Documentation",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 2,
-        "weight": 100,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 391,
-        "tasks": []
-      },
-      {
-        "id": "para_92",
-        "featureId": "feature_68",
-        "number": 3,
-        "title": "19. Quality Assurance Against Template Standards",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 3,
-        "weight": 85,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 406,
-        "tasks": []
-      },
-      {
-        "id": "para_93",
-        "featureId": "feature_68",
-        "number": 4,
-        "title": "20. Final Integration Review with Legal Team",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 4,
-        "weight": 60,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 426,
-        "tasks": []
-      },
-      {
-        "id": "para_94",
-        "featureId": "feature_69",
-        "number": 1,
-        "title": "Critical Evidence Series (Must Collect)",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 443,
-        "tasks": []
-      },
-      {
-        "id": "para_95",
-        "featureId": "feature_70",
-        "number": 1,
-        "title": "1. Platform Ownership Counter-Claim",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 475,
-        "tasks": []
-      },
-      {
-        "id": "para_96",
-        "featureId": "feature_70",
-        "number": 2,
-        "title": "2. Technical Impossibility Argument",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 482,
-        "tasks": []
-      },
-      {
-        "id": "para_97",
-        "featureId": "feature_70",
-        "number": 3,
-        "title": "3. Peter's Bad Faith Evidence",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 3,
-        "weight": 100,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 489,
-        "tasks": []
-      },
-      {
-        "id": "para_98",
-        "featureId": "feature_71",
-        "number": 1,
-        "title": "Quantitative Metrics",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 498,
-        "tasks": []
-      },
-      {
-        "id": "para_99",
-        "featureId": "feature_71",
-        "number": 2,
-        "title": "Qualitative Metrics",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 505,
-        "tasks": []
-      },
-      {
-        "id": "para_100",
-        "featureId": "feature_72",
-        "number": 1,
-        "title": "Risk 1: Redundancy with Jacqueline's Response",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 516,
-        "tasks": []
-      },
-      {
-        "id": "para_101",
-        "featureId": "feature_72",
-        "number": 2,
-        "title": "Risk 2: Contradictions Between Responses",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 519,
-        "tasks": []
-      },
-      {
-        "id": "para_102",
-        "featureId": "feature_72",
-        "number": 3,
-        "title": "Risk 3: Evidence Collection Delays",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 3,
-        "weight": 100,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 522,
-        "tasks": []
-      },
-      {
-        "id": "para_103",
-        "featureId": "feature_72",
-        "number": 4,
-        "title": "Risk 4: Time Constraints",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 4,
-        "weight": 60,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 525,
-        "tasks": []
-      },
-      {
-        "id": "para_104",
-        "featureId": "feature_74",
-        "number": 1,
-        "title": "External Dependencies",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 545,
-        "tasks": []
-      },
-      {
-        "id": "para_105",
-        "featureId": "feature_74",
-        "number": 2,
-        "title": "Internal Dependencies",
-        "content": "Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 550,
-        "tasks": []
-      },
-      {
-        "id": "para_106",
-        "featureId": "feature_77",
-        "number": 1,
-        "title": "Strengths of Current Draft",
-        "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 11,
-        "tasks": []
-      },
-      {
-        "id": "para_107",
-        "featureId": "feature_77",
-        "number": 2,
-        "title": "Critical Gaps Identified",
-        "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 21,
-        "tasks": []
-      },
-      {
-        "id": "para_108",
-        "featureId": "feature_78",
-        "number": 1,
-        "title": "1. Implement Priority-Based Response Architecture",
-        "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 41,
-        "tasks": [
-          {
-            "id": "task_139",
-            "paragraphId": "para_108",
-            "featureId": "feature_78",
-            "title": "Add Dan's technical affidavit explaining infrastructure requirements",
-            "description": "Add Dan's technical affidavit explaining infrastructure requirements",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 56
-          },
-          {
-            "id": "task_140",
-            "paragraphId": "para_108",
-            "featureId": "feature_78",
-            "title": "Create point-by-point rebuttal matrix for each sub-allegation",
-            "description": "Create point-by-point rebuttal matrix for each sub-allegation",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 86
-          },
-          {
-            "id": "task_141",
-            "paragraphId": "para_108",
-            "featureId": "feature_78",
-            "title": "Add external validation (accountant letters, SARS compliance, bank relationsh...",
-            "description": "Add external validation (accountant letters, SARS compliance, bank relationships)",
-            "rankOrder": 3,
-            "weight": 85,
-            "priority": "medium",
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 90
-          },
-          {
-            "id": "task_142",
-            "paragraphId": "para_108",
-            "featureId": "feature_78",
-            "title": "Analyze suspicious timing of \"discovery\" relative to settlement negotiations",
-            "description": "Analyze suspicious timing of \"discovery\" relative to settlement negotiations",
-            "rankOrder": 4,
-            "weight": 60,
-            "priority": "medium",
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 123
-          },
-          {
-            "id": "task_143",
-            "paragraphId": "para_108",
-            "featureId": "feature_78",
-            "title": "Document Peter's menacing and coercive conduct during confrontation",
-            "description": "Document Peter's menacing and coercive conduct during confrontation",
-            "rankOrder": 5,
-            "weight": 100,
-            "priority": "medium",
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 131
-          },
-          {
-            "id": "task_144",
-            "paragraphId": "para_108",
-            "featureId": "feature_78",
-            "title": "Create standardized response template for each paragraph",
-            "description": "Create standardized response template for each paragraph",
-            "rankOrder": 6,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 158
-          }
-        ]
-      },
-      {
-        "id": "para_109",
-        "featureId": "feature_78",
-        "number": 2,
-        "title": "2. Integrate Dan's Technical and Operational Perspective",
-        "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 199,
-        "tasks": []
-      },
-      {
-        "id": "para_110",
-        "featureId": "feature_78",
-        "number": 3,
-        "title": "3. Enhance Evidence Architecture",
-        "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "rankOrder": 3,
-        "weight": 100,
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 244,
-        "tasks": []
-      },
-      {
-        "id": "para_111",
-        "featureId": "feature_78",
-        "number": 4,
-        "title": "4. Strengthen Counter-Narrative Strategy",
-        "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "rankOrder": 4,
-        "weight": 60,
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 320,
-        "tasks": []
-      },
-      {
-        "id": "para_112",
-        "featureId": "feature_78",
-        "number": 5,
-        "title": "5. Implement Systematic Cross-Referencing",
-        "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "rankOrder": 5,
-        "weight": 50,
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 363,
-        "tasks": []
-      },
-      {
-        "id": "para_113",
-        "featureId": "feature_78",
-        "number": 6,
-        "title": "6. Address Dan-Specific Technical Elements",
-        "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "rankOrder": 6,
-        "weight": 50,
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 402,
-        "tasks": []
-      },
-      {
-        "id": "para_114",
-        "featureId": "feature_78",
-        "number": 7,
-        "title": "7. Enhance Strategic Litigation Positioning",
-        "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "rankOrder": 7,
-        "weight": 50,
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 480,
-        "tasks": []
-      },
-      {
-        "id": "para_115",
-        "featureId": "feature_78",
-        "number": 8,
-        "title": "8. Implement Comprehensive Timeline Analysis",
-        "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "rankOrder": 8,
-        "weight": 50,
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 533,
-        "tasks": []
-      },
-      {
-        "id": "para_116",
-        "featureId": "feature_78",
-        "number": 9,
-        "title": "9. Develop Responsible Person Regulatory Crisis Section",
-        "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "rankOrder": 9,
-        "weight": 50,
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 585,
-        "tasks": []
-      },
-      {
-        "id": "para_117",
-        "featureId": "feature_78",
-        "number": 10,
-        "title": "10. Create Comprehensive Response Structure",
-        "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "rankOrder": 10,
-        "weight": 50,
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 653,
-        "tasks": []
-      },
-      {
-        "id": "para_118",
-        "featureId": "feature_79",
-        "number": 1,
-        "title": "✅ Phase 1: Immediate Additions (High Impact, Low Effort) - COMPLETED",
-        "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 781,
-        "tasks": []
-      },
-      {
-        "id": "para_119",
-        "featureId": "feature_79",
-        "number": 2,
-        "title": "Phase 2: Systematic Coverage (Medium Impact, Medium Effort)",
-        "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 815,
-        "tasks": []
-      },
-      {
-        "id": "para_120",
-        "featureId": "feature_79",
-        "number": 3,
-        "title": "Phase 3: Complete Coverage (Lower Impact, Higher Effort)",
-        "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "rankOrder": 3,
-        "weight": 85,
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 838,
-        "tasks": []
-      },
-      {
-        "id": "para_121",
-        "featureId": "feature_79",
-        "number": 4,
-        "title": "Phase 4: Polish and Integration (Quality Enhancement)",
-        "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "rankOrder": 4,
-        "weight": 60,
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 861,
-        "tasks": []
-      },
-      {
-        "id": "para_122",
-        "featureId": "feature_81",
-        "number": 1,
-        "title": "✅ Must-Do (Phase 1) - COMPLETED & ENHANCED",
-        "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 899,
-        "tasks": []
-      },
-      {
-        "id": "para_123",
-        "featureId": "feature_81",
-        "number": 2,
-        "title": "Should-Do (Phase 2)",
-        "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 908,
-        "tasks": [
-          {
-            "id": "task_145",
-            "paragraphId": "para_123",
-            "featureId": "feature_81",
-            "title": "Add all high-priority paragraph responses",
-            "description": "Add all high-priority paragraph responses",
-            "rankOrder": 1,
-            "weight": 100,
-            "priority": "high",
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 910
-          },
-          {
-            "id": "task_146",
-            "paragraphId": "para_123",
-            "featureId": "feature_81",
-            "title": "Create Dan's technical affidavit",
-            "description": "Create Dan's technical affidavit",
-            "rankOrder": 2,
-            "weight": 90,
-            "priority": "medium",
-            "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-            "lineNumber": 911
-          }
-        ]
-      },
-      {
-        "id": "para_124",
-        "featureId": "feature_81",
-        "number": 3,
-        "title": "Nice-to-Have (Phase 3-4)",
-        "content": "Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "rankOrder": 3,
-        "weight": 85,
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 913,
-        "tasks": []
-      },
-      {
-        "id": "para_125",
-        "featureId": "feature_84",
-        "number": 1,
-        "title": "Current Strengths",
-        "content": "Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "lineNumber": 9,
-        "tasks": []
-      },
-      {
-        "id": "para_126",
-        "featureId": "feature_84",
-        "number": 2,
-        "title": "Critical Gaps",
-        "content": "Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "lineNumber": 18,
-        "tasks": []
-      },
-      {
-        "id": "para_127",
-        "featureId": "feature_85",
-        "number": 1,
-        "title": "✅ 1. COMPLETED - Add Responsible Person Regulatory Crisis Section (CRITICAL)",
-        "content": "Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "lineNumber": 34,
-        "tasks": []
-      },
-      {
-        "id": "para_128",
-        "featureId": "feature_85",
-        "number": 2,
-        "title": "✅ 2. COMPLETED - Add Settlement Timing and Strategic Litigation Section (CRITICAL)",
-        "content": "Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "lineNumber": 51,
-        "tasks": []
-      },
-      {
-        "id": "para_129",
-        "featureId": "feature_85",
-        "number": 3,
-        "title": "✅ 3. COMPLETED - Add Peter's Causation Section (CRITICAL)",
-        "content": "Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "rankOrder": 3,
-        "weight": 85,
-        "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "lineNumber": 65,
-        "tasks": []
-      },
-      {
-        "id": "para_130",
-        "featureId": "feature_85",
-        "number": 4,
-        "title": "✅ 4. COMPLETED - Create Dan's Technical Infrastructure Affidavit (HIGH PRIORITY)",
-        "content": "Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "rankOrder": 4,
-        "weight": 60,
-        "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "lineNumber": 79,
-        "tasks": []
-      },
-      {
-        "id": "para_131",
-        "featureId": "feature_85",
-        "number": 5,
-        "title": "✅ 5. COMPLETED - Create Comprehensive Timeline Analysis (HIGH PRIORITY)",
-        "content": "Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "rankOrder": 5,
-        "weight": 50,
-        "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "lineNumber": 95,
-        "tasks": []
-      },
-      {
-        "id": "para_132",
-        "featureId": "feature_86",
-        "number": 1,
-        "title": "Phase 1: Critical Additions (11-16 hours total)",
-        "content": "Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "rankOrder": 1,
-        "weight": 95,
-        "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "lineNumber": 118,
-        "tasks": []
-      },
-      {
-        "id": "para_133",
-        "featureId": "feature_86",
-        "number": 2,
-        "title": "Phase 2: Systematic Coverage (24-34 hours)",
-        "content": "Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "rankOrder": 2,
-        "weight": 90,
-        "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "lineNumber": 121,
-        "tasks": []
-      },
-      {
-        "id": "para_134",
-        "featureId": "feature_86",
-        "number": 3,
-        "title": "Phase 3: Complete Coverage (30-42 hours)",
-        "content": "Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "rankOrder": 3,
-        "weight": 85,
-        "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "lineNumber": 124,
-        "tasks": []
-      },
-      {
-        "id": "para_135",
-        "featureId": "feature_86",
-        "number": 4,
-        "title": "Phase 4: Polish and Integration (13-18 hours)",
-        "content": "Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "rankOrder": 4,
-        "weight": 60,
-        "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "lineNumber": 127,
-        "tasks": []
-      },
-      {
-        "id": "para_136",
-        "featureId": "feature_1",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 5,
-        "tasks": []
-      },
-      {
-        "id": "para_137",
-        "featureId": "feature_2",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 12,
-        "tasks": []
-      },
-      {
-        "id": "para_138",
-        "featureId": "feature_3",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 19,
-        "tasks": []
-      },
-      {
-        "id": "para_139",
-        "featureId": "feature_4",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 24,
-        "tasks": []
-      },
-      {
-        "id": "para_140",
-        "featureId": "feature_5",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 31,
-        "tasks": []
-      },
-      {
-        "id": "para_141",
-        "featureId": "feature_8",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 70,
-        "tasks": []
-      },
-      {
-        "id": "para_142",
-        "featureId": "feature_9",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 76,
-        "tasks": []
-      },
-      {
-        "id": "para_143",
-        "featureId": "feature_11",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 102,
-        "tasks": []
-      },
-      {
-        "id": "para_144",
-        "featureId": "feature_14",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/workflow-test.md",
-        "lineNumber": 47,
-        "tasks": []
-      },
-      {
-        "id": "para_145",
-        "featureId": "feature_15",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/special-characters-test-sample.md",
-        "lineNumber": 5,
-        "tasks": []
-      },
-      {
-        "id": "para_146",
-        "featureId": "feature_16",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/special-characters-test-sample.md",
-        "lineNumber": 11,
-        "tasks": []
-      },
-      {
-        "id": "para_147",
-        "featureId": "feature_17",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/special-characters-test-sample.md",
-        "lineNumber": 20,
-        "tasks": []
-      },
-      {
-        "id": "para_148",
-        "featureId": "feature_18",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/special-characters-test-sample.md",
-        "lineNumber": 26,
-        "tasks": []
-      },
-      {
-        "id": "para_149",
-        "featureId": "feature_19",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/special-characters-test-sample.md",
-        "lineNumber": 33,
-        "tasks": []
-      },
-      {
-        "id": "para_150",
-        "featureId": "feature_20",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/special-characters-test-sample.md",
-        "lineNumber": 38,
-        "tasks": []
-      },
-      {
-        "id": "para_151",
-        "featureId": "feature_22",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/special-characters-integration-test.md",
-        "lineNumber": 5,
-        "tasks": []
-      },
-      {
-        "id": "para_152",
-        "featureId": "feature_23",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/special-characters-integration-test.md",
-        "lineNumber": 12,
-        "tasks": []
-      },
-      {
-        "id": "para_153",
-        "featureId": "feature_24",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/special-characters-integration-test.md",
-        "lineNumber": 19,
-        "tasks": []
-      },
-      {
-        "id": "para_154",
-        "featureId": "feature_25",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/special-characters-integration-test.md",
-        "lineNumber": 26,
-        "tasks": []
-      },
-      {
-        "id": "para_155",
-        "featureId": "feature_26",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/special-characters-integration-test.md",
-        "lineNumber": 32,
-        "tasks": []
-      },
-      {
-        "id": "para_156",
-        "featureId": "feature_28",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/simple-workflow-test.md",
-        "lineNumber": 3,
-        "tasks": []
-      },
-      {
-        "id": "para_157",
-        "featureId": "feature_29",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/simple-workflow-test.md",
-        "lineNumber": 8,
-        "tasks": []
-      },
-      {
-        "id": "para_158",
-        "featureId": "feature_30",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/simple-workflow-test.md",
-        "lineNumber": 13,
-        "tasks": []
-      },
-      {
-        "id": "para_159",
-        "featureId": "feature_31",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/simple-workflow-test.md",
-        "lineNumber": 18,
-        "tasks": []
-      },
-      {
-        "id": "para_160",
-        "featureId": "feature_32",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/simple-workflow-test.md",
-        "lineNumber": 22,
-        "tasks": []
-      },
-      {
-        "id": "para_161",
-        "featureId": "feature_36",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 59,
-        "tasks": []
-      },
-      {
-        "id": "para_162",
-        "featureId": "feature_38",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/burden-of-proof-test.md",
-        "lineNumber": 3,
-        "tasks": []
-      },
-      {
-        "id": "para_163",
-        "featureId": "feature_39",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/burden-of-proof-test.md",
-        "lineNumber": 8,
-        "tasks": []
-      },
-      {
-        "id": "para_164",
-        "featureId": "feature_40",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/burden-of-proof-test.md",
-        "lineNumber": 13,
-        "tasks": []
-      },
-      {
-        "id": "para_165",
-        "featureId": "feature_42",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 3,
-        "tasks": []
-      },
-      {
-        "id": "para_166",
-        "featureId": "feature_43",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 7,
-        "tasks": []
-      },
-      {
-        "id": "para_167",
-        "featureId": "feature_51",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 266,
-        "tasks": []
-      },
-      {
-        "id": "para_168",
-        "featureId": "feature_52",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 274,
-        "tasks": []
-      },
-      {
-        "id": "para_169",
-        "featureId": "feature_53",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/README.md",
-        "lineNumber": 5,
-        "tasks": []
-      },
-      {
-        "id": "para_170",
-        "featureId": "feature_58",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/README.md",
-        "lineNumber": 158,
-        "tasks": []
-      },
-      {
-        "id": "para_171",
-        "featureId": "feature_60",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/README.md",
-        "lineNumber": 191,
-        "tasks": []
-      },
-      {
-        "id": "para_172",
-        "featureId": "feature_61",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/README.md",
-        "lineNumber": 198,
-        "tasks": []
-      },
-      {
-        "id": "para_173",
-        "featureId": "feature_62",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 2,
-        "tasks": []
-      },
-      {
-        "id": "para_174",
-        "featureId": "feature_63",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 11,
-        "tasks": []
-      },
-      {
-        "id": "para_175",
-        "featureId": "feature_73",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 530,
-        "tasks": []
-      },
-      {
-        "id": "para_176",
-        "featureId": "feature_75",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 557,
-        "tasks": []
-      },
-      {
-        "id": "para_177",
-        "featureId": "feature_76",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 3,
-        "tasks": []
-      },
-      {
-        "id": "para_178",
-        "featureId": "feature_80",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 886,
-        "tasks": []
-      },
-      {
-        "id": "para_179",
-        "featureId": "feature_82",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 921,
-        "tasks": []
-      },
-      {
-        "id": "para_180",
-        "featureId": "feature_83",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "lineNumber": 3,
-        "tasks": []
-      },
-      {
-        "id": "para_181",
-        "featureId": "feature_87",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "lineNumber": 132,
-        "tasks": []
-      },
-      {
-        "id": "para_182",
-        "featureId": "feature_88",
-        "number": 1,
-        "title": "Implementation Tasks",
-        "content": "Default paragraph for task grouping",
-        "rankOrder": 1,
-        "weight": 100,
-        "source": "todo/Executive Summary_ Jax-Dan Response Improvements.md",
-        "lineNumber": 144,
-        "tasks": []
-      }
-    ],
-    "tasks": [
-      {
-        "id": "task_1",
-        "paragraphId": "para_1",
-        "featureId": "feature_6",
-        "title": "Create unit tests for markdown parsing logic",
-        "description": "Create unit tests for markdown parsing logic",
-        "rankOrder": 1,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 40
-      },
-      {
-        "id": "task_2",
-        "paragraphId": "para_1",
-        "featureId": "feature_6",
-        "title": "Implement integration tests for GitHub API interaction",
-        "description": "Implement integration tests for GitHub API interaction",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 41
-      },
-      {
-        "id": "task_3",
-        "paragraphId": "para_1",
-        "featureId": "feature_6",
-        "title": "Add regression tests to prevent workflow breaking changes",
-        "description": "Add regression tests to prevent workflow breaking changes",
-        "rankOrder": 3,
-        "weight": 85,
-        "priority": "low",
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 42
-      },
-      {
-        "id": "task_4",
-        "paragraphId": "para_2",
-        "featureId": "feature_6",
-        "title": "Test with émojis and ünicode characters in task descriptions",
-        "description": "Test with émojis and ünicode characters in task descriptions",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 47
-      },
-      {
-        "id": "task_5",
-        "paragraphId": "para_2",
-        "featureId": "feature_6",
-        "title": "Validate proper handling of tasks with \"quotes\" and 'apostrophes'",
-        "description": "Validate proper handling of tasks with \"quotes\" and 'apostrophes'",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 48
-      },
-      {
-        "id": "task_6",
-        "paragraphId": "para_7",
-        "featureId": "feature_10",
-        "title": "Fix security vulnerability in authentication system",
-        "description": "Fix security vulnerability in authentication system",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 95
-      },
-      {
-        "id": "task_7",
-        "paragraphId": "para_8",
-        "featureId": "feature_10",
-        "title": "Add new feature for improved user experience",
-        "description": "Add new feature for improved user experience",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 99
-      },
-      {
-        "id": "task_8",
-        "paragraphId": "para_8",
-        "featureId": "feature_10",
-        "title": "Implement advanced analytics dashboard",
-        "description": "Implement advanced analytics dashboard",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/workflow-validation-tests.md",
-        "lineNumber": 100
-      },
-      {
-        "id": "task_9",
-        "paragraphId": "para_10",
-        "featureId": "feature_12",
-        "title": "Verify proper issue creation with multiple labels",
-        "description": "Verify proper issue creation with multiple labels",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/workflow-test.md",
-        "lineNumber": 13
-      },
-      {
-        "id": "task_10",
-        "paragraphId": "para_11",
-        "featureId": "feature_12",
-        "title": "Add metrics collection for workflow performance",
-        "description": "Add metrics collection for workflow performance",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "low",
-        "source": "todo/workflow-test.md",
-        "lineNumber": 17
-      },
-      {
-        "id": "task_11",
-        "paragraphId": "para_11",
-        "featureId": "feature_12",
-        "title": "Implement batching for large numbers of issues",
-        "description": "Implement batching for large numbers of issues",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/workflow-test.md",
-        "lineNumber": 18
-      },
-      {
-        "id": "task_12",
-        "paragraphId": "para_12",
-        "featureId": "feature_12",
-        "title": "Create validation tests for workflow changes",
-        "description": "Create validation tests for workflow changes",
-        "rankOrder": 1,
-        "weight": 90,
-        "priority": "low",
-        "source": "todo/workflow-test.md",
-        "lineNumber": 21
-      },
-      {
-        "id": "task_13",
-        "paragraphId": "para_16",
-        "featureId": "feature_21",
-        "title": "Test \"quoted text\" with émojis 🎯, numbers 123, and symbols @#$ all together",
-        "description": "Test \"quoted text\" with émojis 🎯, numbers 123, and symbols @#$ all together",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/special-characters-test-sample.md",
-        "lineNumber": 48
-      },
-      {
-        "id": "task_14",
-        "paragraphId": "para_16",
-        "featureId": "feature_21",
-        "title": "Create système de gestion with 50% performance using $1,000 budget and 🚀 dep...",
-        "description": "Create système de gestion with 50% performance using $1,000 budget and 🚀 deployment",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/special-characters-test-sample.md",
-        "lineNumber": 49
-      },
-      {
-        "id": "task_15",
-        "paragraphId": "para_16",
-        "featureId": "feature_21",
-        "title": "Validate Peter's fiduciary claims with €500K damages at 95% confidence level",
-        "description": "Validate Peter's fiduciary claims with €500K damages at 95% confidence level",
-        "rankOrder": 3,
-        "weight": 85,
-        "priority": "medium",
-        "source": "todo/special-characters-test-sample.md",
-        "lineNumber": 50
-      },
-      {
-        "id": "task_16",
-        "paragraphId": "para_18",
-        "featureId": "feature_27",
-        "title": "Test café vs cafe\\u0301 (composed vs decomposed unicode) for consistency",
-        "description": "Test café vs cafe\\u0301 (composed vs decomposed unicode) for consistency",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/special-characters-integration-test.md",
-        "lineNumber": 46
-      },
-      {
-        "id": "task_17",
-        "paragraphId": "para_18",
-        "featureId": "feature_27",
-        "title": "Validate unicode bidirectional text: English text with العربية mixed content",
-        "description": "Validate unicode bidirectional text: English text with العربية mixed content",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/special-characters-integration-test.md",
-        "lineNumber": 49
-      },
-      {
-        "id": "task_18",
-        "paragraphId": "para_19",
-        "featureId": "feature_27",
-        "title": "Test various quote styles: \"straight\", \"smart\", „German\", «French», 「Japanese」",
-        "description": "Test various quote styles: \"straight\", \"smart\", „German\", «French», 「Japanese」",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/special-characters-integration-test.md",
-        "lineNumber": 52
-      },
-      {
-        "id": "task_19",
-        "paragraphId": "para_19",
-        "featureId": "feature_27",
-        "title": "Validate time/date formats: 14:30–16:00 on 2024/12/25, T±2hr accuracy",
-        "description": "Validate time/date formats: 14:30–16:00 on 2024/12/25, T±2hr accuracy",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/special-characters-integration-test.md",
-        "lineNumber": 55
-      },
-      {
-        "id": "task_20",
-        "paragraphId": "para_20",
-        "featureId": "feature_27",
-        "title": "Test regex patterns: /^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$/",
-        "description": "Test regex patterns: `/^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$/`",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/special-characters-integration-test.md",
-        "lineNumber": 58
-      },
-      {
-        "id": "task_21",
-        "paragraphId": "para_20",
-        "featureId": "feature_27",
-        "title": "Validate XML/HTML: <title>Café & Restaurant: \"Best Naïve Service\"</title>",
-        "description": "Validate XML/HTML: `<title>Café & Restaurant: \"Best Naïve Service\"</title>`",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/special-characters-integration-test.md",
-        "lineNumber": 61
-      },
-      {
-        "id": "task_22",
-        "paragraphId": "para_21",
-        "featureId": "feature_27",
-        "title": "Implement screen reader support for émojis: 🚀 → \"rocket ship emoji\"",
-        "description": "Implement screen reader support for émojis: 🚀 → \"rocket ship emoji\"",
-        "rankOrder": 1,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/special-characters-integration-test.md",
-        "lineNumber": 64
-      },
-      {
-        "id": "task_23",
-        "paragraphId": "para_21",
-        "featureId": "feature_27",
-        "title": "Test accessibility descriptions: ♿ → \"wheelchair accessible\", 👁️ → \"eye symbol\"",
-        "description": "Test accessibility descriptions: ♿ → \"wheelchair accessible\", 👁️ → \"eye symbol\"",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/special-characters-integration-test.md",
-        "lineNumber": 66
-      },
-      {
-        "id": "task_24",
-        "paragraphId": "para_22",
-        "featureId": "feature_33",
-        "title": "Implement comprehensive test suite for civil evidence standards validation (>...",
-        "description": "Implement comprehensive test suite for **civil evidence standards** validation (>50% likelihood)",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 9
-      },
-      {
-        "id": "task_25",
-        "paragraphId": "para_22",
-        "featureId": "feature_33",
-        "title": "Create automated testing pipeline for preponderance of evidence assessment fr...",
-        "description": "Create automated testing pipeline for **preponderance of evidence** assessment framework",
-        "rankOrder": 2,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 10
-      },
-      {
-        "id": "task_26",
-        "paragraphId": "para_22",
-        "featureId": "feature_33",
-        "title": "Add monitoring and alerting for documentary evidence validation protocols",
-        "description": "Add monitoring and alerting for **documentary evidence** validation protocols",
-        "rankOrder": 3,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 11
-      },
-      {
-        "id": "task_27",
-        "paragraphId": "para_22",
-        "featureId": "feature_33",
-        "title": "Fix workflow functionality for witness credibility assessment mechanisms",
-        "description": "Fix workflow functionality for **witness credibility** assessment mechanisms",
-        "rankOrder": 4,
-        "weight": 60,
-        "priority": "low",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 12
-      },
-      {
-        "id": "task_28",
-        "paragraphId": "para_22",
-        "featureId": "feature_33",
-        "title": "Update duplicate prevention for circumstantial evidence evaluation systems",
-        "description": "Update duplicate prevention for **circumstantial evidence** evaluation systems",
-        "rankOrder": 5,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 13
-      },
-      {
-        "id": "task_29",
-        "paragraphId": "para_23",
-        "featureId": "feature_33",
-        "title": "Implement comprehensive test suite for balance of probabilities standard vali...",
-        "description": "Implement comprehensive test suite for **balance of probabilities** standard validation",
-        "rankOrder": 1,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 17
-      },
-      {
-        "id": "task_30",
-        "paragraphId": "para_23",
-        "featureId": "feature_33",
-        "title": "Create automated testing pipeline for more likely than not evidence evaluation",
-        "description": "Create automated testing pipeline for **more likely than not** evidence evaluation",
-        "rankOrder": 2,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 18
-      },
-      {
-        "id": "task_31",
-        "paragraphId": "para_23",
-        "featureId": "feature_33",
-        "title": "Add monitoring and alerting for civil burden of proof tracking systems",
-        "description": "Add monitoring and alerting for **civil burden of proof** tracking systems",
-        "rankOrder": 3,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 19
-      },
-      {
-        "id": "task_32",
-        "paragraphId": "para_23",
-        "featureId": "feature_33",
-        "title": "Fix workflow functionality for liability assessment frameworks",
-        "description": "Fix workflow functionality for **liability assessment** frameworks",
-        "rankOrder": 4,
-        "weight": 60,
-        "priority": "low",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 20
-      },
-      {
-        "id": "task_33",
-        "paragraphId": "para_23",
-        "featureId": "feature_33",
-        "title": "Update duplicate prevention for damages calculation validation",
-        "description": "Update duplicate prevention for **damages calculation** validation",
-        "rankOrder": 5,
-        "weight": 50,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 21
-      },
-      {
-        "id": "task_34",
-        "paragraphId": "para_24",
-        "featureId": "feature_34",
-        "title": "Implement comprehensive test suite for criminal evidence standards (>95% cert...",
-        "description": "Implement comprehensive test suite for **criminal evidence standards** (>95% certainty)",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 27
-      },
-      {
-        "id": "task_35",
-        "paragraphId": "para_24",
-        "featureId": "feature_34",
-        "title": "Create automated testing pipeline for beyond reasonable doubt assessment fram...",
-        "description": "Create automated testing pipeline for **beyond reasonable doubt** assessment framework",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 28
-      },
-      {
-        "id": "task_36",
-        "paragraphId": "para_24",
-        "featureId": "feature_34",
-        "title": "Add monitoring and alerting for prosecutorial burden validation protocols",
-        "description": "Add monitoring and alerting for **prosecutorial burden** validation protocols",
-        "rankOrder": 3,
-        "weight": 85,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 29
-      },
-      {
-        "id": "task_37",
-        "paragraphId": "para_24",
-        "featureId": "feature_34",
-        "title": "Fix workflow functionality for reasonable doubt evaluation mechanisms",
-        "description": "Fix workflow functionality for **reasonable doubt** evaluation mechanisms",
-        "rankOrder": 4,
-        "weight": 60,
-        "priority": "low",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 30
-      },
-      {
-        "id": "task_38",
-        "paragraphId": "para_24",
-        "featureId": "feature_34",
-        "title": "Update duplicate prevention for evidence sufficiency assessment systems",
-        "description": "Update duplicate prevention for **evidence sufficiency** assessment systems",
-        "rankOrder": 5,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 31
-      },
-      {
-        "id": "task_39",
-        "paragraphId": "para_25",
-        "featureId": "feature_34",
-        "title": "Implement comprehensive test suite for moral certainty standard validation",
-        "description": "Implement comprehensive test suite for **moral certainty** standard validation",
-        "rankOrder": 1,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 35
-      },
-      {
-        "id": "task_40",
-        "paragraphId": "para_25",
-        "featureId": "feature_34",
-        "title": "Create automated testing pipeline for evidence exclusion rule frameworks",
-        "description": "Create automated testing pipeline for **evidence exclusion** rule frameworks",
-        "rankOrder": 2,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 36
-      },
-      {
-        "id": "task_41",
-        "paragraphId": "para_25",
-        "featureId": "feature_34",
-        "title": "Add monitoring and alerting for criminal burden of proof tracking systems",
-        "description": "Add monitoring and alerting for **criminal burden of proof** tracking systems",
-        "rankOrder": 3,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 37
-      },
-      {
-        "id": "task_42",
-        "paragraphId": "para_25",
-        "featureId": "feature_34",
-        "title": "Fix workflow functionality for guilt determination protocols",
-        "description": "Fix workflow functionality for **guilt determination** protocols",
-        "rankOrder": 4,
-        "weight": 60,
-        "priority": "low",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 38
-      },
-      {
-        "id": "task_43",
-        "paragraphId": "para_25",
-        "featureId": "feature_34",
-        "title": "Update duplicate prevention for conviction requirements validation",
-        "description": "Update duplicate prevention for **conviction requirements** validation",
-        "rankOrder": 5,
-        "weight": 50,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 39
-      },
-      {
-        "id": "task_44",
-        "paragraphId": "para_26",
-        "featureId": "feature_35",
-        "title": "Implement comprehensive test suite for mathematical proof validation (100% ce...",
-        "description": "Implement comprehensive test suite for **mathematical proof** validation (100% certainty)",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 45
-      },
-      {
-        "id": "task_45",
-        "paragraphId": "para_26",
-        "featureId": "feature_35",
-        "title": "Create automated testing pipeline for logical invariant verification systems",
-        "description": "Create automated testing pipeline for **logical invariant** verification systems",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 46
-      },
-      {
-        "id": "task_46",
-        "paragraphId": "para_26",
-        "featureId": "feature_35",
-        "title": "Add monitoring and alerting for axiom-based proof validation frameworks",
-        "description": "Add monitoring and alerting for **axiom-based** proof validation frameworks",
-        "rankOrder": 3,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 47
-      },
-      {
-        "id": "task_47",
-        "paragraphId": "para_26",
-        "featureId": "feature_35",
-        "title": "Fix workflow functionality for deductive reasoning chain verification",
-        "description": "Fix workflow functionality for **deductive reasoning** chain verification",
-        "rankOrder": 4,
-        "weight": 60,
-        "priority": "low",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 48
-      },
-      {
-        "id": "task_48",
-        "paragraphId": "para_26",
-        "featureId": "feature_35",
-        "title": "Update duplicate prevention for formal verification protocol systems",
-        "description": "Update duplicate prevention for **formal verification** protocol systems",
-        "rankOrder": 5,
-        "weight": 50,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 49
-      },
-      {
-        "id": "task_49",
-        "paragraphId": "para_27",
-        "featureId": "feature_35",
-        "title": "Implement comprehensive test suite for absolute certainty validation frameworks",
-        "description": "Implement comprehensive test suite for **absolute certainty** validation frameworks",
-        "rankOrder": 1,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 53
-      },
-      {
-        "id": "task_50",
-        "paragraphId": "para_27",
-        "featureId": "feature_35",
-        "title": "Create automated testing pipeline for logical consistency verification systems",
-        "description": "Create automated testing pipeline for **logical consistency** verification systems",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 54
-      },
-      {
-        "id": "task_51",
-        "paragraphId": "para_27",
-        "featureId": "feature_35",
-        "title": "Add monitoring and alerting for proof by contradiction validation protocols",
-        "description": "Add monitoring and alerting for **proof by contradiction** validation protocols",
-        "rankOrder": 3,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 55
-      },
-      {
-        "id": "task_52",
-        "paragraphId": "para_27",
-        "featureId": "feature_35",
-        "title": "Fix workflow functionality for mathematical induction verification frameworks",
-        "description": "Fix workflow functionality for **mathematical induction** verification frameworks",
-        "rankOrder": 4,
-        "weight": 60,
-        "priority": "low",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 56
-      },
-      {
-        "id": "task_53",
-        "paragraphId": "para_27",
-        "featureId": "feature_35",
-        "title": "Update duplicate prevention for theorem proving automation systems",
-        "description": "Update duplicate prevention for **theorem proving** automation systems",
-        "rankOrder": 5,
-        "weight": 50,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 57
-      },
-      {
-        "id": "task_54",
-        "paragraphId": "para_28",
-        "featureId": "feature_37",
-        "title": "Implement comprehensive test suite for documentary evidence establishing agen...",
-        "description": "Implement comprehensive test suite for **documentary evidence** establishing agent actions",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 72
-      },
-      {
-        "id": "task_55",
-        "paragraphId": "para_28",
-        "featureId": "feature_37",
-        "title": "Create automated testing pipeline for witness testimony corroboration systems",
-        "description": "Create automated testing pipeline for **witness testimony** corroboration systems",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 73
-      },
-      {
-        "id": "task_56",
-        "paragraphId": "para_28",
-        "featureId": "feature_37",
-        "title": "Add monitoring and alerting for financial records analysis frameworks",
-        "description": "Add monitoring and alerting for **financial records** analysis frameworks",
-        "rankOrder": 3,
-        "weight": 85,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 74
-      },
-      {
-        "id": "task_57",
-        "paragraphId": "para_28",
-        "featureId": "feature_37",
-        "title": "Fix workflow functionality for communication patterns evidence validation",
-        "description": "Fix workflow functionality for **communication patterns** evidence validation",
-        "rankOrder": 4,
-        "weight": 100,
-        "priority": "low",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 75
-      },
-      {
-        "id": "task_58",
-        "paragraphId": "para_28",
-        "featureId": "feature_37",
-        "title": "Update duplicate prevention for timeline correlation assessment protocols",
-        "description": "Update duplicate prevention for **timeline correlation** assessment protocols",
-        "rankOrder": 5,
-        "weight": 50,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 76
-      },
-      {
-        "id": "task_59",
-        "paragraphId": "para_29",
-        "featureId": "feature_37",
-        "title": "Implement comprehensive test suite for criminal intent evidence validation",
-        "description": "Implement comprehensive test suite for **criminal intent** evidence validation",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 81
-      },
-      {
-        "id": "task_60",
-        "paragraphId": "para_29",
-        "featureId": "feature_37",
-        "title": "Create automated testing pipeline for actus reus (guilty act) verification sy...",
-        "description": "Create automated testing pipeline for **actus reus** (guilty act) verification systems",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 82
-      },
-      {
-        "id": "task_61",
-        "paragraphId": "para_29",
-        "featureId": "feature_37",
-        "title": "Add monitoring and alerting for mens rea (guilty mind) assessment frameworks",
-        "description": "Add monitoring and alerting for **mens rea** (guilty mind) assessment frameworks",
-        "rankOrder": 3,
-        "weight": 85,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 83
-      },
-      {
-        "id": "task_62",
-        "paragraphId": "para_29",
-        "featureId": "feature_37",
-        "title": "Fix workflow functionality for causation establishment protocols",
-        "description": "Fix workflow functionality for **causation** establishment protocols",
-        "rankOrder": 4,
-        "weight": 60,
-        "priority": "low",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 84
-      },
-      {
-        "id": "task_63",
-        "paragraphId": "para_29",
-        "featureId": "feature_37",
-        "title": "Update duplicate prevention for alibi refutation validation systems",
-        "description": "Update duplicate prevention for **alibi refutation** validation systems",
-        "rankOrder": 5,
-        "weight": 50,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 85
-      },
-      {
-        "id": "task_64",
-        "paragraphId": "para_30",
-        "featureId": "feature_37",
-        "title": "Implement comprehensive test suite for logical axiom validation frameworks",
-        "description": "Implement comprehensive test suite for **logical axiom** validation frameworks",
-        "rankOrder": 1,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 90
-      },
-      {
-        "id": "task_65",
-        "paragraphId": "para_30",
-        "featureId": "feature_37",
-        "title": "Create automated testing pipeline for deductive proof chain verification",
-        "description": "Create automated testing pipeline for **deductive proof** chain verification",
-        "rankOrder": 2,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 91
-      },
-      {
-        "id": "task_66",
-        "paragraphId": "para_30",
-        "featureId": "feature_37",
-        "title": "Add monitoring and alerting for contradiction elimination validation protocols",
-        "description": "Add monitoring and alerting for **contradiction elimination** validation protocols",
-        "rankOrder": 3,
-        "weight": 85,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 92
-      },
-      {
-        "id": "task_67",
-        "paragraphId": "para_30",
-        "featureId": "feature_37",
-        "title": "Fix workflow functionality for exhaustive case analysis systems",
-        "description": "Fix workflow functionality for **exhaustive case** analysis systems",
-        "rankOrder": 4,
-        "weight": 60,
-        "priority": "low",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 93
-      },
-      {
-        "id": "task_68",
-        "paragraphId": "para_30",
-        "featureId": "feature_37",
-        "title": "Update duplicate prevention for formal proof completeness verification",
-        "description": "Update duplicate prevention for **formal proof** completeness verification",
-        "rankOrder": 5,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/optimal-strategies-burden-of-proof.md",
-        "lineNumber": 94
-      },
-      {
-        "id": "task_69",
-        "paragraphId": "para_33",
-        "featureId": "feature_44",
-        "title": "Gather Responsible Person documentation for 37 jurisdictions (JF-RP1)",
-        "description": "Gather Responsible Person documentation for 37 jurisdictions (JF-RP1)",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 22
-      },
-      {
-        "id": "task_70",
-        "paragraphId": "para_33",
-        "featureId": "feature_44",
-        "title": "Obtain regulatory risk analysis documentation (JF-RP2)",
-        "description": "Obtain regulatory risk analysis documentation (JF-RP2)",
-        "rankOrder": 2,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 23
-      },
-      {
-        "id": "task_71",
-        "paragraphId": "para_33",
-        "featureId": "feature_44",
-        "title": "Collect director loan account statements for all 3 directors (JF-DLA1, JF-DLA...",
-        "description": "Collect director loan account statements for all 3 directors (JF-DLA1, JF-DLA2, JF-DLA3)",
-        "rankOrder": 3,
-        "weight": 85,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 24
-      },
-      {
-        "id": "task_72",
-        "paragraphId": "para_33",
-        "featureId": "feature_44",
-        "title": "Document Peter's own withdrawals with minimum 4 examples (JF-PA1 through JF-PA4)",
-        "description": "Document Peter's own withdrawals with minimum 4 examples (JF-PA1 through JF-PA4)",
-        "rankOrder": 4,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 25
-      },
-      {
-        "id": "task_73",
-        "paragraphId": "para_33",
-        "featureId": "feature_44",
-        "title": "Obtain R500K payment bank statement dated 16 July 2025 (JF-BS1)",
-        "description": "Obtain R500K payment bank statement dated 16 July 2025 (JF-BS1)",
-        "rankOrder": 5,
-        "weight": 50,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 26
-      },
-      {
-        "id": "task_74",
-        "paragraphId": "para_33",
-        "featureId": "feature_44",
-        "title": "Create comparison document highlighting all changes between JF5 draft and fin...",
-        "description": "Create comparison document highlighting all changes between JF5 draft and final - **Template created**: `evidence/annexures/JF5-COMPARISON_DRAFT_VS_FINAL_CHANGES.md` - Requires completion after obtaining both agreements",
-        "rankOrder": 6,
-        "weight": 100,
-        "priority": "high",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 29
-      },
-      {
-        "id": "task_75",
-        "paragraphId": "para_33",
-        "featureId": "feature_44",
-        "title": "Obtain Daniel's witness statement regarding \"Has anything changed?\" exchange",
-        "description": "Obtain Daniel's witness statement regarding \"Has anything changed?\" exchange",
-        "rankOrder": 7,
-        "weight": 50,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 30
-      },
-      {
-        "id": "task_76",
-        "paragraphId": "para_33",
-        "featureId": "feature_44",
-        "title": "Collect Chesno fraud documentation (JF-CHESNO1 through JF-CHESNO4)",
-        "description": "Collect Chesno fraud documentation (JF-CHESNO1 through JF-CHESNO4)",
-        "rankOrder": 8,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 32
-      },
-      {
-        "id": "task_77",
-        "paragraphId": "para_33",
-        "featureId": "feature_44",
-        "title": "Document Daniel's 8-year restoration evidence (JF-RESTORE1 through JF-RESTORE4)",
-        "description": "Document Daniel's 8-year restoration evidence (JF-RESTORE1 through JF-RESTORE4)",
-        "rankOrder": 9,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 33
-      },
-      {
-        "id": "task_78",
-        "paragraphId": "para_34",
-        "featureId": "feature_44",
-        "title": "Obtain system access restriction logs (JF-SAL1, JF-EAL1, JF-FSL1)",
-        "description": "Obtain system access restriction logs (JF-SAL1, JF-EAL1, JF-FSL1)",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 37
-      },
-      {
-        "id": "task_79",
-        "paragraphId": "para_34",
-        "featureId": "feature_44",
-        "title": "Collect correspondence showing Daniel provided documentation (JF-CORR1)",
-        "description": "Collect correspondence showing Daniel provided documentation (JF-CORR1)",
-        "rankOrder": 2,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 39
-      },
-      {
-        "id": "task_80",
-        "paragraphId": "para_34",
-        "featureId": "feature_44",
-        "title": "Gather IT service invoices and contracts",
-        "description": "Gather IT service invoices and contracts",
-        "rankOrder": 3,
-        "weight": 85,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 50
-      },
-      {
-        "id": "task_81",
-        "paragraphId": "para_34",
-        "featureId": "feature_44",
-        "title": "Document historical collaborative model evidence (JF-HIST1, JF-HIST2, JF-HIST3)",
-        "description": "Document historical collaborative model evidence (JF-HIST1, JF-HIST2, JF-HIST3)",
-        "rankOrder": 4,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 51
-      },
-      {
-        "id": "task_82",
-        "paragraphId": "para_34",
-        "featureId": "feature_44",
-        "title": "Document director exclusion evidence (JF-EX1, JF-EX2, JF-EX3, JF-EX4)",
-        "description": "Document director exclusion evidence (JF-EX1, JF-EX2, JF-EX3, JF-EX4)",
-        "rankOrder": 5,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 60
-      },
-      {
-        "id": "task_83",
-        "paragraphId": "para_35",
-        "featureId": "feature_44",
-        "title": "Gather revenue figures for international markets",
-        "description": "Gather revenue figures for international markets",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 65
-      },
-      {
-        "id": "task_84",
-        "paragraphId": "para_35",
-        "featureId": "feature_44",
-        "title": "Collect financial records showing businesses remain profitable",
-        "description": "Collect financial records showing businesses remain profitable",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 66
-      },
-      {
-        "id": "task_85",
-        "paragraphId": "para_35",
-        "featureId": "feature_44",
-        "title": "Document evidence of Peter's participation in informal practices",
-        "description": "Document evidence of Peter's participation in informal practices",
-        "rankOrder": 3,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 67
-      },
-      {
-        "id": "task_86",
-        "paragraphId": "para_36",
-        "featureId": "feature_45",
-        "title": "Review and consolidate jax-response and jax-dan-response directories to elimi...",
-        "description": "Review and consolidate jax-response and jax-dan-response directories to eliminate duplication",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 73
-      },
-      {
-        "id": "task_87",
-        "paragraphId": "para_36",
-        "featureId": "feature_45",
-        "title": "Update all README.md files to reflect current repository state",
-        "description": "Update all README.md files to reflect current repository state",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 75
-      },
-      {
-        "id": "task_88",
-        "paragraphId": "para_36",
-        "featureId": "feature_45",
-        "title": "Verify all annexure references in affidavit v3 are correct and complete",
-        "description": "Verify all annexure references in affidavit v3 are correct and complete",
-        "rankOrder": 3,
-        "weight": 85,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 77
-      },
-      {
-        "id": "task_89",
-        "paragraphId": "para_37",
-        "featureId": "feature_45",
-        "title": "Update REPOSITORY_STRUCTURE.md to include new jax-response directory structure",
-        "description": "Update REPOSITORY_STRUCTURE.md to include new jax-response directory structure",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 81
-      },
-      {
-        "id": "task_90",
-        "paragraphId": "para_37",
-        "featureId": "feature_45",
-        "title": "Create comprehensive evidence index mapping all 275+ files",
-        "description": "Create comprehensive evidence index mapping all 275+ files",
-        "rankOrder": 2,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 82
-      },
-      {
-        "id": "task_91",
-        "paragraphId": "para_37",
-        "featureId": "feature_45",
-        "title": "Document the relationship between jax-response and jax-dan-response directories",
-        "description": "Document the relationship between jax-response and jax-dan-response directories",
-        "rankOrder": 3,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 83
-      },
-      {
-        "id": "task_92",
-        "paragraphId": "para_37",
-        "featureId": "feature_45",
-        "title": "Update case timeline with all 15 forensic analysis events",
-        "description": "Update case timeline with all 15 forensic analysis events",
-        "rankOrder": 4,
-        "weight": 60,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 84
-      },
-      {
-        "id": "task_93",
-        "paragraphId": "para_37",
-        "featureId": "feature_45",
-        "title": "Create visual timeline diagram for key events from March-August 2025",
-        "description": "Create visual timeline diagram for key events from March-August 2025",
-        "rankOrder": 5,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 85
-      },
-      {
-        "id": "task_94",
-        "paragraphId": "para_38",
-        "featureId": "feature_45",
-        "title": "Create automated scripts for evidence cross-referencing",
-        "description": "Create automated scripts for evidence cross-referencing",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 90
-      },
-      {
-        "id": "task_95",
-        "paragraphId": "para_38",
-        "featureId": "feature_45",
-        "title": "Implement database integration for structured case data",
-        "description": "Implement database integration for structured case data",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 91
-      },
-      {
-        "id": "task_96",
-        "paragraphId": "para_38",
-        "featureId": "feature_45",
-        "title": "Develop API for programmatic access to case information",
-        "description": "Develop API for programmatic access to case information",
-        "rankOrder": 3,
-        "weight": 85,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 92
-      },
-      {
-        "id": "task_97",
-        "paragraphId": "para_38",
-        "featureId": "feature_45",
-        "title": "Create automated case status reporting system",
-        "description": "Create automated case status reporting system",
-        "rankOrder": 4,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 93
-      },
-      {
-        "id": "task_98",
-        "paragraphId": "para_40",
-        "featureId": "feature_46",
-        "title": "Verify all dates in timeline are accurate and consistent",
-        "description": "Verify all dates in timeline are accurate and consistent",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 119
-      },
-      {
-        "id": "task_99",
-        "paragraphId": "para_40",
-        "featureId": "feature_46",
-        "title": "Check all annexure numbering is sequential and complete",
-        "description": "Check all annexure numbering is sequential and complete",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 121
-      },
-      {
-        "id": "task_100",
-        "paragraphId": "para_41",
-        "featureId": "feature_46",
-        "title": "Add visual aids (timelines, financial flow diagrams) as annexures",
-        "description": "Add visual aids (timelines, financial flow diagrams) as annexures",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "low",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 126
-      },
-      {
-        "id": "task_101",
-        "paragraphId": "para_41",
-        "featureId": "feature_46",
-        "title": "Prepare witness statement templates for Daniel and other witnesses",
-        "description": "Prepare witness statement templates for Daniel and other witnesses",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 146
-      },
-      {
-        "id": "task_102",
-        "paragraphId": "para_41",
-        "featureId": "feature_46",
-        "title": "Develop evidence presentation strategy for court",
-        "description": "Develop evidence presentation strategy for court",
-        "rankOrder": 3,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 147
-      },
-      {
-        "id": "task_103",
-        "paragraphId": "para_41",
-        "featureId": "feature_46",
-        "title": "Create quick reference guide for all 50+ annexures",
-        "description": "Create quick reference guide for all 50+ annexures",
-        "rankOrder": 4,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 148
-      },
-      {
-        "id": "task_104",
-        "paragraphId": "para_42",
-        "featureId": "feature_47",
-        "title": "Validate all dates in revenue-theft, family-trust, and financial-flows analyses",
-        "description": "Validate all dates in revenue-theft, family-trust, and financial-flows analyses",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "low",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 157
-      },
-      {
-        "id": "task_105",
-        "paragraphId": "para_43",
-        "featureId": "feature_47",
-        "title": "Add cross-border financial flow analysis for UK-SA transactions",
-        "description": "Add cross-border financial flow analysis for UK-SA transactions",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "low",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 162
-      },
-      {
-        "id": "task_106",
-        "paragraphId": "para_43",
-        "featureId": "feature_47",
-        "title": "Create comprehensive evidence cross-reference for all three categories",
-        "description": "Create comprehensive evidence cross-reference for all three categories",
-        "rankOrder": 2,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 164
-      },
-      {
-        "id": "task_107",
-        "paragraphId": "para_43",
-        "featureId": "feature_47",
-        "title": "Develop expert witness requirements list for financial forensics",
-        "description": "Develop expert witness requirements list for financial forensics",
-        "rankOrder": 3,
-        "weight": 85,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 165
-      },
-      {
-        "id": "task_108",
-        "paragraphId": "para_43",
-        "featureId": "feature_47",
-        "title": "Prepare forensic analysis summary for attorney and court",
-        "description": "Prepare forensic analysis summary for attorney and court",
-        "rankOrder": 4,
-        "weight": 60,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 166
-      },
-      {
-        "id": "task_109",
-        "paragraphId": "para_44",
-        "featureId": "feature_47",
-        "title": "Create network analysis diagrams showing fund flows and relationships",
-        "description": "Create network analysis diagrams showing fund flows and relationships",
-        "rankOrder": 1,
-        "weight": 90,
-        "priority": "low",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 170
-      },
-      {
-        "id": "task_110",
-        "paragraphId": "para_44",
-        "featureId": "feature_47",
-        "title": "Develop timeline visualization for all 15 forensic events",
-        "description": "Develop timeline visualization for all 15 forensic events",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 171
-      },
-      {
-        "id": "task_111",
-        "paragraphId": "para_44",
-        "featureId": "feature_47",
-        "title": "Create damage calculation methodology documentation",
-        "description": "Create damage calculation methodology documentation",
-        "rankOrder": 3,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 185
-      },
-      {
-        "id": "task_112",
-        "paragraphId": "para_44",
-        "featureId": "feature_47",
-        "title": "Develop expert testimony preparation materials",
-        "description": "Develop expert testimony preparation materials",
-        "rankOrder": 4,
-        "weight": 60,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 186
-      },
-      {
-        "id": "task_113",
-        "paragraphId": "para_45",
-        "featureId": "feature_48",
-        "title": "Verify all GitHub issue generation workflows function correctly",
-        "description": "Verify all GitHub issue generation workflows function correctly",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "low",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 193
-      },
-      {
-        "id": "task_114",
-        "paragraphId": "para_45",
-        "featureId": "feature_48",
-        "title": "Test evidence cross-referencing system for accuracy",
-        "description": "Test evidence cross-referencing system for accuracy",
-        "rankOrder": 2,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 194
-      },
-      {
-        "id": "task_115",
-        "paragraphId": "para_46",
-        "featureId": "feature_48",
-        "title": "Review all 275+ files for naming consistency",
-        "description": "Review all 275+ files for naming consistency",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 200
-      },
-      {
-        "id": "task_116",
-        "paragraphId": "para_46",
-        "featureId": "feature_48",
-        "title": "Verify all markdown files render correctly on GitHub",
-        "description": "Verify all markdown files render correctly on GitHub",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 201
-      },
-      {
-        "id": "task_117",
-        "paragraphId": "para_46",
-        "featureId": "feature_48",
-        "title": "Check all internal links and cross-references work",
-        "description": "Check all internal links and cross-references work",
-        "rankOrder": 3,
-        "weight": 85,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 202
-      },
-      {
-        "id": "task_118",
-        "paragraphId": "para_46",
-        "featureId": "feature_48",
-        "title": "Validate all financial figures use consistent currency notation",
-        "description": "Validate all financial figures use consistent currency notation",
-        "rankOrder": 4,
-        "weight": 60,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 204
-      },
-      {
-        "id": "task_119",
-        "paragraphId": "para_47",
-        "featureId": "feature_48",
-        "title": "Implement automated testing for repository structure integrity",
-        "description": "Implement automated testing for repository structure integrity",
-        "rankOrder": 1,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 208
-      },
-      {
-        "id": "task_120",
-        "paragraphId": "para_47",
-        "featureId": "feature_48",
-        "title": "Create validation scripts for evidence completeness",
-        "description": "Create validation scripts for evidence completeness",
-        "rankOrder": 2,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 209
-      },
-      {
-        "id": "task_121",
-        "paragraphId": "para_47",
-        "featureId": "feature_48",
-        "title": "Develop automated cross-reference checking system",
-        "description": "Develop automated cross-reference checking system",
-        "rankOrder": 3,
-        "weight": 85,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 210
-      },
-      {
-        "id": "task_122",
-        "paragraphId": "para_47",
-        "featureId": "feature_48",
-        "title": "Implement continuous integration for documentation updates",
-        "description": "Implement continuous integration for documentation updates",
-        "rankOrder": 4,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 211
-      },
-      {
-        "id": "task_123",
-        "paragraphId": "para_47",
-        "featureId": "feature_48",
-        "title": "Create automated reporting for repository health metrics",
-        "description": "Create automated reporting for repository health metrics",
-        "rankOrder": 5,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 212
-      },
-      {
-        "id": "task_124",
-        "paragraphId": "para_48",
-        "featureId": "feature_49",
-        "title": "Update critical documentation",
-        "description": "Update critical documentation",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "critical",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 219
-      },
-      {
-        "id": "task_125",
-        "paragraphId": "para_49",
-        "featureId": "feature_49",
-        "title": "Gather all Phase 2 high-priority evidence",
-        "description": "Gather all Phase 2 high-priority evidence",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "high",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 224
-      },
-      {
-        "id": "task_126",
-        "paragraphId": "para_50",
-        "featureId": "feature_49",
-        "title": "Prepare for legal review",
-        "description": "Prepare for legal review",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Repository_Status_and_Critical_Evidence_Collection.md",
-        "lineNumber": 229
-      },
-      {
-        "id": "task_127",
-        "paragraphId": "para_62",
-        "featureId": "feature_55",
-        "title": "Implement priority-based response architecture",
-        "description": "Implement priority-based response architecture",
-        "rankOrder": 1,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/README.md",
-        "lineNumber": 81
-      },
-      {
-        "id": "task_128",
-        "paragraphId": "para_62",
-        "featureId": "feature_55",
-        "title": "Create comprehensive timeline analysis",
-        "description": "Create comprehensive timeline analysis",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/README.md",
-        "lineNumber": 82
-      },
-      {
-        "id": "task_129",
-        "paragraphId": "para_70",
-        "featureId": "feature_59",
-        "title": "Update critical documentation",
-        "description": "Update critical documentation",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "critical",
-        "source": "todo/README.md",
-        "lineNumber": 170
-      },
-      {
-        "id": "task_130",
-        "paragraphId": "para_71",
-        "featureId": "feature_59",
-        "title": "Gather Phase 2 high-priority evidence",
-        "description": "Gather Phase 2 high-priority evidence",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "high",
-        "source": "todo/README.md",
-        "lineNumber": 175
-      },
-      {
-        "id": "task_131",
-        "paragraphId": "para_71",
-        "featureId": "feature_59",
-        "title": "Verify forensic analysis",
-        "description": "Verify forensic analysis",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/README.md",
-        "lineNumber": 177
-      },
-      {
-        "id": "task_132",
-        "paragraphId": "para_72",
-        "featureId": "feature_59",
-        "title": "Prepare for legal review",
-        "description": "Prepare for legal review",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/README.md",
-        "lineNumber": 180
-      },
-      {
-        "id": "task_133",
-        "paragraphId": "para_85",
-        "featureId": "feature_66",
-        "title": "Add \"Daniel's Technical Perspective\" sections to jax-response files",
-        "description": "Add \"Daniel's Technical Perspective\" sections to jax-response files",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 316
-      },
-      {
-        "id": "task_134",
-        "paragraphId": "para_85",
-        "featureId": "feature_66",
-        "title": "Add \"Jacqueline's Legal Perspective\" sections to jax-dan-response files",
-        "description": "Add \"Jacqueline's Legal Perspective\" sections to jax-dan-response files",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 317
-      },
-      {
-        "id": "task_135",
-        "paragraphId": "para_85",
-        "featureId": "feature_66",
-        "title": "Update evidence-attachments files with \"Referenced By\" sections",
-        "description": "Update evidence-attachments files with \"Referenced By\" sections",
-        "rankOrder": 3,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 318
-      },
-      {
-        "id": "task_136",
-        "paragraphId": "para_85",
-        "featureId": "feature_66",
-        "title": "Verify all cross-references are accurate",
-        "description": "Verify all cross-references are accurate",
-        "rankOrder": 4,
-        "weight": 60,
-        "priority": "medium",
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 319
-      },
-      {
-        "id": "task_137",
-        "paragraphId": "para_90",
-        "featureId": "feature_68",
-        "title": "Verify all cross-references are accurate",
-        "description": "Verify all cross-references are accurate",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 381
-      },
-      {
-        "id": "task_138",
-        "paragraphId": "para_90",
-        "featureId": "feature_68",
-        "title": "Check for contradictions between Jacqueline's and Daniel's responses",
-        "description": "Check for contradictions between Jacqueline's and Daniel's responses",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md",
-        "lineNumber": 382
-      },
-      {
-        "id": "task_139",
-        "paragraphId": "para_108",
-        "featureId": "feature_78",
-        "title": "Add Dan's technical affidavit explaining infrastructure requirements",
-        "description": "Add Dan's technical affidavit explaining infrastructure requirements",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 56
-      },
-      {
-        "id": "task_140",
-        "paragraphId": "para_108",
-        "featureId": "feature_78",
-        "title": "Create point-by-point rebuttal matrix for each sub-allegation",
-        "description": "Create point-by-point rebuttal matrix for each sub-allegation",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 86
-      },
-      {
-        "id": "task_141",
-        "paragraphId": "para_108",
-        "featureId": "feature_78",
-        "title": "Add external validation (accountant letters, SARS compliance, bank relationsh...",
-        "description": "Add external validation (accountant letters, SARS compliance, bank relationships)",
-        "rankOrder": 3,
-        "weight": 85,
-        "priority": "medium",
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 90
-      },
-      {
-        "id": "task_142",
-        "paragraphId": "para_108",
-        "featureId": "feature_78",
-        "title": "Analyze suspicious timing of \"discovery\" relative to settlement negotiations",
-        "description": "Analyze suspicious timing of \"discovery\" relative to settlement negotiations",
-        "rankOrder": 4,
-        "weight": 60,
-        "priority": "medium",
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 123
-      },
-      {
-        "id": "task_143",
-        "paragraphId": "para_108",
-        "featureId": "feature_78",
-        "title": "Document Peter's menacing and coercive conduct during confrontation",
-        "description": "Document Peter's menacing and coercive conduct during confrontation",
-        "rankOrder": 5,
-        "weight": 100,
-        "priority": "medium",
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 131
-      },
-      {
-        "id": "task_144",
-        "paragraphId": "para_108",
-        "featureId": "feature_78",
-        "title": "Create standardized response template for each paragraph",
-        "description": "Create standardized response template for each paragraph",
-        "rankOrder": 6,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 158
-      },
-      {
-        "id": "task_145",
-        "paragraphId": "para_123",
-        "featureId": "feature_81",
-        "title": "Add all high-priority paragraph responses",
-        "description": "Add all high-priority paragraph responses",
-        "rankOrder": 1,
-        "weight": 100,
-        "priority": "high",
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 910
-      },
-      {
-        "id": "task_146",
-        "paragraphId": "para_123",
-        "featureId": "feature_81",
-        "title": "Create Dan's technical affidavit",
-        "description": "Create Dan's technical affidavit",
-        "rankOrder": 2,
-        "weight": 90,
-        "priority": "medium",
-        "source": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
-        "lineNumber": 911
-      }
-    ]
-  },
-  "statistics": {
-    "by_priority": {
-      "critical": 2,
-      "high": 4,
-      "medium": 123,
-      "low": 17
-    },
-    "by_argument": [
-      {
-        "argument": "Workflow Validation Tests",
-        "features": 11,
-        "tasks": 8
-      },
-      {
-        "argument": "Workflow Test Tasks",
-        "features": 3,
-        "tasks": 4
-      },
-      {
-        "argument": "Special Characters Test Sample",
-        "features": 7,
-        "tasks": 3
-      },
-      {
-        "argument": "Special Characters Integration Test",
-        "features": 6,
-        "tasks": 8
-      },
-      {
-        "argument": "Simple Workflow Test",
-        "features": 5,
-        "tasks": 0
-      },
-      {
-        "argument": "Optimal Strategies Implementation - Burden of Proof Validation",
-        "features": 5,
-        "tasks": 45
-      },
-      {
-        "argument": "Burden of Proof Workflow Test",
-        "features": 4,
-        "tasks": 0
-      },
-      {
-        "argument": "Repository Status and Critical Evidence Collection",
-        "features": 11,
-        "tasks": 58
-      },
-      {
-        "argument": "Todo Folder",
-        "features": 9,
-        "tasks": 6
-      },
-      {
-        "argument": "Jax-Dan Response Expansion Plan",
-        "features": 14,
-        "tasks": 6
-      },
-      {
-        "argument": "Improvements for Jax-Dan Response Based on AD Elements",
-        "features": 7,
-        "tasks": 8
-      },
-      {
-        "argument": "Executive Summary: Jax-Dan Response Improvements",
-        "features": 6,
-        "tasks": 0
-      }
-    ],
-    "avg_paragraphs_per_feature": "2.07",
-    "avg_tasks_per_paragraph": "0.80",
-    "avg_tasks_per_feature": "1.66"
-  }
-}
+# Structured TODO - Hierarchical Case Structure
+
+**Generated:** 2025-10-28T07:20:15.586Z  
+**Parser Version:** 1.0.0  
+**Schema Version:** 1.0
+
+## Summary Statistics
+
+- **Total Legal Arguments:** 12
+- **Total Features:** 88
+- **Total Paragraphs:** 182
+- **Total Tasks:** 146
+- **Average Paragraphs per Feature:** 2.07
+- **Average Tasks per Paragraph:** 0.80
+- **Average Tasks per Feature:** 1.66
+
+## Priority Distribution
+
+| Priority | Count |
+|----------|-------|
+| Critical | 2 |
+| High | 4 |
+| Medium | 123 |
+| Low | 17 |
+
+## Arguments Summary
+
+| Argument | Features | Tasks |
+|----------|----------|-------|
+| Workflow Validation Tests | 11 | 8 |
+| Workflow Test Tasks | 3 | 4 |
+| Special Characters Test Sample | 7 | 3 |
+| Special Characters Integration Test | 6 | 8 |
+| Simple Workflow Test | 5 | 0 |
+| Optimal Strategies Implementation - Burden of Proof Validation | 5 | 45 |
+| Burden of Proof Workflow Test | 4 | 0 |
+| Repository Status and Critical Evidence Collection | 11 | 58 |
+| Todo Folder | 9 | 6 |
+| Jax-Dan Response Expansion Plan | 14 | 6 |
+| Improvements for Jax-Dan Response Based on AD Elements | 7 | 8 |
+| Executive Summary: Jax-Dan Response Improvements | 6 | 0 |
+
+---
+
+## Legal Arguments and Features
+
+### arg_1: Workflow Validation Tests
+
+**Type:** defense  
+**Strategy:** Support legal position  
+**Source:** todo/workflow-validation-tests.md  
+**Description:** Legal argument extracted from todo/workflow-validation-tests.md
+
+#### Features (11)
+
+##### feature_1: Must-Do (Critical Priority)
+
+**Priority:** critical  
+**Source:** todo/workflow-validation-tests.md (line 5)  
+**Description:** Feature extracted from todo/workflow-validation-tests.md
+
+**Paragraphs (1):**
+
+- **para_136** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/workflow-validation-tests.md (line 5)
+
+---
+
+##### feature_2: Should-Do (High Priority)
+
+**Priority:** high  
+**Source:** todo/workflow-validation-tests.md (line 12)  
+**Description:** Feature extracted from todo/workflow-validation-tests.md
+
+**Paragraphs (1):**
+
+- **para_137** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/workflow-validation-tests.md (line 12)
+
+---
+
+##### feature_3: Nice-to-Have (Low Priority)
+
+**Priority:** low  
+**Source:** todo/workflow-validation-tests.md (line 19)  
+**Description:** Feature extracted from todo/workflow-validation-tests.md
+
+**Paragraphs (1):**
+
+- **para_138** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/workflow-validation-tests.md (line 19)
+
+---
+
+##### feature_4: Improvements Needed:
+
+**Priority:** medium  
+**Source:** todo/workflow-validation-tests.md (line 24)  
+**Description:** Feature extracted from todo/workflow-validation-tests.md
+
+**Paragraphs (1):**
+
+- **para_139** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/workflow-validation-tests.md (line 24)
+
+---
+
+##### feature_5: **Action Required**:
+
+**Priority:** medium  
+**Source:** todo/workflow-validation-tests.md (line 31)  
+**Description:** Feature extracted from todo/workflow-validation-tests.md
+
+**Paragraphs (1):**
+
+- **para_140** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/workflow-validation-tests.md (line 31)
+
+---
+
+##### feature_6: Edge Case Testing
+
+**Priority:** medium  
+**Source:** todo/workflow-validation-tests.md (line 36)  
+**Description:** Feature extracted from todo/workflow-validation-tests.md
+
+**Paragraphs (3):**
+
+- **para_1** - Tasks with Various Formats (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/workflow-validation-tests.md
+  - Source: todo/workflow-validation-tests.md (line 38)
+  - **Tasks (3):**
+    - [ ] **task_1**: Create unit tests for markdown parsing logic
+      - Rank: 1, Weight: 90, Priority: medium
+      - Source: todo/workflow-validation-tests.md (line 40)
+    - [ ] **task_2**: Implement integration tests for GitHub API interaction
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/workflow-validation-tests.md (line 41)
+    - [ ] **task_3**: Add regression tests to prevent workflow breaking changes
+      - Rank: 3, Weight: 85, Priority: low
+      - Source: todo/workflow-validation-tests.md (line 42)
+
+- **para_2** - Special Characters and Formatting (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/workflow-validation-tests.md
+  - Source: todo/workflow-validation-tests.md (line 45)
+  - **Tasks (2):**
+    - [ ] **task_4**: Test with émojis and ünicode characters in task descriptions
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/workflow-validation-tests.md (line 47)
+    - [ ] **task_5**: Validate proper handling of tasks with "quotes" and 'apostrophes'
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/workflow-validation-tests.md (line 48)
+
+- **para_3** - Long Task Descriptions (Rank: 3, Weight: 85)
+  - Content: Paragraph extracted from todo/workflow-validation-tests.md
+  - Source: todo/workflow-validation-tests.md (line 51)
+
+---
+
+##### feature_7: Priority Section Variations
+
+**Priority:** medium  
+**Source:** todo/workflow-validation-tests.md (line 56)  
+**Description:** Feature extracted from todo/workflow-validation-tests.md
+
+**Paragraphs (3):**
+
+- **para_4** - Priority 1 Tasks (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/workflow-validation-tests.md
+  - Source: todo/workflow-validation-tests.md (line 58)
+
+- **para_5** - Phase 2 Tasks (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/workflow-validation-tests.md
+  - Source: todo/workflow-validation-tests.md (line 62)
+
+- **para_6** - Framework Phase 3 (Rank: 3, Weight: 85)
+  - Content: Paragraph extracted from todo/workflow-validation-tests.md
+  - Source: todo/workflow-validation-tests.md (line 66)
+
+---
+
+##### feature_8: **Recommended Actions**:
+
+**Priority:** medium  
+**Source:** todo/workflow-validation-tests.md (line 70)  
+**Description:** Feature extracted from todo/workflow-validation-tests.md
+
+**Paragraphs (1):**
+
+- **para_141** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/workflow-validation-tests.md (line 70)
+
+---
+
+##### feature_9: Quality Filter Testing
+
+**Priority:** medium  
+**Source:** todo/workflow-validation-tests.md (line 76)  
+**Description:** Feature extracted from todo/workflow-validation-tests.md
+
+**Paragraphs (1):**
+
+- **para_142** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/workflow-validation-tests.md (line 76)
+
+---
+
+##### feature_10: Multiple Label Testing
+
+**Priority:** medium  
+**Source:** todo/workflow-validation-tests.md (line 92)  
+**Description:** Feature extracted from todo/workflow-validation-tests.md
+
+**Paragraphs (2):**
+
+- **para_7** - Critical Section with Bug Label (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/workflow-validation-tests.md
+  - Source: todo/workflow-validation-tests.md (line 94)
+  - **Tasks (1):**
+    - [ ] **task_6**: Fix security vulnerability in authentication system
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/workflow-validation-tests.md (line 95)
+
+- **para_8** - Enhancement Section (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/workflow-validation-tests.md
+  - Source: todo/workflow-validation-tests.md (line 98)
+  - **Tasks (2):**
+    - [ ] **task_7**: Add new feature for improved user experience
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/workflow-validation-tests.md (line 99)
+    - [ ] **task_8**: Implement advanced analytics dashboard
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/workflow-validation-tests.md (line 100)
+
+---
+
+##### feature_11: Force Regeneration Testing
+
+**Priority:** medium  
+**Source:** todo/workflow-validation-tests.md (line 102)  
+**Description:** Feature extracted from todo/workflow-validation-tests.md
+
+**Paragraphs (1):**
+
+- **para_143** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/workflow-validation-tests.md (line 102)
+
+---
+
+
+### arg_2: Workflow Test Tasks
+
+**Type:** defense  
+**Strategy:** Support legal position  
+**Source:** todo/workflow-test.md  
+**Description:** Legal argument extracted from todo/workflow-test.md
+
+#### Features (3)
+
+##### feature_12: Core Workflow Tests
+
+**Priority:** low  
+**Source:** todo/workflow-test.md (line 3)  
+**Description:** Feature extracted from todo/workflow-test.md
+
+**Paragraphs (4):**
+
+- **para_9** - Must-Do (Critical Priority) (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/workflow-test.md
+  - Source: todo/workflow-test.md (line 5)
+
+- **para_10** - Should-Do (High Priority) (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/workflow-test.md
+  - Source: todo/workflow-test.md (line 10)
+  - **Tasks (1):**
+    - [ ] **task_9**: Verify proper issue creation with multiple labels
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/workflow-test.md (line 13)
+
+- **para_11** - Nice-to-Have (Low Priority) (Rank: 3, Weight: 85)
+  - Content: Paragraph extracted from todo/workflow-test.md
+  - Source: todo/workflow-test.md (line 15)
+  - **Tasks (2):**
+    - [ ] **task_10**: Add metrics collection for workflow performance
+      - Rank: 1, Weight: 100, Priority: low
+      - Source: todo/workflow-test.md (line 17)
+    - [ ] **task_11**: Implement batching for large numbers of issues
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/workflow-test.md (line 18)
+
+- **para_12** - Improvements Needed: (Rank: 4, Weight: 60)
+  - Content: Paragraph extracted from todo/workflow-test.md
+  - Source: todo/workflow-test.md (line 20)
+  - **Tasks (1):**
+    - [ ] **task_12**: Create validation tests for workflow changes
+      - Rank: 1, Weight: 90, Priority: low
+      - Source: todo/workflow-test.md (line 21)
+
+---
+
+##### feature_13: Burden of Proof Strategy Implementation - Target Task
+
+**Priority:** medium  
+**Source:** todo/workflow-test.md (line 27)  
+**Description:** Feature extracted from todo/workflow-test.md
+
+**Paragraphs (3):**
+
+- **para_13** - Must-Do Requirements (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/workflow-test.md
+  - Source: todo/workflow-test.md (line 31)
+
+- **para_14** - Should-Do Enhancements (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/workflow-test.md
+  - Source: todo/workflow-test.md (line 37)
+
+- **para_15** - Nice-to-Have Extensions (Rank: 3, Weight: 85)
+  - Content: Paragraph extracted from todo/workflow-test.md
+  - Source: todo/workflow-test.md (line 42)
+
+---
+
+##### feature_14: Improvements Needed
+
+**Priority:** medium  
+**Source:** todo/workflow-test.md (line 47)  
+**Description:** Feature extracted from todo/workflow-test.md
+
+**Paragraphs (1):**
+
+- **para_144** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/workflow-test.md (line 47)
+
+---
+
+
+### arg_3: Special Characters Test Sample
+
+**Type:** defense  
+**Strategy:** Support legal position  
+**Source:** todo/special-characters-test-sample.md  
+**Description:** Legal argument extracted from todo/special-characters-test-sample.md
+
+#### Features (7)
+
+##### feature_15: Must-Do (Critical Priority)
+
+**Priority:** critical  
+**Source:** todo/special-characters-test-sample.md (line 5)  
+**Description:** Feature extracted from todo/special-characters-test-sample.md
+
+**Paragraphs (1):**
+
+- **para_145** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/special-characters-test-sample.md (line 5)
+
+---
+
+##### feature_16: Should-Do (High Priority)
+
+**Priority:** high  
+**Source:** todo/special-characters-test-sample.md (line 11)  
+**Description:** Feature extracted from todo/special-characters-test-sample.md
+
+**Paragraphs (1):**
+
+- **para_146** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/special-characters-test-sample.md (line 11)
+
+---
+
+##### feature_17: Nice-to-Have (Low Priority)
+
+**Priority:** low  
+**Source:** todo/special-characters-test-sample.md (line 20)  
+**Description:** Feature extracted from todo/special-characters-test-sample.md
+
+**Paragraphs (1):**
+
+- **para_147** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/special-characters-test-sample.md (line 20)
+
+---
+
+##### feature_18: Improvements Needed:
+
+**Priority:** medium  
+**Source:** todo/special-characters-test-sample.md (line 26)  
+**Description:** Feature extracted from todo/special-characters-test-sample.md
+
+**Paragraphs (1):**
+
+- **para_148** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/special-characters-test-sample.md (line 26)
+
+---
+
+##### feature_19: Long Task Descriptions
+
+**Priority:** medium  
+**Source:** todo/special-characters-test-sample.md (line 33)  
+**Description:** Feature extracted from todo/special-characters-test-sample.md
+
+**Paragraphs (1):**
+
+- **para_149** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/special-characters-test-sample.md (line 33)
+
+---
+
+##### feature_20: **Action Required**:
+
+**Priority:** medium  
+**Source:** todo/special-characters-test-sample.md (line 38)  
+**Description:** Feature extracted from todo/special-characters-test-sample.md
+
+**Paragraphs (1):**
+
+- **para_150** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/special-characters-test-sample.md (line 38)
+
+---
+
+##### feature_21: Edge Case Testing
+
+**Priority:** medium  
+**Source:** todo/special-characters-test-sample.md (line 44)  
+**Description:** Feature extracted from todo/special-characters-test-sample.md
+
+**Paragraphs (1):**
+
+- **para_16** - Combined Special Characters (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/special-characters-test-sample.md
+  - Source: todo/special-characters-test-sample.md (line 46)
+  - **Tasks (3):**
+    - [ ] **task_13**: Test "quoted text" with émojis 🎯, numbers 123, and symbols @#$ all together
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/special-characters-test-sample.md (line 48)
+    - [ ] **task_14**: Create système de gestion with 50% performance using $1,000 budget and 🚀 dep...
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/special-characters-test-sample.md (line 49)
+    - [ ] **task_15**: Validate Peter's fiduciary claims with €500K damages at 95% confidence level
+      - Rank: 3, Weight: 85, Priority: medium
+      - Source: todo/special-characters-test-sample.md (line 50)
+
+---
+
+
+### arg_4: Special Characters Integration Test
+
+**Type:** defense  
+**Strategy:** Support legal position  
+**Source:** todo/special-characters-integration-test.md  
+**Description:** Legal argument extracted from todo/special-characters-integration-test.md
+
+#### Features (6)
+
+##### feature_22: Must-Do (Critical Priority)
+
+**Priority:** critical  
+**Source:** todo/special-characters-integration-test.md (line 5)  
+**Description:** Feature extracted from todo/special-characters-integration-test.md
+
+**Paragraphs (1):**
+
+- **para_151** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/special-characters-integration-test.md (line 5)
+
+---
+
+##### feature_23: Should-Do (High Priority)
+
+**Priority:** high  
+**Source:** todo/special-characters-integration-test.md (line 12)  
+**Description:** Feature extracted from todo/special-characters-integration-test.md
+
+**Paragraphs (1):**
+
+- **para_152** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/special-characters-integration-test.md (line 12)
+
+---
+
+##### feature_24: Nice-to-Have (Medium Priority)
+
+**Priority:** low  
+**Source:** todo/special-characters-integration-test.md (line 19)  
+**Description:** Feature extracted from todo/special-characters-integration-test.md
+
+**Paragraphs (1):**
+
+- **para_153** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/special-characters-integration-test.md (line 19)
+
+---
+
+##### feature_25: Improvements Needed:
+
+**Priority:** medium  
+**Source:** todo/special-characters-integration-test.md (line 26)  
+**Description:** Feature extracted from todo/special-characters-integration-test.md
+
+**Paragraphs (1):**
+
+- **para_154** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/special-characters-integration-test.md (line 26)
+
+---
+
+##### feature_26: **Action Required**:
+
+**Priority:** medium  
+**Source:** todo/special-characters-integration-test.md (line 32)  
+**Description:** Feature extracted from todo/special-characters-integration-test.md
+
+**Paragraphs (1):**
+
+- **para_155** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/special-characters-integration-test.md (line 32)
+
+---
+
+##### feature_27: Edge Cases and Advanced Testing
+
+**Priority:** medium  
+**Source:** todo/special-characters-integration-test.md (line 37)  
+**Description:** Feature extracted from todo/special-characters-integration-test.md
+
+**Paragraphs (5):**
+
+- **para_17** - Emoji Combinations and Modifiers (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/special-characters-integration-test.md
+  - Source: todo/special-characters-integration-test.md (line 39)
+
+- **para_18** - Unicode Normalization Tests (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/special-characters-integration-test.md
+  - Source: todo/special-characters-integration-test.md (line 45)
+  - **Tasks (2):**
+    - [ ] **task_16**: Test café vs cafe\u0301 (composed vs decomposed unicode) for consistency
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/special-characters-integration-test.md (line 46)
+    - [ ] **task_17**: Validate unicode bidirectional text: English text with العربية mixed content
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/special-characters-integration-test.md (line 49)
+
+- **para_19** - Complex Punctuation and Symbols (Rank: 3, Weight: 85)
+  - Content: Paragraph extracted from todo/special-characters-integration-test.md
+  - Source: todo/special-characters-integration-test.md (line 51)
+  - **Tasks (2):**
+    - [ ] **task_18**: Test various quote styles: "straight", "smart", „German", «French», 「Japanese」
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/special-characters-integration-test.md (line 52)
+    - [ ] **task_19**: Validate time/date formats: 14:30–16:00 on 2024/12/25, T±2hr accuracy
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/special-characters-integration-test.md (line 55)
+
+- **para_20** - Programming and Technical Characters (Rank: 4, Weight: 60)
+  - Content: Paragraph extracted from todo/special-characters-integration-test.md
+  - Source: todo/special-characters-integration-test.md (line 57)
+  - **Tasks (2):**
+    - [ ] **task_20**: Test regex patterns: /^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/special-characters-integration-test.md (line 58)
+    - [ ] **task_21**: Validate XML/HTML: <title>Café & Restaurant: "Best Naïve Service"</title>
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/special-characters-integration-test.md (line 61)
+
+- **para_21** - International and Accessibility (Rank: 5, Weight: 50)
+  - Content: Paragraph extracted from todo/special-characters-integration-test.md
+  - Source: todo/special-characters-integration-test.md (line 63)
+  - **Tasks (2):**
+    - [ ] **task_22**: Implement screen reader support for émojis: 🚀 → "rocket ship emoji"
+      - Rank: 1, Weight: 90, Priority: medium
+      - Source: todo/special-characters-integration-test.md (line 64)
+    - [ ] **task_23**: Test accessibility descriptions: ♿ → "wheelchair accessible", 👁️ → "eye symbol"
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/special-characters-integration-test.md (line 66)
+
+---
+
+
+### arg_5: Simple Workflow Test
+
+**Type:** defense  
+**Strategy:** Support legal position  
+**Source:** todo/simple-workflow-test.md  
+**Description:** Legal argument extracted from todo/simple-workflow-test.md
+
+#### Features (5)
+
+##### feature_28: Must-Do (Critical Priority)
+
+**Priority:** critical  
+**Source:** todo/simple-workflow-test.md (line 3)  
+**Description:** Feature extracted from todo/simple-workflow-test.md
+
+**Paragraphs (1):**
+
+- **para_156** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/simple-workflow-test.md (line 3)
+
+---
+
+##### feature_29: Should-Do (High Priority)
+
+**Priority:** high  
+**Source:** todo/simple-workflow-test.md (line 8)  
+**Description:** Feature extracted from todo/simple-workflow-test.md
+
+**Paragraphs (1):**
+
+- **para_157** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/simple-workflow-test.md (line 8)
+
+---
+
+##### feature_30: Improvements Needed:
+
+**Priority:** medium  
+**Source:** todo/simple-workflow-test.md (line 13)  
+**Description:** Feature extracted from todo/simple-workflow-test.md
+
+**Paragraphs (1):**
+
+- **para_158** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/simple-workflow-test.md (line 13)
+
+---
+
+##### feature_31: Nice-to-Have (Low Priority)
+
+**Priority:** low  
+**Source:** todo/simple-workflow-test.md (line 18)  
+**Description:** Feature extracted from todo/simple-workflow-test.md
+
+**Paragraphs (1):**
+
+- **para_159** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/simple-workflow-test.md (line 18)
+
+---
+
+##### feature_32: Test Results Summary
+
+**Priority:** medium  
+**Source:** todo/simple-workflow-test.md (line 22)  
+**Description:** Feature extracted from todo/simple-workflow-test.md
+
+**Paragraphs (1):**
+
+- **para_160** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/simple-workflow-test.md (line 22)
+
+---
+
+
+### arg_6: Optimal Strategies Implementation - Burden of Proof Validation
+
+**Type:** evidence  
+**Strategy:** Support legal position  
+**Source:** todo/optimal-strategies-burden-of-proof.md  
+**Description:** Legal argument extracted from todo/optimal-strategies-burden-of-proof.md
+
+#### Features (5)
+
+##### feature_33: Civil Standard - Balance of Probabilities
+
+**Priority:** medium  
+**Source:** todo/optimal-strategies-burden-of-proof.md (line 5)  
+**Description:** Feature extracted from todo/optimal-strategies-burden-of-proof.md
+
+**Paragraphs (2):**
+
+- **para_22** - Critical Priority Tasks (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/optimal-strategies-burden-of-proof.md
+  - Source: todo/optimal-strategies-burden-of-proof.md (line 7)
+  - **Tasks (5):**
+    - [ ] **task_24**: Implement comprehensive test suite for civil evidence standards validation (>...
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 9)
+    - [ ] **task_25**: Create automated testing pipeline for preponderance of evidence assessment fr...
+      - Rank: 2, Weight: 100, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 10)
+    - [ ] **task_26**: Add monitoring and alerting for documentary evidence validation protocols
+      - Rank: 3, Weight: 100, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 11)
+    - [ ] **task_27**: Fix workflow functionality for witness credibility assessment mechanisms
+      - Rank: 4, Weight: 60, Priority: low
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 12)
+    - [ ] **task_28**: Update duplicate prevention for circumstantial evidence evaluation systems
+      - Rank: 5, Weight: 100, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 13)
+
+- **para_23** - High Priority Tasks (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/optimal-strategies-burden-of-proof.md
+  - Source: todo/optimal-strategies-burden-of-proof.md (line 15)
+  - **Tasks (5):**
+    - [ ] **task_29**: Implement comprehensive test suite for balance of probabilities standard vali...
+      - Rank: 1, Weight: 90, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 17)
+    - [ ] **task_30**: Create automated testing pipeline for more likely than not evidence evaluation
+      - Rank: 2, Weight: 100, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 18)
+    - [ ] **task_31**: Add monitoring and alerting for civil burden of proof tracking systems
+      - Rank: 3, Weight: 100, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 19)
+    - [ ] **task_32**: Fix workflow functionality for liability assessment frameworks
+      - Rank: 4, Weight: 60, Priority: low
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 20)
+    - [ ] **task_33**: Update duplicate prevention for damages calculation validation
+      - Rank: 5, Weight: 50, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 21)
+
+---
+
+##### feature_34: Criminal Standard - Beyond Reasonable Doubt
+
+**Priority:** medium  
+**Source:** todo/optimal-strategies-burden-of-proof.md (line 23)  
+**Description:** Feature extracted from todo/optimal-strategies-burden-of-proof.md
+
+**Paragraphs (2):**
+
+- **para_24** - Critical Priority Tasks (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/optimal-strategies-burden-of-proof.md
+  - Source: todo/optimal-strategies-burden-of-proof.md (line 25)
+  - **Tasks (5):**
+    - [ ] **task_34**: Implement comprehensive test suite for criminal evidence standards (>95% cert...
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 27)
+    - [ ] **task_35**: Create automated testing pipeline for beyond reasonable doubt assessment fram...
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 28)
+    - [ ] **task_36**: Add monitoring and alerting for prosecutorial burden validation protocols
+      - Rank: 3, Weight: 85, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 29)
+    - [ ] **task_37**: Fix workflow functionality for reasonable doubt evaluation mechanisms
+      - Rank: 4, Weight: 60, Priority: low
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 30)
+    - [ ] **task_38**: Update duplicate prevention for evidence sufficiency assessment systems
+      - Rank: 5, Weight: 100, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 31)
+
+- **para_25** - High Priority Tasks (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/optimal-strategies-burden-of-proof.md
+  - Source: todo/optimal-strategies-burden-of-proof.md (line 33)
+  - **Tasks (5):**
+    - [ ] **task_39**: Implement comprehensive test suite for moral certainty standard validation
+      - Rank: 1, Weight: 90, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 35)
+    - [ ] **task_40**: Create automated testing pipeline for evidence exclusion rule frameworks
+      - Rank: 2, Weight: 100, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 36)
+    - [ ] **task_41**: Add monitoring and alerting for criminal burden of proof tracking systems
+      - Rank: 3, Weight: 100, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 37)
+    - [ ] **task_42**: Fix workflow functionality for guilt determination protocols
+      - Rank: 4, Weight: 60, Priority: low
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 38)
+    - [ ] **task_43**: Update duplicate prevention for conviction requirements validation
+      - Rank: 5, Weight: 50, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 39)
+
+---
+
+##### feature_35: Mathematical Standard - Invariant Conditions
+
+**Priority:** medium  
+**Source:** todo/optimal-strategies-burden-of-proof.md (line 41)  
+**Description:** Feature extracted from todo/optimal-strategies-burden-of-proof.md
+
+**Paragraphs (2):**
+
+- **para_26** - Critical Priority Tasks (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/optimal-strategies-burden-of-proof.md
+  - Source: todo/optimal-strategies-burden-of-proof.md (line 43)
+  - **Tasks (5):**
+    - [ ] **task_44**: Implement comprehensive test suite for mathematical proof validation (100% ce...
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 45)
+    - [ ] **task_45**: Create automated testing pipeline for logical invariant verification systems
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 46)
+    - [ ] **task_46**: Add monitoring and alerting for axiom-based proof validation frameworks
+      - Rank: 3, Weight: 100, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 47)
+    - [ ] **task_47**: Fix workflow functionality for deductive reasoning chain verification
+      - Rank: 4, Weight: 60, Priority: low
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 48)
+    - [ ] **task_48**: Update duplicate prevention for formal verification protocol systems
+      - Rank: 5, Weight: 50, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 49)
+
+- **para_27** - High Priority Tasks (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/optimal-strategies-burden-of-proof.md
+  - Source: todo/optimal-strategies-burden-of-proof.md (line 51)
+  - **Tasks (5):**
+    - [ ] **task_49**: Implement comprehensive test suite for absolute certainty validation frameworks
+      - Rank: 1, Weight: 90, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 53)
+    - [ ] **task_50**: Create automated testing pipeline for logical consistency verification systems
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 54)
+    - [ ] **task_51**: Add monitoring and alerting for proof by contradiction validation protocols
+      - Rank: 3, Weight: 100, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 55)
+    - [ ] **task_52**: Fix workflow functionality for mathematical induction verification frameworks
+      - Rank: 4, Weight: 60, Priority: low
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 56)
+    - [ ] **task_53**: Update duplicate prevention for theorem proving automation systems
+      - Rank: 5, Weight: 50, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 57)
+
+---
+
+##### feature_36: Improvements Needed:
+
+**Priority:** medium  
+**Source:** todo/optimal-strategies-burden-of-proof.md (line 59)  
+**Description:** Feature extracted from todo/optimal-strategies-burden-of-proof.md
+
+**Paragraphs (1):**
+
+- **para_161** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/optimal-strategies-burden-of-proof.md (line 59)
+
+---
+
+##### feature_37: Necessary Conditions for Proof
+
+**Priority:** medium  
+**Source:** todo/optimal-strategies-burden-of-proof.md (line 67)  
+**Description:** Feature extracted from todo/optimal-strategies-burden-of-proof.md
+
+**Paragraphs (3):**
+
+- **para_28** - Civil Cases (Dan & Jax proving guilt of other agents) (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/optimal-strategies-burden-of-proof.md
+  - Source: todo/optimal-strategies-burden-of-proof.md (line 69)
+  - **Tasks (5):**
+    - [ ] **task_54**: Implement comprehensive test suite for documentary evidence establishing agen...
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 72)
+    - [ ] **task_55**: Create automated testing pipeline for witness testimony corroboration systems
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 73)
+    - [ ] **task_56**: Add monitoring and alerting for financial records analysis frameworks
+      - Rank: 3, Weight: 85, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 74)
+    - [ ] **task_57**: Fix workflow functionality for communication patterns evidence validation
+      - Rank: 4, Weight: 100, Priority: low
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 75)
+    - [ ] **task_58**: Update duplicate prevention for timeline correlation assessment protocols
+      - Rank: 5, Weight: 50, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 76)
+
+- **para_29** - Criminal Cases (Dan & Jax proving guilt beyond reasonable doubt) (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/optimal-strategies-burden-of-proof.md
+  - Source: todo/optimal-strategies-burden-of-proof.md (line 78)
+  - **Tasks (5):**
+    - [ ] **task_59**: Implement comprehensive test suite for criminal intent evidence validation
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 81)
+    - [ ] **task_60**: Create automated testing pipeline for actus reus (guilty act) verification sy...
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 82)
+    - [ ] **task_61**: Add monitoring and alerting for mens rea (guilty mind) assessment frameworks
+      - Rank: 3, Weight: 85, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 83)
+    - [ ] **task_62**: Fix workflow functionality for causation establishment protocols
+      - Rank: 4, Weight: 60, Priority: low
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 84)
+    - [ ] **task_63**: Update duplicate prevention for alibi refutation validation systems
+      - Rank: 5, Weight: 50, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 85)
+
+- **para_30** - Mathematical Invariants (Absolute certainty required) (Rank: 3, Weight: 85)
+  - Content: Paragraph extracted from todo/optimal-strategies-burden-of-proof.md
+  - Source: todo/optimal-strategies-burden-of-proof.md (line 87)
+  - **Tasks (5):**
+    - [ ] **task_64**: Implement comprehensive test suite for logical axiom validation frameworks
+      - Rank: 1, Weight: 90, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 90)
+    - [ ] **task_65**: Create automated testing pipeline for deductive proof chain verification
+      - Rank: 2, Weight: 100, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 91)
+    - [ ] **task_66**: Add monitoring and alerting for contradiction elimination validation protocols
+      - Rank: 3, Weight: 85, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 92)
+    - [ ] **task_67**: Fix workflow functionality for exhaustive case analysis systems
+      - Rank: 4, Weight: 60, Priority: low
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 93)
+    - [ ] **task_68**: Update duplicate prevention for formal proof completeness verification
+      - Rank: 5, Weight: 100, Priority: medium
+      - Source: todo/optimal-strategies-burden-of-proof.md (line 94)
+
+---
+
+
+### arg_7: Burden of Proof Workflow Test
+
+**Type:** evidence  
+**Strategy:** Support legal position  
+**Source:** todo/burden-of-proof-test.md  
+**Description:** Legal argument extracted from todo/burden-of-proof-test.md
+
+#### Features (4)
+
+##### feature_38: Must-Do (Critical Priority)
+
+**Priority:** critical  
+**Source:** todo/burden-of-proof-test.md (line 3)  
+**Description:** Feature extracted from todo/burden-of-proof-test.md
+
+**Paragraphs (1):**
+
+- **para_162** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/burden-of-proof-test.md (line 3)
+
+---
+
+##### feature_39: Should-Do (High Priority)
+
+**Priority:** high  
+**Source:** todo/burden-of-proof-test.md (line 8)  
+**Description:** Feature extracted from todo/burden-of-proof-test.md
+
+**Paragraphs (1):**
+
+- **para_163** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/burden-of-proof-test.md (line 8)
+
+---
+
+##### feature_40: Nice-to-Have (Low Priority)
+
+**Priority:** low  
+**Source:** todo/burden-of-proof-test.md (line 13)  
+**Description:** Feature extracted from todo/burden-of-proof-test.md
+
+**Paragraphs (1):**
+
+- **para_164** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/burden-of-proof-test.md (line 13)
+
+---
+
+##### feature_41: Implementation Notes
+
+**Priority:** medium  
+**Source:** todo/burden-of-proof-test.md (line 17)  
+**Description:** Feature extracted from todo/burden-of-proof-test.md
+
+**Paragraphs (2):**
+
+- **para_31** - Target Parties: (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/burden-of-proof-test.md
+  - Source: todo/burden-of-proof-test.md (line 26)
+
+- **para_32** - Evidence Requirements: (Rank: 2, Weight: 100)
+  - Content: Paragraph extracted from todo/burden-of-proof-test.md
+  - Source: todo/burden-of-proof-test.md (line 31)
+
+---
+
+
+### arg_8: Repository Status and Critical Evidence Collection
+
+**Type:** evidence  
+**Strategy:** Support legal position  
+**Source:** todo/Repository_Status_and_Critical_Evidence_Collection.md  
+**Description:** Legal argument extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+
+#### Features (11)
+
+##### feature_42: Overview
+
+**Priority:** medium  
+**Source:** todo/Repository_Status_and_Critical_Evidence_Collection.md (line 3)  
+**Description:** Feature extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+
+**Paragraphs (1):**
+
+- **para_165** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 3)
+
+---
+
+##### feature_43: Current Repository Status
+
+**Priority:** medium  
+**Source:** todo/Repository_Status_and_Critical_Evidence_Collection.md (line 7)  
+**Description:** Feature extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+
+**Paragraphs (1):**
+
+- **para_166** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 7)
+
+---
+
+##### feature_44: Priority Recommendations
+
+**Priority:** medium  
+**Source:** todo/Repository_Status_and_Critical_Evidence_Collection.md (line 18)  
+**Description:** Feature extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+
+**Paragraphs (3):**
+
+- **para_33** - Must-Do (Phase 1) - Critical Evidence Collection (Rank: 1, Weight: 100)
+  - Content: Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 20)
+  - **Tasks (9):**
+    - [ ] **task_69**: Gather Responsible Person documentation for 37 jurisdictions (JF-RP1)
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 22)
+    - [ ] **task_70**: Obtain regulatory risk analysis documentation (JF-RP2)
+      - Rank: 2, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 23)
+    - [ ] **task_71**: Collect director loan account statements for all 3 directors (JF-DLA1, JF-DLA...
+      - Rank: 3, Weight: 85, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 24)
+    - [ ] **task_72**: Document Peter's own withdrawals with minimum 4 examples (JF-PA1 through JF-PA4)
+      - Rank: 4, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 25)
+    - [ ] **task_73**: Obtain R500K payment bank statement dated 16 July 2025 (JF-BS1)
+      - Rank: 5, Weight: 50, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 26)
+    - [ ] **task_74**: Create comparison document highlighting all changes between JF5 draft and fin...
+      - Rank: 6, Weight: 100, Priority: high
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 29)
+    - [ ] **task_75**: Obtain Daniel's witness statement regarding "Has anything changed?" exchange
+      - Rank: 7, Weight: 50, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 30)
+    - [ ] **task_76**: Collect Chesno fraud documentation (JF-CHESNO1 through JF-CHESNO4)
+      - Rank: 8, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 32)
+    - [ ] **task_77**: Document Daniel's 8-year restoration evidence (JF-RESTORE1 through JF-RESTORE4)
+      - Rank: 9, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 33)
+
+- **para_34** - Should-Do (Phase 2) - High Priority Evidence (Rank: 2, Weight: 100)
+  - Content: Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 35)
+  - **Tasks (5):**
+    - [ ] **task_78**: Obtain system access restriction logs (JF-SAL1, JF-EAL1, JF-FSL1)
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 37)
+    - [ ] **task_79**: Collect correspondence showing Daniel provided documentation (JF-CORR1)
+      - Rank: 2, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 39)
+    - [ ] **task_80**: Gather IT service invoices and contracts
+      - Rank: 3, Weight: 85, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 50)
+    - [ ] **task_81**: Document historical collaborative model evidence (JF-HIST1, JF-HIST2, JF-HIST3)
+      - Rank: 4, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 51)
+    - [ ] **task_82**: Document director exclusion evidence (JF-EX1, JF-EX2, JF-EX3, JF-EX4)
+      - Rank: 5, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 60)
+
+- **para_35** - Nice-to-Have (Phase 3) - Supporting Evidence (Rank: 3, Weight: 100)
+  - Content: Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 62)
+  - **Tasks (3):**
+    - [ ] **task_83**: Gather revenue figures for international markets
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 65)
+    - [ ] **task_84**: Collect financial records showing businesses remain profitable
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 66)
+    - [ ] **task_85**: Document evidence of Peter's participation in informal practices
+      - Rank: 3, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 67)
+
+---
+
+##### feature_45: Repository Maintenance Tasks
+
+**Priority:** medium  
+**Source:** todo/Repository_Status_and_Critical_Evidence_Collection.md (line 69)  
+**Description:** Feature extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+
+**Paragraphs (3):**
+
+- **para_36** - Must-Do (Phase 1) - Critical Maintenance (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 71)
+  - **Tasks (3):**
+    - [ ] **task_86**: Review and consolidate jax-response and jax-dan-response directories to elimi...
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 73)
+    - [ ] **task_87**: Update all README.md files to reflect current repository state
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 75)
+    - [ ] **task_88**: Verify all annexure references in affidavit v3 are correct and complete
+      - Rank: 3, Weight: 85, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 77)
+
+- **para_37** - Should-Do (Phase 2) - Documentation Updates (Rank: 2, Weight: 100)
+  - Content: Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 79)
+  - **Tasks (5):**
+    - [ ] **task_89**: Update REPOSITORY_STRUCTURE.md to include new jax-response directory structure
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 81)
+    - [ ] **task_90**: Create comprehensive evidence index mapping all 275+ files
+      - Rank: 2, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 82)
+    - [ ] **task_91**: Document the relationship between jax-response and jax-dan-response directories
+      - Rank: 3, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 83)
+    - [ ] **task_92**: Update case timeline with all 15 forensic analysis events
+      - Rank: 4, Weight: 60, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 84)
+    - [ ] **task_93**: Create visual timeline diagram for key events from March-August 2025
+      - Rank: 5, Weight: 90, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 85)
+
+- **para_38** - Nice-to-Have (Phase 3) - Optimization (Rank: 3, Weight: 85)
+  - Content: Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 87)
+  - **Tasks (4):**
+    - [ ] **task_94**: Create automated scripts for evidence cross-referencing
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 90)
+    - [ ] **task_95**: Implement database integration for structured case data
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 91)
+    - [ ] **task_96**: Develop API for programmatic access to case information
+      - Rank: 3, Weight: 85, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 92)
+    - [ ] **task_97**: Create automated case status reporting system
+      - Rank: 4, Weight: 90, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 93)
+
+---
+
+##### feature_46: Affidavit Preparation Tasks
+
+**Priority:** medium  
+**Source:** todo/Repository_Status_and_Critical_Evidence_Collection.md (line 95)  
+**Description:** Feature extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+
+**Paragraphs (3):**
+
+- **para_39** - Must-Do (Phase 1) - Before Legal Review (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 97)
+
+- **para_40** - Should-Do (Phase 2) - Legal Review Preparation (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 116)
+  - **Tasks (2):**
+    - [ ] **task_98**: Verify all dates in timeline are accurate and consistent
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 119)
+    - [ ] **task_99**: Check all annexure numbering is sequential and complete
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 121)
+
+- **para_41** - Nice-to-Have (Phase 3) - Enhancement (Rank: 3, Weight: 85)
+  - Content: Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 124)
+  - **Tasks (4):**
+    - [ ] **task_100**: Add visual aids (timelines, financial flow diagrams) as annexures
+      - Rank: 1, Weight: 100, Priority: low
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 126)
+    - [ ] **task_101**: Prepare witness statement templates for Daniel and other witnesses
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 146)
+    - [ ] **task_102**: Develop evidence presentation strategy for court
+      - Rank: 3, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 147)
+    - [ ] **task_103**: Create quick reference guide for all 50+ annexures
+      - Rank: 4, Weight: 90, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 148)
+
+---
+
+##### feature_47: Forensic Analysis Enhancement
+
+**Priority:** medium  
+**Source:** todo/Repository_Status_and_Critical_Evidence_Collection.md (line 150)  
+**Description:** Feature extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+
+**Paragraphs (3):**
+
+- **para_42** - Must-Do (Phase 1) - Critical Analysis (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 152)
+  - **Tasks (1):**
+    - [ ] **task_104**: Validate all dates in revenue-theft, family-trust, and financial-flows analyses
+      - Rank: 1, Weight: 100, Priority: low
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 157)
+
+- **para_43** - Should-Do (Phase 2) - Analysis Expansion (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 160)
+  - **Tasks (4):**
+    - [ ] **task_105**: Add cross-border financial flow analysis for UK-SA transactions
+      - Rank: 1, Weight: 100, Priority: low
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 162)
+    - [ ] **task_106**: Create comprehensive evidence cross-reference for all three categories
+      - Rank: 2, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 164)
+    - [ ] **task_107**: Develop expert witness requirements list for financial forensics
+      - Rank: 3, Weight: 85, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 165)
+    - [ ] **task_108**: Prepare forensic analysis summary for attorney and court
+      - Rank: 4, Weight: 60, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 166)
+
+- **para_44** - Nice-to-Have (Phase 3) - Advanced Analysis (Rank: 3, Weight: 85)
+  - Content: Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 168)
+  - **Tasks (4):**
+    - [ ] **task_109**: Create network analysis diagrams showing fund flows and relationships
+      - Rank: 1, Weight: 90, Priority: low
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 170)
+    - [ ] **task_110**: Develop timeline visualization for all 15 forensic events
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 171)
+    - [ ] **task_111**: Create damage calculation methodology documentation
+      - Rank: 3, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 185)
+    - [ ] **task_112**: Develop expert testimony preparation materials
+      - Rank: 4, Weight: 60, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 186)
+
+---
+
+##### feature_48: Testing and Quality Assurance
+
+**Priority:** medium  
+**Source:** todo/Repository_Status_and_Critical_Evidence_Collection.md (line 188)  
+**Description:** Feature extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+
+**Paragraphs (3):**
+
+- **para_45** - Must-Do (Phase 1) - Critical Testing (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 190)
+  - **Tasks (2):**
+    - [ ] **task_113**: Verify all GitHub issue generation workflows function correctly
+      - Rank: 1, Weight: 100, Priority: low
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 193)
+    - [ ] **task_114**: Test evidence cross-referencing system for accuracy
+      - Rank: 2, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 194)
+
+- **para_46** - Should-Do (Phase 2) - Quality Checks (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 198)
+  - **Tasks (4):**
+    - [ ] **task_115**: Review all 275+ files for naming consistency
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 200)
+    - [ ] **task_116**: Verify all markdown files render correctly on GitHub
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 201)
+    - [ ] **task_117**: Check all internal links and cross-references work
+      - Rank: 3, Weight: 85, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 202)
+    - [ ] **task_118**: Validate all financial figures use consistent currency notation
+      - Rank: 4, Weight: 60, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 204)
+
+- **para_47** - Nice-to-Have (Phase 3) - Advanced QA (Rank: 3, Weight: 85)
+  - Content: Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 206)
+  - **Tasks (5):**
+    - [ ] **task_119**: Implement automated testing for repository structure integrity
+      - Rank: 1, Weight: 90, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 208)
+    - [ ] **task_120**: Create validation scripts for evidence completeness
+      - Rank: 2, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 209)
+    - [ ] **task_121**: Develop automated cross-reference checking system
+      - Rank: 3, Weight: 85, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 210)
+    - [ ] **task_122**: Implement continuous integration for documentation updates
+      - Rank: 4, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 211)
+    - [ ] **task_123**: Create automated reporting for repository health metrics
+      - Rank: 5, Weight: 90, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 212)
+
+---
+
+##### feature_49: Timeline and Milestones
+
+**Priority:** medium  
+**Source:** todo/Repository_Status_and_Critical_Evidence_Collection.md (line 214)  
+**Description:** Feature extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+
+**Paragraphs (4):**
+
+- **para_48** - Week 1 (Immediate) (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 216)
+  - **Tasks (1):**
+    - [x] **task_124**: Update critical documentation
+      - Rank: 1, Weight: 100, Priority: critical
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 219)
+
+- **para_49** - Week 2 (Short-term) (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 222)
+  - **Tasks (1):**
+    - [ ] **task_125**: Gather all Phase 2 high-priority evidence
+      - Rank: 1, Weight: 100, Priority: high
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 224)
+
+- **para_50** - Week 3 (Medium-term) (Rank: 3, Weight: 85)
+  - Content: Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 228)
+  - **Tasks (1):**
+    - [ ] **task_126**: Prepare for legal review
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 229)
+
+- **para_51** - Week 4 (Pre-submission) (Rank: 4, Weight: 60)
+  - Content: Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 234)
+
+---
+
+##### feature_50: Success Criteria
+
+**Priority:** medium  
+**Source:** todo/Repository_Status_and_Critical_Evidence_Collection.md (line 240)  
+**Description:** Feature extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+
+**Paragraphs (4):**
+
+- **para_52** - Evidence Collection Complete (Rank: 1, Weight: 100)
+  - Content: Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 242)
+
+- **para_53** - Repository Maintenance Complete (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 248)
+
+- **para_54** - Affidavit Ready for Legal Review (Rank: 3, Weight: 85)
+  - Content: Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 254)
+
+- **para_55** - Quality Assurance Complete (Rank: 4, Weight: 60)
+  - Content: Paragraph extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 260)
+
+---
+
+##### feature_51: Notes
+
+**Priority:** medium  
+**Source:** todo/Repository_Status_and_Critical_Evidence_Collection.md (line 266)  
+**Description:** Feature extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+
+**Paragraphs (1):**
+
+- **para_167** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 266)
+
+---
+
+##### feature_52: References
+
+**Priority:** medium  
+**Source:** todo/Repository_Status_and_Critical_Evidence_Collection.md (line 274)  
+**Description:** Feature extracted from todo/Repository_Status_and_Critical_Evidence_Collection.md
+
+**Paragraphs (1):**
+
+- **para_168** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/Repository_Status_and_Critical_Evidence_Collection.md (line 274)
+
+---
+
+
+### arg_9: Todo Folder
+
+**Type:** defense  
+**Strategy:** Support legal position  
+**Source:** todo/README.md  
+**Description:** Legal argument extracted from todo/README.md
+
+#### Features (9)
+
+##### feature_53: Purpose
+
+**Priority:** medium  
+**Source:** todo/README.md (line 5)  
+**Description:** Feature extracted from todo/README.md
+
+**Paragraphs (1):**
+
+- **para_169** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/README.md (line 5)
+
+---
+
+##### feature_54: Current Todo Documents
+
+**Priority:** medium  
+**Source:** todo/README.md (line 9)  
+**Description:** Feature extracted from todo/README.md
+
+**Paragraphs (2):**
+
+- **para_56** - Active Todo Files (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/README.md
+  - Source: todo/README.md (line 11)
+
+- **para_57** - Workflow Test Files (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/README.md
+  - Source: todo/README.md (line 33)
+
+---
+
+##### feature_55: How It Works
+
+**Priority:** medium  
+**Source:** todo/README.md (line 48)  
+**Description:** Feature extracted from todo/README.md
+
+**Paragraphs (6):**
+
+- **para_58** - Automatic Issue Generation (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/README.md
+  - Source: todo/README.md (line 50)
+
+- **para_59** - Task Format (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/README.md
+  - Source: todo/README.md (line 59)
+
+- **para_60** - Must-Do (Phase 1) (Rank: 3, Weight: 85)
+  - Content: Paragraph extracted from todo/README.md
+  - Source: todo/README.md (line 65)
+
+- **para_61** - Should-Do (Phase 2) (Rank: 4, Weight: 60)
+  - Content: Paragraph extracted from todo/README.md
+  - Source: todo/README.md (line 69)
+
+- **para_62** - Nice-to-Have (Phase 3) (Rank: 5, Weight: 50)
+  - Content: Paragraph extracted from todo/README.md
+  - Source: todo/README.md (line 73)
+  - **Tasks (2):**
+    - [ ] **task_127**: Implement priority-based response architecture
+      - Rank: 1, Weight: 90, Priority: medium
+      - Source: todo/README.md (line 81)
+    - [ ] **task_128**: Create comprehensive timeline analysis
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/README.md (line 82)
+
+- **para_63** - Priority Mapping (Rank: 6, Weight: 50)
+  - Content: Paragraph extracted from todo/README.md
+  - Source: todo/README.md (line 86)
+
+---
+
+##### feature_56: Repository Status Context
+
+**Priority:** medium  
+**Source:** todo/README.md (line 94)  
+**Description:** Feature extracted from todo/README.md
+
+**Paragraphs (3):**
+
+- **para_64** - Current State (October 13, 2025) (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/README.md
+  - Source: todo/README.md (line 96)
+
+- **para_65** - Repository Growth (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/README.md
+  - Source: todo/README.md (line 110)
+
+- **para_66** - Critical Evidence Gaps (Rank: 3, Weight: 100)
+  - Content: Paragraph extracted from todo/README.md
+  - Source: todo/README.md (line 118)
+
+---
+
+##### feature_57: Usage Guidelines
+
+**Priority:** medium  
+**Source:** todo/README.md (line 134)  
+**Description:** Feature extracted from todo/README.md
+
+**Paragraphs (3):**
+
+- **para_67** - For Contributors (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/README.md
+  - Source: todo/README.md (line 136)
+
+- **para_68** - For Reviewers (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/README.md
+  - Source: todo/README.md (line 144)
+
+- **para_69** - For Project Managers (Rank: 3, Weight: 85)
+  - Content: Paragraph extracted from todo/README.md
+  - Source: todo/README.md (line 151)
+
+---
+
+##### feature_58: Workflow Documentation
+
+**Priority:** low  
+**Source:** todo/README.md (line 158)  
+**Description:** Feature extracted from todo/README.md
+
+**Paragraphs (1):**
+
+- **para_170** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/README.md (line 158)
+
+---
+
+##### feature_59: Timeline and Milestones
+
+**Priority:** medium  
+**Source:** todo/README.md (line 165)  
+**Description:** Feature extracted from todo/README.md
+
+**Paragraphs (4):**
+
+- **para_70** - Week 1 (Immediate) (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/README.md
+  - Source: todo/README.md (line 167)
+  - **Tasks (1):**
+    - [x] **task_129**: Update critical documentation
+      - Rank: 1, Weight: 100, Priority: critical
+      - Source: todo/README.md (line 170)
+
+- **para_71** - Week 2 (Short-term) (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/README.md
+  - Source: todo/README.md (line 173)
+  - **Tasks (2):**
+    - [ ] **task_130**: Gather Phase 2 high-priority evidence
+      - Rank: 1, Weight: 100, Priority: high
+      - Source: todo/README.md (line 175)
+    - [ ] **task_131**: Verify forensic analysis
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/README.md (line 177)
+
+- **para_72** - Week 3 (Medium-term) (Rank: 3, Weight: 85)
+  - Content: Paragraph extracted from todo/README.md
+  - Source: todo/README.md (line 179)
+  - **Tasks (1):**
+    - [ ] **task_132**: Prepare for legal review
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/README.md (line 180)
+
+- **para_73** - Week 4 (Pre-submission) (Rank: 4, Weight: 60)
+  - Content: Paragraph extracted from todo/README.md
+  - Source: todo/README.md (line 185)
+
+---
+
+##### feature_60: Related Documentation
+
+**Priority:** medium  
+**Source:** todo/README.md (line 191)  
+**Description:** Feature extracted from todo/README.md
+
+**Paragraphs (1):**
+
+- **para_171** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/README.md (line 191)
+
+---
+
+##### feature_61: Notes
+
+**Priority:** medium  
+**Source:** todo/README.md (line 198)  
+**Description:** Feature extracted from todo/README.md
+
+**Paragraphs (1):**
+
+- **para_172** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/README.md (line 198)
+
+---
+
+
+### arg_10: Jax-Dan Response Expansion Plan
+
+**Type:** defense  
+**Strategy:** Support legal position  
+**Source:** todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md  
+**Description:** Legal argument extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+
+#### Features (14)
+
+##### feature_62: Systematic AD Paragraph Coverage Implementation
+
+**Priority:** medium  
+**Source:** todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 2)  
+**Description:** Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+
+**Paragraphs (1):**
+
+- **para_173** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 2)
+
+---
+
+##### feature_63: Executive Summary
+
+**Priority:** medium  
+**Source:** todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 11)  
+**Description:** Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+
+**Paragraphs (1):**
+
+- **para_174** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 11)
+
+---
+
+##### feature_64: Must-Do (Phase 1) - Week 1: Critical Priority Files
+
+**Priority:** critical  
+**Source:** todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 21)  
+**Description:** Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+
+**Paragraphs (7):**
+
+- **para_74** - 1. Create jax-dan-response/AD/1-Critical/ Directory Structure (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 23)
+
+- **para_75** - 2. Create PARA_7_2-7_5_IT_EXPENSES.md - IT Expense Technical Justification (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 33)
+
+- **para_76** - 3. Create PARA_7_6_R500K_PAYMENT.md - Director Loan Account System Architecture (Rank: 3, Weight: 85)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 67)
+
+- **para_77** - 4. Create PARA_7_7-7_8_PAYMENT_AUTHORIZATION.md - Payment Authorization Workflow Details (Rank: 4, Weight: 60)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 101)
+
+- **para_78** - 5. Create PARA_7_9-7_11_BUSINESS_PURPOSE.md - Platform Ownership Business Purpose (Rank: 5, Weight: 50)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 129)
+
+- **para_79** - 6. Create PARA_10_5-10_10_23_FINANCIAL_SYSTEMS.md - Financial Systems Perspective (Rank: 6, Weight: 50)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 158)
+
+- **para_80** - 7. Create jax-dan-response/AD/1-Critical/README.md - Directory Index (Rank: 7, Weight: 50)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 187)
+
+---
+
+##### feature_65: Should-Do (Phase 2) - Week 2: High Priority Files
+
+**Priority:** high  
+**Source:** todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 204)  
+**Description:** Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+
+**Paragraphs (2):**
+
+- **para_81** - 8. Create jax-dan-response/AD/2-High-Priority/ Additional Files (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 206)
+
+- **para_82** - 9. Update jax-dan-response/AD/2-High-Priority/README.md (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 270)
+
+---
+
+##### feature_66: Nice-to-Have (Phase 3) - Week 3: Evidence Integration and Cross-Referencing
+
+**Priority:** low  
+**Source:** todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 278)  
+**Description:** Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+
+**Paragraphs (4):**
+
+- **para_83** - 10. Create EVIDENCE_MAPPING_MATRIX.md (Rank: 1, Weight: 100)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 280)
+
+- **para_84** - 11. Create DAN_RESPONSE_SUMMARY.md (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 295)
+
+- **para_85** - 12. Implement Bidirectional Cross-Referencing (Rank: 3, Weight: 85)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 311)
+  - **Tasks (4):**
+    - [ ] **task_133**: Add "Daniel's Technical Perspective" sections to jax-response files
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 316)
+    - [ ] **task_134**: Add "Jacqueline's Legal Perspective" sections to jax-dan-response files
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 317)
+    - [ ] **task_135**: Update evidence-attachments files with "Referenced By" sections
+      - Rank: 3, Weight: 100, Priority: medium
+      - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 318)
+    - [ ] **task_136**: Verify all cross-references are accurate
+      - Rank: 4, Weight: 60, Priority: medium
+      - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 319)
+
+- **para_86** - 13. Update jax-dan-response/README.md (Rank: 4, Weight: 60)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 325)
+
+---
+
+##### feature_67: Nice-to-Have (Phase 4) - Week 4: Medium Priority Expansion
+
+**Priority:** low  
+**Source:** todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 340)  
+**Description:** Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+
+**Paragraphs (3):**
+
+- **para_87** - 14. Evaluate Priority 3 (Medium) Paragraphs for Daniel's Relevance (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 342)
+
+- **para_88** - 15. Create Selected Priority 3 (Medium) Files (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 358)
+
+- **para_89** - 16. Create jax-dan-response/AD/3-Medium-Priority/README.md (Rank: 3, Weight: 85)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 366)
+
+---
+
+##### feature_68: Nice-to-Have (Phase 5) - Week 5: Finalization and Quality Assurance
+
+**Priority:** low  
+**Source:** todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 374)  
+**Description:** Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+
+**Paragraphs (4):**
+
+- **para_90** - 17. Comprehensive Consistency Review (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 376)
+  - **Tasks (2):**
+    - [ ] **task_137**: Verify all cross-references are accurate
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 381)
+    - [ ] **task_138**: Check for contradictions between Jacqueline's and Daniel's responses
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 382)
+
+- **para_91** - 18. Evidence Series Documentation (Rank: 2, Weight: 100)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 391)
+
+- **para_92** - 19. Quality Assurance Against Template Standards (Rank: 3, Weight: 85)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 406)
+
+- **para_93** - 20. Final Integration Review with Legal Team (Rank: 4, Weight: 60)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 426)
+
+---
+
+##### feature_69: Evidence Collection Requirements
+
+**Priority:** medium  
+**Source:** todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 441)  
+**Description:** Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+
+**Paragraphs (1):**
+
+- **para_94** - Critical Evidence Series (Must Collect) (Rank: 1, Weight: 100)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 443)
+
+---
+
+##### feature_70: Strategic Integration Points
+
+**Priority:** medium  
+**Source:** todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 473)  
+**Description:** Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+
+**Paragraphs (3):**
+
+- **para_95** - 1. Platform Ownership Counter-Claim (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 475)
+
+- **para_96** - 2. Technical Impossibility Argument (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 482)
+
+- **para_97** - 3. Peter's Bad Faith Evidence (Rank: 3, Weight: 100)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 489)
+
+---
+
+##### feature_71: Success Metrics
+
+**Priority:** medium  
+**Source:** todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 496)  
+**Description:** Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+
+**Paragraphs (2):**
+
+- **para_98** - Quantitative Metrics (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 498)
+
+- **para_99** - Qualitative Metrics (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 505)
+
+---
+
+##### feature_72: Risk Mitigation
+
+**Priority:** medium  
+**Source:** todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 514)  
+**Description:** Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+
+**Paragraphs (4):**
+
+- **para_100** - Risk 1: Redundancy with Jacqueline's Response (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 516)
+
+- **para_101** - Risk 2: Contradictions Between Responses (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 519)
+
+- **para_102** - Risk 3: Evidence Collection Delays (Rank: 3, Weight: 100)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 522)
+
+- **para_103** - Risk 4: Time Constraints (Rank: 4, Weight: 60)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 525)
+
+---
+
+##### feature_73: Timeline Summary
+
+**Priority:** medium  
+**Source:** todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 530)  
+**Description:** Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+
+**Paragraphs (1):**
+
+- **para_175** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 530)
+
+---
+
+##### feature_74: Dependencies
+
+**Priority:** medium  
+**Source:** todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 543)  
+**Description:** Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+
+**Paragraphs (2):**
+
+- **para_104** - External Dependencies (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 545)
+
+- **para_105** - Internal Dependencies (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 550)
+
+---
+
+##### feature_75: Next Steps (Immediate Actions)
+
+**Priority:** medium  
+**Source:** todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 557)  
+**Description:** Feature extracted from todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md
+
+**Paragraphs (1):**
+
+- **para_176** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/JAX_DAN_RESPONSE_EXPANSION_PLAN.md (line 557)
+
+---
+
+
+### arg_11: Improvements for Jax-Dan Response Based on AD Elements
+
+**Type:** defense  
+**Strategy:** Support legal position  
+**Source:** todo/Improvements for Jax-Dan Response Based on AD Elements.md  
+**Description:** Legal argument extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+
+#### Features (7)
+
+##### feature_76: Executive Summary
+
+**Priority:** medium  
+**Source:** todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 3)  
+**Description:** Feature extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+
+**Paragraphs (1):**
+
+- **para_177** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 3)
+
+---
+
+##### feature_77: Current State Analysis
+
+**Priority:** medium  
+**Source:** todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 9)  
+**Description:** Feature extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+
+**Paragraphs (2):**
+
+- **para_106** - Strengths of Current Draft (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+  - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 11)
+
+- **para_107** - Critical Gaps Identified (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+  - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 21)
+
+---
+
+##### feature_78: Recommended Improvements
+
+**Priority:** medium  
+**Source:** todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 39)  
+**Description:** Feature extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+
+**Paragraphs (10):**
+
+- **para_108** - 1. Implement Priority-Based Response Architecture (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+  - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 41)
+  - **Tasks (6):**
+    - [ ] **task_139**: Add Dan's technical affidavit explaining infrastructure requirements
+      - Rank: 1, Weight: 100, Priority: medium
+      - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 56)
+    - [ ] **task_140**: Create point-by-point rebuttal matrix for each sub-allegation
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 86)
+    - [ ] **task_141**: Add external validation (accountant letters, SARS compliance, bank relationsh...
+      - Rank: 3, Weight: 85, Priority: medium
+      - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 90)
+    - [ ] **task_142**: Analyze suspicious timing of "discovery" relative to settlement negotiations
+      - Rank: 4, Weight: 60, Priority: medium
+      - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 123)
+    - [ ] **task_143**: Document Peter's menacing and coercive conduct during confrontation
+      - Rank: 5, Weight: 100, Priority: medium
+      - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 131)
+    - [ ] **task_144**: Create standardized response template for each paragraph
+      - Rank: 6, Weight: 90, Priority: medium
+      - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 158)
+
+- **para_109** - 2. Integrate Dan's Technical and Operational Perspective (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+  - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 199)
+
+- **para_110** - 3. Enhance Evidence Architecture (Rank: 3, Weight: 100)
+  - Content: Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+  - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 244)
+
+- **para_111** - 4. Strengthen Counter-Narrative Strategy (Rank: 4, Weight: 60)
+  - Content: Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+  - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 320)
+
+- **para_112** - 5. Implement Systematic Cross-Referencing (Rank: 5, Weight: 50)
+  - Content: Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+  - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 363)
+
+- **para_113** - 6. Address Dan-Specific Technical Elements (Rank: 6, Weight: 50)
+  - Content: Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+  - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 402)
+
+- **para_114** - 7. Enhance Strategic Litigation Positioning (Rank: 7, Weight: 50)
+  - Content: Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+  - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 480)
+
+- **para_115** - 8. Implement Comprehensive Timeline Analysis (Rank: 8, Weight: 50)
+  - Content: Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+  - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 533)
+
+- **para_116** - 9. Develop Responsible Person Regulatory Crisis Section (Rank: 9, Weight: 50)
+  - Content: Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+  - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 585)
+
+- **para_117** - 10. Create Comprehensive Response Structure (Rank: 10, Weight: 50)
+  - Content: Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+  - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 653)
+
+---
+
+##### feature_79: Implementation Roadmap
+
+**Priority:** medium  
+**Source:** todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 779)  
+**Description:** Feature extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+
+**Paragraphs (4):**
+
+- **para_118** - ✅ Phase 1: Immediate Additions (High Impact, Low Effort) - COMPLETED (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+  - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 781)
+
+- **para_119** - Phase 2: Systematic Coverage (Medium Impact, Medium Effort) (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+  - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 815)
+
+- **para_120** - Phase 3: Complete Coverage (Lower Impact, Higher Effort) (Rank: 3, Weight: 85)
+  - Content: Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+  - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 838)
+
+- **para_121** - Phase 4: Polish and Integration (Quality Enhancement) (Rank: 4, Weight: 60)
+  - Content: Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+  - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 861)
+
+---
+
+##### feature_80: Total Estimated Effort
+
+**Priority:** medium  
+**Source:** todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 886)  
+**Description:** Feature extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+
+**Paragraphs (1):**
+
+- **para_178** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 886)
+
+---
+
+##### feature_81: Priority Recommendations
+
+**Priority:** medium  
+**Source:** todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 897)  
+**Description:** Feature extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+
+**Paragraphs (3):**
+
+- **para_122** - ✅ Must-Do (Phase 1) - COMPLETED & ENHANCED (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+  - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 899)
+
+- **para_123** - Should-Do (Phase 2) (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+  - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 908)
+  - **Tasks (2):**
+    - [ ] **task_145**: Add all high-priority paragraph responses
+      - Rank: 1, Weight: 100, Priority: high
+      - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 910)
+    - [ ] **task_146**: Create Dan's technical affidavit
+      - Rank: 2, Weight: 90, Priority: medium
+      - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 911)
+
+- **para_124** - Nice-to-Have (Phase 3-4) (Rank: 3, Weight: 85)
+  - Content: Paragraph extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+  - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 913)
+
+---
+
+##### feature_82: Conclusion
+
+**Priority:** medium  
+**Source:** todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 921)  
+**Description:** Feature extracted from todo/Improvements for Jax-Dan Response Based on AD Elements.md
+
+**Paragraphs (1):**
+
+- **para_179** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/Improvements for Jax-Dan Response Based on AD Elements.md (line 921)
+
+---
+
+
+### arg_12: Executive Summary: Jax-Dan Response Improvements
+
+**Type:** defense  
+**Strategy:** Support legal position  
+**Source:** todo/Executive Summary_ Jax-Dan Response Improvements.md  
+**Description:** Legal argument extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md
+
+#### Features (6)
+
+##### feature_83: Overview
+
+**Priority:** medium  
+**Source:** todo/Executive Summary_ Jax-Dan Response Improvements.md (line 3)  
+**Description:** Feature extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md
+
+**Paragraphs (1):**
+
+- **para_180** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/Executive Summary_ Jax-Dan Response Improvements.md (line 3)
+
+---
+
+##### feature_84: Key Findings
+
+**Priority:** medium  
+**Source:** todo/Executive Summary_ Jax-Dan Response Improvements.md (line 7)  
+**Description:** Feature extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md
+
+**Paragraphs (2):**
+
+- **para_125** - Current Strengths (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md
+  - Source: todo/Executive Summary_ Jax-Dan Response Improvements.md (line 9)
+
+- **para_126** - Critical Gaps (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md
+  - Source: todo/Executive Summary_ Jax-Dan Response Improvements.md (line 18)
+
+---
+
+##### feature_85: Top 5 Priority Recommendations
+
+**Priority:** medium  
+**Source:** todo/Executive Summary_ Jax-Dan Response Improvements.md (line 32)  
+**Description:** Feature extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md
+
+**Paragraphs (5):**
+
+- **para_127** - ✅ 1. COMPLETED - Add Responsible Person Regulatory Crisis Section (CRITICAL) (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md
+  - Source: todo/Executive Summary_ Jax-Dan Response Improvements.md (line 34)
+
+- **para_128** - ✅ 2. COMPLETED - Add Settlement Timing and Strategic Litigation Section (CRITICAL) (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md
+  - Source: todo/Executive Summary_ Jax-Dan Response Improvements.md (line 51)
+
+- **para_129** - ✅ 3. COMPLETED - Add Peter's Causation Section (CRITICAL) (Rank: 3, Weight: 85)
+  - Content: Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md
+  - Source: todo/Executive Summary_ Jax-Dan Response Improvements.md (line 65)
+
+- **para_130** - ✅ 4. COMPLETED - Create Dan's Technical Infrastructure Affidavit (HIGH PRIORITY) (Rank: 4, Weight: 60)
+  - Content: Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md
+  - Source: todo/Executive Summary_ Jax-Dan Response Improvements.md (line 79)
+
+- **para_131** - ✅ 5. COMPLETED - Create Comprehensive Timeline Analysis (HIGH PRIORITY) (Rank: 5, Weight: 50)
+  - Content: Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md
+  - Source: todo/Executive Summary_ Jax-Dan Response Improvements.md (line 95)
+
+---
+
+##### feature_86: Implementation Phases
+
+**Priority:** medium  
+**Source:** todo/Executive Summary_ Jax-Dan Response Improvements.md (line 116)  
+**Description:** Feature extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md
+
+**Paragraphs (4):**
+
+- **para_132** - Phase 1: Critical Additions (11-16 hours total) (Rank: 1, Weight: 95)
+  - Content: Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md
+  - Source: todo/Executive Summary_ Jax-Dan Response Improvements.md (line 118)
+
+- **para_133** - Phase 2: Systematic Coverage (24-34 hours) (Rank: 2, Weight: 90)
+  - Content: Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md
+  - Source: todo/Executive Summary_ Jax-Dan Response Improvements.md (line 121)
+
+- **para_134** - Phase 3: Complete Coverage (30-42 hours) (Rank: 3, Weight: 85)
+  - Content: Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md
+  - Source: todo/Executive Summary_ Jax-Dan Response Improvements.md (line 124)
+
+- **para_135** - Phase 4: Polish and Integration (13-18 hours) (Rank: 4, Weight: 60)
+  - Content: Paragraph extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md
+  - Source: todo/Executive Summary_ Jax-Dan Response Improvements.md (line 127)
+
+---
+
+##### feature_87: Strategic Impact
+
+**Priority:** medium  
+**Source:** todo/Executive Summary_ Jax-Dan Response Improvements.md (line 132)  
+**Description:** Feature extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md
+
+**Paragraphs (1):**
+
+- **para_181** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/Executive Summary_ Jax-Dan Response Improvements.md (line 132)
+
+---
+
+##### feature_88: Conclusion
+
+**Priority:** medium  
+**Source:** todo/Executive Summary_ Jax-Dan Response Improvements.md (line 144)  
+**Description:** Feature extracted from todo/Executive Summary_ Jax-Dan Response Improvements.md
+
+**Paragraphs (1):**
+
+- **para_182** - Implementation Tasks (Rank: 1, Weight: 100)
+  - Content: Default paragraph for task grouping
+  - Source: todo/Executive Summary_ Jax-Dan Response Improvements.md (line 144)
+
+---
+
+
