@@ -1,0 +1,201 @@
+name: Create Issues from Structured Todo
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (print issues without creating)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+      batch_size:
+        description: 'Number of issues to create (0 = all)'
+        required: false
+        default: '0'
+        type: string
+
+jobs:
+  create-issues:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup jq
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+      
+      - name: Validate structured-todo.json
+        run: |
+          if [ ! -f "todo/structured-todo.json" ]; then
+            echo "Error: todo/structured-todo.json not found"
+            exit 1
+          fi
+          
+          # Validate JSON syntax
+          if ! jq empty todo/structured-todo.json 2>/dev/null; then
+            echo "Error: Invalid JSON in structured-todo.json"
+            exit 1
+          fi
+          
+          echo "✓ JSON validation passed"
+      
+      - name: Parse and display task summary
+        id: summary
+        run: |
+          total=$(jq '.hierarchy.tasks | length' todo/structured-todo.json)
+          critical=$(jq '[.hierarchy.tasks[] | select(.priority == "critical")] | length' todo/structured-todo.json)
+          high=$(jq '[.hierarchy.tasks[] | select(.priority == "high")] | length' todo/structured-todo.json)
+          medium=$(jq '[.hierarchy.tasks[] | select(.priority == "medium")] | length' todo/structured-todo.json)
+          low=$(jq '[.hierarchy.tasks[] | select(.priority == "low")] | length' todo/structured-todo.json)
+          
+          echo "total=$total" >> $GITHUB_OUTPUT
+          echo "critical=$critical" >> $GITHUB_OUTPUT
+          echo "high=$high" >> $GITHUB_OUTPUT
+          echo "medium=$medium" >> $GITHUB_OUTPUT
+          echo "low=$low" >> $GITHUB_OUTPUT
+          
+          echo "## Task Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Total Tasks:** $total" >> $GITHUB_STEP_SUMMARY
+          echo "- **Critical:** $critical" >> $GITHUB_STEP_SUMMARY
+          echo "- **High:** $high" >> $GITHUB_STEP_SUMMARY
+          echo "- **Medium:** $medium" >> $GITHUB_STEP_SUMMARY
+          echo "- **Low:** $low" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+      
+      - name: Create issues
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          BATCH_SIZE: ${{ inputs.batch_size }}
+        run: |
+          total=$(jq '.hierarchy.tasks | length' todo/structured-todo.json)
+          batch_size=${BATCH_SIZE:-0}
+          
+          # Determine how many issues to create
+          if [ "$batch_size" -eq 0 ]; then
+            limit=$total
+          else
+            limit=$batch_size
+          fi
+          
+          echo "Creating up to $limit issues (Total available: $total)"
+          echo ""
+          
+          created=0
+          failed=0
+          skipped=0
+          
+          # Process tasks
+          jq -c '.hierarchy.tasks[]' todo/structured-todo.json | while IFS= read -r task; do
+            # Check if we've reached the limit
+            if [ "$created" -ge "$limit" ] && [ "$limit" -gt 0 ]; then
+              skipped=$((skipped + 1))
+              continue
+            fi
+            
+            # Extract task details
+            id=$(echo "$task" | jq -r '.id')
+            title=$(echo "$task" | jq -r '.title')
+            description=$(echo "$task" | jq -r '.description')
+            priority=$(echo "$task" | jq -r '.priority')
+            source=$(echo "$task" | jq -r '.source')
+            lineNumber=$(echo "$task" | jq -r '.lineNumber // "N/A"')
+            featureId=$(echo "$task" | jq -r '.featureId // "N/A"')
+            paragraphId=$(echo "$task" | jq -r '.paragraphId // "N/A"')
+            
+            # Build issue body
+            body="**Priority:** $priority
+**Description:** $description
+
+---
+
+**Source:** \`$source\` (line $lineNumber)
+**Feature ID:** \`$featureId\`
+**Paragraph ID:** \`$paragraphId\`
+**Task ID:** \`$id\`
+
+---
+
+*This issue was automatically generated from structured-todo.json*"
+            
+            # Write to temp files to handle special characters
+            echo "$title" > /tmp/issue_title.txt
+            echo "$body" > /tmp/issue_body.txt
+            
+            # Display progress
+            short_title=$(echo "$title" | cut -c1-60)
+            echo "[$((created + failed + 1))/$total] $short_title..."
+            
+            if [ "$DRY_RUN" = "true" ]; then
+              echo "  [DRY RUN] Would create issue with priority: $priority"
+              created=$((created + 1))
+            else
+              # Create the issue
+              if gh issue create \
+                --title "$(cat /tmp/issue_title.txt)" \
+                --body "$(cat /tmp/issue_body.txt)" \
+                --repo "${{ github.repository }}" 2>&1; then
+                created=$((created + 1))
+                echo "  ✓ Created"
+              else
+                failed=$((failed + 1))
+                echo "  ✗ Failed"
+              fi
+              
+              # Small delay to avoid rate limiting
+              sleep 0.5
+            fi
+          done
+          
+          # Summary
+          echo ""
+          echo "============================================================"
+          echo "Issue creation complete!"
+          echo "Created: $created"
+          echo "Failed: $failed"
+          if [ "$limit" -gt 0 ] && [ "$limit" -lt "$total" ]; then
+            echo "Skipped: $((total - limit))"
+          fi
+          echo "Total: $total"
+          echo "============================================================"
+          
+          # Add to GitHub summary
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ **Created:** $created" >> $GITHUB_STEP_SUMMARY
+          echo "- ❌ **Failed:** $failed" >> $GITHUB_STEP_SUMMARY
+          if [ "$limit" -gt 0 ] && [ "$limit" -lt "$total" ]; then
+            echo "- ⏭️ **Skipped:** $((total - limit))" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "- 📊 **Total:** $total" >> $GITHUB_STEP_SUMMARY
+          
+          # Fail the workflow if any issues failed to create
+          if [ "$failed" -gt 0 ]; then
+            echo ""
+            echo "⚠️ Some issues failed to create. Check the logs above."
+            exit 1
+          fi
+      
+      - name: Create summary report
+        if: always()
+        run: |
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Workflow Information" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Repository:** ${{ github.repository }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Workflow:** ${{ github.workflow }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Run ID:** ${{ github.run_id }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Triggered by:** ${{ github.actor }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Dry Run:** ${{ inputs.dry_run }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Batch Size:** ${{ inputs.batch_size }} (0 = all)" >> $GITHUB_STEP_SUMMARY
