@@ -124,6 +124,13 @@ The repository has grown significantly:
 ### Nice-to-Have (Phase 3) - Enhancement
 
 1. Add visual aids (timelines, financial flow diagrams) as annexures
+2. Create executive summary of key evidence for attorney review
+3. ✅ **COMPLETED** - Prepare witness statement templates for Daniel and other witnesses
+   - **Templates Created:** 4 comprehensive witness statement templates
+   - **Location:** `evidence/witness-statements/templates/`
+   - **Templates:** Daniel (JF-WS2), Kayla posthumous (JF-WS3), Jacqueline (JF-WS4), Generic (JF-WS[X])
+   - **Core Revelation Linked:** All templates link to platform ownership by RegimA Zone Ltd (UK) and RWD ZA's lack of independent revenue stream
+   - **Completion Date:** October 23, 2025
 2. ✅ **COMPLETED** - Create executive summary of key evidence for attorney review
    - **Documents Created:**
      - `ATTORNEY_EXECUTIVE_BRIEFING.md` (30KB, 789 lines) - Comprehensive case analysis and strategic guidance
