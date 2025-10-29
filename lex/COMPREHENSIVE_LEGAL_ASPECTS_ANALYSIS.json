@@ -1,0 +1,298 @@
+{
+  "entities": {
+    "natural_persons": [
+      {
+        "name": "Peter Faucitt",
+        "roles": [
+          "Director (RST, SLG, RWD)",
+          "Trustee (Faucitt Family Trust)",
+          "Shareholder (50% RST, 33% SLG/RWD)",
+          "Property Owner (50% Villa Via)"
+        ],
+        "legal_issues": [
+          "Director collective action breach",
+          "Trustee conflict of interest",
+          "Self-dealing (Villa Via)",
+          "Trust power abuse"
+        ],
+        "lex_principles_needed": [
+          "director-collective-action-requirement",
+          "trustee-conflict-prohibition",
+          "director-self-dealing-prohibition",
+          "trust-power-abuse-test"
+        ]
+      },
+      {
+        "name": "Jacqueline Faucitt",
+        "roles": [
+          "CEO (RST)",
+          "Director (RST)",
+          "Trust Beneficiary",
+          "Shareholder (50% RST, 33% SLG/RWD)"
+        ],
+        "legal_issues": [
+          "R500K payment authorization",
+          "Business judgment protection",
+          "Trust distribution entitlement"
+        ],
+        "lex_principles_needed": [
+          "business-judgment-rule",
+          "trust-distribution-authorization-test",
+          "director-signatory-authority"
+        ]
+      },
+      {
+        "name": "Daniel Faucitt",
+        "roles": [
+          "CIO (RST)",
+          "Responsible Person (EU Reg 1223/2009)",
+          "Platform Owner (RegimA Zone Ltd UK)",
+          "Director (Multiple entities)"
+        ],
+        "legal_issues": [
+          "Platform unjust enrichment claim",
+          "Regulatory compliance defense",
+          "Documentation obstruction defense"
+        ],
+        "lex_principles_needed": [
+          "unjust-enrichment-test",
+          "regulatory-compliance-necessity",
+          "eu-responsible-person-duty"
+        ]
+      }
+    ],
+    "juristic_persons": [
+      {
+        "name": "RegimA Skin Treatments (Pty) Ltd (RST)",
+        "type": "Company",
+        "legal_issues": [
+          "Villa Via rent self-dealing",
+          "R500K payment dispute",
+          "IT expense reasonableness"
+        ],
+        "lex_principles_needed": [
+          "related-party-transaction-disclosure",
+          "payment-authorization-rules",
+          "business-expense-reasonableness"
+        ]
+      },
+      {
+        "name": "Strategic Logistics Group (Pty) Ltd (SLG)",
+        "type": "Company",
+        "legal_issues": [
+          "R5.4M manufactured loss",
+          "R5.2M inventory adjustment"
+        ],
+        "lex_principles_needed": [
+          "accounting-fraud-indicators",
+          "transfer-pricing-abuse",
+          "inventory-valuation-rules"
+        ]
+      },
+      {
+        "name": "RegimA Worldwide Distribution (Pty) Ltd (RWD)",
+        "type": "Company",
+        "legal_issues": [
+          "Platform usage without payment",
+          "No stock/inventory/assets",
+          "Trust structure ambiguity"
+        ],
+        "lex_principles_needed": [
+          "unjust-enrichment-test",
+          "revenue-source-verification",
+          "trust-operation-indicators"
+        ]
+      },
+      {
+        "name": "RegimA Zone Ltd",
+        "type": "UK Company",
+        "legal_issues": [
+          "Platform investment legitimacy",
+          "Unjust enrichment claim"
+        ],
+        "lex_principles_needed": [
+          "investment-legitimacy-test",
+          "cross-border-unjust-enrichment"
+        ]
+      },
+      {
+        "name": "Villa Via (Pty) Ltd",
+        "type": "Company",
+        "legal_issues": [
+          "86% profit margin on rent",
+          "Self-dealing structure"
+        ],
+        "lex_principles_needed": [
+          "excessive-profit-extraction-test",
+          "director-self-dealing-prohibition"
+        ]
+      },
+      {
+        "name": "Faucitt Family Trust",
+        "type": "Trust",
+        "legal_issues": [
+          "Trustee attacking beneficiary",
+          "Bypassing trust powers",
+          "Trust asset abandonment"
+        ],
+        "lex_principles_needed": [
+          "trustee-conflict-prohibition",
+          "trust-power-abuse-test",
+          "trust-asset-abandonment-indicators"
+        ]
+      }
+    ]
+  },
+  "relations": [
+    {
+      "type": "Director-Company",
+      "parties": [
+        "Peter Faucitt",
+        "RST/SLG/RWD"
+      ],
+      "legal_framework": "Companies Act 71/2008",
+      "issues": [
+        "Unilateral card cancellation",
+        "Collective action breach"
+      ],
+      "lex_principles": [
+        "director-collective-action-requirement",
+        "board-resolution-necessity"
+      ]
+    },
+    {
+      "type": "Trustee-Beneficiary",
+      "parties": [
+        "Peter Faucitt (Trustee)",
+        "Jax Faucitt (Beneficiary)"
+      ],
+      "legal_framework": "Trust Property Control Act 57/1988",
+      "issues": [
+        "Trustee seeking interdict against beneficiary",
+        "Conflict of interest"
+      ],
+      "lex_principles": [
+        "trustee-conflict-prohibition",
+        "beneficiary-adverse-action-prohibition"
+      ]
+    },
+    {
+      "type": "Self-Dealing",
+      "parties": [
+        "Peter Faucitt",
+        "RST",
+        "Villa Via"
+      ],
+      "legal_framework": "Companies Act s75-76",
+      "issues": [
+        "Rent charges from RST to Villa Via (Peter owns 50% of both)",
+        "86% profit margin"
+      ],
+      "lex_principles": [
+        "director-self-dealing-prohibition",
+        "excessive-profit-extraction-test"
+      ]
+    },
+    {
+      "type": "Unjust Enrichment",
+      "parties": [
+        "RWD",
+        "RegimA Zone Ltd (Dan's UK company)"
+      ],
+      "legal_framework": "Common law unjust enrichment",
+      "issues": [
+        "RWD used platform for 28 months without payment",
+        "R2.94M-R6.88M potential claim"
+      ],
+      "lex_principles": [
+        "unjust-enrichment-test",
+        "quantum-meruit",
+        "restitution"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-06-06",
+      "event": "Dan provides reports to accountant",
+      "significance": "Cooperation with Peter's request",
+      "legal_relevance": "Shows good faith, contradicts obstruction claims"
+    },
+    {
+      "date": "2025-06-07",
+      "event": "Peter cancels business cards (unilateral action)",
+      "significance": "Day after Dan's cooperation - suspicious timing",
+      "legal_relevance": "Manufactured crisis, director collective action breach, documentation obstruction",
+      "lex_principles": [
+        "director-collective-action-requirement",
+        "manufactured-crisis-indicators",
+        "timing-analysis-bad-faith"
+      ]
+    },
+    {
+      "date": "2025-06-07 to present",
+      "event": "Documentation becomes inaccessible due to card cancellation",
+      "significance": "Peter created the problem he now complains about",
+      "legal_relevance": "Venire contra factum proprium (estoppel), obstruction of documentation",
+      "lex_principles": [
+        "venire-contra-factum-proprium",
+        "obstruction-of-documentation-indicators"
+      ]
+    },
+    {
+      "date": "During settlement negotiation period",
+      "event": "Peter seeks ex parte interdict",
+      "significance": "Escalation without internal resolution attempt",
+      "legal_relevance": "Abuse of process, manufactured urgency, ulterior motive",
+      "lex_principles": [
+        "abuse-of-process",
+        "manufactured-urgency-indicators",
+        "ulterior-motive-analysis"
+      ]
+    }
+  ],
+  "timelines": {
+    "card_cancellation_timeline": {
+      "sequence": [
+        "Dan cooperates with report request (June 6)",
+        "Peter cancels cards unilaterally (June 7 - next day)",
+        "Documentation becomes inaccessible",
+        "Peter complains about missing documentation"
+      ],
+      "legal_significance": "Demonstrates manufactured crisis and bad faith",
+      "lex_principles": [
+        "timing-analysis-bad-faith",
+        "manufactured-crisis-indicators",
+        "but-for-causation"
+      ]
+    },
+    "trust_power_bypass_timeline": {
+      "sequence": [
+        "Peter has absolute trust powers",
+        "Peter chooses not to use direct trust powers",
+        "Peter seeks court interdict instead",
+        "Timing coincides with settlement negotiation"
+      ],
+      "legal_significance": "Suggests ulterior motive beyond trust administration",
+      "lex_principles": [
+        "trust-power-abuse-test",
+        "trust-power-bypass-indicators",
+        "ulterior-motive-analysis"
+      ]
+    },
+    "platform_usage_timeline": {
+      "sequence": [
+        "Dan's UK company invests R1M in platform",
+        "RWD uses platform for 28 months",
+        "No payment made to RegimA Zone Ltd",
+        "Unjust enrichment of R2.94M-R6.88M"
+      ],
+      "legal_significance": "Establishes unjust enrichment claim",
+      "lex_principles": [
+        "unjust-enrichment-test",
+        "quantum-meruit",
+        "restitution-calculation"
+      ]
+    }
+  }
+}

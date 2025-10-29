@@ -13,6 +13,7 @@ const EmptyTodoFileValidator = require('./empty-todo-file-validation.test.js');
 const MalformedMarkdownTest = require('./malformed-markdown-test.js');
 const NoActionableTasksValidator = require('./no-actionable-tasks-test.js');
 const ComprehensiveTodoFileValidation = require('./comprehensive-todo-file-validation.test.js');
+const RepositoryStructureIntegrityTest = require('./repository-structure-integrity.test.js');
 const fs = require('fs');
 const TestResultArchiver = require('./test-result-archiver');
 
@@ -29,6 +30,7 @@ class TestRunner {
       malformedMarkdown: null,
       noActionableTasks: null,
       todoValidation: null,
+      repositoryStructure: null,
       overall: {
         total_tests: 0,
         passed_tests: 0,
@@ -157,6 +159,11 @@ class TestRunner {
       failed: emptyTodoValidator.testResults.filter(t => !t.passed).length,
       errors: emptyTodoValidator.errors,
       requirement_source: 'todo/workflow-validation-tests.md line 71'
+    };
+    
+    return success;
+  }
+
   async runTodoValidationTests() {
     console.log('\n📋 Running Comprehensive Todo File Validation Tests...\n');
     
@@ -211,6 +218,25 @@ class TestRunner {
     return success;
   }
 
+  async runRepositoryStructureTests() {
+    console.log('\n🏗️  Running Repository Structure Integrity Tests...\n');
+    
+    const structureTest = new RepositoryStructureIntegrityTest();
+    const success = structureTest.runAllTests();
+    
+    this.results.repositoryStructure = {
+      success: success,
+      total: structureTest.testResults.length,
+      passed: structureTest.testResults.filter(t => t.passed).length,
+      failed: structureTest.testResults.filter(t => !t.passed).length,
+      errors: structureTest.errors,
+      metrics: structureTest.structureMetrics,
+      requirement_source: 'todo/Repository_Status_and_Critical_Evidence_Collection.md line 178'
+    };
+    
+    return success;
+  }
+
   calculateOverallResults() {
     this.results.overall.total_tests = this.results.validation.total + 
                                        this.results.integration.total + 
@@ -218,11 +244,11 @@ class TestRunner {
                                        this.results.comprehensive.total + 
                                        this.results.security.total + 
                                        this.results.endToEnd.total + 
-                                       this.results.emptyTodoValidation.total;
-                                       this.results.endToEnd.total +
+                                       this.results.emptyTodoValidation.total +
                                        this.results.malformedMarkdown.total +
                                        this.results.noActionableTasks.total +
-                                       this.results.todoValidation.total;
+                                       this.results.todoValidation.total +
+                                       this.results.repositoryStructure.total;
     
     this.results.overall.passed_tests = this.results.validation.passed + 
                                         this.results.integration.passed + 
@@ -230,11 +256,11 @@ class TestRunner {
                                         this.results.comprehensive.passed + 
                                         this.results.security.passed + 
                                         this.results.endToEnd.passed + 
-                                        this.results.emptyTodoValidation.passed;
-                                        this.results.endToEnd.passed +
+                                        this.results.emptyTodoValidation.passed +
                                         this.results.malformedMarkdown.passed +
                                         this.results.noActionableTasks.passed +
-                                        this.results.todoValidation.passed;
+                                        this.results.todoValidation.passed +
+                                        this.results.repositoryStructure.passed;
     
     this.results.overall.failed_tests = this.results.validation.failed + 
                                         this.results.integration.failed + 
@@ -242,11 +268,11 @@ class TestRunner {
                                         this.results.comprehensive.failed + 
                                         this.results.security.failed + 
                                         this.results.endToEnd.failed + 
-                                        this.results.emptyTodoValidation.failed;
-                                        this.results.endToEnd.failed +
+                                        this.results.emptyTodoValidation.failed +
                                         this.results.malformedMarkdown.failed +
                                         this.results.noActionableTasks.failed +
-                                        this.results.todoValidation.failed;
+                                        this.results.todoValidation.failed +
+                                        this.results.repositoryStructure.failed;
     
     this.results.overall.success_rate = Math.round((this.results.overall.passed_tests / this.results.overall.total_tests) * 100);
   }
@@ -440,8 +466,7 @@ class TestRunner {
       testType: 'comprehensive-test',
       metadata: {
         runner_version: '1.0.0',
-        test_suites: ['validation', 'integration', 'comprehensive', 'security', 'end-to-end', 'empty-todo-validation']
-        test_suites: ['validation', 'integration', 'api', 'comprehensive', 'security', 'end-to-end', 'malformed-markdown', 'todo-validation']
+        test_suites: ['validation', 'integration', 'api', 'comprehensive', 'security', 'end-to-end', 'empty-todo-validation', 'malformed-markdown', 'todo-validation', 'repository-structure']
       },
       summary: this.results.overall
     });
@@ -465,6 +490,7 @@ class TestRunner {
       const malformedMarkdownSuccess = await this.runMalformedMarkdownTests();
       const noActionableTasksSuccess = await this.runNoActionableTasksTests();
       const todoValidationSuccess = await this.runTodoValidationTests();
+      const repositoryStructureSuccess = await this.runRepositoryStructureTests();
       
       this.calculateOverallResults();
       this.saveResults();
@@ -476,8 +502,10 @@ class TestRunner {
       console.log(`⏱️  Total execution time: ${duration}s`);
       
       // Exit with appropriate code
-      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && emptyTodoSuccess;
-      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && malformedMarkdownSuccess && noActionableTasksSuccess && todoValidationSuccess;
+      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && 
+                             comprehensiveSuccess && securitySuccess && endToEndSuccess && 
+                             emptyTodoSuccess && malformedMarkdownSuccess && noActionableTasksSuccess && 
+                             todoValidationSuccess && repositoryStructureSuccess;
       process.exit(overallSuccess ? 0 : 1);
       
     } catch (error) {

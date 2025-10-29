@@ -124,6 +124,13 @@ The repository has grown significantly:
 ### Nice-to-Have (Phase 3) - Enhancement
 
 1. Add visual aids (timelines, financial flow diagrams) as annexures
+2. Create executive summary of key evidence for attorney review
+3. ✅ **COMPLETED** - Prepare witness statement templates for Daniel and other witnesses
+   - **Templates Created:** 4 comprehensive witness statement templates
+   - **Location:** `evidence/witness-statements/templates/`
+   - **Templates:** Daniel (JF-WS2), Kayla posthumous (JF-WS3), Jacqueline (JF-WS4), Generic (JF-WS[X])
+   - **Core Revelation Linked:** All templates link to platform ownership by RegimA Zone Ltd (UK) and RWD ZA's lack of independent revenue stream
+   - **Completion Date:** October 23, 2025
 2. ✅ **COMPLETED** - Create executive summary of key evidence for attorney review
    - **Documents Created:**
      - `ATTORNEY_EXECUTIVE_BRIEFING.md` (30KB, 789 lines) - Comprehensive case analysis and strategic guidance
@@ -144,7 +151,16 @@ The repository has grown significantly:
      - Expert witness coordination guide
    - **Completion Date:** October 27, 2025
 3. Prepare witness statement templates for Daniel and other witnesses
-4. Develop evidence presentation strategy for court
+4. ✅ **COMPLETED** - Develop evidence presentation strategy for court
+   - **Completion Date:** October 23, 2025
+   - **Documents Created:**
+     - `evidence/EVIDENCE_PRESENTATION_STRATEGY_FOR_COURT.md` (37,501 chars) - Comprehensive 12-part strategy
+     - `evidence/VISUAL_EVIDENCE_FLOW_DIAGRAM.md` (25,379 chars) - 10 detailed visual diagrams
+     - `evidence/EVIDENCE_LINKAGE_QUICK_REFERENCE.md` (14,432 chars) - Quick reference guide
+     - `evidence/EVIDENCE_PRESENTATION_INTEGRATION_GUIDE.md` (14,699 chars) - Integration guide
+   - **Total Documentation:** 92,011 characters across 4 comprehensive documents
+   - **Key Innovation:** Links all evidence to central revelation that RegimA Zone Ltd (UK - Dan & Kay) owns and paid for Shopify platform (R140K-R280K) while RWD ZA generated R2.94M-R6.88M revenue without compensation and has no independent revenue stream
+   - **Coverage:** Opening/closing arguments, witness examination, visual aids, legal frameworks, unjust enrichment analysis, response templates, courtroom strategies
 5. Create quick reference guide for all 50+ annexures
 
 ## Forensic Analysis Enhancement
@@ -183,7 +199,18 @@ The repository has grown significantly:
      - Strategic legal recommendations
    - **Status:** 818 lines, fully cross-referenced, ready for affidavit integration
 4. Create damage calculation methodology documentation
-5. Develop expert testimony preparation materials
+5. ✅ **COMPLETED** - Develop expert testimony preparation materials
+   - **Document Created:** `docs/legal/evidence/EXPERT_TESTIMONY_PREPARATION_MATERIALS.md`
+   - **Framework Complete:** Comprehensive 1,225-line expert witness preparation guide (47,500+ words)
+   - **Key Features:**
+     - Five expert witness categories (Forensic Accounting, IT/Technical, Business Operations, Legal Compliance, International Business)
+     - All testimony linked to central revelation: RegimA Zone Ltd platform ownership, RWD ZA revenue dependency
+     - Cross-examination preparation for anticipated defense arguments
+     - Evidence cross-reference matrix linking all expert testimony to existing evidence
+     - Testimony coordination framework ensuring consistent narrative
+     - Expert qualification requirements and budget estimates (R820K - R1.275M)
+   - **Central Revelation Integration:** All materials emphasize that Dan & Kay Shopify platform was owned and paid for by RegimA Zone Ltd (UK company), RWD ZA has no independent revenue stream
+   - **Next Phase:** Expert witness engagement and preparation when proceeding to court
 
 ## Testing and Quality Assurance
 

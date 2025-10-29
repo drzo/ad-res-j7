@@ -75,6 +75,38 @@ node tests/run-all-tests.js
 npm test
 ```
 
+### 4. `repository-structure-integrity.test.js` (NEW)
+**Purpose**: Validate repository structure integrity and evidence organization
+
+**Context**: 
+- Implementation of Phase 3 Advanced QA requirement (line 178 in todo/Repository_Status_and_Critical_Evidence_Collection.md)
+- Links repository structure to critical Shopify payment evidence trail
+- Validates evidence linking Dan & Kay Shopify platform payments to Dan & Jax UK company (RegimA Zone Ltd)
+- Confirms RWD ZA lack of independent revenue stream documentation
+
+**Tests Include**:
+- Core directory structure validation (9 required directories)
+- Evidence file organization verification
+- Shopify payment evidence trail documentation (tracks 132+ references)
+- RegimA Zone Ltd payment documentation (tracks 40+ references)
+- Revenue stream analysis validation (3 evidence directories)
+- Critical evidence cross-reference validation
+- Payment trail linkage from UK company to Shopify platform
+- Repository structure metadata verification
+
+**Metrics Tracked**:
+- Required directories found vs. missing
+- Shopify payment references count
+- RegimA Zone Ltd references count  
+- Revenue stream evidence directories count
+
+**Usage**:
+```bash
+node tests/repository-structure-integrity.test.js
+# Or use npm script:
+npm run test:repository-structure
+```
+
 ## Test Results
 
 All tests generate detailed JSON reports:
@@ -100,6 +132,9 @@ node tests/integration-test.js
 
 # Malformed markdown tests only
 npm run test:malformed-markdown
+
+# Repository structure integrity tests only
+npm run test:repository-structure
 
 # All tests with detailed output
 node tests/run-all-tests.js
