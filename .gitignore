@@ -74,3 +74,10 @@ build/
 file-converter.js
 ocr-file-converter.js.merge-marker
 __pycache__/
+
+# Local analysis clones (keep untracked to avoid multiple Git repos)
+ad-hypergraph-mapping/repos/
+repo-analysis/ad-res-j7/
+repo-analysis/analysss/
+repo-analysis/analyticase/
+repo-analysis/avtomaatoctory/
