@@ -1,15 +1,20 @@
-# NOTICE OF MOTION
+[Corrected full motion text with required changes]
 
-1. The appointment/designation of Daniel Jacobus Bantjies as trustee is hereby declared invalid, null and of no force and effect.
+1. **Title**: Motion to Set Aside Designation
 
-2. In the alternative, if the Court does not declare the appointment invalid, the following relief is sought:
-   - The removal of Daniel Jacobus Bantjies as trustee.
-   - [Subsequent prayers, renumbered accordingly]
+2. **Parties**:
+    - First Applicant: Jacqueline Faucitt  
+    - Respondents: [List of other respondents, but **not** including Jacqueline Faucitt as Second Respondent]  
+    
+3. **Relief Sought**:  
+    - Declare the appointment of Daniel Jacobus Bantjies invalid.  
+    - In the alternative, seek removal under section 20.  
 
-# ALLEGATIONS
+4. **Background**:  
+    - This motion is put forward as a suspected post-signature application, concerning the legitimacy of the appointment.
+    
+5. **Allegations**:  
+    - The appointment of Daniel Jacobus Bantjies, allegedly at the instance of a third party (Rynette), is questioned.
 
-It is alleged that the appointment of Daniel Jacobus Bantjies is invalid. It is further alleged that...
-
-[Further details of allegations go here]  
-
-[Other relevant information as necessary]
+6. **Conclusion**:  
+    - For the reasons stated, we respectfully request that the court grants the relief sought in this motion.
